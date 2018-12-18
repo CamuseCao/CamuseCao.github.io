@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-07T03:08:01.820Z</updated>
+  <updated>2018-12-18T13:22:49.493Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/12/18/test/"/>
+    <id>http://yoursite.com/2018/12/18/test/</id>
+    <published>2018-12-18T13:22:49.493Z</published>
+    <updated>2018-12-18T13:22:49.493Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/12/18/t/"/>
+    <id>http://yoursite.com/2018/12/18/t/</id>
+    <published>2018-12-18T13:09:48.294Z</published>
+    <updated>2018-12-18T13:40:57.053Z</updated>
+    
+    <content type="html"><![CDATA[.test{  width:100px;  hieght:100px;  background-color:red;  border-radius:50%;}.img1{width:100px;hieght:100px;background-color:red;border-radius:50%;}.imgcenter{text-align:center;}]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        .test{
+  width:100px;
+  hieght:100px;
+  background-color:red;
+  border-radius:50%;
+}
+.img1{
+width:100px;
+hieght:100px;
+background-color:red;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>凝聚态物理期末总结</title>
+    <link href="http://yoursite.com/2018/12/18/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
+    <id>http://yoursite.com/2018/12/18/凝聚态物理期末/</id>
+    <published>2018-12-18T12:02:22.171Z</published>
+    <updated>2018-12-18T13:42:23.218Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="求倒格矢"><a href="#求倒格矢" class="headerlink" title="求倒格矢"></a>求倒格矢</h3><a id="more"></a><h3 id="固体的结合：金属结合、共价结合、离子结合、范德瓦尔斯结合、氢键结合"><a href="#固体的结合：金属结合、共价结合、离子结合、范德瓦尔斯结合、氢键结合" class="headerlink" title="固体的结合：金属结合、共价结合、离子结合、范德瓦尔斯结合、氢键结合"></a>固体的结合：金属结合、共价结合、离子结合、范德瓦尔斯结合、氢键结合</h3><h3 id="晶体的缺陷"><a href="#晶体的缺陷" class="headerlink" title="晶体的缺陷"></a>晶体的缺陷</h3><h3 id="能带论"><a href="#能带论" class="headerlink" title="能带论"></a>能带论</h3><p><img src="https://i.loli.net/2018/12/18/5c18e72fb95e4.png" alt="525px-Band_gap_comparison.svg"></p><p><link rel="stylesheet" href="t.css"></p><div class="test">dsf</div><div class"img1"="" style="width:450px; height:200px; text-align:center ; border:1px solid blue "><br><br><img src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"><br><br></div><p><img style="width:450px; height:200px;" src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></p><div class="imgcenter"><br><img class="img1" src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"><br></div><ul><li>金属的能带穿过费米能级</li><li>半导体的能到不穿过，且禁带宽度较小</li><li>绝缘体的能带也不穿过费米能级，禁带宽度大</li><li>半金属（semi-mental)的能带与费米能级相切。</li><li>半金属（half-mental)自旋向上部分与金属相同，自旋向下部分与绝缘体相同。</li></ul><p>表面物理：</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;求倒格矢&quot;&gt;&lt;a href=&quot;#求倒格矢&quot; class=&quot;headerlink&quot; title=&quot;求倒格矢&quot;&gt;&lt;/a&gt;求倒格矢&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>商务英语</title>
