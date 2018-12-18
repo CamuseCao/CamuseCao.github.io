@@ -1,0 +1,14 @@
+.test{
+  width:100px;
+  height:100px;
+  background-color:red;
+  border-radius:50%;
+}
+.img1{
+background-color:red;
+border-radius:50%;
+
+}
+.imgcenter{
+text-align:center;!important
+}
