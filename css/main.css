@@ -2069,7 +2069,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #edf986;
+  background: #af8cff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3216,8 +3216,8 @@ pre {
 }
 .img1 {
   width: auto;
-  background-color: #f00;
-  border-radius: 50%;
+  background-color: #fff;
+  border-radius: 10%;
 }
 .imgcenter {
   text-align: center;
