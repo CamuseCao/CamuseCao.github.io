@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-25T16:18:33.676Z</updated>
+  <updated>2019-02-10T15:56:43.091Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用软件记录</title>
+    <link href="http://yoursite.com/2019/02/10/software/"/>
+    <id>http://yoursite.com/2019/02/10/software/</id>
+    <published>2019-02-10T15:00:24.497Z</published>
+    <updated>2019-02-10T15:56:43.091Z</updated>
+    
+    <content type="html"><![CDATA[<p>该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。</p><a id="more"></a><h2 id="下载使用的软件"><a href="#下载使用的软件" class="headerlink" title="下载使用的软件"></a>下载使用的软件</h2><ul><li>豆丁当当 用来下载某些网上无法直接下载的文档。</li><li>百度云 下载一些分享的资源的很好选择</li><li>冰点下载 能下载的文档应该比豆丁当当要多，但是有广告</li><li>Nutstore 办公使用很合适的同步软件</li><li>天若OCR 快速文字识别，免费使用，识别效果不错</li><li>P2P 资源寻找</li><li>Proxydown 百度云资料的不限速下载，似乎要挂了</li><li>SciHub 文献的下载</li><li>万能资源搜索助手 功能如其名</li><li>迅雷 资源丰富</li><li>Verysync 自己的同步软件</li><li></li></ul><h2 id="垃圾清理以及病毒查收等"><a href="#垃圾清理以及病毒查收等" class="headerlink" title="垃圾清理以及病毒查收等"></a>垃圾清理以及病毒查收等</h2><ul><li>Adwcleaner</li><li>CCleaner 好用又良心</li><li>Dism++ 功能很全，无论是垃圾清理还是注册表清理。也可以用来管理开机启动项等。</li><li>lenovodm 联想电脑驱动的管理</li><li>MenuMgr 管理你的右键，从此不再臃肿</li><li>Procexp 功能更齐全的任务管理器</li><li>Recuva 硬盘文件恢复</li><li>WiseRegCleaner 注册表清理</li><li>Launchy 软件快速启动</li><li>Speccy 电脑硬件查看</li><li></li></ul><h2 id="编程以及编辑的软件"><a href="#编程以及编辑的软件" class="headerlink" title="编程以及编辑的软件"></a>编程以及编辑的软件</h2><ul><li>Anaconda Python环境管理以及包管理</li><li>Atom 很好看也好用的编辑器</li><li>Jabref 管理参考文献的软件，配合<code>TeX</code>使用效果更佳</li><li>Mathpix 公式识别为<code>LaTeX</code>代码</li><li>MathType 公式输入，可以转化为<code>LaTeX</code>代码</li><li>Matlab 庞然大物，矩阵计算是它的强项</li><li>MikTeX TeX的一个很轻小的发行版本</li><li>Putty 远程控制</li><li>R 统计计算语言</li><li>Shadowsocks SS数据传输</li><li>VSCode 好用的编辑器</li><li>Xmanager 远程控制</li><li>Git 版本控制于Github管理</li><li>Pycharm Python编辑器</li><li>Node 解决别的软件的依赖</li><li>Pandoc 各种文件的转换</li><li>Typora Markdown我最喜欢的查看器</li><li>Texstudio TeX编辑器</li><li>TeXLive TeX的一个很齐全的发行版本</li><li></li></ul><h2 id="图片、音频、视频、文件的查看于处理"><a href="#图片、音频、视频、文件的查看于处理" class="headerlink" title="图片、音频、视频、文件的查看于处理"></a>图片、音频、视频、文件的查看于处理</h2><ul><li>网易云音乐 大家都喜欢</li><li>PhotoZoom 图片的放大</li><li>Foobar 可以尽可能自己改造的音乐播放器</li><li>PDFdo PDF Converter 处理PDF的一款软件</li><li>吾爱看看 可以找到一些付费视频</li><li>Snipaste 截图软件</li><li>Bandicam 录频软件</li><li>Xnview 图片查看于编辑</li><li>HoneyView 图片查看</li><li>Pltplayer 一款优秀的播放器</li><li>福昕高级PDF编辑器 如其名</li><li></li></ul><h2 id="学习软件"><a href="#学习软件" class="headerlink" title="学习软件"></a>学习软件</h2><ul><li>Chrome Goole出品的浏览器</li><li>有道词典</li><li>TeamViewer 远程控制，团队协作</li><li>Tor 一款优秀且保护隐私的浏览器</li><li>Vmware 优秀的虚拟机软件</li><li>WindowTabs 让大部分软件都可以有标签</li><li></li></ul><h2 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h2><ul><li>Everything 只要记得一点关键名字，就有希望找到被你遗忘在某个角落的文件。</li><li>KeePass 密码记录</li><li>TreeSize 分析资源占用</li><li>TeraCopy 代替原来的剪切复制</li><li></li></ul><h2 id="社交聊天"><a href="#社交聊天" class="headerlink" title="社交聊天"></a>社交聊天</h2><ul><li>QQ4</li><li>Telegram 不太需要担心隐私问题的聊天软件</li><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="软件" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="软件" scheme="http://yoursite.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>凝聚态物理期末总结</title>
