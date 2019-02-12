@@ -848,29 +848,48 @@
 
 
   
-    
+    <!-- LOCAL: You can save these files to your site and update links -->
 
-<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
+<!-- END LOCAL -->
 
+<style>
+#gitment-container a {
+  border-bottom: none;
+}
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css"/>
+  a.gitment-editor-footer-tip, .gitment-container.gitment-footer-container {
+    display: none;
+  }
 
-
-
-<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+</style>
 
 <script>
-  var gitalk = new Gitalk({
-    clientID: '006b8ff4614a3b25a682',
-    clientSecret: '31bed57a45cc0dd6b56e9509a2fef935ee3f279b',
-    repo: 'GitTalk',
-    owner: 'CamuseCao',
-    admin: ['CamuseCao'],
-    id: md5(location.pathname),
-    distractionFreeMode: 'true'
-  });
-  gitalk.render('gitalk-container');
+  function renderGitment() {
+    var gitment = new Gitmint({
+      id: window.location.pathname,
+      owner: 'CamuseCao',
+      repo: 'GitTalk',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+      
+      oauth: {
+      
+      
+        client_secret: '31bed57a45cc0dd6b56e9509a2fef935ee3f279b',
+      
+        client_id: '006b8ff4614a3b25a682'
+      }
+    });
+    gitment.render('gitment-container');
+  }
+
+  
+    renderGitment();
+  
 </script>
 
   
