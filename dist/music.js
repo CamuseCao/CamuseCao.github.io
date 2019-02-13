@@ -59,7 +59,7 @@ const ap = new APlayer({
         name: 'Blank Space',
         artist: 'Taylor Swift',
         url: 'http://www.ytmp3.cn/down/49718.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/8.jpg',
+        cover: 'https://raw.githubusercontent.com/CamuseCao/Picture/master/Artist/Taylor-Swift.jpg',
       },
       {
         name: "Be alright",
