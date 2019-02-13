@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ICON]]></title>
+    <url>%2F2019%2F02%2F13%2FTest%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>图标</category>
+      </categories>
+      <tags>
+        <tag>图标</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[常用软件记录]]></title>
     <url>%2F2019%2F02%2F10%2Fsoftware%2F</url>
     <content type="text"><![CDATA[该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。 下载使用的软件 豆丁当当 用来下载某些网上无法直接下载的文档。 百度云 下载一些分享的资源的很好选择 冰点下载 能下载的文档应该比豆丁当当要多，但是有广告 Nutstore 办公使用很合适的同步软件 天若OCR 快速文字识别，免费使用，识别效果不错 P2P 资源寻找 Proxydown 百度云资料的不限速下载，似乎要挂了 SciHub 文献的下载 万能资源搜索助手 功能如其名 迅雷 资源丰富 Verysync 自己的同步软件 垃圾清理以及病毒查收等 Adwcleaner CCleaner 好用又良心 Dism++ 功能很全，无论是垃圾清理还是注册表清理。也可以用来管理开机启动项等。 lenovodm 联想电脑驱动的管理 MenuMgr 管理你的右键，从此不再臃肿 Procexp 功能更齐全的任务管理器 Recuva 硬盘文件恢复 WiseRegCleaner 注册表清理 Launchy 软件快速启动 Speccy 电脑硬件查看 编程以及编辑的软件 Anaconda Python环境管理以及包管理 Atom 很好看也好用的编辑器 Jabref 管理参考文献的软件，配合TeX使用效果更佳 Mathpix 公式识别为LaTeX代码 MathType 公式输入，可以转化为LaTeX代码 Matlab 庞然大物，矩阵计算是它的强项 MikTeX TeX的一个很轻小的发行版本 Putty 远程控制 R 统计计算语言 Shadowsocks SS数据传输 VSCode 好用的编辑器 Xmanager 远程控制 Git 版本控制于Github管理 Pycharm Python编辑器 Node 解决别的软件的依赖 Pandoc 各种文件的转换 Typora Markdown我最喜欢的查看器 Texstudio TeX编辑器 TeXLive TeX的一个很齐全的发行版本 图片、音频、视频、文件的查看于处理 网易云音乐 大家都喜欢 PhotoZoom 图片的放大 Foobar 可以尽可能自己改造的音乐播放器 PDFdo PDF Converter 处理PDF的一款软件 吾爱看看 可以找到一些付费视频 Snipaste 截图软件 Bandicam 录频软件 Xnview 图片查看于编辑 HoneyView 图片查看 Pltplayer 一款优秀的播放器 福昕高级PDF编辑器 如其名 学习软件 Chrome Goole出品的浏览器 有道词典 TeamViewer 远程控制，团队协作 Tor 一款优秀且保护隐私的浏览器 Vmware 优秀的虚拟机软件 WindowTabs 让大部分软件都可以有标签 文件管理 Everything 只要记得一点关键名字，就有希望找到被你遗忘在某个角落的文件。 KeePass 密码记录 TreeSize 分析资源占用 TeraCopy 代替原来的剪切复制 社交聊天 QQ4 Telegram 不太需要担心隐私问题的聊天软件]]></content>
