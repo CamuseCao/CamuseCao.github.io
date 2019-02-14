@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-14T13:56:44.850Z</updated>
+  <updated>2019-02-14T07:23:53.434Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Naruto-Pictures</title>
-    <link href="http://yoursite.com/2019-02-14-/Picture/"/>
-    <id>http://yoursite.com/2019-02-14-/Picture/</id>
-    <published>2019-02-14T13:32:50.717Z</published>
-    <updated>2019-02-14T13:56:44.850Z</updated>
-    
-    <content type="html"><![CDATA[<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="https://i.loli.net/2019/02/14/5c65184278fb1.jpeg" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="https://i.loli.net/2019/02/14/5c6518422cb02.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="https://i.loli.net/2019/02/14/5c6518422cb02.jpg" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="https://i.loli.net/2019/02/14/5c65184278fb1.jpeg" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="https://i.loli.net/2019/02/14/5c65184278fb1.jpeg" alt=""></div></div></div></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;widt
-      
-    
-    </summary>
-    
-      <category term="picture" scheme="http://yoursite.com/categories/picture/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>ICON</title>
