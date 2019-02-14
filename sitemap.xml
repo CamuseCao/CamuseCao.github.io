@@ -4,42 +4,84 @@
   <url>
     <loc>http://yoursite.com/photos/index.html</loc>
     
-    <lastmod>2019-02-13T15:17:31.029Z</lastmod>
+    <lastmod>2019-02-14T14:52:43.668Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/02/13/Test/</loc>
+    <loc>http://yoursite.com/2019-02-14-/Picture/</loc>
     
-    <lastmod>2019-02-13T12:14:42.746Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/12/18/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</loc>
-    
-    <lastmod>2019-02-12T12:56:09.653Z</lastmod>
+    <lastmod>2019-02-14T13:56:44.850Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/02/10/software/</loc>
+    <loc>http://yoursite.com/2018-12-18-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</loc>
     
-    <lastmod>2019-02-10T15:56:43.091Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/12/07/English/</loc>
-    
-    <lastmod>2018-12-07T03:08:01.820Z</lastmod>
+    <lastmod>2019-02-14T09:29:55.306Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/baidu_verify_Tu4TtSgQ1d.html</loc>
+    <loc>http://yoursite.com/2018-10-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</loc>
     
-    <lastmod>2018-10-09T11:41:49.046Z</lastmod>
+    <lastmod>2019-02-14T07:24:06.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019-02-13-/Test/</loc>
+    
+    <lastmod>2019-02-14T07:23:53.434Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019-02-10-/software/</loc>
+    
+    <lastmod>2019-02-14T07:23:40.723Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018-10-09-/Review/</loc>
+    
+    <lastmod>2019-02-14T07:23:29.473Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018-10-09-/Interview/</loc>
+    
+    <lastmod>2019-02-14T07:23:23.043Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018-12-07-/English/</loc>
+    
+    <lastmod>2019-02-14T07:23:16.175Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018-10-09-/Clear/</loc>
+    
+    <lastmod>2019-02-14T07:23:10.786Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018-10-09-/Article1/</loc>
+    
+    <lastmod>2019-02-14T07:23:03.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2019-02-14T07:17:57.734Z</lastmod>
     
   </url>
   
@@ -51,44 +93,16 @@
   </url>
   
   <url>
+    <loc>http://yoursite.com/baidu_verify_Tu4TtSgQ1d.html</loc>
+    
+    <lastmod>2018-10-09T11:41:49.046Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/index.html</loc>
     
     <lastmod>2018-10-09T11:41:48.312Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/10/09/Interview/</loc>
-    
-    <lastmod>2018-10-09T11:40:57.573Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/10/09/Article1/</loc>
-    
-    <lastmod>2018-10-09T11:40:35.530Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/10/09/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</loc>
-    
-    <lastmod>2018-10-09T11:40:10.288Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/10/09/Clear/</loc>
-    
-    <lastmod>2018-10-09T09:07:57.687Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/10/09/Review/</loc>
-    
-    <lastmod>2018-10-09T08:57:40.890Z</lastmod>
     
   </url>
   
