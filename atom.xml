@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Living to die</title>
+  <title>Born to die</title>
   
   <subtitle>Living to love</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://www.camuseblog.top/"/>
   <updated>2019-02-14T17:05:30.678Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://www.camuseblog.top/</id>
   
   <author>
     <name>CamuseCao</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>物理定律告诉你，爱情的真相有多么残酷！</title>
-    <link href="http://yoursite.com/2019-02-14-/Lover/"/>
-    <id>http://yoursite.com/2019-02-14-/Lover/</id>
+    <link href="http://www.camuseblog.top/2019-02-14-/Lover/"/>
+    <id>http://www.camuseblog.top/2019-02-14-/Lover/</id>
     <published>2019-02-14T15:47:12.398Z</published>
     <updated>2019-02-14T17:05:30.678Z</updated>
     
@@ -36,15 +36,15 @@
     
     </summary>
     
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="http://www.camuseblog.top/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>ICON</title>
-    <link href="http://yoursite.com/2019-02-13-/Test/"/>
-    <id>http://yoursite.com/2019-02-13-/Test/</id>
+    <link href="http://www.camuseblog.top/2019-02-13-/Test/"/>
+    <id>http://www.camuseblog.top/2019-02-13-/Test/</id>
     <published>2019-02-13T06:16:51.145Z</published>
     <updated>2019-02-14T07:23:53.434Z</updated>
     
@@ -56,15 +56,15 @@
     
     </summary>
     
-      <category term="图标" scheme="http://yoursite.com/categories/%E5%9B%BE%E6%A0%87/"/>
+      <category term="图标" scheme="http://www.camuseblog.top/categories/%E5%9B%BE%E6%A0%87/"/>
     
     
   </entry>
   
   <entry>
     <title>常用软件记录</title>
-    <link href="http://yoursite.com/2019-02-10-/software/"/>
-    <id>http://yoursite.com/2019-02-10-/software/</id>
+    <link href="http://www.camuseblog.top/2019-02-10-/software/"/>
+    <id>http://www.camuseblog.top/2019-02-10-/software/</id>
     <published>2019-02-10T15:00:24.497Z</published>
     <updated>2019-02-14T07:23:40.723Z</updated>
     
@@ -76,15 +76,15 @@
     
     </summary>
     
-      <category term="软件" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="http://www.camuseblog.top/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>凝聚态物理期末总结</title>
-    <link href="http://yoursite.com/2018-12-18-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
-    <id>http://yoursite.com/2018-12-18-/凝聚态物理期末/</id>
+    <link href="http://www.camuseblog.top/2018-12-18-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
+    <id>http://www.camuseblog.top/2018-12-18-/凝聚态物理期末/</id>
     <published>2018-12-18T12:02:22.171Z</published>
     <updated>2019-02-14T09:29:55.306Z</updated>
     
@@ -99,15 +99,15 @@
     
     </summary>
     
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="http://www.camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>商务英语</title>
-    <link href="http://yoursite.com/2018-12-07-/English/"/>
-    <id>http://yoursite.com/2018-12-07-/English/</id>
+    <link href="http://www.camuseblog.top/2018-12-07-/English/"/>
+    <id>http://www.camuseblog.top/2018-12-07-/English/</id>
     <published>2018-12-07T02:01:30.651Z</published>
     <updated>2019-02-14T07:23:16.175Z</updated>
     
@@ -119,15 +119,15 @@
     
     </summary>
     
-      <category term="临时" scheme="http://yoursite.com/categories/%E4%B8%B4%E6%97%B6/"/>
+      <category term="临时" scheme="http://www.camuseblog.top/categories/%E4%B8%B4%E6%97%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>近代物理实验复习</title>
-    <link href="http://yoursite.com/2018-10-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
-    <id>http://yoursite.com/2018-10-09-/近代物理实验卷子/</id>
+    <link href="http://www.camuseblog.top/2018-10-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
+    <id>http://www.camuseblog.top/2018-10-09-/近代物理实验卷子/</id>
     <published>2018-10-09T09:07:08.157Z</published>
     <updated>2019-02-14T07:24:06.682Z</updated>
     
@@ -143,15 +143,15 @@
     
     </summary>
     
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="http://www.camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>一个酷炫的清理技能</title>
-    <link href="http://yoursite.com/2018-10-09-/Clear/"/>
-    <id>http://yoursite.com/2018-10-09-/Clear/</id>
+    <link href="http://www.camuseblog.top/2018-10-09-/Clear/"/>
+    <id>http://www.camuseblog.top/2018-10-09-/Clear/</id>
     <published>2018-10-09T08:56:09.080Z</published>
     <updated>2019-02-14T07:23:10.786Z</updated>
     
@@ -163,15 +163,15 @@
     
     </summary>
     
-      <category term="电脑知识" scheme="http://yoursite.com/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+      <category term="电脑知识" scheme="http://www.camuseblog.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
     
     
   </entry>
   
   <entry>
     <title>自适应电子和光电子学的压电电子学和压电光电子学</title>
-    <link href="http://yoursite.com/2018-10-09-/Article1/"/>
-    <id>http://yoursite.com/2018-10-09-/Article1/</id>
+    <link href="http://www.camuseblog.top/2018-10-09-/Article1/"/>
+    <id>http://www.camuseblog.top/2018-10-09-/Article1/</id>
     <published>2018-10-09T08:29:46.333Z</published>
     <updated>2019-02-14T07:23:03.704Z</updated>
     
@@ -183,15 +183,15 @@
     
     </summary>
     
-      <category term="文献阅读" scheme="http://yoursite.com/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
+      <category term="文献阅读" scheme="http://www.camuseblog.top/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>面试题目</title>
-    <link href="http://yoursite.com/2018-10-09-/Interview/"/>
-    <id>http://yoursite.com/2018-10-09-/Interview/</id>
+    <link href="http://www.camuseblog.top/2018-10-09-/Interview/"/>
+    <id>http://www.camuseblog.top/2018-10-09-/Interview/</id>
     <published>2018-10-09T08:13:19.192Z</published>
     <updated>2019-02-14T07:23:23.043Z</updated>
     
@@ -203,15 +203,15 @@
     
     </summary>
     
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="http://www.camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>基础知识复习</title>
-    <link href="http://yoursite.com/2018-10-09-/Review/"/>
-    <id>http://yoursite.com/2018-10-09-/Review/</id>
+    <link href="http://www.camuseblog.top/2018-10-09-/Review/"/>
+    <id>http://www.camuseblog.top/2018-10-09-/Review/</id>
     <published>2018-10-09T07:55:13.062Z</published>
     <updated>2019-02-14T07:23:29.473Z</updated>
     
@@ -223,7 +223,7 @@
     
     </summary>
     
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="http://www.camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
