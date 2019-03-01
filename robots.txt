@@ -12,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://camuseblog.top/sitemap.xml
-Sitemap: http://camuseblog.top/baidusitemap.xml
+Sitemap: https://camuseblog.top/sitemap.xml
+Sitemap: https://camuseblog.top/baidusitemap.xml
