@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[收藏链接]]></title>
+    <url>%2F2019-03-02-%2FUrl%2F</url>
+    <content type="text"><![CDATA[本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。 PicGo的配置参考地址：PicGo]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[TeX 那些小事]]></title>
     <url>%2F2019-03-01-%2FTeX-Record%2F</url>
     <content type="text"><![CDATA[本文记录了自己使用TeX的一些心得，分享给TeXers，欢迎大家交流。 TeXStudio部分我喜欢的魔法注释： % !TeX TXS-program:compile = txs:///latexmk/{}[-xelatex -synctex=1 -interaction=nonstopmode] 用于XeLaTeX的编译方式 % !TeX TXS-program:compile = txs:///latexmk/{}[-pdf -synctex=1 -interaction=nonstopmode] 用于pdfLaTeX的编译方式 % !TeX TS-program = pdflatex ,等号后面可以换成xelatex等 % !TeX root = ./your.tex指定主文件 % !TeX encoding = UTF-8 指定编码方式 % !TeX spellcheck = en_US 指定语法检查的语言 有趣的宏包 therefore 地址在这里输入\Threrfore 会得到同义的表达 optidef 宏包加载的美学geometry的加载需要在fancyhdr宏包前，否则会出现页眉的长度与页面内容的宽度不同。 你用的其它宏包没有特殊说明加载位置的话，hyperref常常最后加载，否则很容易出现问题。 cleveref宏包要在hyperref宏包之后加载。 一些小命令好看的圆圈注脚制作123\usepackage&#123;pifont&#125;\renewcommand\thefootnote&#123;\ding&#123;\numexpr171+\value&#123;footnote&#125;&#125;&#125;\footnote&#123;这个注脚的圆圈数字好看了吧&#125; 把Bib文件也放在主文件里，方便做MWE123456789101112131415161718192021\documentclass&#123;article&#125;\title&#123;A Silly Article&#125;\author&#123;Me&#125;\begin&#123;document&#125;\maketitleMy favorite article is \cite&#123;supercurves&#125;.\bibliographystyle&#123;plain&#125;\bibliography&#123;shortbib&#125;\end&#123;document&#125;\begin&#123;filecontents&#125;&#123;shortbib.bib&#125; @ARTICLE&#123;supercurves, AUTHOR=&#123;Minghui Xia&#125;, TITLE=&#123;Image Registration by "Super-Curves"&#125;, JOURNAL=&#123;IEEE Transactions on Image Processing&#125;, YEAR=&#123;1985&#125;, VOLUME = &#123;13&#125;, PAGES=&#123;720&#125;, &#125;\end&#123;filecontents&#125; 简单的中英文字体配置简单示例12345678910111213141516\documentclass&#123;ctexart&#125;% 英文字体配置部分\setmainfont&#123;Source Serif Pro&#125;%Times New Roman\setsansfont&#123;Source Sans Pro&#125;\setmonofont&#123;Source Code Pro&#125;% 中文字体配置部分\usepackage&#123;xeCJK&#125;%中文字体\setCJKmainfont&#123;宋体&#125;%正文字体\setCJKsansfont&#123;黑体&#125;%无衬线字体\setCJKmonofont&#123;楷体&#125;%等宽字体\setCJKfamilyfont&#123;boldsong&#125;&#123;Source Han Serif SC Heavy&#125;\begin&#123;document&#125; \sffamily 无衬线字体 \ttfamily 等宽字体\end&#123;document&#125;]]></content>
@@ -149,7 +160,8 @@
         <category>学习</category>
       </categories>
       <tags>
-        <tag>Physics.Band</tag>
+        <tag>Physics</tag>
+        <tag>Band</tag>
       </tags>
   </entry>
   <entry>
@@ -161,7 +173,8 @@
       </categories>
       <tags>
         <tag>Physics</tag>
-        <tag>Semiconductor.Band</tag>
+        <tag>Band</tag>
+        <tag>Semiconductor</tag>
       </tags>
   </entry>
 </search>

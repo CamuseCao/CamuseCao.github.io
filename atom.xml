@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camuseblog.top/"/>
-  <updated>2019-03-01T17:11:30.428Z</updated>
+  <updated>2019-03-02T10:37:44.677Z</updated>
   <id>https://camuseblog.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>收藏链接</title>
+    <link href="https://camuseblog.top/2019-03-02-/Url/"/>
+    <id>https://camuseblog.top/2019-03-02-/Url/</id>
+    <published>2019-03-02T09:22:06.626Z</published>
+    <updated>2019-03-02T10:37:44.677Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。</p><hr><a id="more"></a><h3 id="PicGo的配置参考地址：PicGo"><a href="#PicGo的配置参考地址：PicGo" class="headerlink" title="PicGo的配置参考地址：PicGo"></a>PicGo的配置参考地址：<a href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A" target="_blank" rel="noopener">PicGo</a></h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+      <category term="软件" scheme="https://camuseblog.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camuseblog.top/tags/Software/"/>
+    
+  </entry>
   
   <entry>
     <title>TeX 那些小事</title>
@@ -326,7 +349,7 @@
     <link href="https://camuseblog.top/2018-10-09-/Interview/"/>
     <id>https://camuseblog.top/2018-10-09-/Interview/</id>
     <published>2018-10-09T08:13:19.192Z</published>
-    <updated>2019-03-01T13:23:44.798Z</updated>
+    <updated>2019-03-02T09:29:25.859Z</updated>
     
     <content type="html"><![CDATA[<h2 id="如何理解能带结构？画一个简单的能带结构。"><a href="#如何理解能带结构？画一个简单的能带结构。" class="headerlink" title="如何理解能带结构？画一个简单的能带结构。"></a>如何理解能带结构？画一个简单的能带结构。</h2><p>$k\text{与}E(k)$的关系图即能带结构。<br>画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。</p><hr><a id="more"></a><p><img src="https://i.loli.net/2018/07/03/5b3b63b64c896.png" alt="1"></p><h2 id="如何区别-n-型和-p-型半导体？"><a href="#如何区别-n-型和-p-型半导体？" class="headerlink" title="如何区别 n 型和 p 型半导体？"></a>如何区别 n 型和 p 型半导体？</h2><p>采用霍尔效应来区分。对材料加一个垂直向下的磁场，测量霍尔电压加以区分。</p><h2 id="一维无限深方势阱的波函数图像、能量表达式、函数表达式以及大体的解题步骤。"><a href="#一维无限深方势阱的波函数图像、能量表达式、函数表达式以及大体的解题步骤。" class="headerlink" title="一维无限深方势阱的波函数图像、能量表达式、函数表达式以及大体的解题步骤。"></a>一维无限深方势阱的波函数图像、能量表达式、函数表达式以及大体的解题步骤。</h2><h2 id="自由电子能否吸收光子？"><a href="#自由电子能否吸收光子？" class="headerlink" title="自由电子能否吸收光子？"></a>自由电子能否吸收光子？</h2><p>不能。<br>根据动量和能量守恒的要求是没有解的。</p><p>该方程组是无解的，因此不能吸收光子。</p>]]></content>
     
@@ -340,7 +363,9 @@
       <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Physics.Band" scheme="https://camuseblog.top/tags/Physics-Band/"/>
+      <category term="Physics" scheme="https://camuseblog.top/tags/Physics/"/>
+    
+      <category term="Band" scheme="https://camuseblog.top/tags/Band/"/>
     
   </entry>
   
@@ -349,7 +374,7 @@
     <link href="https://camuseblog.top/2018-10-09-/Review/"/>
     <id>https://camuseblog.top/2018-10-09-/Review/</id>
     <published>2018-10-09T07:55:13.062Z</published>
-    <updated>2019-03-01T13:23:06.998Z</updated>
+    <updated>2019-03-02T09:29:06.667Z</updated>
     
     <content type="html"><![CDATA[<h2 id="半导体重掺应用"><a href="#半导体重掺应用" class="headerlink" title="半导体重掺应用"></a>半导体重掺应用</h2><hr><a id="more"></a><p>在掺杂程度足够高、进入简并状态的情况下，不同原子的电子会形成共有化运动，即这些原子的电子运动波函数相互重叠，从而使杂质能级形成连续的能带。这个杂质能带填充了原来价带、导带之间的能隙，这样，简并半导体的能隙宽度就减小了，从而显示出一些不同寻常的性质。例如，当温度升高，简并半导体的导电性能不会显著增加。另一方面，简并半导体的载流子浓度尽管比非简并半导体高，但还是远低于金属，因此它们会显示出介于半导体和金属的性质。</p><blockquote><p>重掺杂的简并半导体应用较为广泛。1958 年研制成功的隧道二极管就是利用这样的重掺杂简并半导体制成的，其中 N 型半导体的费米能级进入导带，而 P 型半导体的费米能级进入价带。这项发明使其发明者江崎玲于奈在 1973 年被授予诺贝尔物理学奖。</p></blockquote><h2 id="表征手段"><a href="#表征手段" class="headerlink" title="表征手段"></a>表征手段</h2><ul><li>扫描隧道显微镜</li><li>光致发光</li><li>X 射线光谱</li><li>质谱法</li><li>热学分析</li><li>色谱法</li></ul><h2 id="激光产生的条件"><a href="#激光产生的条件" class="headerlink" title="激光产生的条件"></a>激光产生的条件</h2><ul><li>受激幅射是产生激光的首要条件,也是必要条件,但还不是充分条件</li><li>工作物质必须具有亚稳态能级</li><li>形成粒子数反转,使受激发射多于吸收</li><li>要使频率单纯,方向集中,就必须有一个振荡腔</li><li>光子在腔中振荡一次产生的光子数比损耗掉的光子多得多</li></ul><h2 id="VASP-的作用"><a href="#VASP-的作用" class="headerlink" title="VASP 的作用"></a>VASP 的作用</h2><p>它是进行电子结构计算和量子力学-分子动力学模拟软件包。</p><p>可以在密度泛函理论（DFT）框架内求解 Kohn-Sham 方程(已实现了混合（hybrid）泛函计算)，也可以在 Hartree-Fock（HF）的近似下求解 Roothaan 方程。</p><h2 id="第一性原理"><a href="#第一性原理" class="headerlink" title="第一性原理"></a>第一性原理</h2><ul><li><p>第一类以波函数为核心物理量，先用 Slater 行列式展开波函数，再求解展开系数。常见的有 Hartree-Fock，MPn，CCSD(T), CI 等。搞化学的人提到“第一性原理”，指的就是这类方法，并且他们一般叫“量子化学”。</p></li><li><p>第二类以电荷密度为核心物理量，即密度泛函理论。密度泛函理论核心就两条定理，能玩出花样的反倒是各种泛函。搞物理的人提到“第一性原理”，指的就是这类方法。密度泛函理论计算量比量子化学方法小，但缺陷也很明显，就是激发态算不准，并且是先天不足，怎么都救不回来那种（量子化学方法激发态就算得不错）。</p></li><li><p>还有一类是基于格林函数的，把量子场论的那套理论移植了过来。目前还不是很成熟，只能算一算激发态能量。</p></li></ul>]]></content>
     
@@ -364,7 +389,9 @@
     
       <category term="Physics" scheme="https://camuseblog.top/tags/Physics/"/>
     
-      <category term="Semiconductor.Band" scheme="https://camuseblog.top/tags/Semiconductor-Band/"/>
+      <category term="Band" scheme="https://camuseblog.top/tags/Band/"/>
+    
+      <category term="Semiconductor" scheme="https://camuseblog.top/tags/Semiconductor/"/>
     
   </entry>
   
