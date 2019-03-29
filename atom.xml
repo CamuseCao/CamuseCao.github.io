@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camuseblog.top/"/>
-  <updated>2019-03-02T15:39:33.070Z</updated>
+  <updated>2019-03-29T02:50:36.058Z</updated>
   <id>https://camuseblog.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>csv文件的小坑(自己主动跳进去的)</title>
+    <link href="https://camuseblog.top/2019-03-29-/csv/"/>
+    <id>https://camuseblog.top/2019-03-29-/csv/</id>
+    <published>2019-03-29T02:34:27.970Z</published>
+    <updated>2019-03-29T02:50:36.058Z</updated>
+    
+    <content type="html"><![CDATA[<p>csv文件是一种逗号分隔值文件格式，它工作是比较稳定的。对于数据量比较大的情况，它是比较好的选择。</p><hr><a id="more"></a><p>因为觉得它挺好的，于是把实验数据录入为csv格式的。由于<code>excel</code>也能打开csv文件，编辑起来比较爽，能够进行运算，所以我并没有直接用普通的编辑器去完成这个工作。虽然我提前知道它是纯文本格式的文件，但是在<code>excel</code>的界面里，我没有特别的意识，顺手添加了额外的几个<code>sheet</code>。开心的把数据录入之后，还特意保存了好，再关闭，准备处理数据。</p><p>接下来就是悲剧时刻了。再打开一看，怎么数据只剩下<code>sheet6</code>了？难道我操作不对吗？当时还是没有想到是文件格式的问题。于是我重新再录入了一遍数据，悲剧又重现了。。。。</p><p>后反思，这货本来就是只能有一个<code>sheet</code>啊。毕竟纯文本的货色。所以提醒大家注意这个问题，它应该是只会留下最后编辑的那个<code>sheet</code>。</p><p>我会这样被坑的原因还有一个就是英文版的系统下，<code>excel</code>不提醒csv文件格式可能会出现这种问题。后面我在同学中文系统性的<code>excel</code>下测试发现保存时会提醒。然而我这不提醒。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;csv文件是一种逗号分隔值文件格式，它工作是比较稳定的。对于数据量比较大的情况，它是比较好的选择。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+      <category term="电脑知识" scheme="https://camuseblog.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Software" scheme="https://camuseblog.top/tags/Software/"/>
+    
+  </entry>
   
   <entry>
     <title>MiKTeX的基本使用</title>
