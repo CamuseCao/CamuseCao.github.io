@@ -103,21 +103,24 @@
 
 
 
-  <meta name="description" content="本文是关于MiKTeX建立自己的cls文件安放位置，以及它如何运行起来latexmk。">
+  <meta name="description" content="本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。">
 <meta name="keywords" content="Software,TeX">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MiKTeX的基本使用">
 <meta property="og:url" content="https://camuseblog.top/2019-03-02-/MiKTeX/index.html">
 <meta property="og:site_name" content="Born to die">
-<meta property="og:description" content="本文是关于MiKTeX建立自己的cls文件安放位置，以及它如何运行起来latexmk。">
+<meta property="og:description" content="本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://i.loli.net/2019/03/30/5c9ee5efcea01.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/30/5c9ee5f51888d.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/30/5c9ee5fd629b6.png">
 <meta property="og:image" content="https://i.loli.net/2019/03/02/5c7a83876c91e.png">
 <meta property="og:image" content="https://i.loli.net/2019/03/02/5c7a839e0f94b.png">
-<meta property="og:updated_time" content="2019-03-02T15:39:33.070Z">
+<meta property="og:updated_time" content="2019-03-30T03:59:59.280Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MiKTeX的基本使用">
-<meta name="twitter:description" content="本文是关于MiKTeX建立自己的cls文件安放位置，以及它如何运行起来latexmk。">
-<meta name="twitter:image" content="https://i.loli.net/2019/03/02/5c7a83876c91e.png">
+<meta name="twitter:description" content="本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/30/5c9ee5efcea01.png">
 
 
 
@@ -498,12 +501,24 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                 
               
 
-              <time title="Created: 2019-03-02 20:39:01 / Modified: 23:39:33" itemprop="dateCreated datePublished" datetime="2019-03-02T20:39:01+08:00">2019-03-02</time>
+              <time title="Created: 2019-03-02 20:39:01" itemprop="dateCreated datePublished" datetime="2019-03-02T20:39:01+08:00">2019-03-02</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-03-30 11:59:59" itemprop="dateModified" datetime="2019-03-30T11:59:59+08:00">2019-03-30</time>
               
             
           </span>
@@ -557,7 +572,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.2k</span>
+                <span title="Symbols count in article">2.2k</span>
               
 
               
@@ -571,7 +586,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2 mins.</span>
               
             </div>
           
@@ -591,12 +606,26 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
       
 
       
-        <p>本文是关于MiKTeX建立自己的cls文件安放位置，以及它如何运行起来latexmk。</p>
+        <p>本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。</p>
 <hr>
 <a id="more"></a>
-<h2 id="MiKTeX下如何使用latexmk"><a href="#MiKTeX下如何使用latexmk" class="headerlink" title="MiKTeX下如何使用latexmk"></a>MiKTeX下如何使用latexmk</h2><p>常用的编译链在没有清除辅助文件的前提下，运行得到的pdf文件的页眉页脚目录这些通常很可能不正确。而用latexmk自动去执行就很少遇到这种问题，因此推荐使用latexmk来编译文件。</p>
+<h2 id="MiKTeX-使用的基本介绍"><a href="#MiKTeX-使用的基本介绍" class="headerlink" title="MiKTeX 使用的基本介绍"></a>MiKTeX 使用的基本介绍</h2><p>介绍部分仅仅介绍它与常用的<code>TeXLive</code>的一些小差异。</p>
+<p><code>MiKTeX</code>安装的时候<code>instal missing packages on-the-fly</code>建议选择<code>asked me first</code>。</p>
+<p>由于<code>MiKTeX</code>基本上只有一些<code>TeX</code>核心的部分，很多宏包都没有在安装的时候一并打包进去。所以在运行一个<code>tex</code>文件时会因为缺少宏包出现下图这样的情形：</p>
+<p><img src="https://i.loli.net/2019/03/30/5c9ee5efcea01.png" alt="m1"></p>
+<p>别慌张，不算出问题。点击<code>Install</code>即可，过一会儿缺少的宏包就就会安装好了。刚开始的时候可能会比较经常出现这个界面。后面你常用的宏包下载好就不会了。</p>
+<p>但是偶尔出现一个宏包下载不下来的情况，这时候很可能是下载的源不稳定导致的，那么只要改变安装宏包的源即可。</p>
+<p>在弹出安装宏包时对于<code>The package will be installed from :</code>选项点击<code>change...</code>，进入下图界面。就选默认的第一个选项，直接点<code>Next</code>选项。</p>
+<p><img src="https://i.loli.net/2019/03/30/5c9ee5f51888d.png" alt="m2"></p>
+<p>接下来选择一个安装源，大陆这里的源经常不稳定，建议选择<code>Japan</code>的。如果你发现这个源也不好使，可以自己按照这个步骤再改变安装的源。<del>如果你能开代理的话，也可以开着代理用对应地区的源。具体步骤就是在上面那张图点击<code>connection setting...</code>，后面的步骤你懂得。</del></p>
+<p><img src="https://i.loli.net/2019/03/30/5c9ee5fd629b6.png" alt="m3"></p>
+<hr>
+<h2 id="MiKTeX-下如何使用latexmk"><a href="#MiKTeX-下如何使用latexmk" class="headerlink" title="MiKTeX 下如何使用latexmk"></a>MiKTeX 下如何使用latexmk</h2><p>常用的编译链在没有清除辅助文件的前提下，运行得到的pdf文件的页眉页脚目录这些通常很可能不正确。而用latexmk自动去执行就很少遇到这种问题，因此推荐使用latexmk来编译文件。</p>
 <p>默认的<code>MiKTeX</code>不像<code>TeXLive</code>这些发行版本打包了非常多东西，它用起来很精简，一般情况下够用。但是我很喜欢latexmk，所以稍微关注了一下怎么解决问题。</p>
 <p><code>MiKTeX</code>没有打包<code>perl.exe</code>，由于缺少它，latexmk不能运行，安装好了就可以了。网上一搜就有了。也可以去这个下<a href="http://strawberryperl.com/" target="_blank" rel="noopener">strawberryperl</a>或者<a href="https://www.activestate.com/products/activeperl/downloads/" target="_blank" rel="noopener">ActivePerl</a>。</p>
+<hr>
+<h2 id="MiKTeX-下如何使用-texify-编译"><a href="#MiKTeX-下如何使用-texify-编译" class="headerlink" title="MiKTeX 下如何使用 texify 编译"></a>MiKTeX 下如何使用 texify 编译</h2><p><code>texify</code>的编译与<code>latemk</code>类似，它是<code>MiKTeX</code>里面打包的组合编译，<code>MiKTeX</code>用户不需要额外安装其它软件就可以直接使用啊。常见参数的选择和一般的编译方式一样。例如用它指定为<code>pdflatex</code>的编译方式可以在命令行用如下命令:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">texify --synctex --pdf --tex-option=<span class="string">"-interaction=nonstopmode"</span> --tex-option=<span class="string">"-file-line-error"</span> Yourfile.tex</span><br></pre></td></tr></table></figure></p>
+<p>如果需要指定使用<code>xelatex</code>编译则用如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">texify --synctex --pdf --engine=xetex --tex-option=<span class="string">"-interaction=nonstopmode"</span> --tex-option=<span class="string">"-file-line-error"</span> Yourfile.tex</span><br></pre></td></tr></table></figure></p>
 <hr>
 <h2 id="MiKTeX如何安装自己的Classs文件"><a href="#MiKTeX如何安装自己的Classs文件" class="headerlink" title="MiKTeX如何安装自己的Classs文件"></a>MiKTeX如何安装自己的Classs文件</h2><p>很多人知道这个在<code>TeXLive</code>怎么完成，但是未必知道在<code>MiKTeX</code>上如何完成，所以特别写了这个简单的教程。</p>
 <p>首先新建一个文件夹，假设它叫<code>MyTex</code>，这个文件夹的放置位置要确保能有直接的读写权限，并且不要放在<code>MiKTeX</code>的安装路径内。接下来在<code>MyTex</code>文件夹下新建文件夹叫<code>tex</code>,进一步在<code>tex</code>文件夹下新建<code>latex</code>文件夹。后面这两个文件夹名字必须完全相同，不要自己随意起名。</p>
@@ -929,7 +958,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MiKTeX下如何使用latexmk"><span class="nav-number">1.</span> <span class="nav-text">MiKTeX下如何使用latexmk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MiKTeX如何安装自己的Classs文件"><span class="nav-number">2.</span> <span class="nav-text">MiKTeX如何安装自己的Classs文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MiKTeX-使用的基本介绍"><span class="nav-number">1.</span> <span class="nav-text">MiKTeX 使用的基本介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MiKTeX-下如何使用latexmk"><span class="nav-number">2.</span> <span class="nav-text">MiKTeX 下如何使用latexmk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MiKTeX-下如何使用-texify-编译"><span class="nav-number">3.</span> <span class="nav-text">MiKTeX 下如何使用 texify 编译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MiKTeX如何安装自己的Classs文件"><span class="nav-number">4.</span> <span class="nav-text">MiKTeX如何安装自己的Classs文件</span></a></li></ol></div>
             
 
           </div>
@@ -981,7 +1010,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 
 
 <div class="theme-info">
-  <span class="post-count">博客全站共30.1k字</span>
+  <span class="post-count">博客全站共30.6k字</span>
 </div>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -1643,10 +1672,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
         }, 300);
       }).append(e);
     })
-  </script>
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -1663,7 +1689,10 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
 </script>
 <!-- End: Injected MathJax -->
-<!-- hexo-inject:end --></body>
+<!-- hexo-inject:end -->
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script></body>
 </html>
 
 <!-- 页面点击小红心 -->
