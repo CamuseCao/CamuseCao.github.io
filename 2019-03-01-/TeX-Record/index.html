@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="Born to die">
 <meta property="og:description" content="本文记录了使用TeX的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-30T03:02:36.281Z">
+<meta property="og:updated_time" content="2019-04-02T13:02:16.568Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TeX 那些小事">
 <meta name="twitter:description" content="本文记录了使用TeX的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。">
@@ -512,7 +512,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-30 11:02:36" itemprop="dateModified" datetime="2019-03-30T11:02:36+08:00">2019-03-30</time>
+                <time title="Modified: 2019-04-02 21:02:16" itemprop="dateModified" datetime="2019-04-02T21:02:16+08:00">2019-04-02</time>
               
             
           </span>
@@ -566,7 +566,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">8.8k</span>
+                <span title="Symbols count in article">9k</span>
               
 
               
@@ -605,8 +605,8 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 <a id="more"></a>
 <h2 id="TeXStudio部分"><a href="#TeXStudio部分" class="headerlink" title="TeXStudio部分"></a>TeXStudio部分</h2><p>我喜欢的魔法注释：</p>
 <ul>
-<li><code>% !TeX TXS-program:compile = txs:///latexmk/{}[-xelatex -synctex=1 -interaction=nonstopmode %tex]</code> 用于<code>XeLaTeX</code>的编译方式</li>
-<li><code>% !TeX TXS-program:compile = txs:///latexmk/{}[-pdf -synctex=1 -interaction=nonstopmode %tex]</code> 用于<code>pdfLaTeX</code>的编译方式</li>
+<li><code>% !TeX TXS-program:compile = txs:///latexmk/{}[-xelatex -synctex=1 -interaction=nonstopmode %.tex]</code> 用于<code>XeLaTeX</code>的编译方式</li>
+<li><code>% !TeX TXS-program:compile = txs:///latexmk/{}[-pdf -synctex=1 -interaction=nonstopmode %.tex]</code> 用于<code>pdfLaTeX</code>的编译方式</li>
 <li><code>% !TeX TS-program = pdflatex</code> ,等号后面可以换成<code>xelatex</code>等</li>
 <li><code>% !TeX root = ./your.tex</code>指定主文件</li>
 <li><code>% !TeX encoding = UTF-8</code> 指定编码方式</li>
@@ -673,6 +673,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 <p>参考资料： <a href="https://tex.stackexchange.com/questions/52368/how-can-i-insert-by-bib-file-into-my-tex-file" target="_blank" rel="noopener">stackexchange</a></p>
 <h3 id="简单的中英文字体配置简单示例"><a href="#简单的中英文字体配置简单示例" class="headerlink" title="简单的中英文字体配置简单示例"></a>简单的中英文字体配置简单示例</h3><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% !TeX TS-program = xelatex</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexart&#125;</span></span></span><br><span class="line"><span class="comment">%以下仅介绍如何配置，但是我的具体配置未必适合你使用的场合，请自己合理使用。</span></span><br><span class="line"><span class="comment">% 英文字体配置部分</span></span><br><span class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;Times New Roman&#125;</span></span><span class="comment">%</span></span><br><span class="line"><span class="tag">\<span class="name">setsansfont</span><span class="string">&#123;Footlight MT Light&#125;</span></span><span class="comment">%无衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setmonofont</span><span class="string">&#123;Bookman Old Style&#125;</span></span><span class="comment">%等宽字体</span></span><br><span class="line"><span class="comment">% 中文字体配置部分</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;xeCJK&#125;</span></span><span class="comment">%中文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKmainfont</span><span class="string">&#123;宋体&#125;</span></span><span class="comment">%正文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKsansfont</span><span class="string">&#123;黑体&#125;</span></span><span class="comment">%无衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKmonofont</span><span class="string">&#123;楷体&#125;</span></span><span class="comment">%等宽字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKfamilyfont</span><span class="string">&#123;yahei&#125;</span><span class="string">&#123;Microsoft YaHei&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">Huge</span></span> </span><br><span class="line"><span class="tag">\<span class="name">centering</span></span></span><br><span class="line">	      中文正文,这个不是微软雅黑</span><br><span class="line">	      </span><br><span class="line">	      English.  </span><br><span class="line">	      </span><br><span class="line"><span class="tag">\<span class="name">sffamily</span></span> 无衬线字体</span><br><span class="line"></span><br><span class="line">          English</span><br><span class="line">          </span><br><span class="line"><span class="tag">\<span class="name">ttfamily</span></span> 等宽字体</span><br><span class="line"></span><br><span class="line">          English</span><br><span class="line">          </span><br><span class="line"><span class="tag">\<span class="name">yahei</span></span> 这是微软雅黑 </span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
 <p>参考资源： <a href="https://stone-zeng.github.io//2018-08-08-use-opentype-fonts/" target="_blank" rel="noopener">stone-zeng.github.io</a></p>
+<h3 id="用tex把图片转化成pdf-并不能提高图片的质量"><a href="#用tex把图片转化成pdf-并不能提高图片的质量" class="headerlink" title="用tex把图片转化成pdf(并不能提高图片的质量)"></a>用tex把图片转化成pdf(并不能提高图片的质量)</h3><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;standalone&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;graphicx&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">includegraphics</span><span class="string">&#123;yourpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -836,7 +837,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -910,7 +911,11 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                     
                       
                     
-                    <span class="site-state-item-count">16</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -992,7 +997,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TeXStudio部分"><span class="nav-number">1.</span> <span class="nav-text">TeXStudio部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VsCode部分"><span class="nav-number">2.</span> <span class="nav-text">VsCode部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有趣的宏包"><span class="nav-number">3.</span> <span class="nav-text">有趣的宏包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏包加载的美学"><span class="nav-number">4.</span> <span class="nav-text">宏包加载的美学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些小命令"><span class="nav-number">5.</span> <span class="nav-text">一些小命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#好看的圆圈注脚制作"><span class="nav-number">5.1.</span> <span class="nav-text">好看的圆圈注脚制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#普通的带圈数字制作"><span class="nav-number">5.2.</span> <span class="nav-text">普通的带圈数字制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#把Bib文件也放在主文件里，方便做MWE"><span class="nav-number">5.3.</span> <span class="nav-text">把Bib文件也放在主文件里，方便做MWE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的中英文字体配置简单示例"><span class="nav-number">5.4.</span> <span class="nav-text">简单的中英文字体配置简单示例</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TeXStudio部分"><span class="nav-number">1.</span> <span class="nav-text">TeXStudio部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VsCode部分"><span class="nav-number">2.</span> <span class="nav-text">VsCode部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有趣的宏包"><span class="nav-number">3.</span> <span class="nav-text">有趣的宏包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏包加载的美学"><span class="nav-number">4.</span> <span class="nav-text">宏包加载的美学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些小命令"><span class="nav-number">5.</span> <span class="nav-text">一些小命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#好看的圆圈注脚制作"><span class="nav-number">5.1.</span> <span class="nav-text">好看的圆圈注脚制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#普通的带圈数字制作"><span class="nav-number">5.2.</span> <span class="nav-text">普通的带圈数字制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#把Bib文件也放在主文件里，方便做MWE"><span class="nav-number">5.3.</span> <span class="nav-text">把Bib文件也放在主文件里，方便做MWE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的中英文字体配置简单示例"><span class="nav-number">5.4.</span> <span class="nav-text">简单的中英文字体配置简单示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用tex把图片转化成pdf-并不能提高图片的质量"><span class="nav-number">5.5.</span> <span class="nav-text">用tex把图片转化成pdf(并不能提高图片的质量)</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1044,7 +1049,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 
 
 <div class="theme-info">
-  <span class="post-count">博客全站共30.6k字</span>
+  <span class="post-count">博客全站共31.4k字</span>
 </div>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -1743,7 +1748,10 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
         }, 300);
       }).append(e);
     })
-  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  </script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -1760,10 +1768,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
 </script>
 <!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script></body>
+<!-- hexo-inject:end --></body>
 </html>
 
 <!-- 页面点击小红心 -->
