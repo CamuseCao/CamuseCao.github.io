@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LaTeX 字体的基础配置]]></title>
+    <url>%2F2019-06-01-%2FTeX-Fonts%2F</url>
+    <content type="text"><![CDATA[本文将介绍如何简单的配置LaTeX用xelatex编译时，可参考的一种字体配置方案。 很多情况下LaTeX默认的字体配置并不令人满意或者符合特定的场景需求，会有字体配置的需求。而pdflatex的编译方式要指定满意的字体是比较复杂的，xelatex相对来说比较简单，它能够调用系统安装的字体。以下的内容都是针对使用xelatex编译时的参考方案。 作为一个中国人，文档里面出现中文和英文的现象并不少见。要指定英文字体比较容易，使用fontspec宏包可以实现。如果要同时指定中文的使用字体，可以使用xeCJK宏包。由于中文字体的特别，中国的TeX组织开发了该宏包。以下展示一个比较完整的字体设置方案。要编译成功需要安装相应的字体，可以用这个思路换成你需要的字体。 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667\PassOptionsToPackage&#123;no-math&#125;&#123;fontspec&#125; %在改变西文字体时不改变数学字体\documentclass&#123;ctexbook&#125; %已调用xeCJK宏包\usepackage&#123;fontspec&#125; %[no-math]\usepackage&#123;amsmath,amsthm&#125;\usepackage&#123;unicode-math&#125;\setmainfont&#123;Source Serif Pro&#125; %指定西文正文字体，即衬线字体\setsansfont&#123;Source Sans Pro&#125; %指定西文无衬线字体，常用于标题目录等位置\setmonofont&#123;Source Code Pro&#125; %指定西文等宽字体，常用于代码展示等位置 \setmathfont[ Extension =.otf, %采用otf字体 Path=fonts/, %指定字体所在路径，缺省的话会自动查找系统和字体和发行版本所带的字体 BoldFont = XITSMath-Bold, %指定粗体 StylisticSet = 8 ]&#123;XITSMath-Regular&#125; %指定数学字体 \setCJKmainfont[ %衬线中文字体设定 Extension=.otf, Path=fonts/, UprightFont= *-Regular, %右上字体 BoldFont= *-Bold, %加粗字体 ItalicFont= *-Regular, %斜体 BoldItalicFont= *-Bold, %斜体加粗 ItalicFeatures= FakeSlant, %斜体是为斜，不要在需要查重的pdf文件中使用中文斜体，会导致查重有问题。 BoldItalicFeatures= FakeSlant]&#123;NotoSerifCJKsc&#125; \setCJKsansfont[ %无衬线中文字体设定 Extension=.otf, Path=fonts/, UprightFont= *-Regular, BoldFont= *-Bold, ItalicFont= *-Regular, BoldItalicFont= *-Bold, ItalicFeatures= FakeSlant, BoldItalicFeatures= FakeSlant]&#123;NotoSansCJKsc&#125; \setCJKmonofont[ %等宽中文字体设定 Extension=.otf, Path=fonts/, UprightFont= *-Regular, BoldFont= *-Bold, ItalicFont= *-Regular, BoldItalicFont= *-Bold, ItalicFeatures= FakeSlant, BoldItalicFeatures= FakeSlant]&#123;NotoSansMonoCJKsc&#125;\begin&#123;document&#125;$\hbar ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy$ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体 \textbf&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体加粗&#125; \textit&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体伪斜&#125; \sffamily ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体 \textbf&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125; \textit&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125; \ttfamily ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体 \textbf&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125; \textit&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125; \end&#123;document&#125; 指定了普通场合所需的几个字体后，还需要个别其它字体可以通过以下方法设定以及调用。 12345678\newfontfamily\useSomeEnFont&#123;Source Serif Pro&#125; \newCJKfontfamily\useSomeZhFont&#123;宋体&#125;\normalfont\useSomeZhFont\useSomeEnFont&#123;\useSomeEnFont Source Serif Pro font&#125;&#123;\useSomeZhFont 这里是宋体&#125;%% 使用新的一组字体&#123;\normalfont 西文用Source Serif Pro font, 中文用宋体。&#125;]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Programme</tag>
+        <tag>TeX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[利用python批量转换图片的格式]]></title>
     <url>%2F2019-04-30-%2FConvert-pictures%2F</url>
     <content type="text"><![CDATA[今天做了一个实验，实验保存的图片格式只有bmp的一种格式可以选择，并且图片数量不小。但是TeX对于bmp图片的插入支持不是特别友好。因此我想利用python来批量转换图片的格式。 经过一番折腾写出了如下的简单程序，应该能够直接满足转换的需求。我下面处理的时候为了不污染工作目录，把图片都存在Figures/文件夹下。新生成的图片则存在Figures/Figures/文件夹下面。下面的程序应该简单易读，拿来改改应该就能满足一般的需求了。 12345678from PIL import Imageimport globimport osimage_list = []for filename in glob.glob('Figures/*.bmp'): #assuming bmp img = Image.open(filename) filename = img.filename img.save('Figures/' + os.path.splitext(filename)[0] +'.png', 'png') 参考链接：https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python]]></content>
@@ -31,8 +43,8 @@
         <category>学习</category>
       </categories>
       <tags>
-        <tag>Programme</tag>
         <tag>Python</tag>
+        <tag>Programme</tag>
       </tags>
   </entry>
   <entry>

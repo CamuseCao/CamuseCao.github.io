@@ -5,9 +5,9 @@
   <subtitle>Living to love</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://camuseblog.top/"/>
-  <updated>2019-04-30T14:16:20.517Z</updated>
-  <id>https://camuseblog.top/</id>
+  <link href="https://camusecao.github.io/"/>
+  <updated>2019-06-01T08:03:56.916Z</updated>
+  <id>https://camusecao.github.io/</id>
   
   <author>
     <name>CamuseCao</name>
@@ -17,9 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>LaTeX 字体的基础配置</title>
+    <link href="https://camusecao.github.io/2019-06-01-/TeX-Fonts/"/>
+    <id>https://camusecao.github.io/2019-06-01-/TeX-Fonts/</id>
+    <published>2019-05-31T16:06:12.972Z</published>
+    <updated>2019-06-01T08:03:56.916Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文将介绍如何简单的配置<code>LaTeX</code>用<code>xelatex</code>编译时，可参考的一种字体配置方案。</p><hr><a id="more"></a><p>很多情况下<code>LaTeX</code>默认的字体配置并不令人满意或者符合特定的场景需求，会有字体配置的需求。而<code>pdflatex</code>的编译方式要指定满意的字体是比较复杂的，<code>xelatex</code>相对来说比较简单，它能够调用系统安装的字体。以下的内容都是针对使用<code>xelatex</code>编译时的参考方案。</p><p>作为一个中国人，文档里面出现中文和英文的现象并不少见。要指定英文字体比较容易，使用<code>fontspec</code>宏包可以实现。如果要同时指定中文的使用字体，可以使用<code>xeCJK</code>宏包。由于中文字体的特别，中国的<code>TeX</code>组织开发了该宏包。以下展示一个比较完整的字体设置方案。要编译成功需要安装相应的字体，可以用这个思路换成你需要的字体。</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">PassOptionsToPackage</span><span class="string">&#123;no-math&#125;</span><span class="string">&#123;fontspec&#125;</span></span> <span class="comment">%在改变西文字体时不改变数学字体</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexbook&#125;</span></span>            <span class="comment">%已调用xeCJK宏包</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;fontspec&#125;</span></span> <span class="comment">%[no-math]</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;amsmath,amsthm&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;unicode-math&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;Source Serif Pro&#125;</span></span>      <span class="comment">%指定西文正文字体，即衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setsansfont</span><span class="string">&#123;Source Sans Pro&#125;</span></span>       <span class="comment">%指定西文无衬线字体，常用于标题目录等位置</span></span><br><span class="line"><span class="tag">\<span class="name">setmonofont</span><span class="string">&#123;Source Code Pro&#125;</span></span>       <span class="comment">%指定西文等宽字体，常用于代码展示等位置</span></span><br><span class="line">  <span class="tag">\<span class="name">setmathfont</span><span class="string">[</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension    =.otf,             %采用otf字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,                    %指定字体所在路径，缺省的话会自动查找系统和字体和发行版本所带的字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont     = XITSMath-Bold,   %指定粗体</span></span></span><br><span class="line"><span class="tag"><span class="string">    StylisticSet = 8</span></span></span><br><span class="line"><span class="tag"><span class="string">  ]</span><span class="string">&#123;XITSMath-Regular&#125;</span></span>        <span class="comment">%指定数学字体</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKmainfont</span><span class="string">[                  %衬线中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,  %右上字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,     %加粗字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,  %斜体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,     %斜体加粗</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,  %斜体是为斜，不要在需要查重的pdf文件中使用中文斜体，会导致查重有问题。</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSerifCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKsansfont</span><span class="string">[                  %无衬线中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSansCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKmonofont</span><span class="string">[                  %等宽中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSansMonoCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">hbar</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy$</span></span><br><span class="line"></span><br><span class="line"> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体</span><br><span class="line"></span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体加粗&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体伪斜&#125;</span></span></span><br><span class="line">  </span><br><span class="line"><span class="tag">\<span class="name">sffamily</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体</span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="tag">\<span class="name">ttfamily</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体</span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"></span><br><span class="line"> <span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure><p>指定了普通场合所需的几个字体后，还需要个别其它字体可以通过以下方法设定以及调用。</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">newfontfamily</span></span><span class="tag">\<span class="name">useSomeEnFont</span><span class="string">&#123;Source Serif Pro&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">newCJKfontfamily</span></span><span class="tag">\<span class="name">useSomeZhFont</span><span class="string">&#123;宋体&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">normalfont</span></span><span class="tag">\<span class="name">useSomeZhFont</span></span><span class="tag">\<span class="name">useSomeEnFont</span></span></span><br><span class="line"></span><br><span class="line">&#123;<span class="tag">\<span class="name">useSomeEnFont</span></span> Source Serif Pro font&#125;</span><br><span class="line">&#123;<span class="tag">\<span class="name">useSomeZhFont</span></span> 这里是宋体&#125;</span><br><span class="line"><span class="comment">%% 使用新的一组字体</span></span><br><span class="line">&#123;<span class="tag">\<span class="name">normalfont</span></span> 西文用Source Serif Pro font, 中文用宋体。&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文将介绍如何简单的配置&lt;code&gt;LaTeX&lt;/code&gt;用&lt;code&gt;xelatex&lt;/code&gt;编译时，可参考的一种字体配置方案。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Programme" scheme="https://camusecao.github.io/tags/Programme/"/>
+    
+      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
+    
+  </entry>
+  
+  <entry>
     <title>利用python批量转换图片的格式</title>
-    <link href="https://camuseblog.top/2019-04-30-/Convert-pictures/"/>
-    <id>https://camuseblog.top/2019-04-30-/Convert-pictures/</id>
+    <link href="https://camusecao.github.io/2019-04-30-/Convert-pictures/"/>
+    <id>https://camusecao.github.io/2019-04-30-/Convert-pictures/</id>
     <published>2019-04-30T14:02:12.198Z</published>
     <updated>2019-04-30T14:16:20.517Z</updated>
     
@@ -32,17 +57,17 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Python" scheme="https://camuseblog.top/tags/Python/"/>
+      <category term="Python" scheme="https://camusecao.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>TeX 批量插入图片</title>
-    <link href="https://camuseblog.top/2019-04-30-/Insert-pictures-tex/"/>
-    <id>https://camuseblog.top/2019-04-30-/Insert-pictures-tex/</id>
+    <link href="https://camusecao.github.io/2019-04-30-/Insert-pictures-tex/"/>
+    <id>https://camusecao.github.io/2019-04-30-/Insert-pictures-tex/</id>
     <published>2019-04-30T08:45:23.582Z</published>
     <updated>2019-04-30T14:04:32.618Z</updated>
     
@@ -55,19 +80,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Programme" scheme="https://camuseblog.top/tags/Programme/"/>
+      <category term="Programme" scheme="https://camusecao.github.io/tags/Programme/"/>
     
-      <category term="TeX" scheme="https://camuseblog.top/tags/TeX/"/>
+      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
     
   </entry>
   
   <entry>
     <title>Jupyter Notebook 的使用小记</title>
-    <link href="https://camuseblog.top/2019-04-27-/Jupyternotebook/"/>
-    <id>https://camuseblog.top/2019-04-27-/Jupyternotebook/</id>
+    <link href="https://camusecao.github.io/2019-04-27-/Jupyternotebook/"/>
+    <id>https://camusecao.github.io/2019-04-27-/Jupyternotebook/</id>
     <published>2019-04-27T02:13:31.638Z</published>
     <updated>2019-04-27T02:32:50.235Z</updated>
     
@@ -80,19 +105,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Programme" scheme="https://camuseblog.top/tags/Programme/"/>
+      <category term="Python" scheme="https://camusecao.github.io/tags/Python/"/>
     
-      <category term="Python" scheme="https://camuseblog.top/tags/Python/"/>
+      <category term="Programme" scheme="https://camusecao.github.io/tags/Programme/"/>
     
   </entry>
   
   <entry>
     <title>csv文件的小坑(自己主动跳进去的)</title>
-    <link href="https://camuseblog.top/2019-03-29-/csv/"/>
-    <id>https://camuseblog.top/2019-03-29-/csv/</id>
+    <link href="https://camusecao.github.io/2019-03-29-/csv/"/>
+    <id>https://camusecao.github.io/2019-03-29-/csv/</id>
     <published>2019-03-29T02:34:27.970Z</published>
     <updated>2019-03-29T02:50:36.058Z</updated>
     
@@ -105,17 +130,17 @@
     
     </summary>
     
-      <category term="电脑知识" scheme="https://camuseblog.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+      <category term="电脑知识" scheme="https://camusecao.github.io/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
     
     
-      <category term="Software" scheme="https://camuseblog.top/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>MiKTeX的基本使用</title>
-    <link href="https://camuseblog.top/2019-03-02-/MiKTeX/"/>
-    <id>https://camuseblog.top/2019-03-02-/MiKTeX/</id>
+    <link href="https://camusecao.github.io/2019-03-02-/MiKTeX/"/>
+    <id>https://camusecao.github.io/2019-03-02-/MiKTeX/</id>
     <published>2019-03-02T12:39:01.611Z</published>
     <updated>2019-03-30T07:27:58.215Z</updated>
     
@@ -128,19 +153,19 @@
     
     </summary>
     
-      <category term="Programme" scheme="https://camuseblog.top/categories/Programme/"/>
+      <category term="Programme" scheme="https://camusecao.github.io/categories/Programme/"/>
     
     
-      <category term="Software" scheme="https://camuseblog.top/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
     
-      <category term="TeX" scheme="https://camuseblog.top/tags/TeX/"/>
+      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
     
   </entry>
   
   <entry>
     <title>收藏链接</title>
-    <link href="https://camuseblog.top/2019-03-02-/Url/"/>
-    <id>https://camuseblog.top/2019-03-02-/Url/</id>
+    <link href="https://camusecao.github.io/2019-03-02-/Url/"/>
+    <id>https://camusecao.github.io/2019-03-02-/Url/</id>
     <published>2019-03-02T09:22:06.626Z</published>
     <updated>2019-03-02T10:37:44.677Z</updated>
     
@@ -153,17 +178,17 @@
     
     </summary>
     
-      <category term="软件" scheme="https://camuseblog.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://camusecao.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Software" scheme="https://camuseblog.top/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>TeX 那些小事</title>
-    <link href="https://camuseblog.top/2019-03-01-/TeX-Record/"/>
-    <id>https://camuseblog.top/2019-03-01-/TeX-Record/</id>
+    <link href="https://camusecao.github.io/2019-03-01-/TeX-Record/"/>
+    <id>https://camusecao.github.io/2019-03-01-/TeX-Record/</id>
     <published>2019-03-01T13:54:46.397Z</published>
     <updated>2019-04-02T13:02:16.568Z</updated>
     
@@ -176,17 +201,17 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="TeX" scheme="https://camuseblog.top/tags/TeX/"/>
+      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
     
   </entry>
   
   <entry>
     <title>Chrome的私人配置</title>
-    <link href="https://camuseblog.top/2019-02-22-/Chrome-setting/"/>
-    <id>https://camuseblog.top/2019-02-22-/Chrome-setting/</id>
+    <link href="https://camusecao.github.io/2019-02-22-/Chrome-setting/"/>
+    <id>https://camusecao.github.io/2019-02-22-/Chrome-setting/</id>
     <published>2019-02-21T16:38:40.098Z</published>
     <updated>2019-03-09T11:30:25.597Z</updated>
     
@@ -199,21 +224,21 @@
     
     </summary>
     
-      <category term="软件" scheme="https://camuseblog.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://camusecao.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Chrome" scheme="https://camuseblog.top/tags/Chrome/"/>
+      <category term="Chrome" scheme="https://camusecao.github.io/tags/Chrome/"/>
     
-      <category term="Software" scheme="https://camuseblog.top/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
     
-      <category term="Extension" scheme="https://camuseblog.top/tags/Extension/"/>
+      <category term="Extension" scheme="https://camusecao.github.io/tags/Extension/"/>
     
   </entry>
   
   <entry>
     <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
-    <link href="https://camuseblog.top/2019-02-20-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
-    <id>https://camuseblog.top/2019-02-20-/作死心得/</id>
+    <link href="https://camusecao.github.io/2019-02-20-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
+    <id>https://camusecao.github.io/2019-02-20-/作死心得/</id>
     <published>2019-02-20T12:27:12.489Z</published>
     <updated>2019-03-01T13:18:08.658Z</updated>
     
@@ -226,21 +251,21 @@
     
     </summary>
     
-      <category term="电脑知识" scheme="https://camuseblog.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+      <category term="电脑知识" scheme="https://camusecao.github.io/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
     
     
-      <category term="Software" scheme="https://camuseblog.top/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
     
-      <category term="Regedit" scheme="https://camuseblog.top/tags/Regedit/"/>
+      <category term="Regedit" scheme="https://camusecao.github.io/tags/Regedit/"/>
     
-      <category term="System" scheme="https://camuseblog.top/tags/System/"/>
+      <category term="System" scheme="https://camusecao.github.io/tags/System/"/>
     
   </entry>
   
   <entry>
     <title>物理定律告诉你，爱情的真相有多么残酷！</title>
-    <link href="https://camuseblog.top/2019-02-14-/Lover/"/>
-    <id>https://camuseblog.top/2019-02-14-/Lover/</id>
+    <link href="https://camusecao.github.io/2019-02-14-/Lover/"/>
+    <id>https://camusecao.github.io/2019-02-14-/Lover/</id>
     <published>2019-02-14T15:47:12.398Z</published>
     <updated>2019-03-01T13:23:27.086Z</updated>
     
@@ -258,23 +283,23 @@
     
     </summary>
     
-      <category term="生活" scheme="https://camuseblog.top/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://camusecao.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="Physics" scheme="https://camuseblog.top/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
     
-      <category term="Love" scheme="https://camuseblog.top/tags/Love/"/>
+      <category term="Love" scheme="https://camusecao.github.io/tags/Love/"/>
     
-      <category term="Life" scheme="https://camuseblog.top/tags/Life/"/>
+      <category term="Life" scheme="https://camusecao.github.io/tags/Life/"/>
     
   </entry>
   
   <entry>
     <title>ICON</title>
-    <link href="https://camuseblog.top/2019-02-13-/Test/"/>
-    <id>https://camuseblog.top/2019-02-13-/Test/</id>
+    <link href="https://camusecao.github.io/2019-02-13-/Test/"/>
+    <id>https://camusecao.github.io/2019-02-13-/Test/</id>
     <published>2019-02-13T06:16:51.145Z</published>
-    <updated>2019-03-01T13:21:10.979Z</updated>
+    <updated>2019-05-31T15:50:31.519Z</updated>
     
     <content type="html"><![CDATA[<p><i class="fa fa-camera-retro"></i></p><hr><a id="more"></a><p><i class="fa fa-circle-o-notch fa-spin"></i><br><i class="fa fa-refresh fa-spin"></i><br><i class="fa fa-cog fa-spin"></i><br><i class="fa fa-spinner fa-pulse"></i></p><p><i class="fa fa-qq"></i><br><i class="fa fa-cny"></i><br><i class="fa fa-link"></i><br><i class="fa fa-chrome"></i><br><i class="fa fa-github"></i><br><i class="fa fa-github-alt"></i><br><i class="fa fa-linux"></i><br><i class="fa fa-windows"></i><br><i class="fa fa-mouse-pointer"></i><br><i class="fa fa-music"></i><br><i class="fa fa-hand-o-up"></i><br><i class="fa fa-arrow-circle-o-up"></i></p><p><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i></p><p><img src="https://raw.githubusercontent.com/CamuseCao/Picture/master/Mouse/Sword/Sword-b.ico" alt=""></p><p><img src="https://raw.githubusercontent.com/CamuseCao/Picture/master/Mouse/Sword/Sword-w.ico" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p>]]></content>
     
@@ -285,17 +310,17 @@
     
     </summary>
     
-      <category term="图标" scheme="https://camuseblog.top/categories/%E5%9B%BE%E6%A0%87/"/>
+      <category term="图标" scheme="https://camusecao.github.io/categories/%E5%9B%BE%E6%A0%87/"/>
     
     
-      <category term="Icon" scheme="https://camuseblog.top/tags/Icon/"/>
+      <category term="Icon" scheme="https://camusecao.github.io/tags/Icon/"/>
     
   </entry>
   
   <entry>
     <title>常用软件记录</title>
-    <link href="https://camuseblog.top/2019-02-10-/software/"/>
-    <id>https://camuseblog.top/2019-02-10-/software/</id>
+    <link href="https://camusecao.github.io/2019-02-10-/software/"/>
+    <id>https://camusecao.github.io/2019-02-10-/software/</id>
     <published>2019-02-10T15:00:24.497Z</published>
     <updated>2019-03-01T13:21:21.107Z</updated>
     
@@ -308,17 +333,17 @@
     
     </summary>
     
-      <category term="软件" scheme="https://camuseblog.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://camusecao.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Software" scheme="https://camuseblog.top/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>厦门大学模板使用说明</title>
-    <link href="https://camuseblog.top/2019-01-29-/XMU-Thesis-Instruction/"/>
-    <id>https://camuseblog.top/2019-01-29-/XMU-Thesis-Instruction/</id>
+    <link href="https://camusecao.github.io/2019-01-29-/XMU-Thesis-Instruction/"/>
+    <id>https://camusecao.github.io/2019-01-29-/XMU-Thesis-Instruction/</id>
     <published>2019-01-28T16:00:09.255Z</published>
     <updated>2019-03-01T13:20:59.180Z</updated>
     
@@ -331,17 +356,17 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="TeX" scheme="https://camuseblog.top/tags/TeX/"/>
+      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
     
   </entry>
   
   <entry>
     <title>凝聚态物理期末总结</title>
-    <link href="https://camuseblog.top/2018-12-18-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
-    <id>https://camuseblog.top/2018-12-18-/凝聚态物理期末/</id>
+    <link href="https://camusecao.github.io/2018-12-18-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
+    <id>https://camusecao.github.io/2018-12-18-/凝聚态物理期末/</id>
     <published>2018-12-18T12:02:22.171Z</published>
     <updated>2019-03-01T13:19:16.400Z</updated>
     
@@ -355,19 +380,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Physics" scheme="https://camuseblog.top/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
     
-      <category term="Band" scheme="https://camuseblog.top/tags/Band/"/>
+      <category term="Band" scheme="https://camusecao.github.io/tags/Band/"/>
     
   </entry>
   
   <entry>
     <title>商务英语</title>
-    <link href="https://camuseblog.top/2018-12-07-/English/"/>
-    <id>https://camuseblog.top/2018-12-07-/English/</id>
+    <link href="https://camusecao.github.io/2018-12-07-/English/"/>
+    <id>https://camusecao.github.io/2018-12-07-/English/</id>
     <published>2018-12-07T02:01:30.651Z</published>
     <updated>2019-03-01T13:24:00.679Z</updated>
     
@@ -381,17 +406,17 @@
     
     </summary>
     
-      <category term="临时" scheme="https://camuseblog.top/categories/%E4%B8%B4%E6%97%B6/"/>
+      <category term="临时" scheme="https://camusecao.github.io/categories/%E4%B8%B4%E6%97%B6/"/>
     
     
-      <category term="Play" scheme="https://camuseblog.top/tags/Play/"/>
+      <category term="Play" scheme="https://camusecao.github.io/tags/Play/"/>
     
   </entry>
   
   <entry>
     <title>近代物理实验复习</title>
-    <link href="https://camuseblog.top/2018-10-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
-    <id>https://camuseblog.top/2018-10-09-/近代物理实验卷子/</id>
+    <link href="https://camusecao.github.io/2018-10-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
+    <id>https://camusecao.github.io/2018-10-09-/近代物理实验卷子/</id>
     <published>2018-10-09T09:07:08.157Z</published>
     <updated>2019-03-07T06:01:13.172Z</updated>
     
@@ -408,19 +433,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Physics" scheme="https://camuseblog.top/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
     
-      <category term="Experiment" scheme="https://camuseblog.top/tags/Experiment/"/>
+      <category term="Experiment" scheme="https://camusecao.github.io/tags/Experiment/"/>
     
   </entry>
   
   <entry>
     <title>一个酷炫的清理技能</title>
-    <link href="https://camuseblog.top/2018-10-09-/Clear/"/>
-    <id>https://camuseblog.top/2018-10-09-/Clear/</id>
+    <link href="https://camusecao.github.io/2018-10-09-/Clear/"/>
+    <id>https://camusecao.github.io/2018-10-09-/Clear/</id>
     <published>2018-10-09T08:56:09.080Z</published>
     <updated>2019-03-01T13:24:11.856Z</updated>
     
@@ -433,19 +458,19 @@
     
     </summary>
     
-      <category term="电脑知识" scheme="https://camuseblog.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+      <category term="电脑知识" scheme="https://camusecao.github.io/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
     
     
-      <category term="Command" scheme="https://camuseblog.top/tags/Command/"/>
+      <category term="Command" scheme="https://camusecao.github.io/tags/Command/"/>
     
-      <category term="Clean" scheme="https://camuseblog.top/tags/Clean/"/>
+      <category term="Clean" scheme="https://camusecao.github.io/tags/Clean/"/>
     
   </entry>
   
   <entry>
     <title>自适应电子和光电子学的压电电子学和压电光电子学</title>
-    <link href="https://camuseblog.top/2018-10-09-/Article1/"/>
-    <id>https://camuseblog.top/2018-10-09-/Article1/</id>
+    <link href="https://camusecao.github.io/2018-10-09-/Article1/"/>
+    <id>https://camusecao.github.io/2018-10-09-/Article1/</id>
     <published>2018-10-09T08:29:46.333Z</published>
     <updated>2019-03-01T13:24:34.059Z</updated>
     
@@ -458,17 +483,17 @@
     
     </summary>
     
-      <category term="文献阅读" scheme="https://camuseblog.top/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
+      <category term="文献阅读" scheme="https://camusecao.github.io/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
     
     
-      <category term="Physics" scheme="https://camuseblog.top/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
     
   </entry>
   
   <entry>
     <title>面试题目</title>
-    <link href="https://camuseblog.top/2018-10-09-/Interview/"/>
-    <id>https://camuseblog.top/2018-10-09-/Interview/</id>
+    <link href="https://camusecao.github.io/2018-10-09-/Interview/"/>
+    <id>https://camusecao.github.io/2018-10-09-/Interview/</id>
     <published>2018-10-09T08:13:19.192Z</published>
     <updated>2019-03-02T09:29:25.859Z</updated>
     
@@ -481,38 +506,12 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Physics" scheme="https://camuseblog.top/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
     
-      <category term="Band" scheme="https://camuseblog.top/tags/Band/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基础知识复习</title>
-    <link href="https://camuseblog.top/2018-10-09-/Review/"/>
-    <id>https://camuseblog.top/2018-10-09-/Review/</id>
-    <published>2018-10-09T07:55:13.062Z</published>
-    <updated>2019-03-02T09:29:06.667Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="半导体重掺应用"><a href="#半导体重掺应用" class="headerlink" title="半导体重掺应用"></a>半导体重掺应用</h2><hr><a id="more"></a><p>在掺杂程度足够高、进入简并状态的情况下，不同原子的电子会形成共有化运动，即这些原子的电子运动波函数相互重叠，从而使杂质能级形成连续的能带。这个杂质能带填充了原来价带、导带之间的能隙，这样，简并半导体的能隙宽度就减小了，从而显示出一些不同寻常的性质。例如，当温度升高，简并半导体的导电性能不会显著增加。另一方面，简并半导体的载流子浓度尽管比非简并半导体高，但还是远低于金属，因此它们会显示出介于半导体和金属的性质。</p><blockquote><p>重掺杂的简并半导体应用较为广泛。1958 年研制成功的隧道二极管就是利用这样的重掺杂简并半导体制成的，其中 N 型半导体的费米能级进入导带，而 P 型半导体的费米能级进入价带。这项发明使其发明者江崎玲于奈在 1973 年被授予诺贝尔物理学奖。</p></blockquote><h2 id="表征手段"><a href="#表征手段" class="headerlink" title="表征手段"></a>表征手段</h2><ul><li>扫描隧道显微镜</li><li>光致发光</li><li>X 射线光谱</li><li>质谱法</li><li>热学分析</li><li>色谱法</li></ul><h2 id="激光产生的条件"><a href="#激光产生的条件" class="headerlink" title="激光产生的条件"></a>激光产生的条件</h2><ul><li>受激幅射是产生激光的首要条件,也是必要条件,但还不是充分条件</li><li>工作物质必须具有亚稳态能级</li><li>形成粒子数反转,使受激发射多于吸收</li><li>要使频率单纯,方向集中,就必须有一个振荡腔</li><li>光子在腔中振荡一次产生的光子数比损耗掉的光子多得多</li></ul><h2 id="VASP-的作用"><a href="#VASP-的作用" class="headerlink" title="VASP 的作用"></a>VASP 的作用</h2><p>它是进行电子结构计算和量子力学-分子动力学模拟软件包。</p><p>可以在密度泛函理论（DFT）框架内求解 Kohn-Sham 方程(已实现了混合（hybrid）泛函计算)，也可以在 Hartree-Fock（HF）的近似下求解 Roothaan 方程。</p><h2 id="第一性原理"><a href="#第一性原理" class="headerlink" title="第一性原理"></a>第一性原理</h2><ul><li><p>第一类以波函数为核心物理量，先用 Slater 行列式展开波函数，再求解展开系数。常见的有 Hartree-Fock，MPn，CCSD(T), CI 等。搞化学的人提到“第一性原理”，指的就是这类方法，并且他们一般叫“量子化学”。</p></li><li><p>第二类以电荷密度为核心物理量，即密度泛函理论。密度泛函理论核心就两条定理，能玩出花样的反倒是各种泛函。搞物理的人提到“第一性原理”，指的就是这类方法。密度泛函理论计算量比量子化学方法小，但缺陷也很明显，就是激发态算不准，并且是先天不足，怎么都救不回来那种（量子化学方法激发态就算得不错）。</p></li><li><p>还有一类是基于格林函数的，把量子场论的那套理论移植了过来。目前还不是很成熟，只能算一算激发态能量。</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;半导体重掺应用&quot;&gt;&lt;a href=&quot;#半导体重掺应用&quot; class=&quot;headerlink&quot; title=&quot;半导体重掺应用&quot;&gt;&lt;/a&gt;半导体重掺应用&lt;/h2&gt;&lt;hr&gt;
-    
-    </summary>
-    
-      <category term="学习" scheme="https://camuseblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Physics" scheme="https://camuseblog.top/tags/Physics/"/>
-    
-      <category term="Band" scheme="https://camuseblog.top/tags/Band/"/>
-    
-      <category term="Semiconductor" scheme="https://camuseblog.top/tags/Semiconductor/"/>
+      <category term="Band" scheme="https://camusecao.github.io/tags/Band/"/>
     
   </entry>
   
