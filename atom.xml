@@ -5,9 +5,9 @@
   <subtitle>Living to love</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://camusecao.github.io/"/>
+  <link href="https://camusecao.top/"/>
   <updated>2019-06-01T08:03:56.916Z</updated>
-  <id>https://camusecao.github.io/</id>
+  <id>https://camusecao.top/</id>
   
   <author>
     <name>CamuseCao</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>LaTeX 字体的基础配置</title>
-    <link href="https://camusecao.github.io/2019-06-01-/TeX-Fonts/"/>
-    <id>https://camusecao.github.io/2019-06-01-/TeX-Fonts/</id>
+    <link href="https://camusecao.top/2019-06-01-/TeX-Fonts/"/>
+    <id>https://camusecao.top/2019-06-01-/TeX-Fonts/</id>
     <published>2019-05-31T16:06:12.972Z</published>
     <updated>2019-06-01T08:03:56.916Z</updated>
     
@@ -32,19 +32,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
-      <category term="Programme" scheme="https://camusecao.github.io/tags/Programme/"/>
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
   <entry>
     <title>利用python批量转换图片的格式</title>
-    <link href="https://camusecao.github.io/2019-04-30-/Convert-pictures/"/>
-    <id>https://camusecao.github.io/2019-04-30-/Convert-pictures/</id>
+    <link href="https://camusecao.top/2019-04-30-/Convert-pictures/"/>
+    <id>https://camusecao.top/2019-04-30-/Convert-pictures/</id>
     <published>2019-04-30T14:02:12.198Z</published>
     <updated>2019-04-30T14:16:20.517Z</updated>
     
@@ -57,17 +57,17 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Python" scheme="https://camusecao.github.io/tags/Python/"/>
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>TeX 批量插入图片</title>
-    <link href="https://camusecao.github.io/2019-04-30-/Insert-pictures-tex/"/>
-    <id>https://camusecao.github.io/2019-04-30-/Insert-pictures-tex/</id>
+    <link href="https://camusecao.top/2019-04-30-/Insert-pictures-tex/"/>
+    <id>https://camusecao.top/2019-04-30-/Insert-pictures-tex/</id>
     <published>2019-04-30T08:45:23.582Z</published>
     <updated>2019-04-30T14:04:32.618Z</updated>
     
@@ -80,19 +80,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
-      <category term="Programme" scheme="https://camusecao.github.io/tags/Programme/"/>
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
   <entry>
     <title>Jupyter Notebook 的使用小记</title>
-    <link href="https://camusecao.github.io/2019-04-27-/Jupyternotebook/"/>
-    <id>https://camusecao.github.io/2019-04-27-/Jupyternotebook/</id>
+    <link href="https://camusecao.top/2019-04-27-/Jupyternotebook/"/>
+    <id>https://camusecao.top/2019-04-27-/Jupyternotebook/</id>
     <published>2019-04-27T02:13:31.638Z</published>
     <updated>2019-04-27T02:32:50.235Z</updated>
     
@@ -105,19 +105,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Python" scheme="https://camusecao.github.io/tags/Python/"/>
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
     
-      <category term="Programme" scheme="https://camusecao.github.io/tags/Programme/"/>
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
   <entry>
     <title>csv文件的小坑(自己主动跳进去的)</title>
-    <link href="https://camusecao.github.io/2019-03-29-/csv/"/>
-    <id>https://camusecao.github.io/2019-03-29-/csv/</id>
+    <link href="https://camusecao.top/2019-03-29-/csv/"/>
+    <id>https://camusecao.top/2019-03-29-/csv/</id>
     <published>2019-03-29T02:34:27.970Z</published>
     <updated>2019-03-29T02:50:36.058Z</updated>
     
@@ -130,17 +130,17 @@
     
     </summary>
     
-      <category term="电脑知识" scheme="https://camusecao.github.io/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
     
     
-      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>MiKTeX的基本使用</title>
-    <link href="https://camusecao.github.io/2019-03-02-/MiKTeX/"/>
-    <id>https://camusecao.github.io/2019-03-02-/MiKTeX/</id>
+    <link href="https://camusecao.top/2019-03-02-/MiKTeX/"/>
+    <id>https://camusecao.top/2019-03-02-/MiKTeX/</id>
     <published>2019-03-02T12:39:01.611Z</published>
     <updated>2019-03-30T07:27:58.215Z</updated>
     
@@ -153,19 +153,19 @@
     
     </summary>
     
-      <category term="Programme" scheme="https://camusecao.github.io/categories/Programme/"/>
+      <category term="Programme" scheme="https://camusecao.top/categories/Programme/"/>
     
     
-      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
-      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
   </entry>
   
   <entry>
     <title>收藏链接</title>
-    <link href="https://camusecao.github.io/2019-03-02-/Url/"/>
-    <id>https://camusecao.github.io/2019-03-02-/Url/</id>
+    <link href="https://camusecao.top/2019-03-02-/Url/"/>
+    <id>https://camusecao.top/2019-03-02-/Url/</id>
     <published>2019-03-02T09:22:06.626Z</published>
     <updated>2019-03-02T10:37:44.677Z</updated>
     
@@ -178,17 +178,17 @@
     
     </summary>
     
-      <category term="软件" scheme="https://camusecao.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>TeX 那些小事</title>
-    <link href="https://camusecao.github.io/2019-03-01-/TeX-Record/"/>
-    <id>https://camusecao.github.io/2019-03-01-/TeX-Record/</id>
+    <link href="https://camusecao.top/2019-03-01-/TeX-Record/"/>
+    <id>https://camusecao.top/2019-03-01-/TeX-Record/</id>
     <published>2019-03-01T13:54:46.397Z</published>
     <updated>2019-04-02T13:02:16.568Z</updated>
     
@@ -201,17 +201,17 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
   </entry>
   
   <entry>
     <title>Chrome的私人配置</title>
-    <link href="https://camusecao.github.io/2019-02-22-/Chrome-setting/"/>
-    <id>https://camusecao.github.io/2019-02-22-/Chrome-setting/</id>
+    <link href="https://camusecao.top/2019-02-22-/Chrome-setting/"/>
+    <id>https://camusecao.top/2019-02-22-/Chrome-setting/</id>
     <published>2019-02-21T16:38:40.098Z</published>
     <updated>2019-03-09T11:30:25.597Z</updated>
     
@@ -224,21 +224,21 @@
     
     </summary>
     
-      <category term="软件" scheme="https://camusecao.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Chrome" scheme="https://camusecao.github.io/tags/Chrome/"/>
+      <category term="Chrome" scheme="https://camusecao.top/tags/Chrome/"/>
     
-      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
-      <category term="Extension" scheme="https://camusecao.github.io/tags/Extension/"/>
+      <category term="Extension" scheme="https://camusecao.top/tags/Extension/"/>
     
   </entry>
   
   <entry>
     <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
-    <link href="https://camusecao.github.io/2019-02-20-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
-    <id>https://camusecao.github.io/2019-02-20-/作死心得/</id>
+    <link href="https://camusecao.top/2019-02-20-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
+    <id>https://camusecao.top/2019-02-20-/作死心得/</id>
     <published>2019-02-20T12:27:12.489Z</published>
     <updated>2019-03-01T13:18:08.658Z</updated>
     
@@ -251,21 +251,21 @@
     
     </summary>
     
-      <category term="电脑知识" scheme="https://camusecao.github.io/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
     
     
-      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
-      <category term="Regedit" scheme="https://camusecao.github.io/tags/Regedit/"/>
+      <category term="Regedit" scheme="https://camusecao.top/tags/Regedit/"/>
     
-      <category term="System" scheme="https://camusecao.github.io/tags/System/"/>
+      <category term="System" scheme="https://camusecao.top/tags/System/"/>
     
   </entry>
   
   <entry>
     <title>物理定律告诉你，爱情的真相有多么残酷！</title>
-    <link href="https://camusecao.github.io/2019-02-14-/Lover/"/>
-    <id>https://camusecao.github.io/2019-02-14-/Lover/</id>
+    <link href="https://camusecao.top/2019-02-14-/Lover/"/>
+    <id>https://camusecao.top/2019-02-14-/Lover/</id>
     <published>2019-02-14T15:47:12.398Z</published>
     <updated>2019-03-01T13:23:27.086Z</updated>
     
@@ -283,21 +283,21 @@
     
     </summary>
     
-      <category term="生活" scheme="https://camusecao.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://camusecao.top/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
-      <category term="Love" scheme="https://camusecao.github.io/tags/Love/"/>
+      <category term="Love" scheme="https://camusecao.top/tags/Love/"/>
     
-      <category term="Life" scheme="https://camusecao.github.io/tags/Life/"/>
+      <category term="Life" scheme="https://camusecao.top/tags/Life/"/>
     
   </entry>
   
   <entry>
     <title>ICON</title>
-    <link href="https://camusecao.github.io/2019-02-13-/Test/"/>
-    <id>https://camusecao.github.io/2019-02-13-/Test/</id>
+    <link href="https://camusecao.top/2019-02-13-/Test/"/>
+    <id>https://camusecao.top/2019-02-13-/Test/</id>
     <published>2019-02-13T06:16:51.145Z</published>
     <updated>2019-05-31T15:50:31.519Z</updated>
     
@@ -310,17 +310,17 @@
     
     </summary>
     
-      <category term="图标" scheme="https://camusecao.github.io/categories/%E5%9B%BE%E6%A0%87/"/>
+      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
     
     
-      <category term="Icon" scheme="https://camusecao.github.io/tags/Icon/"/>
+      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
     
   </entry>
   
   <entry>
     <title>常用软件记录</title>
-    <link href="https://camusecao.github.io/2019-02-10-/software/"/>
-    <id>https://camusecao.github.io/2019-02-10-/software/</id>
+    <link href="https://camusecao.top/2019-02-10-/software/"/>
+    <id>https://camusecao.top/2019-02-10-/software/</id>
     <published>2019-02-10T15:00:24.497Z</published>
     <updated>2019-03-01T13:21:21.107Z</updated>
     
@@ -333,17 +333,17 @@
     
     </summary>
     
-      <category term="软件" scheme="https://camusecao.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Software" scheme="https://camusecao.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>厦门大学模板使用说明</title>
-    <link href="https://camusecao.github.io/2019-01-29-/XMU-Thesis-Instruction/"/>
-    <id>https://camusecao.github.io/2019-01-29-/XMU-Thesis-Instruction/</id>
+    <link href="https://camusecao.top/2019-01-29-/XMU-Thesis-Instruction/"/>
+    <id>https://camusecao.top/2019-01-29-/XMU-Thesis-Instruction/</id>
     <published>2019-01-28T16:00:09.255Z</published>
     <updated>2019-03-01T13:20:59.180Z</updated>
     
@@ -356,17 +356,17 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="TeX" scheme="https://camusecao.github.io/tags/TeX/"/>
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
   </entry>
   
   <entry>
     <title>凝聚态物理期末总结</title>
-    <link href="https://camusecao.github.io/2018-12-18-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
-    <id>https://camusecao.github.io/2018-12-18-/凝聚态物理期末/</id>
+    <link href="https://camusecao.top/2018-12-18-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
+    <id>https://camusecao.top/2018-12-18-/凝聚态物理期末/</id>
     <published>2018-12-18T12:02:22.171Z</published>
     <updated>2019-03-01T13:19:16.400Z</updated>
     
@@ -380,19 +380,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
-      <category term="Band" scheme="https://camusecao.github.io/tags/Band/"/>
+      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
     
   </entry>
   
   <entry>
     <title>商务英语</title>
-    <link href="https://camusecao.github.io/2018-12-07-/English/"/>
-    <id>https://camusecao.github.io/2018-12-07-/English/</id>
+    <link href="https://camusecao.top/2018-12-07-/English/"/>
+    <id>https://camusecao.top/2018-12-07-/English/</id>
     <published>2018-12-07T02:01:30.651Z</published>
     <updated>2019-03-01T13:24:00.679Z</updated>
     
@@ -406,17 +406,17 @@
     
     </summary>
     
-      <category term="临时" scheme="https://camusecao.github.io/categories/%E4%B8%B4%E6%97%B6/"/>
+      <category term="临时" scheme="https://camusecao.top/categories/%E4%B8%B4%E6%97%B6/"/>
     
     
-      <category term="Play" scheme="https://camusecao.github.io/tags/Play/"/>
+      <category term="Play" scheme="https://camusecao.top/tags/Play/"/>
     
   </entry>
   
   <entry>
     <title>近代物理实验复习</title>
-    <link href="https://camusecao.github.io/2018-10-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
-    <id>https://camusecao.github.io/2018-10-09-/近代物理实验卷子/</id>
+    <link href="https://camusecao.top/2018-10-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
+    <id>https://camusecao.top/2018-10-09-/近代物理实验卷子/</id>
     <published>2018-10-09T09:07:08.157Z</published>
     <updated>2019-03-07T06:01:13.172Z</updated>
     
@@ -433,19 +433,19 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
-      <category term="Experiment" scheme="https://camusecao.github.io/tags/Experiment/"/>
+      <category term="Experiment" scheme="https://camusecao.top/tags/Experiment/"/>
     
   </entry>
   
   <entry>
     <title>一个酷炫的清理技能</title>
-    <link href="https://camusecao.github.io/2018-10-09-/Clear/"/>
-    <id>https://camusecao.github.io/2018-10-09-/Clear/</id>
+    <link href="https://camusecao.top/2018-10-09-/Clear/"/>
+    <id>https://camusecao.top/2018-10-09-/Clear/</id>
     <published>2018-10-09T08:56:09.080Z</published>
     <updated>2019-03-01T13:24:11.856Z</updated>
     
@@ -458,19 +458,19 @@
     
     </summary>
     
-      <category term="电脑知识" scheme="https://camusecao.github.io/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
     
     
-      <category term="Command" scheme="https://camusecao.github.io/tags/Command/"/>
+      <category term="Command" scheme="https://camusecao.top/tags/Command/"/>
     
-      <category term="Clean" scheme="https://camusecao.github.io/tags/Clean/"/>
+      <category term="Clean" scheme="https://camusecao.top/tags/Clean/"/>
     
   </entry>
   
   <entry>
     <title>自适应电子和光电子学的压电电子学和压电光电子学</title>
-    <link href="https://camusecao.github.io/2018-10-09-/Article1/"/>
-    <id>https://camusecao.github.io/2018-10-09-/Article1/</id>
+    <link href="https://camusecao.top/2018-10-09-/Article1/"/>
+    <id>https://camusecao.top/2018-10-09-/Article1/</id>
     <published>2018-10-09T08:29:46.333Z</published>
     <updated>2019-03-01T13:24:34.059Z</updated>
     
@@ -483,17 +483,17 @@
     
     </summary>
     
-      <category term="文献阅读" scheme="https://camusecao.github.io/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
+      <category term="文献阅读" scheme="https://camusecao.top/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
     
     
-      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
   </entry>
   
   <entry>
     <title>面试题目</title>
-    <link href="https://camusecao.github.io/2018-10-09-/Interview/"/>
-    <id>https://camusecao.github.io/2018-10-09-/Interview/</id>
+    <link href="https://camusecao.top/2018-10-09-/Interview/"/>
+    <id>https://camusecao.top/2018-10-09-/Interview/</id>
     <published>2018-10-09T08:13:19.192Z</published>
     <updated>2019-03-02T09:29:25.859Z</updated>
     
@@ -506,12 +506,12 @@
     
     </summary>
     
-      <category term="学习" scheme="https://camusecao.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Physics" scheme="https://camusecao.github.io/tags/Physics/"/>
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
-      <category term="Band" scheme="https://camusecao.github.io/tags/Band/"/>
+      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
     
   </entry>
   
