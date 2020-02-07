@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="Born to die">
 <meta property="og:description" content="本文记录 Python 使用 Selenium 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 js 脚本的加载使得爬虫的难度增大，因此可以考虑使用 Selenium 库来帮助我们，用它操纵浏览器来爬取需要的数据。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-26T09:35:10.217Z">
+<meta property="og:updated_time" content="2020-01-26T11:59:50.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python 的 selenium 的一些使用">
 <meta name="twitter:description" content="本文记录 Python 使用 Selenium 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 js 脚本的加载使得爬虫的难度增大，因此可以考虑使用 Selenium 库来帮助我们，用它操纵浏览器来爬取需要的数据。">
@@ -509,7 +509,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-01-26 17:35:10" itemprop="dateModified" datetime="2020-01-26T17:35:10+08:00">2020-01-26</time>
+                <time title="Modified: 2020-01-26 19:59:50" itemprop="dateModified" datetime="2020-01-26T19:59:50+08:00">2020-01-26</time>
               
             
           </span>
@@ -562,7 +562,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">4.6k</span>
+                <span title="Symbols count in article">4.7k</span>
               
 
               
@@ -618,7 +618,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 输入内容并且跳转 注意适当加入一些休息时间</span></span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="kw"]'</span>)</span><br><span class="line">element.clear()  <span class="comment"># 清除原本在的数据</span></span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">element.send_keys(<span class="string">'量子力学'</span>)  <span class="comment"># 输入新的</span></span><br><span class="line">time.sleep(<span class="number">1.5</span>)</span><br><span class="line">driver.find_element_by_xpath(<span class="string">'//*[@id="sb"]'</span>).click()</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># driver.close()</span></span><br></pre></td></tr></table></figure>
 
 <p>如何新开一个 <code>tag</code> 并且关闭？可以参考如下的操作 </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">chromeOptions = webdriver.ChromeOptions()</span><br><span class="line">star_url = <span class="string">r"https://camusecao.top/"</span></span><br><span class="line"></span><br><span class="line">webdrive = <span class="string">r'D:/your/chromedriver.exe'</span></span><br><span class="line">driver = webdriver.Chrome(webdrive, chrome_options=chromeOptions)</span><br><span class="line">driver.get(star_url)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参考 https://stackoverflow.com/questions/28431765/open-web-in-new-tab-selenium-python 和 https://stackoverflow.com/questions/38154483/using-selenium-webdriver-in-python-to-open-link-in-new-tab-window https://stackoverflow.com/questions/25951968/open-and-close-new-tab-with-selenium-webdriver-in-os-x</span></span><br><span class="line"></span><br><span class="line">time.sleep(<span class="number">5</span>)</span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="sidebar"]/div/div[1]/div/div[4]/ul/li/a'</span>)</span><br><span class="line">driver.execute_script(<span class="string">'arguments[0].click();'</span>, element)</span><br><span class="line">time.sleep(<span class="number">4</span>)</span><br><span class="line"><span class="comment"># 聚焦到新开的 tab</span></span><br><span class="line">driver.switch_to_window(driver.window_handles[<span class="number">1</span>])</span><br><span class="line"><span class="comment"># 关闭这个 tab</span></span><br><span class="line">driver.close()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">chromeOptions = webdriver.ChromeOptions()</span><br><span class="line">star_url = <span class="string">r"https://camusecao.top/"</span></span><br><span class="line"></span><br><span class="line">webdrive = <span class="string">r'D:/your/chromedriver.exe'</span></span><br><span class="line">driver = webdriver.Chrome(webdrive, chrome_options=chromeOptions)</span><br><span class="line">driver.get(star_url)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参考 https://stackoverflow.com/questions/28431765/open-web-in-new-tab-selenium-python 和 https://stackoverflow.com/questions/38154483/using-selenium-webdriver-in-python-to-open-link-in-new-tab-window https://stackoverflow.com/questions/25951968/open-and-close-new-tab-with-selenium-webdriver-in-os-x</span></span><br><span class="line"></span><br><span class="line">time.sleep(<span class="number">5</span>)</span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="sidebar"]/div/div[1]/div/div[4]/ul/li/a'</span>)</span><br><span class="line">driver.execute_script(<span class="string">'arguments[0].click();'</span>, element)</span><br><span class="line">time.sleep(<span class="number">4</span>)</span><br><span class="line"><span class="comment"># 聚焦到新开的 tab</span></span><br><span class="line">driver.switch_to_window(driver.window_handles[<span class="number">1</span>])</span><br><span class="line"><span class="comment"># 关闭这个 tab</span></span><br><span class="line">driver.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># driver.execute_script("window.open('');")</span></span><br><span class="line"><span class="comment"># driver.switch_to.window(driver.window_handles[1])</span></span><br><span class="line"><span class="comment"># driver.get(url)</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -715,6 +715,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2020-01-31-/Python-Pandas/" rel="prev" title="Python Pandas 库的一些使用">
+                Python Pandas 库的一些使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -780,7 +784,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-count">25</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -977,7 +981,7 @@
 
 
 <div class="theme-info">
-  <span class="post-count">博客全站共33.5k字</span>
+  <span class="post-count">博客全站共35.7k字</span>
 </div>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -1639,10 +1643,7 @@
         }, 300);
       }).append(e);
     })
-  </script>
-
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -1659,7 +1660,10 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
 </script>
 <!-- End: Injected MathJax -->
-<!-- hexo-inject:end --></body>
+<!-- hexo-inject:end -->
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script></body>
 </html>
 
 <!-- 页面点击小红心 -->
