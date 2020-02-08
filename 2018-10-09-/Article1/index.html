@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://camusecao.top').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.7.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="摘要低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。">
+<meta name="keywords" content="Physics">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自适应电子和光电子学的压电电子学和压电光电子学">
+<meta property="og:url" content="https://camusecao.top/2018-10-09-/Article1/index.html">
+<meta property="og:site_name" content="Born to die">
+<meta property="og:description" content="摘要低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://i.loli.net/2018/07/11/5b4627ea9d3d7.png">
+<meta property="og:image" content="https://i.loli.net/2018/07/11/5b4627f710553.png">
+<meta property="og:updated_time" content="2019-03-01T13:24:34.059Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="自适应电子和光电子学的压电电子学和压电光电子学">
+<meta name="twitter:description" content="摘要低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。">
+<meta name="twitter:image" content="https://i.loli.net/2018/07/11/5b4627ea9d3d7.png">
+
+<link rel="canonical" href="https://camusecao.top/2018-10-09-/Article1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>自适应电子和光电子学的压电电子学和压电光电子学 | Born to die</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Born to die</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Living to love</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2018-10-09-/Article1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          自适应电子和光电子学的压电电子学和压电光电子学
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-10-09 16:29:46" itemprop="dateCreated datePublished" datetime="2018-10-09T16:29:46+08:00">2018-10-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-01 21:24:34" itemprop="dateModified" datetime="2019-03-01T21:24:34+08:00">2019-03-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/文献阅读/" itemprop="url" rel="index">
+                    <span itemprop="name">文献阅读</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>0</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。</p>
+<hr>
+<a id="more"></a>
+
+
+<h2 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h2><h3 id="压电效应"><a href="#压电效应" class="headerlink" title="压电效应"></a>压电效应</h3><p>压电效应是利用在具有压电性的材料中产生的压电势（压电势）作为“栅极”电压来调节或控制电荷载流子传输特性以制造新器件。压电电子学的基本原理是由 2007 年钟林王教授介绍的。基于这种效应，已经证明了一系列电子器件，包括压电门控场效应晶体管，压电电位二极管，应变传感器，力/流量传感器，混合场效应晶体管，压电逻辑门，机电存储器，等压电设备被视为一新的半导体器件的类别。压电材料可能在传感器，人体硅技术接口，MEMS，纳米机器人和有源柔性电子设备中具有重要应用。</p>
+<p>由于诸如纤锌矿结构的 ZnO，GaN 和 InN 的材料中的非中心对称性，通过施加应力在晶体中产生压电势。由于同时拥有压电和半导体在晶体中产生的压电势对载流子传输过程有很大影响。通常基本的压电装置的结构可以分为两类。以纳米线为例。第一种是将压电纳米线放在柔性基板上，其两端由电极固定。在这种情况下，当基板弯曲时，纳米线将被纯拉伸或压缩。压电势将沿其轴线引入。它将改变电场或肖特基势垒接触区域的高度。在一端引起的正压电势将降低其高度，而在另一端的负压电势将增加它。因此，电传输特性将改变。第二种压电装置是纳米线的一端用电极固定，而另一端是自由的。在这种情况下，当在纳米线的自由端施加力以使其弯曲时，压电势分布将垂直于纳米线的轴。引入的压电场垂直于电子传输方向，就像在传统的场效应晶体管中施加栅极电压一样。因此，电子传输性质也将改变。</p>
+<blockquote>
+<p>用于压电的材料应该是压电半导体，如 ZnO，GaN 和 InN。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/07/11/5b4627ea9d3d7.png" alt="2"></p>
+
+<h3 id="光压电效应"><a href="#光压电效应" class="headerlink" title="光压电效应"></a>光压电效应</h3><p>光压电效应是压电、半导体和光子特性在非中心对称半导体材料中的三向耦合效应，压电电势是通过向具有压电性的半导体施加应变以控制载流子产生而产生的，金属-半导体结或 pn 结处的传输，分离或复合，用于改善光电器件的性能，例如光电探测器，太阳能电池和发光二极管。王钟林教授于 2010 年提出了这一效应的基本原则。</p>
+<p>当 p 型半导体和 n 型半导体形成结时，p 型侧的空穴和 n 型侧的电子倾向于在界面区域周围重新分布以平衡局部电场，这导致电荷耗尽层。结区中电子和空穴的扩散和复合与器件的光电性质密切相关，其受局部电场分布的影响很大。在界面处存在压电电荷引入了三种效应。</p>
+<ul>
+<li><p>由于引入的局部电位导致的局部电子能带结构的偏移，以及由于局部电荷载流子的重新分布而导致的电荷耗尽层的变化，以平衡局部压电电荷。结处的正压电电荷降低了能带，负压电电荷提高了结区附近的 n 型半导体区域的能带。</p>
+</li>
+<li><p>通过压电势对局部能带进行修改可以有效地捕获电荷，从而可以大大提高电子-空穴复合率，这对提高发光二极管的效率非常有利。</p>
+</li>
+<li><p>倾斜带倾向于改变朝向接合处移动的载流子的移动性。</p>
+</li>
+</ul>
+<p>压电光电子学的材料应具有三个基本特性。</p>
+<ul>
+<li>压电性。</li>
+<li>半导体特性。</li>
+<li>光子激发特性。</li>
+<li>典型的材料是纤锌矿结构，例如 ZnO，GaN 和 InN。</li>
+</ul>
+<blockquote>
+<p>压电，光激发和半导体特性之间的三向耦合，这是压电电子学的基础（压电-半导体耦合），压电光子学（压电-光子激发耦合），光电子学和压电光电子学（压电-半导体-光激发）。这些耦合的核心依赖于压电材料产生的压电势。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/07/11/5b4627f710553.png" alt="1"></p>
+
+<h3 id="压电材料提高纳米传感器的性能"><a href="#压电材料提高纳米传感器的性能" class="headerlink" title="压电材料提高纳米传感器的性能"></a>压电材料提高纳米传感器的性能</h3><p>包含压电半导体的器件中，应变诱导的极化可以调制肖特基势垒高度从而控制接触处的界面能级。这可以显着提高肖特基势垒纳米传感器的性能。</p>
+<blockquote>
+<p>早期应用：ZnO 纳米线传感器，用于在外部菌株的应用下检测生物分子（如蛋白质和葡萄糖），pH 值和气体种类（氧气）。</p>
+</blockquote>
+<p>近期：灵敏响应纳米传感器 ZnO 纳米线传感器检测从生物细胞释放的微量过氧化氢。促进和增强药物代谢和检测。</p>
+<h3 id="二维压电半导体"><a href="#二维压电半导体" class="headerlink" title="二维压电半导体"></a>二维压电半导体</h3><p>理论上预测单层$MoS_2$，$MoSe_2$和其他 TMDCs(二维过渡金属二硫属化物)由于其晶体结构中不存在反转对称性而表现出压电性。结合其高结晶度，出色的半导体特性和优异的机械性能（单层$MoS_2$晶体具有比钢更高的杨氏模量，并且可以变形 11％而没有断裂），使得二维的 TMDCs 成为用于压电装置的高性能机电材料。</p>
+<blockquote>
+<p>使用化学气相沉积（CVD）大规模生产。</p>
+</blockquote>
+<h2 id="半导体薄膜中的压电电子学"><a href="#半导体薄膜中的压电电子学" class="headerlink" title="半导体薄膜中的压电电子学"></a>半导体薄膜中的压电电子学</h2><p>利用薄膜器件中的压电效应可能是克服纳米材料的一些局限性的方法：例如，大规模生产的难度，不均匀性和可靠性。</p>
+<h2 id="压电电子学的理论进展"><a href="#压电电子学的理论进展" class="headerlink" title="压电电子学的理论进展"></a>压电电子学的理论进展</h2><p>采用的半经典方法不能提供对潜在机制的理解水平。最近在使用各种先进方法解决这些问题方面取得了进展。使用完全基于量子力学和基本物理常数的原子和分子结构进行压电效应的 ab initio 计算研究。可以得出结论更好的。最近还研究了压电式晶体管的非线性行为，这可能对非线性压电电路的发展有益，还使用密度泛函理论对单层的$MoS_2$压电晶体管进行了第一次理论研究。</p>
+<h2 id="压电光电子学的应用方面"><a href="#压电光电子学的应用方面" class="headerlink" title="压电光电子学的应用方面"></a>压电光电子学的应用方面</h2><ul>
+<li>有源光电子学</li>
+<li>光电探测器</li>
+<li>发光二极管中</li>
+<li>可见光通信</li>
+<li>冷光应用</li>
+<li>…….</li>
+</ul>
+<h2 id="压电光电子学的理论研究"><a href="#压电光电子学的理论研究" class="headerlink" title="压电光电子学的理论研究"></a>压电光电子学的理论研究</h2><p>早期的理论工作仅限于一维模型，并未考虑设备几何形状，且许多假设不适用于低掺杂浓度的情况。</p>
+<p>最近开发了一种用于对 p-n 结中的压电光电效应进行 2D 模拟的方法，这项工作中采用的有限元方法提供了更直观的结果，然后可以更好地与实验设计的后续优化的实验数据进行比较。当压电半导体中的掺杂浓度较低时，耗尽区域在应变下向 p 型或 n 型区域移动，具体取决于应变极性和压电材料中极轴的方向，这种变化将分别导致空穴或电子的电荷通道。这些理论的发展为后续的实验工作提供了有用的指导。</p>
+<h2 id="展望未来"><a href="#展望未来" class="headerlink" title="展望未来"></a>展望未来</h2><ul>
+<li><p>可以将 2D 材料的压电性质与原子级薄晶体中的其他有趣特性组合。</p>
+</li>
+<li><p>单晶纳米材料具有良好的机械耐久性，将其应用可以延长设备的使用寿命。</p>
+</li>
+<li><p>将量子力学结合到现有模型中将有助于将压电电子学和压电光电子学纳入完整的理论框架。</p>
+</li>
+<li><p>压电效应与铁电电子器件中的残余铁电束缚电荷的接触电位或带结构的改变之间存在相似性。</p>
+</li>
+<li><p>压电电子学和压电光电子学领域使得开发可与环境中的机械信号相互作用的新型电子和光电子学领域成为可能。</p>
+</li>
+<li><p>压电电子学和压电光电子学在应变诱导的界面极化与电荷载流子的带结构和过程之间的耦合方面为经典半导体物理学提供了新的知识。</p>
+</li>
+<li><p>尽管取得了巨大进步，但仍需要做很多工作才能获得全面的理解并充分发挥压电电子学和压电光电子学的潜力。</p>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Physics/" rel="tag"># Physics</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018-10-09-/Interview/" rel="prev" title="面试题目">
+      <i class="fa fa-chevron-left"></i> 面试题目
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018-10-09-/Clear/" rel="next" title="一个酷炫的清理技能">
+      一个酷炫的清理技能 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本原理"><span class="nav-number">2.</span> <span class="nav-text">基本原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#压电效应"><span class="nav-number">2.1.</span> <span class="nav-text">压电效应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#光压电效应"><span class="nav-number">2.2.</span> <span class="nav-text">光压电效应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压电材料提高纳米传感器的性能"><span class="nav-number">2.3.</span> <span class="nav-text">压电材料提高纳米传感器的性能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二维压电半导体"><span class="nav-number">2.4.</span> <span class="nav-text">二维压电半导体</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体薄膜中的压电电子学"><span class="nav-number">3.</span> <span class="nav-text">半导体薄膜中的压电电子学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#压电电子学的理论进展"><span class="nav-number">4.</span> <span class="nav-text">压电电子学的理论进展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#压电光电子学的应用方面"><span class="nav-number">5.</span> <span class="nav-text">压电光电子学的应用方面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#压电光电子学的理论研究"><span class="nav-number">6.</span> <span class="nav-text">压电光电子学的理论研究</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#展望未来"><span class="nav-number">7.</span> <span class="nav-text">展望未来</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">CamuseCao</p>
+  <div class="site-description" itemprop="description">Camuse's blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CamuseCao</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script></body>
+</html>

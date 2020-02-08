@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://camusecao.top').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.7.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="本文将介绍如何简单的配置LaTeX用xelatex编译时，可参考的一种字体配置方案。">
+<meta name="keywords" content="TeX,Programme">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LaTeX 字体的基础配置">
+<meta property="og:url" content="https://camusecao.top/2019-06-01-/TeX-Fonts/index.html">
+<meta property="og:site_name" content="Born to die">
+<meta property="og:description" content="本文将介绍如何简单的配置LaTeX用xelatex编译时，可参考的一种字体配置方案。">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-06-01T08:03:56.916Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LaTeX 字体的基础配置">
+<meta name="twitter:description" content="本文将介绍如何简单的配置LaTeX用xelatex编译时，可参考的一种字体配置方案。">
+
+<link rel="canonical" href="https://camusecao.top/2019-06-01-/TeX-Fonts/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>LaTeX 字体的基础配置 | Born to die</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Born to die</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Living to love</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2019-06-01-/TeX-Fonts/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LaTeX 字体的基础配置
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-06-01 00:06:12 / Modified: 16:03:56" itemprop="dateCreated datePublished" datetime="2019-06-01T00:06:12+08:00">2019-06-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>0</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>本文将介绍如何简单的配置<code>LaTeX</code>用<code>xelatex</code>编译时，可参考的一种字体配置方案。</p>
+<hr>
+<a id="more"></a>
+
+<p>很多情况下<code>LaTeX</code>默认的字体配置并不令人满意或者符合特定的场景需求，会有字体配置的需求。而<code>pdflatex</code>的编译方式要指定满意的字体是比较复杂的，<code>xelatex</code>相对来说比较简单，它能够调用系统安装的字体。以下的内容都是针对使用<code>xelatex</code>编译时的参考方案。</p>
+<p>作为一个中国人，文档里面出现中文和英文的现象并不少见。要指定英文字体比较容易，使用<code>fontspec</code>宏包可以实现。如果要同时指定中文的使用字体，可以使用<code>xeCJK</code>宏包。由于中文字体的特别，中国的<code>TeX</code>组织开发了该宏包。以下展示一个比较完整的字体设置方案。要编译成功需要安装相应的字体，可以用这个思路换成你需要的字体。</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">PassOptionsToPackage</span><span class="string">&#123;no-math&#125;</span><span class="string">&#123;fontspec&#125;</span></span> <span class="comment">%在改变西文字体时不改变数学字体</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexbook&#125;</span></span>            <span class="comment">%已调用xeCJK宏包</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;fontspec&#125;</span></span> <span class="comment">%[no-math]</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;amsmath,amsthm&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;unicode-math&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;Source Serif Pro&#125;</span></span>      <span class="comment">%指定西文正文字体，即衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setsansfont</span><span class="string">&#123;Source Sans Pro&#125;</span></span>       <span class="comment">%指定西文无衬线字体，常用于标题目录等位置</span></span><br><span class="line"><span class="tag">\<span class="name">setmonofont</span><span class="string">&#123;Source Code Pro&#125;</span></span>       <span class="comment">%指定西文等宽字体，常用于代码展示等位置</span></span><br><span class="line">  <span class="tag">\<span class="name">setmathfont</span><span class="string">[</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension    =.otf,             %采用otf字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,                    %指定字体所在路径，缺省的话会自动查找系统和字体和发行版本所带的字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont     = XITSMath-Bold,   %指定粗体</span></span></span><br><span class="line"><span class="tag"><span class="string">    StylisticSet = 8</span></span></span><br><span class="line"><span class="tag"><span class="string">  ]</span><span class="string">&#123;XITSMath-Regular&#125;</span></span>        <span class="comment">%指定数学字体</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKmainfont</span><span class="string">[                  %衬线中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">	Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,  %右上字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,     %加粗字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,  %斜体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,     %斜体加粗</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,  %斜体是为斜，不要在需要查重的pdf文件中使用中文斜体，会导致查重有问题。</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSerifCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKsansfont</span><span class="string">[                  %无衬线中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSansCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKmonofont</span><span class="string">[                  %等宽中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSansMonoCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">hbar</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy$</span></span><br><span class="line"></span><br><span class="line"> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体</span><br><span class="line"></span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体加粗&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体伪斜&#125;</span></span></span><br><span class="line">  </span><br><span class="line"><span class="tag">\<span class="name">sffamily</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体</span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="tag">\<span class="name">ttfamily</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体</span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"></span><br><span class="line"> <span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
+
+
+<p>指定了普通场合所需的几个字体后，还需要个别其它字体可以通过以下方法设定以及调用。</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">newfontfamily</span></span><span class="tag">\<span class="name">useSomeEnFont</span><span class="string">&#123;Source Serif Pro&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">newCJKfontfamily</span></span><span class="tag">\<span class="name">useSomeZhFont</span><span class="string">&#123;宋体&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">normalfont</span></span><span class="tag">\<span class="name">useSomeZhFont</span></span><span class="tag">\<span class="name">useSomeEnFont</span></span></span><br><span class="line"></span><br><span class="line">&#123;<span class="tag">\<span class="name">useSomeEnFont</span></span> Source Serif Pro font&#125;</span><br><span class="line">&#123;<span class="tag">\<span class="name">useSomeZhFont</span></span> 这里是宋体&#125;</span><br><span class="line"><span class="comment">%% 使用新的一组字体</span></span><br><span class="line">&#123;<span class="tag">\<span class="name">normalfont</span></span> 西文用Source Serif Pro font, 中文用宋体。&#125;</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/TeX/" rel="tag"># TeX</a>
+              <a href="/tags/Programme/" rel="tag"># Programme</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019-04-30-/Convert-pictures/" rel="prev" title="利用python批量转换图片的格式">
+      <i class="fa fa-chevron-left"></i> 利用python批量转换图片的格式
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020-01-23-/Python-tricks/" rel="next" title="Python 实用小程序">
+      Python 实用小程序 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">CamuseCao</p>
+  <div class="site-description" itemprop="description">Camuse's blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CamuseCao</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script></body>
+</html>

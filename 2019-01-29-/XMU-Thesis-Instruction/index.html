@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://camusecao.top').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.7.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="使用的前提为了使用该模板，需要安装一个TeX的发行版本。可以选择Texlive或者Miktex,他们都是跨平台的。而Texlive打包了比较多的宏包，较为庞大，Miktex则是临时下载没有的宏包。这里我推荐使用Miktex。">
+<meta name="keywords" content="TeX">
+<meta property="og:type" content="article">
+<meta property="og:title" content="厦门大学模板使用说明">
+<meta property="og:url" content="https://camusecao.top/2019-01-29-/XMU-Thesis-Instruction/index.html">
+<meta property="og:site_name" content="Born to die">
+<meta property="og:description" content="使用的前提为了使用该模板，需要安装一个TeX的发行版本。可以选择Texlive或者Miktex,他们都是跨平台的。而Texlive打包了比较多的宏包，较为庞大，Miktex则是临时下载没有的宏包。这里我推荐使用Miktex。">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-03-01T13:20:59.180Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="厦门大学模板使用说明">
+<meta name="twitter:description" content="使用的前提为了使用该模板，需要安装一个TeX的发行版本。可以选择Texlive或者Miktex,他们都是跨平台的。而Texlive打包了比较多的宏包，较为庞大，Miktex则是临时下载没有的宏包。这里我推荐使用Miktex。">
+
+<link rel="canonical" href="https://camusecao.top/2019-01-29-/XMU-Thesis-Instruction/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>厦门大学模板使用说明 | Born to die</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Born to die</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Living to love</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2019-01-29-/XMU-Thesis-Instruction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          厦门大学模板使用说明
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-01-29 00:00:09" itemprop="dateCreated datePublished" datetime="2019-01-29T00:00:09+08:00">2019-01-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-01 21:20:59" itemprop="dateModified" datetime="2019-03-01T21:20:59+08:00">2019-03-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>0</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="使用的前提"><a href="#使用的前提" class="headerlink" title="使用的前提"></a>使用的前提</h2><p>为了使用该模板，需要安装一个<code>TeX</code>的发行版本。可以选择<code>Texlive</code>或者<code>Miktex</code>,他们都是跨平台的。而<code>Texlive</code>打包了比较多的宏包，较为庞大，<code>Miktex</code>则是临时下载没有的宏包。这里我推荐使用<code>Miktex</code>。</p>
+<hr>
+<a id="more"></a>
+
+<p>但是对于Mac，推荐使用<code>MacTeX</code>，它是为Mac定制的发行版本，应该比较合适。特别提醒<code>CTeX</code>套装无法运行该模板。你可以选择卸载<code>CTeX</code>套装，安装我推荐的发行版本，或者不使用该模板。关于编译方式需选择<code>XeLaTeX</code>,否则无法正常编译该模板,如果熟悉<code>latexmk</code>的可以用它来编译，这更好。</p>
+<p>如果你不想在本地安装<code>TeX</code>的发行版本，其实可以使用 <a href="https://www.overleaf.com" target="_blank" rel="noopener">Overleaf</a> 在线编译平台，同样请使用<code>XeLaTeX</code>编译。如果想在线编译请选择我的另外一个项目去编译。我会在最后附上地址。能在Overleaf编译多亏了他们支持人员 LianTze Lim 的帮助，在此表示感谢。 大家如果在这个平台上使用遇到什么技术问题可以发邮件向<a href="mailto:support@overleaf.com" target="_blank" rel="noopener">支持人员</a>请教，很可能回复的是林前辈哦，请大家不要发邮件问怎么样才能访问该网站。<del>关于打开该网址的正确姿势是找到一个靠谱的梯子，然后爬上去。</del></p>
+<h2 id="模板使用说明"><a href="#模板使用说明" class="headerlink" title="模板使用说明"></a>模板使用说明</h2><p>为了正确使用该模板，请按照提示安装好可使用的TeX发行版本。因为论文内容比较多，因此采取了分文件的方式来构成该文档。主文档<code>XMU.tex</code>的位置位于<code>Main</code>下，正确编译后所得的pdf文件就在这里。<code>Figure</code>文件夹是存放图片的文件夹，该文件夹已经加入图片文件夹的位置，插入图片是无需多加路径，直接用文件名即可。关于<code>Setting</code>文件夹只需要把里面的<code>Information.tex</code>正确填入即可。而你需要编辑的仅有<code>Body</code>文件夹下的文件。</p>
+<p>当你需要毕业论文的打印时。可以打开<code>Cover and reconsitution</code>文件夹，封面的制作程序已经做好了，使用它应该能的到你想要的<code>a3</code>封面，你可以自己再做调整。关于整篇论文的打印，可以在运行主文档<code>Main/XMU.tex</code>时选择用用<code>openright</code>选项，如果它生成的pdf仍然不满意，可以用<code>Reconsitution.tex</code>自己拼接和加空白页，这样总能完成工作。</p>
+<p>你可以使用<code>make1.bat</code>和<code>make2.bat</code>来直接编译得到所有的结果。</p>
+<h2 id="几点说明"><a href="#几点说明" class="headerlink" title="几点说明"></a>几点说明</h2><ul>
+<li><p>该模板应该能够在<code>Mac</code>和<code>Linux</code>系统下运行，但是笔者目前只在<code>Windows</code>上测试过，如果不行，可以向我反应。等有空了我会再去测试一下。<del>最近事情多，没用虚拟机去测试。有同学测试了可以和我反应一下结果啊。</del></p>
+</li>
+<li><p>该模板是在厦门大学博士学位论文模板的基础上修改得到的，因为本科论文与博士学位论文的要求差别比较的，所以定制了该模板。</p>
+</li>
+<li><p>在使用该模板之前，请把原始编译出来的文档读一下，对于你的使用是很有帮助的。</p>
+</li>
+<li><p>由于本人水平有限，因此该模板写的并不好，但是应该勉强能够满足毕业论文的要求。但是仍然可能有许多错误的地方，希望各位使用者如果能发现错误之处能够提出。可以给我法邮件或者直接在 <code>github</code>上面提<code>issue</code>。欢迎大家的参与，共同完善母校的模板。</p>
+</li>
+<li><p>由于本人是一名理科生，对文科的同学毕业论文的额外需求可能了解不多。虽说文科生用这个模板的可能性比较小，如果有人用，有额外的需求也可以提出。</p>
+</li>
+</ul>
+<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>邮箱： <a href="mailto:camusecao@gmail.com" target="_blank" rel="noopener">camusecao@gmail.com</a></p>
+<p>该项目github项目的地址是 : <a href="https://github.com/CamuseCao/XMU-Undergraduate-thesis-template" target="_blank" rel="noopener">Link</a></p>
+<p><code>Overleaf</code>在线编译的项目的地址 ：<a href="https://github.com/CamuseCao/XMU-Thesis-Overleaf" target="_blank" rel="noopener">Githu下载</a>    <a href="https://www.overleaf.com/2128697983jhmpkzxdzmry" target="_blank" rel="noopener">Overleaf查看与下载</a> </p>
+<p>(<code>Overleaf</code>项目的地址请勿随意编辑，方便大家的观看。你可以把它拷到你自己的项目下尽情玩耍。 )</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/TeX/" rel="tag"># TeX</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018-12-18-/凝聚态物理期末/" rel="prev" title="凝聚态物理期末总结">
+      <i class="fa fa-chevron-left"></i> 凝聚态物理期末总结
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019-02-10-/software/" rel="next" title="常用软件记录">
+      常用软件记录 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用的前提"><span class="nav-number">1.</span> <span class="nav-text">使用的前提</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模板使用说明"><span class="nav-number">2.</span> <span class="nav-text">模板使用说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#几点说明"><span class="nav-number">3.</span> <span class="nav-text">几点说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联系方式"><span class="nav-number">4.</span> <span class="nav-text">联系方式</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">CamuseCao</p>
+  <div class="site-description" itemprop="description">Camuse's blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CamuseCao</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":75,"height":150},"mobile":{"show":true}});</script></body>
+</html>
