@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Born to die</title>
+    <link>https://camusecao.top/</link>
+    
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>Camuse&#39;s blog</description>
+    <pubDate>Tue, 02 Apr 2019 13:02:16 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>TeX 那些小事</title>
+      <link>https://camusecao.top/1970-01-01-/TeX-Record/</link>
+      <guid>https://camusecao.top/1970-01-01-/TeX-Record/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;本文记录了使用&lt;code&gt;TeX&lt;/code&gt;的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。&lt;/p&gt;
+&lt;hr /&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/TeX-Record/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>近代物理实验复习</title>
+      <link>https://camusecao.top/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</link>
+      <guid>https://camusecao.top/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;卷子&quot;&gt;2010 卷子&lt;/h2&gt;
+&lt;h3 id=&quot;虚拟仪器的主要特点有&quot;&gt;虚拟仪器的主要特点有：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;尽可能采用了通用的硬件，各种仪器的差异主要是软件。&lt;/li&gt;
+&lt;li&gt;可充分发挥计算机的能力，有强大的数据处理功能，可以创造出功能更强的仪器。&lt;/li&gt;
+&lt;li&gt;用户可以根据自己的需要定义和制造各种仪器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>

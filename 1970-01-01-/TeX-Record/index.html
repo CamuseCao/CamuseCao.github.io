@@ -5,19 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/myimages/Ying.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/myimages/y32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/myimages/y16.ico">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="本文记录了使用TeX的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。">
@@ -28,7 +31,7 @@
 <meta property="og:description" content="本文记录了使用TeX的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="1970-01-01T00:00:00.000Z">
-<meta property="article:modified_time" content="2019-04-02T13:02:16.568Z">
+<meta property="article:modified_time" content="2019-04-02T13:02:16.000Z">
 <meta property="article:author" content="CamuseCao">
 <meta property="article:tag" content="TeX">
 <meta name="twitter:card" content="summary">
@@ -77,7 +80,13 @@
   </style>
 </noscript>
 
+
+  <link rel="stylesheet" href="APlayer.min.css">
+  <script src="APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+
 <link rel="alternate" href="/atom.xml" title="Born to die" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Born to die" type="application/rss+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -103,11 +112,13 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">Living to love</p>
+        <h1 class="site-subtitle" itemprop="description">Living to love</h1>
+      
   </div>
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -121,22 +132,67 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="search-pop-overlay">
+  <div class="popup search-popup">
+      <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
 </div>
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NhbXVzZWNhbw==" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
 
 
     <main class="main">
@@ -155,7 +211,7 @@
     <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/TeX-Record/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/myimages/y.jpg">
       <meta itemprop="name" content="CamuseCao">
       <meta itemprop="description" content="Camuse's blog">
     </span>
@@ -164,9 +220,9 @@
       <meta itemprop="name" content="Born to die">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           TeX 那些小事
-        </h1>
+        </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -195,6 +251,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -206,48 +269,28 @@
 
       
         <p>本文记录了使用<code>TeX</code>的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。</p>
-<hr>
+<hr />
 <a id="more"></a>
-
-<h2 id="TeXStudio部分"><a href="#TeXStudio部分" class="headerlink" title="TeXStudio部分"></a>TeXStudio部分</h2><p>我喜欢的魔法注释：</p>
-<ul>
-<li><code>% !TeX TXS-program:compile = txs:///latexmk/{}[-xelatex -synctex=1 -interaction=nonstopmode %.tex]</code> 用于<code>XeLaTeX</code>的编译方式</li>
-<li><code>% !TeX TXS-program:compile = txs:///latexmk/{}[-pdf -synctex=1 -interaction=nonstopmode %.tex]</code> 用于<code>pdfLaTeX</code>的编译方式</li>
-<li><code>% !TeX TS-program = pdflatex</code> ,等号后面可以换成<code>xelatex</code>等</li>
-<li><code>% !TeX root = ./your.tex</code>指定主文件</li>
-<li><code>% !TeX encoding = UTF-8</code> 指定编码方式</li>
-<li><code>% !TeX spellcheck = en_US</code> 指定语法检查的语言</li>
-</ul>
-<p>参考资料 ：<a href="https://github.com/OsbertWang/install_latex" target="_blank" rel="noopener">OsbertWang/install_latex</a></p>
-<h2 id="VsCode部分"><a href="#VsCode部分" class="headerlink" title="VsCode部分"></a>VsCode部分</h2><p>VsCode的<code>LaTeX</code>插件<code>LaTeX Workshop</code>已经很优秀了，之前的魔法注释还不支持指定参数，现在已经可以了。</p>
+<h2 id="texstudio部分">TeXStudio部分</h2>
+<p>我喜欢的魔法注释： - <code>% !TeX TXS-program:compile = txs:///latexmk/{}[-xelatex -synctex=1 -interaction=nonstopmode %.tex]</code> 用于<code>XeLaTeX</code>的编译方式 - <code>% !TeX TXS-program:compile = txs:///latexmk/{}[-pdf -synctex=1 -interaction=nonstopmode %.tex]</code> 用于<code>pdfLaTeX</code>的编译方式 - <code>% !TeX TS-program = pdflatex</code> ,等号后面可以换成<code>xelatex</code>等 - <code>% !TeX root = ./your.tex</code>指定主文件 - <code>% !TeX encoding = UTF-8</code> 指定编码方式 - <code>% !TeX spellcheck = en_US</code> 指定语法检查的语言</p>
+<p>参考资料 ：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL09zYmVydFdhbmcvaW5zdGFsbF9sYXRleA==" title="https://github.com/OsbertWang/install_latex">OsbertWang/install_latex<i class="fa fa-external-link"></i></span> ## VsCode部分</p>
+<p>VsCode的<code>LaTeX</code>插件<code>LaTeX Workshop</code>已经很优秀了，之前的魔法注释还不支持指定参数，现在已经可以了。</p>
 <p>首先可以给它的配置文件里面先加上默认的魔法注释，如下：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">"latex-workshop.latex.magic.args": [</span><br><span class="line">  "-synctex=1",</span><br><span class="line">  "-interaction=nonstopmode",</span><br><span class="line">  "-file-line-error",</span><br><span class="line">  <span class="string">"%DOC%"</span></span><br><span class="line">]</span><br><span class="line">"latex-workshop.latex.magic.bib.args": [</span><br><span class="line">  <span class="string">"%DOCFILE%"</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-
-<p>这时候在主文件开头加上魔法注释<code>% !TEX program = pdflatex</code>,运行时相当于<code>pdflatex.exe -synctex=1 -interaction=nonstopmode  -file-line-error &quot;yourfile&quot;.tex</code>。</p>
+<p>这时候在主文件开头加上魔法注释<code>% !TEX program = pdflatex</code>,运行时相当于<code>pdflatex.exe -synctex=1 -interaction=nonstopmode  -file-line-error "yourfile".tex</code>。</p>
 <p>如果你还要用<code>bibtex</code>编译参考文献的话在上一个魔法注释下面再加一个魔法注释<code>% !BIB program = bibtex</code>，如果用的时<code>biber</code>后面的参数也可以改成<code>biber</code>。</p>
-<p>但是你可能想让不同的文档编译时可以带不同的参数，这时候还可以再加一个魔法注释<code>% !TEX options = -synctex=1 -interaction=nonstopmode -file-line-error &quot;%DOC%&quot;</code>，等号后面的参数可以自己按需求修改。</p>
+<p>但是你可能想让不同的文档编译时可以带不同的参数，这时候还可以再加一个魔法注释<code>% !TEX options = -synctex=1 -interaction=nonstopmode -file-line-error "%DOC%"</code>，等号后面的参数可以自己按需求修改。</p>
 <p>看到这里<code>texify</code>和<code>latexmk</code>用户两眼就发亮了。这样的话就不需要配置文件，直接用魔法注释实现你想要的编译。</p>
 <p>下面来说明这两种的魔法注释怎么写。</p>
-<p>对于<code>texify</code>:</p>
+<p>对于<code>texify</code>: - 想用xelatex的话这么配置魔法注释 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% !TEX program = texify</span><br><span class="line">% !TEX options = --synctex --pdf --engine=xetex --tex-option=\"-interaction=nonstopmode\" --tex-option=\"-file-line-error\" "%DOC%.tex"</span><br></pre></td></tr></table></figure></p>
 <ul>
-<li><p>想用xelatex的话这么配置魔法注释</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% !TEX program = texify</span><br><span class="line">% !TEX options = --synctex --pdf --engine=xetex --tex-option=\"-interaction=nonstopmode\" --tex-option=\"-file-line-error\" "%DOC%.tex"</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>只用普通的pdflatex的话用下面这个魔法注释</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% !TEX program = texify</span><br><span class="line">% !TEX options = --synctex --pdf --tex-option=\"-interaction=nonstopmode\" --tex-option=\"-file-line-error\" "%DOC%.tex"</span><br></pre></td></tr></table></figure>
-<p>对于latexmk用户也是类似的</p>
-</li>
-<li><p>指定用pdflatex编译</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% !TEX program = latexmk </span><br><span class="line">% !TEX options = -synctex=1 -interaction=nonstopmode -file-line-error -pdf "%DOC%"</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>指定用xelatex编译</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% !TEX program = latexmk </span><br><span class="line">% !TEX options = -synctex=1 -interaction=nonstopmode -file-line-error -xelatex "%DOC%"</span><br></pre></td></tr></table></figure>
-<p>现阶段的魔法注释还有一定的缺点，也就是说<code>% !TEX options = .....</code>是把默认的魔法注释参数覆盖，而不是在上面添加参数。如果是添加参数的话，它可以写的更精简，而不是一大串，这样就可以在后面加上<code>-pdf -xelatex --shell-escape</code>这类参数，极大方便大家的使用。</p>
-</li>
+<li><p>只用普通的pdflatex的话用下面这个魔法注释 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% !TEX program = texify</span><br><span class="line">% !TEX options = --synctex --pdf --tex-option=\"-interaction=nonstopmode\" --tex-option=\"-file-line-error\" "%DOC%.tex"</span><br></pre></td></tr></table></figure> 对于latexmk用户也是类似的</p></li>
+<li><p>指定用pdflatex编译 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% !TEX program = latexmk </span><br><span class="line">% !TEX options = -synctex=1 -interaction=nonstopmode -file-line-error -pdf "%DOC%"</span><br></pre></td></tr></table></figure></p></li>
+<li><p>指定用xelatex编译 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% !TEX program = latexmk </span><br><span class="line">% !TEX options = -synctex=1 -interaction=nonstopmode -file-line-error -xelatex "%DOC%"</span><br></pre></td></tr></table></figure> 现阶段的魔法注释还有一定的缺点，也就是说<code>% !TEX options = .....</code>是把默认的魔法注释参数覆盖，而不是在上面添加参数。如果是添加参数的话，它可以写的更精简，而不是一大串，这样就可以在后面加上<code>-pdf -xelatex --shell-escape</code>这类参数，极大方便大家的使用。</p></li>
 </ul>
 <p>还有提醒的一点就是，目前阶段它的工作还不稳定，我断断续续测试过一段时间，发现一些问题。例如用<code>latexmk</code>的魔法注释选择自己的参数时，需要在<code>latexmk</code>后面加上一个空格，否则编译结果只出<code>.dvi</code>文件。</p>
-<p>我想大家应该也很难记住这么复杂的魔法注释，但是如果你和我一样很喜欢用的话，下面我提供一个用<code>snippet</code>解决这个问题的简单方案。关于<code>snippet</code>如何使用，最好的参考地址肯定是<a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" target="_blank" rel="noopener">官方文档啦</a>。</p>
-<p>为了方便对魔法注释感兴趣用户的使用，我下面分享一下自己写的。如果你有更好的欢迎分享。<br>当然我写的未必符合你个人的使用爱好，请自己根据喜好调整。</p>
+<p>我想大家应该也很难记住这么复杂的魔法注释，但是如果你和我一样很喜欢用的话，下面我提供一个用<code>snippet</code>解决这个问题的简单方案。关于<code>snippet</code>如何使用，最好的参考地址肯定是<span class="exturl" data-url="aHR0cHM6Ly9jb2RlLnZpc3VhbHN0dWRpby5jb20vZG9jcy9lZGl0b3IvdXNlcmRlZmluZWRzbmlwcGV0cw==" title="https://code.visualstudio.com/docs/editor/userdefinedsnippets">官方文档啦<i class="fa fa-external-link"></i></span>。</p>
+<p>为了方便对魔法注释感兴趣用户的使用，我下面分享一下自己写的。如果你有更好的欢迎分享。 当然我写的未必符合你个人的使用爱好，请自己根据喜好调整。</p>
 <p>代码段的设置可以放入用户自定义的<code>tex.json</code>文件中，那样需要另外开启提示功能。也可以直接扔到该插件内部的<code>latex.json</code>文件中。</p>
 <p>对于使用<code>latexmk</code>编译的用户，可以选用这个：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">"latexmk": &#123;</span><br><span class="line">	"prefix": "latexmk",</span><br><span class="line">	"body": [</span><br><span class="line">	 "% !TEX program = latexmk ",</span><br><span class="line">	 "% !TEX options = -synctex=1 -interaction=nonstopmode -file-line-error $&#123;1|-pdf,-xelatex|&#125;$&#123;8: --shell-escape&#125; \"%DOC%\"",</span><br><span class="line">	 "\\documentclass$&#123;2:[UTF8,]&#125;&#123;$&#123;10|ctexart,ctexbook,article,book|&#125;&#125;",</span><br><span class="line">	 "$3",</span><br><span class="line">	 "\\begin&#123;document&#125;",</span><br><span class="line">	 "$0",</span><br><span class="line">	 <span class="string">"\\end&#123;document&#125;"</span></span><br><span class="line">	],</span><br><span class="line">	"description": "Magic for latexmk"</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
@@ -255,71 +298,116 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">"texify": &#123;</span><br><span class="line">	"prefix": "texify",</span><br><span class="line">	"body": [</span><br><span class="line">	 "% !TEX program = texify",</span><br><span class="line">	 "% !TEX options = --pdf --synctex$&#123;1: --engine=xetex&#125;  --tex-option=\\\"-interaction=nonstopmode\\\" --tex-option=\\\"-file-line-error\\\"$&#123;2: --shell-escape&#125; \"%DOC%.tex\"",</span><br><span class="line">	 "\\documentclass$&#123;3:[UTF8,]&#125;&#123;$&#123;4|ctexart,ctexbook,article,book|&#125;&#125;",</span><br><span class="line">	 "$5",</span><br><span class="line">	 "\\begin&#123;document&#125;",</span><br><span class="line">	 "$0",</span><br><span class="line">	 <span class="string">"\\end&#123;document&#125;"</span></span><br><span class="line">	],</span><br><span class="line">	"description": "Magic command for texify"</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 <p>用普通编译方式的可以选择这个：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">"general": &#123;</span><br><span class="line">	"prefix": "general",</span><br><span class="line">	"body": [</span><br><span class="line">	 "% !TEX program = $&#123;1|xelatex,pdflatex |&#125;",</span><br><span class="line">	 "%%$&#123;2:%&#125;  !BIB program = $&#123;3|bibtex,biber|&#125;",</span><br><span class="line">	 "%$&#123;2:%&#125; !BIB options = \"%DOCFILE%\"",</span><br><span class="line">	 "%$&#123;4:%&#125; !TEX options = -synctex=1 -interaction=nonstopmode -file-line-error$&#123;5: --shell-escape&#125; \"%DOC%\"",</span><br><span class="line">	 "\\documentclass$&#123;6:[UTF8,]&#125;&#123;$&#123;10|ctexart,ctexbook,article,book|&#125;&#125;",</span><br><span class="line">	 "$7",</span><br><span class="line">	 "\\begin&#123;document&#125;",</span><br><span class="line">	 "$0",</span><br><span class="line">	 <span class="string">"\\end&#123;document&#125;"</span></span><br><span class="line">	],</span><br><span class="line">	"description": "Magic command for general compile"</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
 <p>下面给一个MWE:</p>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% !TEX program = texify</span></span><br><span class="line"><span class="comment">% !TEX options = --synctex --pdf --tex-option=\"-interaction=nonstopmode\" --tex-option=\"-file-line-error\" "%DOC%.tex"</span></span><br><span class="line"><span class="comment">%魔法注释加在上面，替换称你想用的就行了。记得下面两行选择相应的一行使用。</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">[UTF8]</span><span class="string">&#123;ctexart&#125;</span></span><span class="comment">%测试pdflatex时用这个，把下面那句注释掉。</span></span><br><span class="line"><span class="comment">%\documentclass&#123;ctexart&#125;%测试xelatex时用这个，把上面那句注释掉。</span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">title</span><span class="string">&#123;A Silly Article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;Me&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">maketitle</span></span></span><br><span class="line"></span><br><span class="line">My favorite article is <span class="tag">\<span class="name">cite</span><span class="string">&#123;supercurves&#125;</span></span>. </span><br><span class="line">我最喜欢的文章是<span class="tag">\<span class="name">cite</span><span class="string">&#123;supercurves&#125;</span></span>。</span><br><span class="line"><span class="tag">\<span class="name">bibliographystyle</span><span class="string">&#123;plain&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">bibliography</span><span class="string">&#123;shortbib&#125;</span></span> <span class="comment">%还需要建立一个shortbib.bib文件和这个文件放一起。</span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%这是shortbib.bib文件</span></span><br><span class="line">	@ARTICLE&#123;supercurves,</span><br><span class="line">		AUTHOR=&#123;Minghui Xia&#125;,</span><br><span class="line">		TITLE=&#123;Image Registration by "Super-Curves"&#125;,</span><br><span class="line">		JOURNAL=&#123;IEEE Transactions on Image Processing&#125;,</span><br><span class="line">		YEAR=&#123;1985&#125;,</span><br><span class="line">		VOLUME = &#123;13&#125;,</span><br><span class="line">		PAGES=&#123;720&#125;,</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<p>如果你想用配置文件的话，下面我提供<code>texify</code>和<code>latexmk</code>的配置。至于其它的可以参考<a href="https://github.com/EthanDeng/vscode-latex" target="_blank" rel="noopener">这里的配置</a>。如果愿意看插件作者的英文文档当然更好啦。</p>
+<p>如果你想用配置文件的话，下面我提供<code>texify</code>和<code>latexmk</code>的配置。至于其它的可以参考<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0V0aGFuRGVuZy92c2NvZGUtbGF0ZXg=" title="https://github.com/EthanDeng/vscode-latex">这里的配置<i class="fa fa-external-link"></i></span>。如果愿意看插件作者的英文文档当然更好啦。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">"latex-workshop.latex.tools": [</span><br><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"texifyxe"</span>,</span><br><span class="line">	<span class="attr">"command"</span>: <span class="string">"texify"</span>,</span><br><span class="line"> 	<span class="attr">"args"</span>: [</span><br><span class="line">    	<span class="string">"--synctex"</span>,</span><br><span class="line">    	<span class="string">"--pdf"</span>,</span><br><span class="line"> 		<span class="string">"--engine=xetex"</span>,</span><br><span class="line">    	<span class="string">"--tex-option=\"-interaction=nonstopmode\""</span>,</span><br><span class="line">    	<span class="string">"--tex-option=\"-file-line-error\""</span>,</span><br><span class="line">    	<span class="string">"%DOC%.tex"</span></span><br><span class="line">  		 		],</span><br><span class="line">	<span class="attr">"env"</span>: &#123;&#125;</span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"texifypdf"</span>,</span><br><span class="line">	<span class="attr">"command"</span>: <span class="string">"texify"</span>,</span><br><span class="line">	<span class="attr">"args"</span>: [</span><br><span class="line">    	<span class="string">"--synctex"</span>,</span><br><span class="line">    	<span class="string">"--pdf"</span>,</span><br><span class="line">    	<span class="string">"--tex-option=\"-interaction=nonstopmode\""</span>,</span><br><span class="line">    	<span class="string">"--tex-option=\"-file-line-error\""</span>,</span><br><span class="line">    	<span class="string">"%DOC%.tex"</span></span><br><span class="line">  		  		],</span><br><span class="line">	<span class="attr">"env"</span>: &#123;&#125;</span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"latexmkxe"</span>,</span><br><span class="line">	<span class="attr">"command"</span>: <span class="string">"latexmk"</span>,</span><br><span class="line">	<span class="attr">"args"</span>: [</span><br><span class="line">		<span class="string">"-synctex=1"</span>,</span><br><span class="line">		<span class="string">"-interaction=nonstopmode"</span>,</span><br><span class="line">		<span class="string">"-file-line-error"</span>,</span><br><span class="line">		<span class="string">"-xelatex"</span>,</span><br><span class="line">		<span class="comment">//"-outdir=%OUTDIR%",</span></span><br><span class="line">		<span class="string">"%DOC%.tex"</span></span><br><span class="line">			 	]</span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"latexmkpdf"</span>,</span><br><span class="line">	<span class="attr">"command"</span>: <span class="string">"latexmk"</span>,</span><br><span class="line">	<span class="attr">"args"</span>: [</span><br><span class="line">		<span class="string">"-synctex=1"</span>,</span><br><span class="line">		<span class="string">"-interaction=nonstopmode"</span>,</span><br><span class="line">		<span class="string">"-file-line-error"</span>,</span><br><span class="line">		<span class="string">"-pdf"</span>,</span><br><span class="line">		<span class="comment">//"-outdir=%OUTDIR%",</span></span><br><span class="line">		<span class="string">"%DOC%.tex"</span></span><br><span class="line">         		]</span><br><span class="line">&#125;,</span><br><span class="line">],</span><br><span class="line"></span><br><span class="line">"latex-workshop.latex.recipes": [</span><br><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"texifyxe"</span>,</span><br><span class="line">	<span class="attr">"tools"</span>: [<span class="string">"texifyxe"</span>]</span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"texifypdf"</span>,</span><br><span class="line">	<span class="attr">"tools"</span>: [<span class="string">"texifypdf"</span>]</span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"latexmkxe"</span>,</span><br><span class="line">	<span class="attr">"tools"</span>: [<span class="string">"latexmkxe"</span>]</span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"latexmkpdf"</span>,</span><br><span class="line">	<span class="attr">"tools"</span>: [<span class="string">"latexmkpdf"</span>]</span><br><span class="line">&#125;,</span><br><span class="line"> ],</span><br><span class="line"></span><br><span class="line">"latex-workshop.latex.magic.args": [</span><br><span class="line">       "-synctex=1",</span><br><span class="line">       "-interaction=nonstopmode",</span><br><span class="line">       "-file-line-error",</span><br><span class="line">	   <span class="string">"%DOC%"</span></span><br><span class="line">],</span><br><span class="line">"latex-workshop.latex.magic.bib.args": [</span><br><span class="line">  <span class="string">"%DOCFILE%"</span></span><br><span class="line">],</span><br><span class="line"></span><br><span class="line"><span class="comment">//"latex-workshop.latex.outDir":"%DOC%",</span></span><br></pre></td></tr></table></figure>
-
-<p>参考资料： <a href="https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#building-the-document" target="_blank" rel="noopener">James-Yu/LaTeX-Workshop/Compile#building-the-document</a></p>
-<h2 id="有趣的宏包"><a href="#有趣的宏包" class="headerlink" title="有趣的宏包"></a>有趣的宏包</h2><ul>
-<li><code>therefore</code> 地址在<a href="https://github.com/bgschiller/latex-therefore" target="_blank" rel="noopener">这里</a>输入\Threrfore 会得到同义的表达</li>
+<p>参考资料： <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0phbWVzLVl1L0xhVGVYLVdvcmtzaG9wL3dpa2kvQ29tcGlsZSNidWlsZGluZy10aGUtZG9jdW1lbnQ=" title="https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#building-the-document">James-Yu/LaTeX-Workshop/Compile#building-the-document<i class="fa fa-external-link"></i></span></p>
+<h2 id="有趣的宏包">有趣的宏包</h2>
+<ul>
+<li><code>therefore</code> 地址在<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2Jnc2NoaWxsZXIvbGF0ZXgtdGhlcmVmb3Jl" title="https://github.com/bgschiller/latex-therefore">这里<i class="fa fa-external-link"></i></span>输入会得到同义的表达</li>
 <li><code>optidef</code></li>
 <li><code>minted</code> 展示代码很合适的宏包，编译时要加参数<code>--shell-escape</code></li>
 <li><code>filecontents</code> 一个tex文件里面存放多个“文件”。</li>
 </ul>
-<h2 id="宏包加载的美学"><a href="#宏包加载的美学" class="headerlink" title="宏包加载的美学"></a>宏包加载的美学</h2><p><code>geometry</code>的加载需要在<code>fancyhdr</code>宏包前，否则会出现页眉的长度与页面内容的宽度不同。</p>
+<h2 id="宏包加载的美学">宏包加载的美学</h2>
+<p><code>geometry</code>的加载需要在<code>fancyhdr</code>宏包前，否则会出现页眉的长度与页面内容的宽度不同。</p>
 <p>你用的其它宏包没有特殊说明加载位置的话，<code>hyperref</code>常常最后加载，否则很容易出现问题。</p>
 <p><code>cleveref</code>宏包要在<code>hyperref</code>宏包之后加载。</p>
-<h2 id="一些小命令"><a href="#一些小命令" class="headerlink" title="一些小命令"></a>一些小命令</h2><h3 id="好看的圆圈注脚制作"><a href="#好看的圆圈注脚制作" class="headerlink" title="好看的圆圈注脚制作"></a>好看的圆圈注脚制作</h3><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;pifont&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">renewcommand</span></span><span class="tag">\<span class="name">thefootnote</span><span class="string">&#123;\ding&#123;\numexpr171+\value&#123;footnote&#125;</span></span>&#125;&#125;</span><br><span class="line"><span class="tag">\<span class="name">footnote</span><span class="string">&#123;这个注脚的圆圈数字好看了吧&#125;</span></span></span><br></pre></td></tr></table></figure>
-
-<p>参考资料： <code>LaTeX入门，刘海洋</code>。</p>
-<h3 id="普通的带圈数字制作"><a href="#普通的带圈数字制作" class="headerlink" title="普通的带圈数字制作"></a>普通的带圈数字制作</h3><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;tikz&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">newcommand*</span></span><span class="tag">\<span class="name">circled</span><span class="string">[1]</span><span class="string">&#123;\tikz[baseline=(char.base)]&#123;</span></span></span><br><span class="line"><span class="tag"><span class="string">		\node[shape=circle,draw,inner sep=1pt] (char) &#123;#1&#125;</span></span>;&#125;&#125;</span><br></pre></td></tr></table></figure>
-<p>参考资料： <a href="https://tex.stackexchange.com/questions/199026/how-can-i-draw-circled-integers-with-the-same-size-by-tikz" target="_blank" rel="noopener">stackexchange</a></p>
-<h3 id="把Bib文件也放在主文件里，方便做MWE"><a href="#把Bib文件也放在主文件里，方便做MWE" class="headerlink" title="把Bib文件也放在主文件里，方便做MWE"></a>把Bib文件也放在主文件里，方便做<code>MWE</code></h3><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% !TeX TS-program = pdflatex</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;filecontents&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">title</span><span class="string">&#123;A Silly Article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;Me&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">maketitle</span></span></span><br><span class="line">	<span class="tag">\<span class="name">input</span><span class="string">&#123;another&#125;</span></span></span><br><span class="line">My favorite article is <span class="tag">\<span class="name">cite</span><span class="string">&#123;supercurves&#125;</span></span>.</span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">bibliographystyle</span><span class="string">&#123;plain&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">bibliography</span><span class="string">&#123;shortbib&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;filecontents&#125;</span><span class="string">&#123;shortbib.bib&#125;</span></span></span><br><span class="line">	@ARTICLE&#123;supercurves,</span><br><span class="line">		AUTHOR=&#123;Minghui Xia&#125;,</span><br><span class="line">		TITLE=&#123;Image Registration by "Super-Curves"&#125;,</span><br><span class="line">		JOURNAL=&#123;IEEE Transactions on Image Processing&#125;,</span><br><span class="line">		YEAR=&#123;1985&#125;,</span><br><span class="line">		VOLUME = &#123;13&#125;,</span><br><span class="line">		PAGES=&#123;720&#125;,</span><br><span class="line">	&#125;</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;filecontents&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;filecontents&#125;</span><span class="string">&#123;another.tex&#125;</span></span></span><br><span class="line">Another file.</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;filecontents&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>参考资料： <a href="https://tex.stackexchange.com/questions/52368/how-can-i-insert-by-bib-file-into-my-tex-file" target="_blank" rel="noopener">stackexchange</a></p>
-<h3 id="简单的中英文字体配置简单示例"><a href="#简单的中英文字体配置简单示例" class="headerlink" title="简单的中英文字体配置简单示例"></a>简单的中英文字体配置简单示例</h3><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% !TeX TS-program = xelatex</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexart&#125;</span></span></span><br><span class="line"><span class="comment">%以下仅介绍如何配置，但是我的具体配置未必适合你使用的场合，请自己合理使用。</span></span><br><span class="line"><span class="comment">% 英文字体配置部分</span></span><br><span class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;Times New Roman&#125;</span></span><span class="comment">%</span></span><br><span class="line"><span class="tag">\<span class="name">setsansfont</span><span class="string">&#123;Footlight MT Light&#125;</span></span><span class="comment">%无衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setmonofont</span><span class="string">&#123;Bookman Old Style&#125;</span></span><span class="comment">%等宽字体</span></span><br><span class="line"><span class="comment">% 中文字体配置部分</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;xeCJK&#125;</span></span><span class="comment">%中文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKmainfont</span><span class="string">&#123;宋体&#125;</span></span><span class="comment">%正文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKsansfont</span><span class="string">&#123;黑体&#125;</span></span><span class="comment">%无衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKmonofont</span><span class="string">&#123;楷体&#125;</span></span><span class="comment">%等宽字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKfamilyfont</span><span class="string">&#123;yahei&#125;</span><span class="string">&#123;Microsoft YaHei&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">Huge</span></span> </span><br><span class="line"><span class="tag">\<span class="name">centering</span></span></span><br><span class="line">	      中文正文,这个不是微软雅黑</span><br><span class="line">	      </span><br><span class="line">	      English.  </span><br><span class="line">	      </span><br><span class="line"><span class="tag">\<span class="name">sffamily</span></span> 无衬线字体</span><br><span class="line"></span><br><span class="line">          English</span><br><span class="line">          </span><br><span class="line"><span class="tag">\<span class="name">ttfamily</span></span> 等宽字体</span><br><span class="line"></span><br><span class="line">          English</span><br><span class="line">          </span><br><span class="line"><span class="tag">\<span class="name">yahei</span></span> 这是微软雅黑 </span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>参考资源： <a href="https://stone-zeng.github.io//2018-08-08-use-opentype-fonts/" target="_blank" rel="noopener">stone-zeng.github.io</a></p>
-<h3 id="用tex把图片转化成pdf-并不能提高图片的质量"><a href="#用tex把图片转化成pdf-并不能提高图片的质量" class="headerlink" title="用tex把图片转化成pdf(并不能提高图片的质量)"></a>用tex把图片转化成pdf(并不能提高图片的质量)</h3><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;standalone&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;graphicx&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">includegraphics</span><span class="string">&#123;yourpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
+<h2 id="一些小命令">一些小命令</h2>
+<h3 id="好看的圆圈注脚制作">好看的圆圈注脚制作</h3>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;pifont&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">renewcommand</span></span><span class="tag">\<span class="name">thefootnote</span><span class="string">&#123;\ding&#123;\numexpr171+\value&#123;footnote&#125;</span></span>&#125;&#125;</span><br><span class="line"><span class="tag">\<span class="name">footnote</span><span class="string">&#123;这个注脚的圆圈数字好看了吧&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>参考资料： <code>LaTeX入门，刘海洋</code>。 ### 普通的带圈数字制作</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;tikz&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">newcommand*</span></span><span class="tag">\<span class="name">circled</span><span class="string">[1]</span><span class="string">&#123;\tikz[baseline=(char.base)]&#123;</span></span></span><br><span class="line"><span class="tag"><span class="string">		\node[shape=circle,draw,inner sep=1pt] (char) &#123;#1&#125;</span></span>;&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>参考资料： <span class="exturl" data-url="aHR0cHM6Ly90ZXguc3RhY2tleGNoYW5nZS5jb20vcXVlc3Rpb25zLzE5OTAyNi9ob3ctY2FuLWktZHJhdy1jaXJjbGVkLWludGVnZXJzLXdpdGgtdGhlLXNhbWUtc2l6ZS1ieS10aWt6" title="https://tex.stackexchange.com/questions/199026/how-can-i-draw-circled-integers-with-the-same-size-by-tikz">stackexchange<i class="fa fa-external-link"></i></span></p>
+<h3 id="把bib文件也放在主文件里方便做mwe">把Bib文件也放在主文件里，方便做<code>MWE</code></h3>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% !TeX TS-program = pdflatex</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;filecontents&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">title</span><span class="string">&#123;A Silly Article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">author</span><span class="string">&#123;Me&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">maketitle</span></span></span><br><span class="line">	<span class="tag">\<span class="name">input</span><span class="string">&#123;another&#125;</span></span></span><br><span class="line">My favorite article is <span class="tag">\<span class="name">cite</span><span class="string">&#123;supercurves&#125;</span></span>.</span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">bibliographystyle</span><span class="string">&#123;plain&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">bibliography</span><span class="string">&#123;shortbib&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;filecontents&#125;</span><span class="string">&#123;shortbib.bib&#125;</span></span></span><br><span class="line">	@ARTICLE&#123;supercurves,</span><br><span class="line">		AUTHOR=&#123;Minghui Xia&#125;,</span><br><span class="line">		TITLE=&#123;Image Registration by "Super-Curves"&#125;,</span><br><span class="line">		JOURNAL=&#123;IEEE Transactions on Image Processing&#125;,</span><br><span class="line">		YEAR=&#123;1985&#125;,</span><br><span class="line">		VOLUME = &#123;13&#125;,</span><br><span class="line">		PAGES=&#123;720&#125;,</span><br><span class="line">	&#125;</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;filecontents&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;filecontents&#125;</span><span class="string">&#123;another.tex&#125;</span></span></span><br><span class="line">Another file.</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;filecontents&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>参考资料： <span class="exturl" data-url="aHR0cHM6Ly90ZXguc3RhY2tleGNoYW5nZS5jb20vcXVlc3Rpb25zLzUyMzY4L2hvdy1jYW4taS1pbnNlcnQtYnktYmliLWZpbGUtaW50by1teS10ZXgtZmlsZQ==" title="https://tex.stackexchange.com/questions/52368/how-can-i-insert-by-bib-file-into-my-tex-file">stackexchange<i class="fa fa-external-link"></i></span></p>
+<h3 id="简单的中英文字体配置简单示例">简单的中英文字体配置简单示例</h3>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% !TeX TS-program = xelatex</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexart&#125;</span></span></span><br><span class="line"><span class="comment">%以下仅介绍如何配置，但是我的具体配置未必适合你使用的场合，请自己合理使用。</span></span><br><span class="line"><span class="comment">% 英文字体配置部分</span></span><br><span class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;Times New Roman&#125;</span></span><span class="comment">%</span></span><br><span class="line"><span class="tag">\<span class="name">setsansfont</span><span class="string">&#123;Footlight MT Light&#125;</span></span><span class="comment">%无衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setmonofont</span><span class="string">&#123;Bookman Old Style&#125;</span></span><span class="comment">%等宽字体</span></span><br><span class="line"><span class="comment">% 中文字体配置部分</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;xeCJK&#125;</span></span><span class="comment">%中文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKmainfont</span><span class="string">&#123;宋体&#125;</span></span><span class="comment">%正文字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKsansfont</span><span class="string">&#123;黑体&#125;</span></span><span class="comment">%无衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKmonofont</span><span class="string">&#123;楷体&#125;</span></span><span class="comment">%等宽字体</span></span><br><span class="line"><span class="tag">\<span class="name">setCJKfamilyfont</span><span class="string">&#123;yahei&#125;</span><span class="string">&#123;Microsoft YaHei&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">Huge</span></span> </span><br><span class="line"><span class="tag">\<span class="name">centering</span></span></span><br><span class="line">	      中文正文,这个不是微软雅黑</span><br><span class="line">	      </span><br><span class="line">	      English.  </span><br><span class="line">	      </span><br><span class="line"><span class="tag">\<span class="name">sffamily</span></span> 无衬线字体</span><br><span class="line"></span><br><span class="line">          English</span><br><span class="line">          </span><br><span class="line"><span class="tag">\<span class="name">ttfamily</span></span> 等宽字体</span><br><span class="line"></span><br><span class="line">          English</span><br><span class="line">          </span><br><span class="line"><span class="tag">\<span class="name">yahei</span></span> 这是微软雅黑 </span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>参考资源： <span class="exturl" data-url="aHR0cHM6Ly9zdG9uZS16ZW5nLmdpdGh1Yi5pby8vMjAxOC0wOC0wOC11c2Utb3BlbnR5cGUtZm9udHMv" title="https://stone-zeng.github.io//2018-08-08-use-opentype-fonts/">stone-zeng.github.io<i class="fa fa-external-link"></i></span></p>
+<h3 id="用tex把图片转化成pdf并不能提高图片的质量">用tex把图片转化成pdf(并不能提高图片的质量)</h3>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;standalone&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;graphicx&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">includegraphics</span><span class="string">&#123;yourpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
 
     </div>
 
     
     
     
+      
+
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/myimages/wechatpay.png" alt="CamuseCao WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/myimages/alipay.png" alt="CamuseCao Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/camusecao">
+            <span class="icon">
+              <i class="fa fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/TeX/" rel="tag"># TeX</a>
+              <a href="/tags/TeX/" rel="tag"><i class="fa fa-tag"></i> TeX</a>
           </div>
 
         
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
 
 
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/1970-01-01-/TeXlive-basic-install/" rel="prev" title="Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记">
-      <i class="fa fa-chevron-left"></i> Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记
+    <a href="/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/" rel="prev" title="近代物理实验复习">
+      <i class="fa fa-chevron-left"></i> 近代物理实验复习
     </a></div>
-      <div class="post-nav-item">
-    <a href="/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/" rel="next" title="凝聚态物理期末总结">
-      凝聚态物理期末总结 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -333,6 +421,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -379,12 +468,14 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TeXStudio部分"><span class="nav-number">1.</span> <span class="nav-text">TeXStudio部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VsCode部分"><span class="nav-number">2.</span> <span class="nav-text">VsCode部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有趣的宏包"><span class="nav-number">3.</span> <span class="nav-text">有趣的宏包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏包加载的美学"><span class="nav-number">4.</span> <span class="nav-text">宏包加载的美学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些小命令"><span class="nav-number">5.</span> <span class="nav-text">一些小命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#好看的圆圈注脚制作"><span class="nav-number">5.1.</span> <span class="nav-text">好看的圆圈注脚制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#普通的带圈数字制作"><span class="nav-number">5.2.</span> <span class="nav-text">普通的带圈数字制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#把Bib文件也放在主文件里，方便做MWE"><span class="nav-number">5.3.</span> <span class="nav-text">把Bib文件也放在主文件里，方便做MWE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的中英文字体配置简单示例"><span class="nav-number">5.4.</span> <span class="nav-text">简单的中英文字体配置简单示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用tex把图片转化成pdf-并不能提高图片的质量"><span class="nav-number">5.5.</span> <span class="nav-text">用tex把图片转化成pdf(并不能提高图片的质量)</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#texstudio部分"><span class="nav-number">1.</span> <span class="nav-text">TeXStudio部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有趣的宏包"><span class="nav-number">2.</span> <span class="nav-text">有趣的宏包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏包加载的美学"><span class="nav-number">3.</span> <span class="nav-text">宏包加载的美学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些小命令"><span class="nav-number">4.</span> <span class="nav-text">一些小命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#好看的圆圈注脚制作"><span class="nav-number">4.1.</span> <span class="nav-text">好看的圆圈注脚制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#把bib文件也放在主文件里方便做mwe"><span class="nav-number">4.2.</span> <span class="nav-text">把Bib文件也放在主文件里，方便做MWE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的中英文字体配置简单示例"><span class="nav-number">4.3.</span> <span class="nav-text">简单的中英文字体配置简单示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用tex把图片转化成pdf并不能提高图片的质量"><span class="nav-number">4.4.</span> <span class="nav-text">用tex把图片转化成pdf(并不能提高图片的质量)</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CamuseCao"
+      src="/myimages/y.jpg">
   <p class="site-author-name" itemprop="name">CamuseCao</p>
   <div class="site-description" itemprop="description">Camuse's blog</div>
 </div>
@@ -393,26 +484,54 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">8</span>
+          
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">19</span>
+          
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NhbXVzZWNhbw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;camusecao"><i class="fa fa-fw fa-github"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmNhbXVzZWNhb0BnbWFpbC5jb20=" title="E-Mail → mailto:camusecao@gmail.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</span>
+      </span>
+  </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9tdXl1dXV1LmdpdGh1Yi5pbw==" title="https:&#x2F;&#x2F;muyuuuu.github.io">Lan Ling</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9qZmNoZW4udG9w" title="https:&#x2F;&#x2F;jfchen.top">Huge Rogue</span>
+        </li>
+    </ul>
+  </div>
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
@@ -437,13 +556,31 @@
   </span>
   <span class="author" itemprop="copyrightHolder">CamuseCao</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.2
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e74be3b027c9267" async="async"></script>
   </div>
 
         
+<div class="busuanzi-count">
+  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -456,8 +593,18 @@
     </footer>
   </div>
 
+
+      <div class="aplayer" data-id="375755220" data-server="netease" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="false" data-listmaxheight="350px"></div>
+
   
+  <script size="300" alpha="0.7" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.14.0/lozad.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -466,15 +613,113 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
 
+<script src="/js/bookmark.js"></script>
 
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.getAttribute('pjax') !== null) {
+      script.setAttribute('pjax', '');
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/canvas_lines.min.js"></script>
 
 
   
+  <script pjax>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+  <script pjax>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : 24048,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
@@ -486,13 +731,111 @@
 
 
 
+<script pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
-
-
+    <div id="pjax">
   
 
   
+      
 
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://camusecao.top/1970-01-01-/TeX-Record/',]
+      });
+      });
+  </script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '006b8ff4614a3b25a682',
+      clientSecret: '31bed57a45cc0dd6b56e9509a2fef935ee3f279b',
+      repo        : 'CamuseCao.github.io',
+      owner       : 'CamuseCao',
+      admin       : ['CamuseCao'],
+      id          : '80e403b0293533acdb34e42941943aaf',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+    </div>
 </body>
 </html>

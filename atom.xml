@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-01-26T05:54:48.374Z</updated>
+  <updated>2019-04-02T13:02:16.000Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -17,98 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Python 实用小程序</title>
-    <link href="https://camusecao.top/1970-01-01-/Python-tricks/"/>
-    <id>https://camusecao.top/1970-01-01-/Python-tricks/</id>
+    <title>TeX 那些小事</title>
+    <link href="https://camusecao.top/1970-01-01-/TeX-Record/"/>
+    <id>https://camusecao.top/1970-01-01-/TeX-Record/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-01-26T05:54:48.374Z</updated>
-    
-    <content type="html"><![CDATA[<p>Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 <code>stackoverflow</code> 已经 <code>Python</code> 相关模块的文档。</p><hr><a id="more"></a><p>当一个文件夹里面有成百上千的文件需要重命名，并且重命名套路很强时，可以考虑使用下面的程序稍加修改应用。这个程序的干的具体事就是将 <code>stock</code> 文件夹下面的全部文件名在前面加上 <code>sh.</code> 。 修改运行这样的程序最好现在测试的文件夹里面用，确保把程序写对了再用到目标文件夹中。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span> </span><br><span class="line">    the_dir = <span class="string">"stock/"</span></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(the_dir): </span><br><span class="line">        dst =<span class="string">"sh."</span> + filename </span><br><span class="line">        src =the_dir+ filename </span><br><span class="line">        dst =the_dir+ dst </span><br><span class="line">        os.rename(src, dst) </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>: </span><br><span class="line">      </span><br><span class="line">    <span class="comment"># Calling main() function </span></span><br><span class="line">    main()</span><br></pre></td></tr></table></figure><hr><p><code>Python</code> 读取文件获得的顺序会因为系统不同而有些差异。当我在处理一些图片用数字从小到大命名，但是中间有些又不全，不能直接循环，所以用一下代码来处理，获得符合要全的文件名。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line"></span><br><span class="line">target_dir = <span class="string">'data/'</span></span><br><span class="line">file_numbers = []</span><br><span class="line"><span class="keyword">for</span> file <span class="keyword">in</span> os.listdir(target_dir):</span><br><span class="line">    <span class="keyword">if</span> file.endswith(<span class="string">".png"</span>):</span><br><span class="line">        file_number = file.split(<span class="string">'.'</span>)[<span class="number">0</span>]</span><br><span class="line">        file_numbers +=  [int(file_number)]</span><br><span class="line">new_file_number = [ str(i) + <span class="string">'.png'</span> <span class="keyword">for</span> i <span class="keyword">in</span> sorted(file_numbers)]</span><br></pre></td></tr></table></figure><hr>]]></content>
+    <updated>2019-04-02T13:02:16.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个酷炫的清理技能</title>
-    <link href="https://camusecao.top/1970-01-01-/Clear/"/>
-    <id>https://camusecao.top/1970-01-01-/Clear/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:24:11.856Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="清理回收站"><a href="#清理回收站" class="headerlink" title="清理回收站"></a>清理回收站</h2><p>你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！</p><hr><a id="more"></a><p>清空回收站可以用如下命令行：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure><p>大家应该会用<code>cmd</code>吧。不会的可以这样操作：用<code>window+r</code>键，接下来输入<code>cmd</code>，即可打卡命令行，然后运行上面代码，即可清除回收站的垃圾。</p><p>可是上面的代码可能比较繁琐，不好记，生怕装逼失败。接下啦教你更酷炫的。新建一个文本文档，随意起名，例如<code>clear.txt</code>。</p><p>接下来在里面的上面的代码输入。随后把文件的后缀名改成.bat。</p><p>即变成<code>clear.bat</code>。</p><p>这样就是一个批处理文件了。右键即可看到以管理员身份运行。运行后回收站清空。</p><p>还想把逼装的更好参考如下：</p><p>1.打开如下文件夹：<code>C:\Users\camuse</code>。其中的<code>camuse</code>是用户名，记得改成你自己的。</p><p>2.把刚才的批处理文件放到这里面。</p><p>3.接下来按用<code>window+r</code>键，再输入<code>cmd</code>，打开命令行。</p><p>4.在命令行输入<code>clear</code>,这一步即执行刚才做好的批处理文件。</p><p>如果想把这个用到更多地方也是可以的，比如我们系统有一个缓存了无用文件的地方：<code>C:\Users\Camuse\AppData\Local\Temp</code>,其中的<code>camuse</code>是用户名，记得改成你自己的。</p><p>在命令行运行如下命令可以删除整个文件夹：<code>rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</code>，你也可以把这句命令加入之前的批处理文件。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</span><br><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure><p>如果还有其它想要清理的文件夹自己加入即可。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;清理回收站&quot;&gt;&lt;a href=&quot;#清理回收站&quot; class=&quot;headerlink&quot; title=&quot;清理回收站&quot;&gt;&lt;/a&gt;清理回收站&lt;/h2&gt;&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="Command" scheme="https://camusecao.top/tags/Command/"/>
-    
-      <category term="Clean" scheme="https://camusecao.top/tags/Clean/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Chrome的私人配置</title>
-    <link href="https://camusecao.top/1970-01-01-/Chrome-setting/"/>
-    <id>https://camusecao.top/1970-01-01-/Chrome-setting/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-17T22:36:30.138Z</updated>
-    
-    <content type="html"><![CDATA[<p>这是我的Chrome浏览器的一些配置，有兴趣的话可以看看啊。希望你喜欢。</p><hr><a id="more"></a><h2 id="更改Google搜索结果点击的默认行为"><a href="#更改Google搜索结果点击的默认行为" class="headerlink" title="更改Google搜索结果点击的默认行为"></a>更改Google搜索结果点击的默认行为</h2><p>Chrome的google搜索结果直接点击并不会像百度那样点击一下出现新的一个标签。那怎么样才能出现那样的结果呢？有很多种实现方法。</p><ul><li>在链接处右键选择<code>open in new tab</code>即可。</li><li>按住<code>Control</code>键点击连接。</li></ul><p>这两种都是基本操作。下面再介绍一个改变它单击默认行为的方法。</p><p>首先访问 <a href="https://www.google.com/preferences" target="_blank" rel="noopener">https://www.google.com/preferences</a> 进入谷歌搜索结果设置。</p><p>找到 结果打开方式 这个选项，把在新的浏览器窗口中打开所选的每条搜索结果 这个选项勾选起来</p><p><img src="https://i.loli.net/2019/03/01/5c791835e5f9f.png" alt="QQ截图20190301193102"></p><p>之后保存即可。</p><hr><h2 id="如何让你的Chrome安装插件，并且访问Google"><a href="#如何让你的Chrome安装插件，并且访问Google" class="headerlink" title="如何让你的Chrome安装插件，并且访问Google"></a>如何让你的Chrome安装插件，并且访问Google</h2><p>首先去下载离线安装的插件，可以访问这个网址下载<a href="http://www.cnplugins.com/" target="_blank" rel="noopener">http://www.cnplugins.com/</a> ,搜索<code>谷歌访问助手</code>，把它下载下来。然后右键点击你的Chrome浏览器的快捷方式，点击属性。定位在目标那一栏,然后在最后面先加上一个空格，在加上如下内容： <code>--enable-easy-off-store-extension-install</code> ,记住，加这句话之前要加空格。然后确认并且保存。</p><p>这时候点击这个快捷方式打开Chrome，点击右上角的三个竖点，定位到更多工具，然后点击插件。再开启右上角的开发者模式。这时候就可以直接把离线插件拖进去浏览起安装了。所以把之前下载好的<code>谷歌访问助手.crx</code>拖进去当前页面，这样就能顺利安装好插件了。</p><p>这下访问Google就没有问题了，你可以自由的去Chrome商店里开心的下载其他插件了，后面的安装及其简单。打开 <a href="https://chrome.google.com/webstore/category/extensions" target="_blank" rel="noopener">https://chrome.google.com/webstore/category/extensions</a>，搜索你要的插件，点击安装即可。</p><hr><h2 id="配置你的引流小王子SwitchyOmega"><a href="#配置你的引流小王子SwitchyOmega" class="headerlink" title="配置你的引流小王子SwitchyOmega"></a>配置你的引流小王子SwitchyOmega</h2><p>首先是要安装好<code>SwitchyOmega</code>插件，可以在完成上面的步骤后来下载这个。你需要会使用<code>shadowsocks</code>这种软件，并且有相应的节点，这样看这部分教程才有意义。</p><p>右键点击小王子，点击<code>option</code>，打开配置界面。初次进入有介绍，你可以看看。</p><p>点击到<code>proxy</code>，配置成我的样子。说明下<code>port</code>的选择要看你的<code>shadowsocks</code>占用的端口是哪个，这里的<code>prot</code>就改成对应的，默认的一般是1080。请自行查看你自己的端口是多少。</p><p><img src="https://i.loli.net/2019/03/01/5c7922ec92516.png" alt="QQ图片20190301201644"></p><p>上一步配置好之后点击<code>Auto switch</code></p><p><code>Rule List URL</code>里面填上<code>https://raw.githubusercontent.com/shadowsocksrr/breakwa11.github.io/master/free/freenodeplain.txt</code>,然后按提示更新列表。注意，由于该文件可能由于更新改名字了而更新失败，这时候访问这个网站，查询最新的列表地址。<a href="https://github.com/gfwlist/gfwlist" target="_blank" rel="noopener">https://github.com/gfwlist/gfwlist</a>。里面有一个<code>gfwlist.txt</code>，点击进去，把浏览器上的地址填进去。</p><p>接下来把<code>Rule list rules</code>和<code>Default</code>配置成我这样即可。</p><p>配置好保存，然后点击插件启用。这时你的shadowsocks需要打开，但是不用开代理，这样就能引流了。使用的时候会遇到资源加载失败的情况，你改变它用直接访问或这代理即可，它会帮你添加到情景模式，以后访问就很愉快了。</p><p><img src="https://i.loli.net/2019/03/01/5c7922f5b50ce.png" alt="QQ图片20190301201657"></p><p>更加详细的教程可以看<a href="https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList" target="_blank" rel="noopener">这里</a>。</p><hr><p>下面简单介绍一下我常用的浏览器插件。</p><ul><li>AdBlock 去除部分广告</li><li>Chrono Download Manager 改变Chrome默认的下载，由该插件接管</li><li>Clear Cache 做网页的可以用一下，清除缓存用的</li><li>Sonar 分析网页的加载时间，错误数量。做网站的朋友可以试试看</li><li>Extension Manager 管理插件的插件</li><li>Google Dictionary (by Google) 谷歌翻译的插件，当网页上有不认识的单词时，双击它，即可看到英文解释</li><li>IE Tab 某些页面非得用智障IE浏览起才能打开，这个插件可以让你在Chrome内在需要的网页调用IE内核，不用打开智障浏览器</li><li>Infinity New Tab (Pro) 注册就是pro，改变你的首页，有一定的定制自由度。</li><li>Markdown Preview Chrome的Markdown渲染插件，这样Chrome也可以看到本地文件的渲染结果</li><li>Octotree 经常用Github的同学可以尝试一下这个插件，可以让你直接展开Github项目下面各个层次的文件，而不需要频繁的切换页面</li><li>OneTab 一键把页面收起来，可复原</li><li>Proxy SwitchyOmega 配合SS和SSR食用，合理引流</li><li>RSS Feed Reader RSS阅读器，更新及时收到消息</li><li>Search by Image 快速搜索图片</li><li>Take Webpage Screenshots Entirely 浏览器内截图插件</li><li>Tampermonkey 油猴脚本，里面的脚本丰富，极大的改善浏览起功能，但是请从合适的地方添加脚本</li><li>Telegram for Chrome 插件版Telegram</li><li>Zotero Connector 喜欢用Zotero管理参考文献的小伙伴，在Chrome内加上它，更美味</li><li>谷歌访问助手 访问Goole全家桶的一个简单插件</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是我的Chrome浏览器的一些配置，有兴趣的话可以看看啊。希望你喜欢。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Chrome" scheme="https://camusecao.top/tags/Chrome/"/>
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-      <category term="Extension" scheme="https://camusecao.top/tags/Extension/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TeX 批量插入图片</title>
-    <link href="https://camusecao.top/1970-01-01-/Insert-pictures-tex/"/>
-    <id>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-30T14:04:32.618Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文记录了<code>LaTeX</code>中如何快速批量插入大量图片的方法。</p><hr><a id="more"></a><p>以下情况仅针对你要插入的图片要求一样的情况。</p><p>假设在<code>/images</code>文件夹下面你有各种格式的图片需要插入。</p><p>最简单的情况可以这样处理。打开<code>git bash</code>,输入如下的指令,即可得到一系列的代码。在<code>tex</code>里面用就行了。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> images/*.*; <span class="keyword">do</span> <span class="built_in">echo</span> <span class="string">"\\includegraphics[width=0.9\\linewidth]&#123;images/<span class="variable">$f</span>&#125;\\\\"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure><p>具体的代码可以根据需求更改，例如想用浮动体的插图代码。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> images/*.*; <span class="keyword">do</span> <span class="built_in">printf</span> <span class="string">"\\\begin&#123;figure&#125;\n\t\centering\n\t\includegraphics[width=0.7\linewidth]&#123;images/<span class="variable">$f</span>&#125;\n\t\caption&#123;&#125;\n\t\label&#123;fig:<span class="variable">$f</span>&#125;\n\\\end&#123;figure&#125;\n\n"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure><p> 如果想要插入指定后缀格式的图片，比如<code>png</code>的，那么把<code>images/*.*;</code>改成<code>images/*.png;</code>即可。</p><p>下面再给个别的样式的例子。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> Figures/*.*; <span class="keyword">do</span> <span class="built_in">printf</span> <span class="string">"\\\begin&#123;minipage&#125;&#123;0.18\linewidth&#125;\n\t\centering\n\t\includegraphics[height=1\linewidth]&#123;<span class="variable">$f</span>&#125;\n\t\caption&#123;&#125;\n\\\end&#123;minipage&#125;\n"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure><p>参考链接：<br><a href="https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory" target="_blank" rel="noopener">https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
-&lt;hr&gt;
+      &lt;p&gt;本文记录了使用&lt;code&gt;TeX&lt;/code&gt;的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。&lt;/p&gt;
+&lt;hr /&gt;
     
     </summary>
     
@@ -118,23 +36,25 @@
     
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
   </entry>
   
   <entry>
-    <title>面试题目</title>
-    <link href="https://camusecao.top/1970-01-01-/Interview/"/>
-    <id>https://camusecao.top/1970-01-01-/Interview/</id>
+    <title>近代物理实验复习</title>
+    <link href="https://camusecao.top/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
+    <id>https://camusecao.top/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-02T09:29:25.859Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="如何理解能带结构？画一个简单的能带结构。"><a href="#如何理解能带结构？画一个简单的能带结构。" class="headerlink" title="如何理解能带结构？画一个简单的能带结构。"></a>如何理解能带结构？画一个简单的能带结构。</h2><p>$k\text{与}E(k)$的关系图即能带结构。<br>画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。</p><hr><a id="more"></a><img src="https://i.loli.net/2018/07/03/5b3b63b64c896.png" alt="1"><h2 id="如何区别-n-型和-p-型半导体？"><a href="#如何区别-n-型和-p-型半导体？" class="headerlink" title="如何区别 n 型和 p 型半导体？"></a>如何区别 n 型和 p 型半导体？</h2><p>采用霍尔效应来区分。对材料加一个垂直向下的磁场，测量霍尔电压加以区分。</p><h2 id="一维无限深方势阱的波函数图像、能量表达式、函数表达式以及大体的解题步骤。"><a href="#一维无限深方势阱的波函数图像、能量表达式、函数表达式以及大体的解题步骤。" class="headerlink" title="一维无限深方势阱的波函数图像、能量表达式、函数表达式以及大体的解题步骤。"></a>一维无限深方势阱的波函数图像、能量表达式、函数表达式以及大体的解题步骤。</h2><h2 id="自由电子能否吸收光子？"><a href="#自由电子能否吸收光子？" class="headerlink" title="自由电子能否吸收光子？"></a>自由电子能否吸收光子？</h2><p>不能。<br>根据动量和能量守恒的要求是没有解的。</p><p>该方程组是无解的，因此不能吸收光子。</p>]]></content>
+    <updated>2019-03-07T06:01:13.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;a href=&quot;#如何理解能带结构？画一个简单的能带结构。&quot; class=&quot;headerlink&quot; title=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;/a&gt;如何理解能带结构？画一个简单的能带结构。&lt;/h2&gt;&lt;p&gt;$k\text{与}E(k)$的关系图即能带结构。&lt;br&gt;画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。&lt;/p&gt;
-&lt;hr&gt;
+      &lt;h2 id=&quot;卷子&quot;&gt;2010 卷子&lt;/h2&gt;
+&lt;h3 id=&quot;虚拟仪器的主要特点有&quot;&gt;虚拟仪器的主要特点有：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;尽可能采用了通用的硬件，各种仪器的差异主要是软件。&lt;/li&gt;
+&lt;li&gt;可充分发挥计算机的能力，有强大的数据处理功能，可以创造出功能更强的仪器。&lt;/li&gt;
+&lt;li&gt;用户可以根据自己的需要定义和制造各种仪器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
     
     </summary>
     
@@ -144,385 +64,7 @@
     
       <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
-      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jupyter Notebook 的使用小记</title>
-    <link href="https://camusecao.top/1970-01-01-/Jupyternotebook/"/>
-    <id>https://camusecao.top/1970-01-01-/Jupyternotebook/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-27T02:32:50.235Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文是关于本人使用<code>Jupyter Notebook</code> 使用的一些简单记录，如果你也喜欢用它可以看看。</p><hr><a id="more"></a><p>默认打开<code>Jupyter Notebook</code>的位置是<code>C盘</code>下的用户文件夹作为工作文件夹。这让我很不满，所以我想嫩故不能改变这个设定。在搜索引擎上一搜索，立刻找到了解决方案。</p><p>官方文档果然是可靠的，链接如下： <a href="https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html#change-jupyter-notebook-startup-folder-windows" target="_blank" rel="noopener">Link</a>,以下我对<code>windows</code>系统的部分做下翻译和图片指导。愿意直接看官方文档的就不需要继续看这一段了。</p><p>首先找到<code>Jupyter Notebook</code>的快捷方式，右键点击属性，定位到<code>Target</code>栏，将里面的<code>%USERPROFILE%</code>改成你想要的文件夹完整路径，例如我想改到<code>F:\Code\Code\Python\Jupyter</code>，就改成如下图片的样子。重新用修改过的快捷方式打开它，工作文件夹就改变了。</p><p><img src="https://i.loli.net/2019/04/27/5cc3bed8e63a2.png" alt="Snipaste_2019-04-27_10-30-27"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自适应电子和光电子学的压电电子学和压电光电子学</title>
-    <link href="https://camusecao.top/1970-01-01-/Article1/"/>
-    <id>https://camusecao.top/1970-01-01-/Article1/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:24:34.059Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。</p><hr><a id="more"></a><h2 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h2><h3 id="压电效应"><a href="#压电效应" class="headerlink" title="压电效应"></a>压电效应</h3><p>压电效应是利用在具有压电性的材料中产生的压电势（压电势）作为“栅极”电压来调节或控制电荷载流子传输特性以制造新器件。压电电子学的基本原理是由 2007 年钟林王教授介绍的。基于这种效应，已经证明了一系列电子器件，包括压电门控场效应晶体管，压电电位二极管，应变传感器，力/流量传感器，混合场效应晶体管，压电逻辑门，机电存储器，等压电设备被视为一新的半导体器件的类别。压电材料可能在传感器，人体硅技术接口，MEMS，纳米机器人和有源柔性电子设备中具有重要应用。</p><p>由于诸如纤锌矿结构的 ZnO，GaN 和 InN 的材料中的非中心对称性，通过施加应力在晶体中产生压电势。由于同时拥有压电和半导体在晶体中产生的压电势对载流子传输过程有很大影响。通常基本的压电装置的结构可以分为两类。以纳米线为例。第一种是将压电纳米线放在柔性基板上，其两端由电极固定。在这种情况下，当基板弯曲时，纳米线将被纯拉伸或压缩。压电势将沿其轴线引入。它将改变电场或肖特基势垒接触区域的高度。在一端引起的正压电势将降低其高度，而在另一端的负压电势将增加它。因此，电传输特性将改变。第二种压电装置是纳米线的一端用电极固定，而另一端是自由的。在这种情况下，当在纳米线的自由端施加力以使其弯曲时，压电势分布将垂直于纳米线的轴。引入的压电场垂直于电子传输方向，就像在传统的场效应晶体管中施加栅极电压一样。因此，电子传输性质也将改变。</p><blockquote><p>用于压电的材料应该是压电半导体，如 ZnO，GaN 和 InN。</p></blockquote><p><img src="https://i.loli.net/2018/07/11/5b4627ea9d3d7.png" alt="2"></p><h3 id="光压电效应"><a href="#光压电效应" class="headerlink" title="光压电效应"></a>光压电效应</h3><p>光压电效应是压电、半导体和光子特性在非中心对称半导体材料中的三向耦合效应，压电电势是通过向具有压电性的半导体施加应变以控制载流子产生而产生的，金属-半导体结或 pn 结处的传输，分离或复合，用于改善光电器件的性能，例如光电探测器，太阳能电池和发光二极管。王钟林教授于 2010 年提出了这一效应的基本原则。</p><p>当 p 型半导体和 n 型半导体形成结时，p 型侧的空穴和 n 型侧的电子倾向于在界面区域周围重新分布以平衡局部电场，这导致电荷耗尽层。结区中电子和空穴的扩散和复合与器件的光电性质密切相关，其受局部电场分布的影响很大。在界面处存在压电电荷引入了三种效应。</p><ul><li><p>由于引入的局部电位导致的局部电子能带结构的偏移，以及由于局部电荷载流子的重新分布而导致的电荷耗尽层的变化，以平衡局部压电电荷。结处的正压电电荷降低了能带，负压电电荷提高了结区附近的 n 型半导体区域的能带。</p></li><li><p>通过压电势对局部能带进行修改可以有效地捕获电荷，从而可以大大提高电子-空穴复合率，这对提高发光二极管的效率非常有利。</p></li><li><p>倾斜带倾向于改变朝向接合处移动的载流子的移动性。</p></li></ul><p>压电光电子学的材料应具有三个基本特性。</p><ul><li>压电性。</li><li>半导体特性。</li><li>光子激发特性。</li><li>典型的材料是纤锌矿结构，例如 ZnO，GaN 和 InN。</li></ul><blockquote><p>压电，光激发和半导体特性之间的三向耦合，这是压电电子学的基础（压电-半导体耦合），压电光子学（压电-光子激发耦合），光电子学和压电光电子学（压电-半导体-光激发）。这些耦合的核心依赖于压电材料产生的压电势。</p></blockquote><p><img src="https://i.loli.net/2018/07/11/5b4627f710553.png" alt="1"></p><h3 id="压电材料提高纳米传感器的性能"><a href="#压电材料提高纳米传感器的性能" class="headerlink" title="压电材料提高纳米传感器的性能"></a>压电材料提高纳米传感器的性能</h3><p>包含压电半导体的器件中，应变诱导的极化可以调制肖特基势垒高度从而控制接触处的界面能级。这可以显着提高肖特基势垒纳米传感器的性能。</p><blockquote><p>早期应用：ZnO 纳米线传感器，用于在外部菌株的应用下检测生物分子（如蛋白质和葡萄糖），pH 值和气体种类（氧气）。</p></blockquote><p>近期：灵敏响应纳米传感器 ZnO 纳米线传感器检测从生物细胞释放的微量过氧化氢。促进和增强药物代谢和检测。</p><h3 id="二维压电半导体"><a href="#二维压电半导体" class="headerlink" title="二维压电半导体"></a>二维压电半导体</h3><p>理论上预测单层$MoS_2$，$MoSe_2$和其他 TMDCs(二维过渡金属二硫属化物)由于其晶体结构中不存在反转对称性而表现出压电性。结合其高结晶度，出色的半导体特性和优异的机械性能（单层$MoS_2$晶体具有比钢更高的杨氏模量，并且可以变形 11％而没有断裂），使得二维的 TMDCs 成为用于压电装置的高性能机电材料。</p><blockquote><p>使用化学气相沉积（CVD）大规模生产。</p></blockquote><h2 id="半导体薄膜中的压电电子学"><a href="#半导体薄膜中的压电电子学" class="headerlink" title="半导体薄膜中的压电电子学"></a>半导体薄膜中的压电电子学</h2><p>利用薄膜器件中的压电效应可能是克服纳米材料的一些局限性的方法：例如，大规模生产的难度，不均匀性和可靠性。</p><h2 id="压电电子学的理论进展"><a href="#压电电子学的理论进展" class="headerlink" title="压电电子学的理论进展"></a>压电电子学的理论进展</h2><p>采用的半经典方法不能提供对潜在机制的理解水平。最近在使用各种先进方法解决这些问题方面取得了进展。使用完全基于量子力学和基本物理常数的原子和分子结构进行压电效应的 ab initio 计算研究。可以得出结论更好的。最近还研究了压电式晶体管的非线性行为，这可能对非线性压电电路的发展有益，还使用密度泛函理论对单层的$MoS_2$压电晶体管进行了第一次理论研究。</p><h2 id="压电光电子学的应用方面"><a href="#压电光电子学的应用方面" class="headerlink" title="压电光电子学的应用方面"></a>压电光电子学的应用方面</h2><ul><li>有源光电子学</li><li>光电探测器</li><li>发光二极管中</li><li>可见光通信</li><li>冷光应用</li><li>…….</li></ul><h2 id="压电光电子学的理论研究"><a href="#压电光电子学的理论研究" class="headerlink" title="压电光电子学的理论研究"></a>压电光电子学的理论研究</h2><p>早期的理论工作仅限于一维模型，并未考虑设备几何形状，且许多假设不适用于低掺杂浓度的情况。</p><p>最近开发了一种用于对 p-n 结中的压电光电效应进行 2D 模拟的方法，这项工作中采用的有限元方法提供了更直观的结果，然后可以更好地与实验设计的后续优化的实验数据进行比较。当压电半导体中的掺杂浓度较低时，耗尽区域在应变下向 p 型或 n 型区域移动，具体取决于应变极性和压电材料中极轴的方向，这种变化将分别导致空穴或电子的电荷通道。这些理论的发展为后续的实验工作提供了有用的指导。</p><h2 id="展望未来"><a href="#展望未来" class="headerlink" title="展望未来"></a>展望未来</h2><ul><li><p>可以将 2D 材料的压电性质与原子级薄晶体中的其他有趣特性组合。</p></li><li><p>单晶纳米材料具有良好的机械耐久性，将其应用可以延长设备的使用寿命。</p></li><li><p>将量子力学结合到现有模型中将有助于将压电电子学和压电光电子学纳入完整的理论框架。</p></li><li><p>压电效应与铁电电子器件中的残余铁电束缚电荷的接触电位或带结构的改变之间存在相似性。</p></li><li><p>压电电子学和压电光电子学领域使得开发可与环境中的机械信号相互作用的新型电子和光电子学领域成为可能。</p></li><li><p>压电电子学和压电光电子学在应变诱导的界面极化与电荷载流子的带结构和过程之间的耦合方面为经典半导体物理学提供了新的知识。</p></li><li><p>尽管取得了巨大进步，但仍需要做很多工作才能获得全面的理解并充分发挥压电电子学和压电光电子学的潜力。</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h2&gt;&lt;p&gt;低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="文献阅读" scheme="https://camusecao.top/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
-    
-    
-      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>商务英语</title>
-    <link href="https://camusecao.top/1970-01-01-/English/"/>
-    <id>https://camusecao.top/1970-01-01-/English/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:24:00.679Z</updated>
-    
-    <content type="html"><![CDATA[<p>商务英语的剧本，不知道为什么，就放上来了。</p><p>旁白：今天的故事发生在一家规模不大的游戏公司中，公司仅有 50 名员工。他们正面临着一场危机，公司已经岌岌可危。</p><hr><a id="more"></a><p>老板：很高兴大家今天都来参加这个重要的会议。今天的会议对于公司来说是非常重要的。我先简短的阐述一下公司的现状吧。其实我们公司的利润一直都不高，一直都是勉强维持着，但是这个状况从今年的三月起更加糟糕了。今年的三月份，我们公司开始出现较为严重的亏损，单月的亏损已经到达二十万了。这对与我们来说是不能接受的。亏损太大了，而且到目前为止没有出现反转。按照这样的速度，我们剩下的资金 100 多万最多只能坚持 5 个月了。秘书，你来陈述一下造成这个状况的原因吧。</p><p>秘书：很重的一点就是我们游戏的玩家数量也实在是令我不满意。我们游戏的新玩家数量现在少的可怜，每个月就只有大概几十个人，而且新玩家里面愿意留下来的有非常的少，跟多玩家玩了才几天就再也不上线了。并且我们也越来越难留住老玩家了。我们公司现在做出来的游戏里面最受欢迎的游戏老玩家数量也掉的比较快，每个月退坑的有百来个。很重要的原因是现在的主流游戏的（）类游戏，而我们公司的游戏是以（）为主，在这样的大环境下，没有足够的玩家是理想之中的。</p><p>老板：是的，如果我们再不做出一些改变，明年就可以宣布破产了。而我也发现公司里面有许多员工的效率低下，不少拿着工资却没干出该干的活，因此我提出裁员的提议。通过裁员我们有希望提高公司的效率。我想大概裁处 10~20 个人。同时好可以招一些新人进来。各位高管你们有什么看法呢？</p><p>技术高管：老板，我觉得不行啊。首先来说我们很难界定谁是该裁的员工谁不是该裁的，如果错误的裁员对我们公司的损失更大了。如果是普通公司的员工可能比较容易鉴定出谁的效率高，谁的效率低，但是对我们游戏公司来说很难量化的去衡量他们的效。公司里有些人看起来一天到晚看似在工作，可是却没有做出点实质性的东西。但是这类员工好不好揪出来，即使揪出来了，似乎也不好说什么。还有个别有趣的员工，平日看起来倒是游手好闲的样子，可是人家做出来的东西倒是不少，就比如前两个月才刚来的小杨，他就是这样的人，如果裁员的话，把这种的员工裁了着实可惜了。</p><p>秘书：你说的这点确实有道理，但是这个问题不大，能解决。</p><p>技术高管：第二点就是目前我们公司已经陷入了财政困难了，公司里面的员工不少也有些担心自己的工作稳不稳了，其实下面已经挺不稳定的了，这时候如果下一个裁员通知，我十分担心整个公司上下陷入混乱，并且会让一些有实力的员工干脆直接辞职了，去别的更好的公司，这样一裁员，公司里面能干活的人就更少了。第三点是我们目前还有不少游戏在运营着，这时候如果断然裁员了，那剩下的员工的工作压力就更大了。我们的游戏有些虽然没多少玩家了，但是不能因为人力有限直接停止运行，一旦这么做了，一定会被广大游戏玩家所厌恶的，一时间，我们在业界的口碑会大减，那么剩下的玩家很快就全部没有了，这样子我们公司就真的完蛋了。因此我认为应该让有些游戏渐渐停止运行，但是这至少需要半年，需要几个月的公示停止运行才行。在那之后再裁员才不迟。现阶段我认为裁员不可取。之前的酷 6 网裁员风波闹得沸沸扬扬，公司已经准备起诉相关员工。企业裁员是一门学问，搞到打官司的程度对谁都没好处。西南航空在 2001 年经济步入衰退的困境仍然没有裁员，而且在其 40 年的历史中从来就没有采取过主动式裁员。现在，西南航空已经成为美国最大的国内航空公司，总市值高于其他所有国内航空公司的总和。西南航空前任人力资源总监的理念是：如果人是你最重要的资产，那么你为什么要裁掉他们？</p><p>秘书：可是纵观整个公司，我们很多技术人员确实水平太低了，很多人拿着那么高的工资，可是却没做出点该有的东西。而且人员也挺冗杂的，我同时还觉得我们的管理不到位，有诸多问题，在裁员的同时也有助于我们重新加强对公司员工的管理，通过这样管理效率的提高，会有助于我们公司的发展。关于裁员是的评定，公司内部没有人能做的话也可以请职场丑人来做，他们是专业的，能解决我们难以评估的问题。通过这样的专业人士来裁员，我们一定能够留住人才，同时去除一些较为无用的员工。</p><p>技术高管：那企业文化呢？为了暂时度过危机选择裁员可能后患无穷。</p><p>秘书：裁员当然还有其它的好处的。经过这样的裁员之后，我们有限的资源可以来一次重新分配，如果这次的分配合理，我能能够极大的提高剩下员工的工作效率。通过这样的效率提高，我们公司的状况一定会改变的。很多大公司其实也会过里面裁员一次，通过这样的裁员，不仅能够给大家一个警醒的作用，还把更多的资源分配给真正需要的人，经过这样的裁员之后，他们公司都变得更好了。我相信只要我们把裁员这件事做好，我们一定能够顺利度过这次难关的。亚马逊过去两年的员工数量快速增长使一些部门超出预算，而且有些团队的工作人员已经太多。最近几个月，亚马逊已经在多个事业群开始冻结人事（hiringfreezes），此举使今年亚马逊在西雅图的公开招聘数量降至数年来的最低水平。大公司也有通过裁员解决问题。</p><p>人力资源：可是裁员并没有从本质上解决问题。我们之所以持续的亏损就是因为我们做的游戏并不是现在受欢迎的类型，并且我们公司的游戏开发人员就是不会做那一类游戏。所以即使裁员解决了燃眉之急，这样治标不治本的做法，很快我们又会陷入新的一轮危机中。而且剩下的几个月时间根本不够我们开发一款新游戏。所以我看不应该通过裁员解决危机。而且很多人效率低下是有一定原因的。</p><p>老板：你对比似乎有独到的看法，不防谈谈你对此的见解。</p><p>人力资源：不知道大家是否有关注一下玩家对于咱们公司的一些评价。除了在在咱们论坛上，还有网络上其它的地方。</p><p>技术总管：网上近期以来，对我们公司发布的新游戏普遍感到失望。认为我们的游戏没多少内涵的东西，也没有掀起什么潮流。对于以前的游戏，又很少推出一些新的内容，维护也做的不够好。</p><p>人力总管：技术总管讲的确实对，现在我们公司确实被不少玩家嫌弃。但是，在另一方面，我们公司却受到广发玩家的赞扬。</p><p>老板：你指的是 cgi 这方面吗？</p><p>人力总管：没错。我们公司的 cgi 在各大平台上都非常受欢迎，有部分作品在玩家中的评价相当高，甚至比得上专业公司制作的作品。这与我们公司员工的特长关系相当大啊。虽然不知道怎么形成了这样的现状，但是我们为何不合理利用这样的局面呢？</p><p>秘书：转型的话我们可能进入一个新的领域啊，我们可能直接失去旧的客户，到时候刚转型投入那么多资金可能血本无归。</p><p>技术高管：这一点我倒是觉得不用担心。因为我们在 cgi 方面的产品在市场上已经比较受欢迎了，也就是说实际上我们已经有一定数量的群众了。到时候我们如果加入适当的宣传，客户短期内会有较大的涨幅。</p><p>老板：话虽如此，但是我们公司的技术人员真的能够在短期内做出好的成果吗？一堆做游戏的真的做的来 cgi 吗？</p><p>人力总管：说到这一点上就比较有意思了。关于公司的技术型人才的资料我这里都有，因此我能较好的解答这个。实际上我们公司的游戏开发的人员中有 60%左右的人是有 cgi 相关的背景的，其中还有 25%的人之前就是从事这方面工作的。因此如果说我们转型的话，让这部分人立刻投入工作中是完全没有问题的，至于剩下的那部分人就先让他们维持着那些游戏的运营吧。</p><p>秘书：人力总管这么说确实是，那你就是说我们应该转型吧。可是转型做 cgi 未必有用，它怎么能够让我们公司盈利呢？再说不从优化游戏入手，继续做 cgi 来宣传烂的游戏又有什么用？我认为这么做不如裁员来的有效。</p><p>人力总管：秘书你只知其一，不知其二。确实继续宣传我们现在的几个烂游戏是没戏的，可是谁规定说我们只能为自己的游戏做 cgi 呢？</p><p>技术总管：按照人力总管你的看法就是我们通过为其它公司的优秀游戏做 cg 来获利了。这样看来确实有不少好处。我们可以不需要重新筛选出适合做游戏的人才，而是用现在手头上的做 cg 的人才去做该做的事。我们也不用耗费心思去运行游戏，而只需要找到现在比较火，或者发展初期需要宣传的游戏公司合作即可了。</p><p>人力总管：技术总管的想法正合我意。我认为基于目前公司情况来说，这将是最佳的选择了。</p><p>老板：秘书这件事你怎么看？</p><p>秘书：现在听起来确实不错。那人力总管对于接下来我们各个部分新的部署有何见解？</p><p>人力总管：接下来我们人力资源部将加上 cg 方面相关人才的挖掘，这是必须的。那么技术部门的任务是最紧急的，希望技术总管能够做好技术部门的转型任务。你们必须在短时间没投入较多的人力开始从事 cg 的制作，不仅要提高 cg 的质量，而且还要求更多的数量。提高变量和质量，摸索出 cg 制作方面的要领。还有很重要的一点是我们要赶紧找到适合合作的对象公司，最好可以提前支付一次金额。我们的对象公司一方面要是现在比较就行的游戏的，另一方面就是还在起步，并且比较有潜力的游戏公司。给现在出名的游戏做 cg 能够在较短的时间提高我们的名气，而与有潜力的游戏公司合作也是收入的主要来源。</p><p>老板：听起来各位总管们还有秘书都比较赞成了转型这条线路了，那我也就打算放弃裁员了。各个部门总管接下来应该清楚接下来要做的事情了吧？我想在下周的这时候你们提交一个转型计划。那我会加快合作目标公司的寻找。大家还有什么要补充的吗？</p><p>技术总管：那我想技术部分就先集中精力先做几个关于现在就行的 lol ,吃鸡游戏的 cg 吧。</p><p>老板：没有其它要补充的就散会了。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;商务英语的剧本，不知道为什么，就放上来了。&lt;/p&gt;
-&lt;p&gt;旁白：今天的故事发生在一家规模不大的游戏公司中，公司仅有 50 名员工。他们正面临着一场危机，公司已经岌岌可危。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="临时" scheme="https://camusecao.top/categories/%E4%B8%B4%E6%97%B6/"/>
-    
-    
-      <category term="Play" scheme="https://camusecao.top/tags/Play/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MiKTeX的基本使用</title>
-    <link href="https://camusecao.top/1970-01-01-/MiKTeX/"/>
-    <id>https://camusecao.top/1970-01-01-/MiKTeX/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-30T07:27:58.215Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。</p><hr><a id="more"></a><h2 id="MiKTeX-使用的基本介绍"><a href="#MiKTeX-使用的基本介绍" class="headerlink" title="MiKTeX 使用的基本介绍"></a>MiKTeX 使用的基本介绍</h2><p>介绍部分仅仅介绍它与常用的<code>TeXLive</code>的一些小差异。</p><p><code>MiKTeX</code>安装的时候<code>instal missing packages on-the-fly</code>建议选择<code>asked me first</code>。</p><p>由于<code>MiKTeX</code>基本上只有一些<code>TeX</code>核心的部分，很多宏包都没有在安装的时候一并打包进去。所以在运行一个<code>tex</code>文件时会因为缺少宏包出现下图这样的情形：</p><p><img src="https://i.loli.net/2019/03/30/5c9ee5efcea01.png" alt="m1"></p><p>别慌张，不算出问题。点击<code>Install</code>即可，过一会儿缺少的宏包就就会安装好了。刚开始的时候可能会比较经常出现这个界面。后面你常用的宏包下载好就不会了。</p><p>但是偶尔出现一个宏包下载不下来的情况，这时候很可能是下载的源不稳定导致的，那么只要改变安装宏包的源即可。</p><p>在弹出安装宏包时对于<code>The package will be installed from :</code>选项点击<code>change...</code>，进入下图界面。就选默认的第一个选项，直接点<code>Next</code>选项。</p><p><img src="https://i.loli.net/2019/03/30/5c9ee5f51888d.png" alt="m2"></p><p>接下来选择一个安装源，大陆这里的源经常不稳定，建议选择<code>Japan</code>的。如果你发现这个源也不好使，可以自己按照这个步骤再改变安装的源。<del>如果你能开代理的话，也可以开着代理用对应地区的源。具体步骤就是在上面那张图点击<code>connection setting...</code>，后面的步骤你懂得。</del></p><p><img src="https://i.loli.net/2019/03/30/5c9ee5fd629b6.png" alt="m3"></p><hr><h2 id="MiKTeX-下如何使用latexmk"><a href="#MiKTeX-下如何使用latexmk" class="headerlink" title="MiKTeX 下如何使用latexmk"></a>MiKTeX 下如何使用latexmk</h2><p>常用的编译链在没有清除辅助文件的前提下，运行得到的pdf文件的页眉页脚目录这些通常很可能不正确。而用latexmk自动去执行就很少遇到这种问题，因此推荐使用latexmk来编译文件。</p><p>默认的<code>MiKTeX</code>不像<code>TeXLive</code>这些发行版本打包了非常多东西，它用起来很精简，一般情况下够用。但是我很喜欢latexmk，所以稍微关注了一下怎么解决问题。</p><p><code>MiKTeX</code>没有打包<code>perl.exe</code>，由于缺少它，latexmk不能运行，安装好了就可以了。网上一搜就有了。也可以去这个下<a href="http://strawberryperl.com/" target="_blank" rel="noopener">strawberryperl</a>或者<a href="https://www.activestate.com/products/activeperl/downloads/" target="_blank" rel="noopener">ActivePerl</a>。</p><hr><h2 id="MiKTeX-下如何使用-texify-编译"><a href="#MiKTeX-下如何使用-texify-编译" class="headerlink" title="MiKTeX 下如何使用 texify 编译"></a>MiKTeX 下如何使用 texify 编译</h2><p><code>texify</code>的编译与<code>latemk</code>类似，它是<code>MiKTeX</code>里面打包的组合编译，<code>MiKTeX</code>用户不需要额外安装其它软件就可以直接使用啊。常见参数的选择和一般的编译方式一样。例如用它指定为<code>pdflatex</code>的编译方式可以在命令行用如下命令:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">texify --synctex --pdf --tex-option=<span class="string">"-interaction=nonstopmode"</span> --tex-option=<span class="string">"-file-line-error"</span> Yourfile.tex</span><br></pre></td></tr></table></figure><p>如果需要指定使用<code>xelatex</code>编译则用如下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">texify --synctex --pdf --engine=xetex --tex-option=<span class="string">"-interaction=nonstopmode"</span> --tex-option=<span class="string">"-file-line-error"</span> Yourfile.tex</span><br></pre></td></tr></table></figure><hr><h2 id="MiKTeX如何安装自己的Classs文件"><a href="#MiKTeX如何安装自己的Classs文件" class="headerlink" title="MiKTeX如何安装自己的Classs文件"></a>MiKTeX如何安装自己的Classs文件</h2><p>很多人知道这个在<code>TeXLive</code>怎么完成，但是未必知道在<code>MiKTeX</code>上如何完成，所以特别写了这个简单的教程。</p><p>首先新建一个文件夹，假设它叫<code>MyTex</code>，这个文件夹的放置位置要确保能有直接的读写权限，并且不要放在<code>MiKTeX</code>的安装路径内。接下来在<code>MyTex</code>文件夹下新建文件夹叫<code>tex</code>,进一步在<code>tex</code>文件夹下新建<code>latex</code>文件夹。后面这两个文件夹名字必须完全相同，不要自己随意起名。</p><p>那么这时候你的文件夹应该是这样的：<code>MyTex/tex/latex</code>。记住只有第一个文件夹名字可以任意起。</p><p>接下来打开<code>MiKTeX</code>的控制台，即<code>MiKTeX Console</code>。以管理员身份再开启一次。接下来点击左侧的<code>Setting</code>,再点击<code>Directories</code>找到界面上的加号。点击之后把一开始建好的的<code>MyTex</code>文件夹选中。如果你添加失败了，好好看一下你前面的步骤有没有做错。</p><p><img src="https://i.loli.net/2019/03/02/5c7a83876c91e.png" alt="MiKTeX1"></p><p>这里完成之后，点击菜单栏上的<code>Tasks</code>,运行里面的<code>Refresh file name database</code>。</p><p><img src="https://i.loli.net/2019/03/02/5c7a839e0f94b.png" alt="MiKTeX2"></p><p>刷新好以后就可以把你的<code>.cls</code>文件放到<code>MyTex/tex/latex</code>文件夹下面。再执行一下上一步的<code>Refresh file name database</code>，重新运行就可以了。接下来就可以愉快的使用自己的<code>.cls</code>文件了。</p><p>再讲一下没有被<code>MiKTeX</code>收录的<code>.sty</code>文件的安装。以一个有趣的宏包<code>therefore</code>为例，<a href="https://github.com/bgschiller/latex-therefore" target="_blank" rel="noopener">下载地址</a>。下载下来先解压。解压之后我们打开可以看到里面有<code>.sty</code>和<code>.idf</code>这类文件，把这个文件的文件夹弄到<code>MyTex/tex/latex</code>文件夹下。这时候的文件结构是这样的：<code>MyTex/tex/latex/latex-therefore-master/therefore.sty</code>和<code>MyTex/tex/latex/latex-therefore-master/thereforeromanian.ldf</code>。安装别的宏包结构也是类似的。安装好之后记得也要执行<code>Refresh file name database</code>这个步骤。</p><p>如果觉得这里讲的不够详细或者你按这个操作了没有成功，那么你可以看看<a href="https://tex.stackexchange.com/questions/69483/create-a-local-texmf-tree-in-miktex" target="_blank" rel="noopener">这里</a>。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="Programme" scheme="https://camusecao.top/categories/Programme/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LaTeX 字体的基础配置</title>
-    <link href="https://camusecao.top/1970-01-01-/TeX-Fonts/"/>
-    <id>https://camusecao.top/1970-01-01-/TeX-Fonts/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-06-01T08:03:56.916Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文将介绍如何简单的配置<code>LaTeX</code>用<code>xelatex</code>编译时，可参考的一种字体配置方案。</p><hr><a id="more"></a><p>很多情况下<code>LaTeX</code>默认的字体配置并不令人满意或者符合特定的场景需求，会有字体配置的需求。而<code>pdflatex</code>的编译方式要指定满意的字体是比较复杂的，<code>xelatex</code>相对来说比较简单，它能够调用系统安装的字体。以下的内容都是针对使用<code>xelatex</code>编译时的参考方案。</p><p>作为一个中国人，文档里面出现中文和英文的现象并不少见。要指定英文字体比较容易，使用<code>fontspec</code>宏包可以实现。如果要同时指定中文的使用字体，可以使用<code>xeCJK</code>宏包。由于中文字体的特别，中国的<code>TeX</code>组织开发了该宏包。以下展示一个比较完整的字体设置方案。要编译成功需要安装相应的字体，可以用这个思路换成你需要的字体。</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">PassOptionsToPackage</span><span class="string">&#123;no-math&#125;</span><span class="string">&#123;fontspec&#125;</span></span> <span class="comment">%在改变西文字体时不改变数学字体</span></span><br><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexbook&#125;</span></span>            <span class="comment">%已调用xeCJK宏包</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;fontspec&#125;</span></span> <span class="comment">%[no-math]</span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;amsmath,amsthm&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;unicode-math&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;Source Serif Pro&#125;</span></span>      <span class="comment">%指定西文正文字体，即衬线字体</span></span><br><span class="line"><span class="tag">\<span class="name">setsansfont</span><span class="string">&#123;Source Sans Pro&#125;</span></span>       <span class="comment">%指定西文无衬线字体，常用于标题目录等位置</span></span><br><span class="line"><span class="tag">\<span class="name">setmonofont</span><span class="string">&#123;Source Code Pro&#125;</span></span>       <span class="comment">%指定西文等宽字体，常用于代码展示等位置</span></span><br><span class="line">  <span class="tag">\<span class="name">setmathfont</span><span class="string">[</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension    =.otf,             %采用otf字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,                    %指定字体所在路径，缺省的话会自动查找系统和字体和发行版本所带的字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont     = XITSMath-Bold,   %指定粗体</span></span></span><br><span class="line"><span class="tag"><span class="string">    StylisticSet = 8</span></span></span><br><span class="line"><span class="tag"><span class="string">  ]</span><span class="string">&#123;XITSMath-Regular&#125;</span></span>        <span class="comment">%指定数学字体</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKmainfont</span><span class="string">[                  %衬线中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,  %右上字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,     %加粗字体</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,  %斜体</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,     %斜体加粗</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,  %斜体是为斜，不要在需要查重的pdf文件中使用中文斜体，会导致查重有问题。</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSerifCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKsansfont</span><span class="string">[                  %无衬线中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSansCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line">  <span class="tag">\<span class="name">setCJKmonofont</span><span class="string">[                  %等宽中文字体设定</span></span></span><br><span class="line"><span class="tag"><span class="string">    Extension=.otf,</span></span></span><br><span class="line"><span class="tag"><span class="string">    Path=fonts/,</span></span></span><br><span class="line"><span class="tag"><span class="string">    UprightFont=        *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldFont=           *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFont=         *-Regular,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFont=     *-Bold,</span></span></span><br><span class="line"><span class="tag"><span class="string">    ItalicFeatures=     FakeSlant,</span></span></span><br><span class="line"><span class="tag"><span class="string">    BoldItalicFeatures= FakeSlant]</span><span class="string">&#123;NotoSansMonoCJKsc&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">hbar</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy$</span></span><br><span class="line"></span><br><span class="line"> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体</span><br><span class="line"></span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体加粗&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文衬线字体伪斜&#125;</span></span></span><br><span class="line">  </span><br><span class="line"><span class="tag">\<span class="name">sffamily</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体</span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="tag">\<span class="name">ttfamily</span></span> ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体</span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textbf</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"> </span><br><span class="line"> <span class="tag">\<span class="name">textit</span><span class="string">&#123;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxuy 中文字体&#125;</span></span></span><br><span class="line"></span><br><span class="line"> <span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure><p>指定了普通场合所需的几个字体后，还需要个别其它字体可以通过以下方法设定以及调用。</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">newfontfamily</span></span><span class="tag">\<span class="name">useSomeEnFont</span><span class="string">&#123;Source Serif Pro&#125;</span></span> </span><br><span class="line"><span class="tag">\<span class="name">newCJKfontfamily</span></span><span class="tag">\<span class="name">useSomeZhFont</span><span class="string">&#123;宋体&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">normalfont</span></span><span class="tag">\<span class="name">useSomeZhFont</span></span><span class="tag">\<span class="name">useSomeEnFont</span></span></span><br><span class="line"></span><br><span class="line">&#123;<span class="tag">\<span class="name">useSomeEnFont</span></span> Source Serif Pro font&#125;</span><br><span class="line">&#123;<span class="tag">\<span class="name">useSomeZhFont</span></span> 这里是宋体&#125;</span><br><span class="line"><span class="comment">%% 使用新的一组字体</span></span><br><span class="line">&#123;<span class="tag">\<span class="name">normalfont</span></span> 西文用Source Serif Pro font, 中文用宋体。&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文将介绍如何简单的配置&lt;code&gt;LaTeX&lt;/code&gt;用&lt;code&gt;xelatex&lt;/code&gt;编译时，可参考的一种字体配置方案。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python Pandas 库的一些使用</title>
-    <link href="https://camusecao.top/1970-01-01-/Python-Pandas/"/>
-    <id>https://camusecao.top/1970-01-01-/Python-Pandas/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-01-31T13:00:16.105Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>Pandas</code> 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。</p><hr><a id="more"></a><p>我经常需要合并两个结构相同的 <code>csv</code> 或 <code>excel</code> 或 <code>Pandas</code> 数据表格，这个时候应该直接使用 <code>concat</code> 函数，基本的用法如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">merged = pd.concat([df1, df2], ignore_index=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基础知识复习</title>
-    <link href="https://camusecao.top/1970-01-01-/Review/"/>
-    <id>https://camusecao.top/1970-01-01-/Review/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-02T09:29:06.667Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="半导体重掺应用"><a href="#半导体重掺应用" class="headerlink" title="半导体重掺应用"></a>半导体重掺应用</h2><hr><a id="more"></a><p>在掺杂程度足够高、进入简并状态的情况下，不同原子的电子会形成共有化运动，即这些原子的电子运动波函数相互重叠，从而使杂质能级形成连续的能带。这个杂质能带填充了原来价带、导带之间的能隙，这样，简并半导体的能隙宽度就减小了，从而显示出一些不同寻常的性质。例如，当温度升高，简并半导体的导电性能不会显著增加。另一方面，简并半导体的载流子浓度尽管比非简并半导体高，但还是远低于金属，因此它们会显示出介于半导体和金属的性质。</p><blockquote><p>重掺杂的简并半导体应用较为广泛。1958 年研制成功的隧道二极管就是利用这样的重掺杂简并半导体制成的，其中 N 型半导体的费米能级进入导带，而 P 型半导体的费米能级进入价带。这项发明使其发明者江崎玲于奈在 1973 年被授予诺贝尔物理学奖。</p></blockquote><h2 id="表征手段"><a href="#表征手段" class="headerlink" title="表征手段"></a>表征手段</h2><ul><li>扫描隧道显微镜</li><li>光致发光</li><li>X 射线光谱</li><li>质谱法</li><li>热学分析</li><li>色谱法</li></ul><h2 id="激光产生的条件"><a href="#激光产生的条件" class="headerlink" title="激光产生的条件"></a>激光产生的条件</h2><ul><li>受激幅射是产生激光的首要条件,也是必要条件,但还不是充分条件</li><li>工作物质必须具有亚稳态能级</li><li>形成粒子数反转,使受激发射多于吸收</li><li>要使频率单纯,方向集中,就必须有一个振荡腔</li><li>光子在腔中振荡一次产生的光子数比损耗掉的光子多得多</li></ul><h2 id="VASP-的作用"><a href="#VASP-的作用" class="headerlink" title="VASP 的作用"></a>VASP 的作用</h2><p>它是进行电子结构计算和量子力学-分子动力学模拟软件包。</p><p>可以在密度泛函理论（DFT）框架内求解 Kohn-Sham 方程(已实现了混合（hybrid）泛函计算)，也可以在 Hartree-Fock（HF）的近似下求解 Roothaan 方程。</p><h2 id="第一性原理"><a href="#第一性原理" class="headerlink" title="第一性原理"></a>第一性原理</h2><ul><li><p>第一类以波函数为核心物理量，先用 Slater 行列式展开波函数，再求解展开系数。常见的有 Hartree-Fock，MPn，CCSD(T), CI 等。搞化学的人提到“第一性原理”，指的就是这类方法，并且他们一般叫“量子化学”。</p></li><li><p>第二类以电荷密度为核心物理量，即密度泛函理论。密度泛函理论核心就两条定理，能玩出花样的反倒是各种泛函。搞物理的人提到“第一性原理”，指的就是这类方法。密度泛函理论计算量比量子化学方法小，但缺陷也很明显，就是激发态算不准，并且是先天不足，怎么都救不回来那种（量子化学方法激发态就算得不错）。</p></li><li><p>还有一类是基于格林函数的，把量子场论的那套理论移植了过来。目前还不是很成熟，只能算一算激发态能量。</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;半导体重掺应用&quot;&gt;&lt;a href=&quot;#半导体重掺应用&quot; class=&quot;headerlink&quot; title=&quot;半导体重掺应用&quot;&gt;&lt;/a&gt;半导体重掺应用&lt;/h2&gt;&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
-    
-      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
-    
-      <category term="Semiconductor" scheme="https://camusecao.top/tags/Semiconductor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用python批量转换图片的格式</title>
-    <link href="https://camusecao.top/1970-01-01-/Convert-pictures/"/>
-    <id>https://camusecao.top/1970-01-01-/Convert-pictures/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-30T14:16:20.517Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天做了一个实验，实验保存的图片格式只有<code>bmp</code>的一种格式可以选择，并且图片数量不小。但是<code>TeX</code>对于<code>bmp</code>图片的插入支持不是特别友好。因此我想利用<code>python</code>来批量转换图片的格式。</p><hr><a id="more"></a><p>经过一番折腾写出了如下的简单程序，应该能够直接满足转换的需求。我下面处理的时候为了不污染工作目录，把图片都存在<code>Figures/</code>文件夹下。新生成的图片则存在<code>Figures/Figures/</code>文件夹下面。下面的程序应该简单易读，拿来改改应该就能满足一般的需求了。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> glob</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">image_list = []</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> glob.glob(<span class="string">'Figures/*.bmp'</span>): <span class="comment">#assuming bmp</span></span><br><span class="line">    img = Image.open(filename)</span><br><span class="line">    filename = img.filename</span><br><span class="line">    img.save(<span class="string">'Figures/'</span> + os.path.splitext(filename)[<span class="number">0</span>] +<span class="string">'.png'</span>, <span class="string">'png'</span>)</span><br></pre></td></tr></table></figure><p>参考链接：<br><a href="https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python" target="_blank" rel="noopener">https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>收藏链接</title>
-    <link href="https://camusecao.top/1970-01-01-/Url/"/>
-    <id>https://camusecao.top/1970-01-01-/Url/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-02T10:37:44.677Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。</p><hr><a id="more"></a><h3 id="PicGo的配置参考地址：PicGo"><a href="#PicGo的配置参考地址：PicGo" class="headerlink" title="PicGo的配置参考地址：PicGo"></a>PicGo的配置参考地址：<a href="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A" target="_blank" rel="noopener">PicGo</a></h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ICON</title>
-    <link href="https://camusecao.top/1970-01-01-/Test/"/>
-    <id>https://camusecao.top/1970-01-01-/Test/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-05-31T15:50:31.519Z</updated>
-    
-    <content type="html"><![CDATA[<p><i class="fa fa-camera-retro"></i></p><hr><a id="more"></a><p><i class="fa fa-circle-o-notch fa-spin"></i><br><i class="fa fa-refresh fa-spin"></i><br><i class="fa fa-cog fa-spin"></i><br><i class="fa fa-spinner fa-pulse"></i></p><p><i class="fa fa-qq"></i><br><i class="fa fa-cny"></i><br><i class="fa fa-link"></i><br><i class="fa fa-chrome"></i><br><i class="fa fa-github"></i><br><i class="fa fa-github-alt"></i><br><i class="fa fa-linux"></i><br><i class="fa fa-windows"></i><br><i class="fa fa-mouse-pointer"></i><br><i class="fa fa-music"></i><br><i class="fa fa-hand-o-up"></i><br><i class="fa fa-arrow-circle-o-up"></i></p><p><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i><i class="fa fa-"></i></p><p><img src="https://raw.githubusercontent.com/CamuseCao/Picture/master/Mouse/Sword/Sword-b.ico" alt=""></p><p><img src="https://raw.githubusercontent.com/CamuseCao/Picture/master/Mouse/Sword/Sword-w.ico" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p><p><img src="" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
-    
-    
-      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>厦门大学模板使用说明</title>
-    <link href="https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/"/>
-    <id>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:20:59.180Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="使用的前提"><a href="#使用的前提" class="headerlink" title="使用的前提"></a>使用的前提</h2><p>为了使用该模板，需要安装一个<code>TeX</code>的发行版本。可以选择<code>Texlive</code>或者<code>Miktex</code>,他们都是跨平台的。而<code>Texlive</code>打包了比较多的宏包，较为庞大，<code>Miktex</code>则是临时下载没有的宏包。这里我推荐使用<code>Miktex</code>。</p><hr><a id="more"></a><p>但是对于Mac，推荐使用<code>MacTeX</code>，它是为Mac定制的发行版本，应该比较合适。特别提醒<code>CTeX</code>套装无法运行该模板。你可以选择卸载<code>CTeX</code>套装，安装我推荐的发行版本，或者不使用该模板。关于编译方式需选择<code>XeLaTeX</code>,否则无法正常编译该模板,如果熟悉<code>latexmk</code>的可以用它来编译，这更好。</p><p>如果你不想在本地安装<code>TeX</code>的发行版本，其实可以使用 <a href="https://www.overleaf.com" target="_blank" rel="noopener">Overleaf</a> 在线编译平台，同样请使用<code>XeLaTeX</code>编译。如果想在线编译请选择我的另外一个项目去编译。我会在最后附上地址。能在Overleaf编译多亏了他们支持人员 LianTze Lim 的帮助，在此表示感谢。 大家如果在这个平台上使用遇到什么技术问题可以发邮件向<a href="mailto:support@overleaf.com">支持人员</a>请教，很可能回复的是林前辈哦，请大家不要发邮件问怎么样才能访问该网站。<del>关于打开该网址的正确姿势是找到一个靠谱的梯子，然后爬上去。</del></p><h2 id="模板使用说明"><a href="#模板使用说明" class="headerlink" title="模板使用说明"></a>模板使用说明</h2><p>为了正确使用该模板，请按照提示安装好可使用的TeX发行版本。因为论文内容比较多，因此采取了分文件的方式来构成该文档。主文档<code>XMU.tex</code>的位置位于<code>Main</code>下，正确编译后所得的pdf文件就在这里。<code>Figure</code>文件夹是存放图片的文件夹，该文件夹已经加入图片文件夹的位置，插入图片是无需多加路径，直接用文件名即可。关于<code>Setting</code>文件夹只需要把里面的<code>Information.tex</code>正确填入即可。而你需要编辑的仅有<code>Body</code>文件夹下的文件。</p><p>当你需要毕业论文的打印时。可以打开<code>Cover and reconsitution</code>文件夹，封面的制作程序已经做好了，使用它应该能的到你想要的<code>a3</code>封面，你可以自己再做调整。关于整篇论文的打印，可以在运行主文档<code>Main/XMU.tex</code>时选择用用<code>openright</code>选项，如果它生成的pdf仍然不满意，可以用<code>Reconsitution.tex</code>自己拼接和加空白页，这样总能完成工作。</p><p>你可以使用<code>make1.bat</code>和<code>make2.bat</code>来直接编译得到所有的结果。</p><h2 id="几点说明"><a href="#几点说明" class="headerlink" title="几点说明"></a>几点说明</h2><ul><li><p>该模板应该能够在<code>Mac</code>和<code>Linux</code>系统下运行，但是笔者目前只在<code>Windows</code>上测试过，如果不行，可以向我反应。等有空了我会再去测试一下。<del>最近事情多，没用虚拟机去测试。有同学测试了可以和我反应一下结果啊。</del></p></li><li><p>该模板是在厦门大学博士学位论文模板的基础上修改得到的，因为本科论文与博士学位论文的要求差别比较的，所以定制了该模板。</p></li><li><p>在使用该模板之前，请把原始编译出来的文档读一下，对于你的使用是很有帮助的。</p></li><li><p>由于本人水平有限，因此该模板写的并不好，但是应该勉强能够满足毕业论文的要求。但是仍然可能有许多错误的地方，希望各位使用者如果能发现错误之处能够提出。可以给我法邮件或者直接在 <code>github</code>上面提<code>issue</code>。欢迎大家的参与，共同完善母校的模板。</p></li><li><p>由于本人是一名理科生，对文科的同学毕业论文的额外需求可能了解不多。虽说文科生用这个模板的可能性比较小，如果有人用，有额外的需求也可以提出。</p></li></ul><h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>邮箱： <a href="mailto:camusecao@gmail.com">camusecao@gmail.com</a></p><p>该项目github项目的地址是 : <a href="https://github.com/CamuseCao/XMU-Undergraduate-thesis-template" target="_blank" rel="noopener">Link</a></p><p><code>Overleaf</code>在线编译的项目的地址 ：<a href="https://github.com/CamuseCao/XMU-Thesis-Overleaf" target="_blank" rel="noopener">Githu下载</a>    <a href="https://www.overleaf.com/2128697983jhmpkzxdzmry" target="_blank" rel="noopener">Overleaf查看与下载</a> </p><p>(<code>Overleaf</code>项目的地址请勿随意编辑，方便大家的观看。你可以把它拷到你自己的项目下尽情玩耍。 )</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>csv文件的小坑(自己主动跳进去的)</title>
-    <link href="https://camusecao.top/1970-01-01-/csv/"/>
-    <id>https://camusecao.top/1970-01-01-/csv/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-29T02:50:36.058Z</updated>
-    
-    <content type="html"><![CDATA[<p>csv文件是一种逗号分隔值文件格式，它工作是比较稳定的。对于数据量比较大的情况，它是比较好的选择。</p><hr><a id="more"></a><p>因为觉得它挺好的，于是把实验数据录入为csv格式的。由于<code>excel</code>也能打开csv文件，编辑起来比较爽，能够进行运算，所以我并没有直接用普通的编辑器去完成这个工作。虽然我提前知道它是纯文本格式的文件，但是在<code>excel</code>的界面里，我没有特别的意识，顺手添加了额外的几个<code>sheet</code>。开心的把数据录入之后，还特意保存了好，再关闭，准备处理数据。</p><p>接下来就是悲剧时刻了。再打开一看，怎么数据只剩下<code>sheet6</code>了？难道我操作不对吗？当时还是没有想到是文件格式的问题。于是我重新再录入了一遍数据，悲剧又重现了。。。。</p><p>后反思，这货本来就是只能有一个<code>sheet</code>啊。毕竟纯文本的货色。所以提醒大家注意这个问题，它应该是只会留下最后编辑的那个<code>sheet</code>。</p><p>我会这样被坑的原因还有一个就是英文版的系统下，<code>excel</code>不提醒csv文件格式可能会出现这种问题。后面我在同学中文系统性的<code>excel</code>下测试发现保存时会提醒。然而我这不提醒。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;csv文件是一种逗号分隔值文件格式，它工作是比较稳定的。对于数据量比较大的情况，它是比较好的选择。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 的 selenium 的一些使用</title>
-    <link href="https://camusecao.top/1970-01-01-/python-selenium/"/>
-    <id>https://camusecao.top/1970-01-01-/python-selenium/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-01-26T11:59:50.705Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文记录 <code>Python</code> 使用 <code>Selenium</code> 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 <code>js</code> 脚本的加载使得爬虫的难度增大，因此可以考虑使用 <code>Selenium</code> 库来帮助我们，用它操纵浏览器来爬取需要的数据。</p><hr><a id="more"></a><p>以下为本文涉及的需要加载的包。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">from</span> fake_useragent <span class="keyword">import</span> UserAgent</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="comment"># from lxml import etree, html</span></span><br></pre></td></tr></table></figure><hr><p>首先是使用一个随机的 <code>userAgent</code>，其次是设定初始打开的链接地址。注意设置你的 <code>webdrive</code> 的地址。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> fake_useragent <span class="keyword">import</span> UserAgent</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">user_agent = UserAgent().random</span><br><span class="line"></span><br><span class="line">chromeOptions = webdriver.ChromeOptions()</span><br><span class="line">chromeOptions.add_argument(<span class="string">f'user-agent=<span class="subst">&#123;user_agent&#125;</span>'</span>)</span><br><span class="line">star_url = <span class="string">r"https://wenku.baidu.com/view/8844f45e15791711cc7931b765ce0508763275cf.html"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">webdrive = <span class="string">r'D:/your/chromedriver.exe'</span></span><br><span class="line">driver = webdriver.Chrome(webdrive, chrome_options=chromeOptions)</span><br><span class="line"></span><br><span class="line">driver.get(star_url)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"><span class="comment"># close the browser</span></span><br><span class="line"><span class="comment"># driver.close()</span></span><br></pre></td></tr></table></figure><p>这里用的浏览器是 <code>chrome</code> ，可以看到成功打开了百度文库，但是目前什么操作都没做。</p><p>接下来可以做点简单的操作。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 获取网页的源码，可用于 lxml 的库的分析。但是 selenium 库其实也有选择器，挑选自己喜欢的方式即可</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'baidu.html'</span>,<span class="string">'w'</span>, encoding=<span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(driver.page_source)</span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 滑到页面底部，参考 https://stackoverflow.com/questions/20986631/how-can-i-scroll-a-web-page-using-selenium-webdriver-in-python</span></span><br><span class="line">SCROLL_PAUSE_TIME = <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">last_height = driver.execute_script(<span class="string">"return document.body.scrollHeight"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    driver.execute_script(<span class="string">"window.scrollTo(0, document.body.scrollHeight);"</span>)</span><br><span class="line">    time.sleep(SCROLL_PAUSE_TIME)</span><br><span class="line">    new_height = driver.execute_script(<span class="string">"return document.body.scrollHeight"</span>)</span><br><span class="line">    <span class="keyword">if</span> new_height == last_height:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    last_height = new_height</span><br><span class="line"></span><br><span class="line"><span class="comment"># 滑动页面 水平 0，竖直 -2000 个像素点</span></span><br><span class="line"></span><br><span class="line">driver.execute_script(<span class="string">"window.scrollBy(0,-1500)"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过 xpath 的方法找到对应的 element 并且点击，例如 继续阅读 的按钮 必须在浏览器能看到的范围内才可以点击</span></span><br><span class="line">driver.find_element_by_xpath(<span class="string">'//*[@id="html-reader-go-more"]/div[2]/div[1]/span/span[2]'</span>).click()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将窗口放大到特定的大小</span></span><br><span class="line">driver.set_window_size(<span class="number">520</span>, <span class="number">1080</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将窗口放大到最大</span></span><br><span class="line">driver.maximize_window()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存网页截图,只会保存能看到的部分</span></span><br><span class="line">driver.save_screenshot(<span class="string">'screenshot.png'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存某个元素范围的截图，例如百度文库的 Logo</span></span><br><span class="line">image = driver.find_element_by_xpath(<span class="string">'//*[@id="hd"]/div/div[1]/div[1]/a/span'</span>).screenshot_as_png</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'baidu.png'</span>,<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">   f.write(image)</span><br><span class="line">   f.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取总页码</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">s_page_number = driver.find_element_by_class_name(<span class="string">'page-count'</span>).text</span><br><span class="line">print(s_page_number)</span><br><span class="line"><span class="comment"># '/26' 不是我们想要的直接结果，通过正则将 26 提取出来</span></span><br><span class="line">page_number = re.findall(<span class="string">'/([0-9]+)'</span>, s_page_number)[<span class="number">0</span>]</span><br><span class="line">print(<span class="string">'一共有'</span>+page_number +<span class="string">'页'</span>)</span><br></pre></td></tr></table></figure><hr><p>下面是在页面里面可输入交互的地方输入内容,并且点击.一下都是使用 <code>xpath</code> 进行元素定位.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 输入内容并且跳转 注意适当加入一些休息时间</span></span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="kw"]'</span>)</span><br><span class="line">element.clear()  <span class="comment"># 清除原本在的数据</span></span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">element.send_keys(<span class="string">'量子力学'</span>)  <span class="comment"># 输入新的</span></span><br><span class="line">time.sleep(<span class="number">1.5</span>)</span><br><span class="line">driver.find_element_by_xpath(<span class="string">'//*[@id="sb"]'</span>).click()</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># driver.close()</span></span><br></pre></td></tr></table></figure><p>如何新开一个 <code>tag</code> 并且关闭？可以参考如下的操作 </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">chromeOptions = webdriver.ChromeOptions()</span><br><span class="line">star_url = <span class="string">r"https://camusecao.top/"</span></span><br><span class="line"></span><br><span class="line">webdrive = <span class="string">r'D:/your/chromedriver.exe'</span></span><br><span class="line">driver = webdriver.Chrome(webdrive, chrome_options=chromeOptions)</span><br><span class="line">driver.get(star_url)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参考 https://stackoverflow.com/questions/28431765/open-web-in-new-tab-selenium-python 和 https://stackoverflow.com/questions/38154483/using-selenium-webdriver-in-python-to-open-link-in-new-tab-window https://stackoverflow.com/questions/25951968/open-and-close-new-tab-with-selenium-webdriver-in-os-x</span></span><br><span class="line"></span><br><span class="line">time.sleep(<span class="number">5</span>)</span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="sidebar"]/div/div[1]/div/div[4]/ul/li/a'</span>)</span><br><span class="line">driver.execute_script(<span class="string">'arguments[0].click();'</span>, element)</span><br><span class="line">time.sleep(<span class="number">4</span>)</span><br><span class="line"><span class="comment"># 聚焦到新开的 tab</span></span><br><span class="line">driver.switch_to_window(driver.window_handles[<span class="number">1</span>])</span><br><span class="line"><span class="comment"># 关闭这个 tab</span></span><br><span class="line">driver.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># driver.execute_script("window.open('');")</span></span><br><span class="line"><span class="comment"># driver.switch_to.window(driver.window_handles[1])</span></span><br><span class="line"><span class="comment"># driver.get(url)</span></span><br></pre></td></tr></table></figure><p>有些网页并不是一下子就加载全部的内容，可能要等到你滑动那里才加载。那么如果确保我们等待的时间不会过长呢？可以用 wait 的方法，检测到元素后再行动。比如等到某个元素加载好点击下一页.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="comment"># 设定等待时间为 5s</span></span><br><span class="line">wait = WebDriverWait(driver, <span class="number">5</span>)</span><br><span class="line">the_path = <span class="string">'//div[contains(@data-id,"5")]/img'</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    wait.until(EC.element_to_be_clickable((By.XPATH, the_path)))</span><br><span class="line">    driver.find_element_by_xpath(<span class="string">'//*[@id="newView"]/div[1]/div/a[4]/i'</span>).click()</span><br><span class="line">    time.sleep(random.random() + <span class="number">0.05</span>)</span><br></pre></td></tr></table></figure><p>下面是直接调用 chrome 来实现保存网页的方法。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"></span><br><span class="line">pyautogui.hotkey(<span class="string">'ctrl'</span>, <span class="string">'s'</span>)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">save_file = os.getcwd()+<span class="string">'\save'</span></span><br><span class="line">pyautogui.typewrite(save_file)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">pyautogui.hotkey(<span class="string">'enter'</span>)</span><br><span class="line">time.sleep(<span class="number">4</span>)</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文记录 &lt;code&gt;Python&lt;/code&gt; 使用 &lt;code&gt;Selenium&lt;/code&gt; 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 &lt;code&gt;js&lt;/code&gt; 脚本的加载使得爬虫的难度增大，因此可以考虑使用 &lt;code&gt;Selenium&lt;/code&gt; 库来帮助我们，用它操纵浏览器来爬取需要的数据。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-      <category term="python" scheme="https://camusecao.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用软件记录</title>
-    <link href="https://camusecao.top/1970-01-01-/software/"/>
-    <id>https://camusecao.top/1970-01-01-/software/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:21:21.107Z</updated>
-    
-    <content type="html"><![CDATA[<p>该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。</p><hr><a id="more"></a><h2 id="下载使用的软件"><a href="#下载使用的软件" class="headerlink" title="下载使用的软件"></a>下载使用的软件</h2><ul><li>豆丁当当 用来下载某些网上无法直接下载的文档。</li><li>百度云 下载一些分享的资源的很好选择</li><li>冰点下载 能下载的文档应该比豆丁当当要多，但是有广告</li><li>Nutstore 办公使用很合适的同步软件</li><li>天若OCR 快速文字识别，免费使用，识别效果不错</li><li>P2P 资源寻找</li><li>Proxydown 百度云资料的不限速下载，似乎要挂了</li><li>SciHub 文献的下载</li><li>万能资源搜索助手 功能如其名</li><li>迅雷 资源丰富</li><li>Verysync 自己的同步软件</li><li></li></ul><h2 id="垃圾清理以及病毒查收等"><a href="#垃圾清理以及病毒查收等" class="headerlink" title="垃圾清理以及病毒查收等"></a>垃圾清理以及病毒查收等</h2><ul><li>Adwcleaner</li><li>CCleaner 好用又良心</li><li>Dism++ 功能很全，无论是垃圾清理还是注册表清理。也可以用来管理开机启动项等。</li><li>lenovodm 联想电脑驱动的管理</li><li>MenuMgr 管理你的右键，从此不再臃肿</li><li>Procexp 功能更齐全的任务管理器</li><li>Recuva 硬盘文件恢复</li><li>WiseRegCleaner 注册表清理</li><li>Launchy 软件快速启动</li><li>Speccy 电脑硬件查看</li><li></li></ul><h2 id="编程以及编辑的软件"><a href="#编程以及编辑的软件" class="headerlink" title="编程以及编辑的软件"></a>编程以及编辑的软件</h2><ul><li>Anaconda Python环境管理以及包管理</li><li>Atom 很好看也好用的编辑器</li><li>Jabref 管理参考文献的软件，配合<code>TeX</code>使用效果更佳</li><li>Mathpix 公式识别为<code>LaTeX</code>代码</li><li>MathType 公式输入，可以转化为<code>LaTeX</code>代码</li><li>Matlab 庞然大物，矩阵计算是它的强项</li><li>MikTeX TeX的一个很轻小的发行版本</li><li>Putty 远程控制</li><li>R 统计计算语言</li><li>Shadowsocks SS数据传输</li><li>VSCode 好用的编辑器</li><li>Xmanager 远程控制</li><li>Git 版本控制于Github管理</li><li>Pycharm Python编辑器</li><li>Node 解决别的软件的依赖</li><li>Pandoc 各种文件的转换</li><li>Typora Markdown我最喜欢的查看器</li><li>Texstudio TeX编辑器</li><li>TeXLive TeX的一个很齐全的发行版本</li><li></li></ul><h2 id="图片、音频、视频、文件的查看于处理"><a href="#图片、音频、视频、文件的查看于处理" class="headerlink" title="图片、音频、视频、文件的查看于处理"></a>图片、音频、视频、文件的查看于处理</h2><ul><li>网易云音乐 大家都喜欢</li><li>PhotoZoom 图片的放大</li><li>Foobar 可以尽可能自己改造的音乐播放器</li><li>PDFdo PDF Converter 处理PDF的一款软件</li><li>吾爱看看 可以找到一些付费视频</li><li>Snipaste 截图软件</li><li>Bandicam 录频软件</li><li>Xnview 图片查看于编辑</li><li>HoneyView 图片查看</li><li>Pltplayer 一款优秀的播放器</li><li>福昕高级PDF编辑器 如其名</li><li></li></ul><h2 id="学习软件"><a href="#学习软件" class="headerlink" title="学习软件"></a>学习软件</h2><ul><li>Chrome Goole出品的浏览器</li><li>有道词典</li><li>TeamViewer 远程控制，团队协作</li><li>Tor 一款优秀且保护隐私的浏览器</li><li>Vmware 优秀的虚拟机软件</li><li>WindowTabs 让大部分软件都可以有标签</li><li></li></ul><h2 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h2><ul><li>Everything 只要记得一点关键名字，就有希望找到被你遗忘在某个角落的文件。</li><li>KeePass 密码记录</li><li>TreeSize 分析资源占用</li><li>TeraCopy 代替原来的剪切复制</li><li></li></ul><h2 id="社交聊天"><a href="#社交聊天" class="headerlink" title="社交聊天"></a>社交聊天</h2><ul><li>QQ4</li><li>Telegram 不太需要担心隐私问题的聊天软件</li><li></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
-    <link href="https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
-    <id>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:18:08.658Z</updated>
-    
-    <content type="html"><![CDATA[<p>每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。</p><hr><a id="more"></a><p>步骤是<code>win</code>+<code>R</code>键打开运行，后输入<code>regedit</code>，在注册表内定位到 <code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion</code>,然后下面图片这两条内容修改即可。具体地址凭你喜好。(某些位置会有权限问题)</p><p><img src="https://i.loli.net/2019/02/22/5c6ed9945e202.png" alt="注册表"></p><p>这样就成功(作死)了。<strong>大家最好别这么做。</strong></p><ul><li><p>会导致某些软件自动创建的快捷方式无法使用，这一点我很早就发现了，但是很容易解决，打开快捷方式重新编辑一下就可以了。或者找到软件的位置，再用右键创建快捷方式。这里关于找文件推荐一下<code>Everything</code>，对于文件的查找很有帮助。</p></li><li><p>上面那点可以忍受，我不在乎。可是它会导致<code>Windows</code>的某些更新一直失败，而这一点我最近才发现。本文主旨在于这点，提醒一下和我一样喜欢作死的网友。我之前更新失败后用中文微软社区提供的一些方法均不成功，所以多次重装系统。<del>还好我很多软件都是便携版的，压根不怕重装系统，只要安装几个软件就正常使用了。</del></p></li></ul><p>最终的解决是把报错信息用谷歌搜索在英文的微软社区找到了真正的原因。而真凶就是修改注册表。</p><p><img src="https://i.loli.net/2019/02/22/5c6ed97cf055b.png" alt="update"></p><p>该连接为解决了我问题的<a href="https://social.technet.microsoft.com/Forums/en-US/458f346e-b191-4a13-9ef9-653d9584ea79/windows-update-error-code-0x8007011?forum=win10itprogeneral" target="_blank" rel="noopener">帖子</a>。</p><p>当我修改回默认的，更新问题就好了。至此，我以为万事大吉了。</p><p>然而故事还没有完。第二天发现我的<code>MikTeX</code>就出现问题了。查看它所报的错误，我发现是文件的定位出错。我立刻想到了修改注册表这件事。应该就是我又改回去导致文件定位出现问题。无奈之下卸载重装了。但是有些软件却没有受到影响，可能与它的复杂度以及机制的不用有很大关系吧。</p><p>这下作死的故事暂时完结了，希望大家别手贱，和我一样出这种问题。</p><hr><p>2019年3月1日的更新</p><p>之前我的Chrome浏览器的自动更新老是不能用，其实它也是在我更改注册表之后安装的软件，因此受牵连了。我又重新卸载了安装，自动更新功能可以用了。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-      <category term="Regedit" scheme="https://camusecao.top/tags/Regedit/"/>
-    
-      <category term="System" scheme="https://camusecao.top/tags/System/"/>
+      <category term="Experiment" scheme="https://camusecao.top/tags/Experiment/"/>
     
   </entry>
   
