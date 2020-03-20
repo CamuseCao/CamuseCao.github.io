@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2019-04-02T13:02:16.000Z</updated>
+  <updated>2019-03-02T10:37:44.000Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -17,15 +17,331 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>TeX 那些小事</title>
-    <link href="https://camusecao.top/1970-01-01-/TeX-Record/"/>
-    <id>https://camusecao.top/1970-01-01-/TeX-Record/</id>
+    <title>收藏链接</title>
+    <link href="https://camusecao.top/1970-01-01-/Url/"/>
+    <id>https://camusecao.top/1970-01-01-/Url/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-02T13:02:16.000Z</updated>
+    <updated>2019-03-02T10:37:44.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本文记录了使用&lt;code&gt;TeX&lt;/code&gt;的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。&lt;/p&gt;
+      &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome的私人配置</title>
+    <link href="https://camusecao.top/1970-01-01-/Chrome-setting/"/>
+    <id>https://camusecao.top/1970-01-01-/Chrome-setting/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-03-17T22:36:30.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是我的Chrome浏览器的一些配置，有兴趣的话可以看看啊。希望你喜欢。&lt;/p&gt;
+&lt;h2 id
+      
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Chrome" scheme="https://camusecao.top/tags/Chrome/"/>
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Extension" scheme="https://camusecao.top/tags/Extension/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TeX 批量插入图片</title>
+    <link href="https://camusecao.top/1970-01-01-/Insert-pictures-tex/"/>
+    <id>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-04-30T14:04:32.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试题目</title>
+    <link href="https://camusecao.top/1970-01-01-/Interview/"/>
+    <id>https://camusecao.top/1970-01-01-/Interview/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-02T09:29:25.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;如何理解能带结构画一个简单的能带结构&quot;&gt;如何理解能带结构？画一个简单的能带结构。&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;math inline&quot;&gt;\(k\text{与}E(k)\)&lt;/span&gt;的关系图即能带结构。 画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
+    
+      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jupyter Notebook 的使用小记</title>
+    <link href="https://camusecao.top/1970-01-01-/Jupyternotebook/"/>
+    <id>https://camusecao.top/1970-01-01-/Jupyternotebook/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-04-27T02:32:50.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用python批量转换图片的格式</title>
+    <link href="https://camusecao.top/1970-01-01-/Convert-pictures/"/>
+    <id>https://camusecao.top/1970-01-01-/Convert-pictures/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-04-30T14:16:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python Pandas 库的一些使用</title>
+    <link href="https://camusecao.top/1970-01-01-/Python-Pandas/"/>
+    <id>https://camusecao.top/1970-01-01-/Python-Pandas/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-01-31T13:00:16.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MiKTeX的基本使用</title>
+    <link href="https://camusecao.top/1970-01-01-/MiKTeX/"/>
+    <id>https://camusecao.top/1970-01-01-/MiKTeX/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-03-20T14:51:11.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="Programme" scheme="https://camusecao.top/categories/Programme/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 实用小程序</title>
+    <link href="https://camusecao.top/1970-01-01-/Python-tricks/"/>
+    <id>https://camusecao.top/1970-01-01-/Python-tricks/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-01-26T05:54:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础知识复习</title>
+    <link href="https://camusecao.top/1970-01-01-/Review/"/>
+    <id>https://camusecao.top/1970-01-01-/Review/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-02T09:29:06.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;半导体重掺应用&quot;&gt;半导体重掺应用&lt;/h2&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
+    
+      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
+    
+      <category term="Semiconductor" scheme="https://camusecao.top/tags/Semiconductor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LaTeX 字体的基础配置</title>
+    <link href="https://camusecao.top/1970-01-01-/TeX-Fonts/"/>
+    <id>https://camusecao.top/1970-01-01-/TeX-Fonts/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-06-01T08:03:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文将介绍如何简单的配置&lt;code&gt;LaTeX&lt;/code&gt;用&lt;code&gt;xelatex&lt;/code&gt;编译时，可参考的一种字体配置方案。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ICON</title>
+    <link href="https://camusecao.top/1970-01-01-/Test/"/>
+    <id>https://camusecao.top/1970-01-01-/Test/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-05-31T15:50:31.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
+    
+    
+      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个酷炫的清理技能</title>
+    <link href="https://camusecao.top/1970-01-01-/Clear/"/>
+    <id>https://camusecao.top/1970-01-01-/Clear/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-01T13:24:11.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;清理回收站&quot;&gt;清理回收站&lt;/h2&gt;
+&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Command" scheme="https://camusecao.top/tags/Command/"/>
+    
+      <category term="Clean" scheme="https://camusecao.top/tags/Clean/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>厦门大学模板使用说明</title>
+    <link href="https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/"/>
+    <id>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-01T13:20:59.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;使用的前提&quot;&gt;使用的前提&lt;/h2&gt;
+&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
 &lt;hr /&gt;
     
     </summary>
@@ -39,21 +355,110 @@
   </entry>
   
   <entry>
-    <title>近代物理实验复习</title>
-    <link href="https://camusecao.top/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
-    <id>https://camusecao.top/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</id>
+    <title>csv文件的小坑(自己主动跳进去的)</title>
+    <link href="https://camusecao.top/1970-01-01-/csv/"/>
+    <id>https://camusecao.top/1970-01-01-/csv/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-07T06:01:13.000Z</updated>
+    <updated>2019-03-29T02:50:36.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;卷子&quot;&gt;2010 卷子&lt;/h2&gt;
-&lt;h3 id=&quot;虚拟仪器的主要特点有&quot;&gt;虚拟仪器的主要特点有：&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;尽可能采用了通用的硬件，各种仪器的差异主要是软件。&lt;/li&gt;
-&lt;li&gt;可充分发挥计算机的能力，有强大的数据处理功能，可以创造出功能更强的仪器。&lt;/li&gt;
-&lt;li&gt;用户可以根据自己的需要定义和制造各种仪器。&lt;/li&gt;
-&lt;/ul&gt;
+      &lt;p&gt;csv文件是一种逗号分隔值文件格式，它工作是比较稳定的。对于数据量比较大的情况，它是比较好的选择。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用软件记录</title>
+    <link href="https://camusecao.top/1970-01-01-/software/"/>
+    <id>https://camusecao.top/1970-01-01-/software/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-01T13:21:21.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
+    <link href="https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
+    <id>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-01T13:18:08.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Regedit" scheme="https://camusecao.top/tags/Regedit/"/>
+    
+      <category term="System" scheme="https://camusecao.top/tags/System/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 的 selenium 的一些使用</title>
+    <link href="https://camusecao.top/1970-01-01-/python-selenium/"/>
+    <id>https://camusecao.top/1970-01-01-/python-selenium/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-01-26T11:59:50.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录 &lt;code&gt;Python&lt;/code&gt; 使用 &lt;code&gt;Selenium&lt;/code&gt; 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 &lt;code&gt;js&lt;/code&gt; 脚本的加载使得爬虫的难度增大，因此可以考虑使用 &lt;code&gt;Selenium&lt;/code&gt; 库来帮助我们，用它操纵浏览器来爬取需要的数据。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+      <category term="python" scheme="https://camusecao.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>凝聚态物理期末总结</title>
+    <link href="https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
+    <id>https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-01T13:19:16.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;../t.css&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;求倒格矢&quot;&gt;求倒格矢&lt;/h3&gt;
 &lt;hr /&gt;
     
     </summary>
@@ -64,7 +469,30 @@
     
       <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
-      <category term="Experiment" scheme="https://camusecao.top/tags/Experiment/"/>
+      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自适应电子和光电子学的压电电子学和压电光电子学</title>
+    <link href="https://camusecao.top/1970-01-01-/Article1/"/>
+    <id>https://camusecao.top/1970-01-01-/Article1/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-01T13:24:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;摘要&quot;&gt;摘要&lt;/h2&gt;
+&lt;p&gt;低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。&lt;/p&gt;
+&lt;hr /&gt;
+    
+    </summary>
+    
+    
+      <category term="文献阅读" scheme="https://camusecao.top/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
+    
+    
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
   </entry>
   
