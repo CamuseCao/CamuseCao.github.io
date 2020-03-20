@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/myimages/Ying.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/myimages/y32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/myimages/y16.ico">
+  <link rel="mask-icon" href="/myimages/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://camusecao.top').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="这是我的Chrome浏览器的一些配置，有兴趣的话可以看看啊。希望你喜欢。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chrome的私人配置">
+<meta property="og:url" content="https://camusecao.top/1970-01-01-/Chrome-setting/index.html">
+<meta property="og:site_name" content="Born to die">
+<meta property="og:description" content="这是我的Chrome浏览器的一些配置，有兴趣的话可以看看啊。希望你喜欢。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2019/03/01/5c791835e5f9f.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/01/5c7922ec92516.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/01/5c7922f5b50ce.png">
+<meta property="article:published_time" content="1970-01-01T00:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-17T22:36:30.138Z">
+<meta property="article:author" content="CamuseCao">
+<meta property="article:tag" content="Software">
+<meta property="article:tag" content="Chrome">
+<meta property="article:tag" content="Extension">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/01/5c791835e5f9f.png">
+
+<link rel="canonical" href="https://camusecao.top/1970-01-01-/Chrome-setting/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Chrome的私人配置 | Born to die</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Born to die" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Born to die</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Living to love</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/Chrome-setting/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Chrome的私人配置
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-18 06:36:30" itemprop="dateModified" datetime="2020-03-18T06:36:30+08:00">2020-03-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index">
+                    <span itemprop="name">软件</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>这是我的Chrome浏览器的一些配置，有兴趣的话可以看看啊。希望你喜欢。</p>
+<hr>
+<a id="more"></a>
+
+<h2 id="更改Google搜索结果点击的默认行为"><a href="#更改Google搜索结果点击的默认行为" class="headerlink" title="更改Google搜索结果点击的默认行为"></a>更改Google搜索结果点击的默认行为</h2><p>Chrome的google搜索结果直接点击并不会像百度那样点击一下出现新的一个标签。那怎么样才能出现那样的结果呢？有很多种实现方法。</p>
+<ul>
+<li>在链接处右键选择<code>open in new tab</code>即可。</li>
+<li>按住<code>Control</code>键点击连接。</li>
+</ul>
+<p>这两种都是基本操作。下面再介绍一个改变它单击默认行为的方法。</p>
+<p>首先访问 <a href="https://www.google.com/preferences" target="_blank" rel="noopener">https://www.google.com/preferences</a> 进入谷歌搜索结果设置。</p>
+<p>找到 结果打开方式 这个选项，把在新的浏览器窗口中打开所选的每条搜索结果 这个选项勾选起来</p>
+<p><img src="https://i.loli.net/2019/03/01/5c791835e5f9f.png" alt="QQ截图20190301193102"></p>
+<p>之后保存即可。</p>
+<hr>
+<h2 id="如何让你的Chrome安装插件，并且访问Google"><a href="#如何让你的Chrome安装插件，并且访问Google" class="headerlink" title="如何让你的Chrome安装插件，并且访问Google"></a>如何让你的Chrome安装插件，并且访问Google</h2><p>首先去下载离线安装的插件，可以访问这个网址下载<a href="http://www.cnplugins.com/" target="_blank" rel="noopener">http://www.cnplugins.com/</a> ,搜索<code>谷歌访问助手</code>，把它下载下来。然后右键点击你的Chrome浏览器的快捷方式，点击属性。定位在目标那一栏,然后在最后面先加上一个空格，在加上如下内容： <code>--enable-easy-off-store-extension-install</code> ,记住，加这句话之前要加空格。然后确认并且保存。</p>
+<p>这时候点击这个快捷方式打开Chrome，点击右上角的三个竖点，定位到更多工具，然后点击插件。再开启右上角的开发者模式。这时候就可以直接把离线插件拖进去浏览起安装了。所以把之前下载好的<code>谷歌访问助手.crx</code>拖进去当前页面，这样就能顺利安装好插件了。</p>
+<p>这下访问Google就没有问题了，你可以自由的去Chrome商店里开心的下载其他插件了，后面的安装及其简单。打开 <a href="https://chrome.google.com/webstore/category/extensions" target="_blank" rel="noopener">https://chrome.google.com/webstore/category/extensions</a>，搜索你要的插件，点击安装即可。</p>
+<hr>
+<h2 id="配置你的引流小王子SwitchyOmega"><a href="#配置你的引流小王子SwitchyOmega" class="headerlink" title="配置你的引流小王子SwitchyOmega"></a>配置你的引流小王子SwitchyOmega</h2><p>首先是要安装好<code>SwitchyOmega</code>插件，可以在完成上面的步骤后来下载这个。你需要会使用<code>shadowsocks</code>这种软件，并且有相应的节点，这样看这部分教程才有意义。</p>
+<p>右键点击小王子，点击<code>option</code>，打开配置界面。初次进入有介绍，你可以看看。</p>
+<p>点击到<code>proxy</code>，配置成我的样子。说明下<code>port</code>的选择要看你的<code>shadowsocks</code>占用的端口是哪个，这里的<code>prot</code>就改成对应的，默认的一般是1080。请自行查看你自己的端口是多少。</p>
+<p><img src="https://i.loli.net/2019/03/01/5c7922ec92516.png" alt="QQ图片20190301201644"></p>
+<p>上一步配置好之后点击<code>Auto switch</code></p>
+<p><code>Rule List URL</code>里面填上<code>https://raw.githubusercontent.com/shadowsocksrr/breakwa11.github.io/master/free/freenodeplain.txt</code>,然后按提示更新列表。注意，由于该文件可能由于更新改名字了而更新失败，这时候访问这个网站，查询最新的列表地址。<a href="https://github.com/gfwlist/gfwlist" target="_blank" rel="noopener">https://github.com/gfwlist/gfwlist</a>。里面有一个<code>gfwlist.txt</code>，点击进去，把浏览器上的地址填进去。</p>
+<p>接下来把<code>Rule list rules</code>和<code>Default</code>配置成我这样即可。</p>
+<p>配置好保存，然后点击插件启用。这时你的shadowsocks需要打开，但是不用开代理，这样就能引流了。使用的时候会遇到资源加载失败的情况，你改变它用直接访问或这代理即可，它会帮你添加到情景模式，以后访问就很愉快了。</p>
+<p><img src="https://i.loli.net/2019/03/01/5c7922f5b50ce.png" alt="QQ图片20190301201657"></p>
+<p>更加详细的教程可以看<a href="https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList" target="_blank" rel="noopener">这里</a>。</p>
+<hr>
+<p>下面简单介绍一下我常用的浏览器插件。</p>
+<ul>
+<li>AdBlock 去除部分广告</li>
+<li>Chrono Download Manager 改变Chrome默认的下载，由该插件接管</li>
+<li>Clear Cache 做网页的可以用一下，清除缓存用的</li>
+<li>Sonar 分析网页的加载时间，错误数量。做网站的朋友可以试试看</li>
+<li>Extension Manager 管理插件的插件</li>
+<li>Google Dictionary (by Google) 谷歌翻译的插件，当网页上有不认识的单词时，双击它，即可看到英文解释</li>
+<li>IE Tab 某些页面非得用智障IE浏览起才能打开，这个插件可以让你在Chrome内在需要的网页调用IE内核，不用打开智障浏览器</li>
+<li>Infinity New Tab (Pro) 注册就是pro，改变你的首页，有一定的定制自由度。</li>
+<li>Markdown Preview Chrome的Markdown渲染插件，这样Chrome也可以看到本地文件的渲染结果</li>
+<li>Octotree 经常用Github的同学可以尝试一下这个插件，可以让你直接展开Github项目下面各个层次的文件，而不需要频繁的切换页面</li>
+<li>OneTab 一键把页面收起来，可复原</li>
+<li>Proxy SwitchyOmega 配合SS和SSR食用，合理引流</li>
+<li>RSS Feed Reader RSS阅读器，更新及时收到消息</li>
+<li>Search by Image 快速搜索图片</li>
+<li>Take Webpage Screenshots Entirely 浏览器内截图插件</li>
+<li>Tampermonkey 油猴脚本，里面的脚本丰富，极大的改善浏览起功能，但是请从合适的地方添加脚本</li>
+<li>Telegram for Chrome 插件版Telegram</li>
+<li>Zotero Connector 喜欢用Zotero管理参考文献的小伙伴，在Chrome内加上它，更美味</li>
+<li>谷歌访问助手 访问Goole全家桶的一个简单插件</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Software/" rel="tag"># Software</a>
+              <a href="/tags/Chrome/" rel="tag"># Chrome</a>
+              <a href="/tags/Extension/" rel="tag"># Extension</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/1970-01-01-/Review/" rel="prev" title="基础知识复习">
+      <i class="fa fa-chevron-left"></i> 基础知识复习
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/1970-01-01-/TeX-Fonts/" rel="next" title="LaTeX 字体的基础配置">
+      LaTeX 字体的基础配置 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#更改Google搜索结果点击的默认行为"><span class="nav-number">1.</span> <span class="nav-text">更改Google搜索结果点击的默认行为</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何让你的Chrome安装插件，并且访问Google"><span class="nav-number">2.</span> <span class="nav-text">如何让你的Chrome安装插件，并且访问Google</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置你的引流小王子SwitchyOmega"><span class="nav-number">3.</span> <span class="nav-text">配置你的引流小王子SwitchyOmega</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">CamuseCao</p>
+  <div class="site-description" itemprop="description">Camuse's blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CamuseCao</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

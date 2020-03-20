@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/myimages/Ying.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/myimages/y32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/myimages/y16.ico">
+  <link rel="mask-icon" href="/myimages/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://camusecao.top').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="求倒格矢">
+<meta property="og:type" content="article">
+<meta property="og:title" content="凝聚态物理期末总结">
+<meta property="og:url" content="https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/index.html">
+<meta property="og:site_name" content="Born to die">
+<meta property="og:description" content="求倒格矢">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2018/12/18/5c18e72fb95e4.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg">
+<meta property="article:published_time" content="1970-01-01T00:00:00.000Z">
+<meta property="article:modified_time" content="2019-03-01T13:19:16.400Z">
+<meta property="article:author" content="CamuseCao">
+<meta property="article:tag" content="Physics">
+<meta property="article:tag" content="Band">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2018/12/18/5c18e72fb95e4.png">
+
+<link rel="canonical" href="https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>凝聚态物理期末总结 | Born to die</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Born to die" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Born to die</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Living to love</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          凝聚态物理期末总结
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-01 21:19:16" itemprop="dateModified" datetime="2019-03-01T21:19:16+08:00">2019-03-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <link rel="stylesheet" href="../t.css">
+
+<h3 id="求倒格矢"><a href="#求倒格矢" class="headerlink" title="求倒格矢"></a>求倒格矢</h3><hr>
+<a id="more"></a>
+
+
+<p>定义素晶胞的基矢 $ ( {a_{1}}, {a_{2}}, {a_{3}})$，可以用下列公式决定倒晶格的晶胞基矢${\displaystyle ( {b_{1}}, {b_{2}}, {b_{3}})}$</p>
+<p>$$\begin{cases}<br>  b_{1}=2\pi \frac {a_{2}\times a_{3} }{ a_{1}\cdot<br> ( a_{2}\times a_{3})}; \<br>  b_{2}=2\pi \frac  {  a_{3}\times  a_{1}}{  a_{2}\cdot (  a_{3}\times   a_{1})};\<br>  b_{3}=2\pi \frac  {  a_{1}\times  a_2}{  a_{3}\cdot ( a_1\times  a_2)};<br>\end{cases}$$</p>
+<p>倒晶格与正晶格的关系</p>
+<p>倒晶格与正晶格的基矢满足以下关系<br>$$<br>a_{i}\cdot b_{j}=2\pi \delta _{ij}=<br>\begin{cases}<br>2\pi ,&amp;i\ =\ j;\<br>0,&amp;i\ \neq \ j;<br>\end{cases}<br>$$</p>
+<h3 id="固体的结合"><a href="#固体的结合" class="headerlink" title="固体的结合"></a>固体的结合</h3><ul>
+<li>金属结合</li>
+</ul>
+<p>LA、ILA族及过渡元素，它们的电负性小，最外层一般有一两个容易失去的价电子.构成元素晶体时，晶格上既有金属原子，又有失去了电子的金属离子.但它们都是不稳定的.价电子会向正金属离子运动，即金属离子随时会变成金属原子，金属原子随时会变成金属离子.价电子不再属于个别原子，而是为所有原子所共有，在晶体中作共有化运动.采用一个更简化的物理模型：金属中所有的原子都失掉了最外层的价电子而成为原子实，原子实浸没在共有电子的电子云中.金属晶体的结合力主要是原子实和共有化电子之间的静电库仑力.金属结合只受最小能量的限制，原子越紧凑，电子云与原子实就越紧密，库仑能就越低.</p>
+<ul>
+<li>共价结合</li>
+</ul>
+<p>原子晶体是靠共价键结合的.电子虽不能脱离电负性大的原子，但靠近的两个电负性大的原子可以各出一个电子，形成电子共享的形式，即这一对电子的主要活动范围处于两原子之间，把两个原子联结起来.这一对电子的自旋是相反的，称为配对电子.电子配对的方式称为共价键。</p>
+<ul>
+<li>离子结合</li>
+</ul>
+<p>周期表左边的元素的电负性小，容易失去电子；而周期表右边的元素电负性大，容易俘获电子；二者结合在一起，一个失去电子变成正离子，一个得到电子变成负离子，形成离子晶体。</p>
+<ul>
+<li>范德瓦尔斯结合</li>
+</ul>
+<p>固体表面有吸附现象，气体能凝结成液体，液体能凝结成固体，都说明分子间有结合力存在.分子间的结合力称为范德瓦耳斯力。</p>
+<p>范德瓦耳斯力一般可分为三种类型：</p>
+<p>（1）极性分子间的结合<br>极性分子具有电偶极矩，极性分子间的作用力是库仑力.为了使系统的能量最低，两分子靠近的两原子一定是异性的.</p>
+<p>（2）极性分子与非极性分子的结合</p>
+<p>极性分子的电偶极矩具有长程作用，它使附近的非极性分子产生极化，使非极性分子也成为一个电偶极子.极性分子的偶极矩与非极性分子的诱导偶极矩的吸引力叫诱导力.显然诱导力也是库仑力.</p>
+<p>（3）非极性分子间的结合</p>
+<p>非极性分子在低温下能形成晶体.其结合力是分子间瞬时电偶极矩的一种相互作用.这种作用力是较弱的.</p>
+<ul>
+<li>氢键结合</li>
+</ul>
+<p>氢原子很特殊，虽属于LA族，但它的电负性很大，这样的原子很难直接与其他原子形成离子结合.氢原子通常先与电负性大的原子A形成共价结合；形成共价键后，原来球对称的电子云分布偏向了A原子方向，使氢核和负电中心不再重合，产生了极化现象.此时呈正电性的氢核一端可以通过库仑力与另一个电负性较大的B原子相结合.这种结合可表示为A-H一B，H与A距离近，作用强，与B的距离稍远，结合力相对较弱.通常文献只称H一B为氢键.冰是典型的氢键晶体。</p>
+<h3 id="晶体的缺陷"><a href="#晶体的缺陷" class="headerlink" title="晶体的缺陷"></a>晶体的缺陷</h3><h3 id="能带论"><a href="#能带论" class="headerlink" title="能带论"></a>能带论</h3><div  class="imgcenter">
+<img class="img1" src="https://i.loli.net/2018/12/18/5c18e72fb95e4.png"></img>
+<img  class="img1"
+src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
+</div>
+
+<ul>
+<li>金属的能带穿过费米能级</li>
+<li>半导体的能到不穿过，且禁带宽度较小</li>
+<li>绝缘体的能带也不穿过费米能级，禁带宽度大</li>
+<li>半金属（semi-mental)的能带与费米能级相切。</li>
+<li>半金属（half-mental)自旋向上部分与金属相同，自旋向下部分与绝缘体相同。</li>
+</ul>
+<h3 id="表面物理"><a href="#表面物理" class="headerlink" title="表面物理"></a>表面物理</h3><p>表面的标记</p>
+<h3 id="磁性"><a href="#磁性" class="headerlink" title="磁性"></a>磁性</h3><p>磁性的分类</p>
+<p>铁磁和反铁磁为什么这么叫？</p>
+<h3 id="锂离子电池图片"><a href="#锂离子电池图片" class="headerlink" title="锂离子电池图片"></a>锂离子电池图片</h3><h3 id="Kohn-Sham-方程"><a href="#Kohn-Sham-方程" class="headerlink" title="Kohn-Sham 方程"></a>Kohn-Sham 方程</h3><p>意义：虽然是近似的，但是它可解。改变了基本量，是一个自洽方程。</p>
+<p>$$F=F(n)$$</p>
+<h3 id="两种基本粒子"><a href="#两种基本粒子" class="headerlink" title="两种基本粒子"></a>两种基本粒子</h3><ul>
+<li>费米子构成物质</li>
+</ul>
+<ul>
+<li>玻色子传递相互作用</li>
+</ul>
+<p>Slater 行列式(N=2)。</p>
+<h3 id="二维晶体找原胞"><a href="#二维晶体找原胞" class="headerlink" title="二维晶体找原胞"></a>二维晶体找原胞</h3><h3 id="2010-年物理学诺贝尔奖与石墨烯"><a href="#2010-年物理学诺贝尔奖与石墨烯" class="headerlink" title="2010 年物理学诺贝尔奖与石墨烯"></a>2010 年物理学诺贝尔奖与石墨烯</h3>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Physics/" rel="tag"># Physics</a>
+              <a href="/tags/Band/" rel="tag"># Band</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/" rel="prev" title="关于作死修改注册表导致无法更新Windows系统的反思">
+      <i class="fa fa-chevron-left"></i> 关于作死修改注册表导致无法更新Windows系统的反思
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/1970-01-01-/software/" rel="next" title="常用软件记录">
+      常用软件记录 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#求倒格矢"><span class="nav-number">1.</span> <span class="nav-text">求倒格矢</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#固体的结合"><span class="nav-number">2.</span> <span class="nav-text">固体的结合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#晶体的缺陷"><span class="nav-number">3.</span> <span class="nav-text">晶体的缺陷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#能带论"><span class="nav-number">4.</span> <span class="nav-text">能带论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表面物理"><span class="nav-number">5.</span> <span class="nav-text">表面物理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#磁性"><span class="nav-number">6.</span> <span class="nav-text">磁性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#锂离子电池图片"><span class="nav-number">7.</span> <span class="nav-text">锂离子电池图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kohn-Sham-方程"><span class="nav-number">8.</span> <span class="nav-text">Kohn-Sham 方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两种基本粒子"><span class="nav-number">9.</span> <span class="nav-text">两种基本粒子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二维晶体找原胞"><span class="nav-number">10.</span> <span class="nav-text">二维晶体找原胞</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2010-年物理学诺贝尔奖与石墨烯"><span class="nav-number">11.</span> <span class="nav-text">2010 年物理学诺贝尔奖与石墨烯</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">CamuseCao</p>
+  <div class="site-description" itemprop="description">Camuse's blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CamuseCao</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
