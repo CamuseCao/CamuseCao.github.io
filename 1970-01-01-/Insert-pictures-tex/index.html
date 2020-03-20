@@ -20,7 +20,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="本文记录了LaTeX中如何快速批量插入大量图片的方法。">
@@ -270,7 +270,7 @@
 
       
         <p>本文记录了<code>LaTeX</code>中如何快速批量插入大量图片的方法。</p>
-<hr />
+<hr>
 <a id="more"></a>
 <p>以下情况仅针对你要插入的图片要求一样的情况。</p>
 <p>假设在<code>/images</code>文件夹下面你有各种格式的图片需要插入。</p>
@@ -278,10 +278,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> images/*.*; <span class="keyword">do</span> <span class="built_in">echo</span> <span class="string">"\\includegraphics[width=0.9\\linewidth]&#123;images/<span class="variable">$f</span>&#125;\\\\"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
 <p>具体的代码可以根据需求更改，例如想用浮动体的插图代码。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> images/*.*; <span class="keyword">do</span> <span class="built_in">printf</span> <span class="string">"\\\begin&#123;figure&#125;\n\t\centering\n\t\includegraphics[width=0.7\linewidth]&#123;images/<span class="variable">$f</span>&#125;\n\t\caption&#123;&#125;\n\t\label&#123;fig:<span class="variable">$f</span>&#125;\n\\\end&#123;figure&#125;\n\n"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
-<p>如果想要插入指定后缀格式的图片，比如<code>png</code>的，那么把<code>images/*.*;</code>改成<code>images/*.png;</code>即可。</p>
+<p> 如果想要插入指定后缀格式的图片，比如<code>png</code>的，那么把<code>images/*.*;</code>改成<code>images/*.png;</code>即可。</p>
 <p>下面再给个别的样式的例子。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> Figures/*.*; <span class="keyword">do</span> <span class="built_in">printf</span> <span class="string">"\\\begin&#123;minipage&#125;&#123;0.18\linewidth&#125;\n\t\centering\n\t\includegraphics[height=1\linewidth]&#123;<span class="variable">$f</span>&#125;\n\t\caption&#123;&#125;\n\\\end&#123;minipage&#125;\n"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
-<p>参考链接： https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory</p>
+<p>参考链接：<br><span class="exturl" data-url="aHR0cHM6Ly90ZXguc3RhY2tleGNoYW5nZS5jb20vcXVlc3Rpb25zLzk4NzQ4L2luY2x1ZGluZy1tYW55LWZpZ3VyZXMtZnJvbS1hLWRpcmVjdG9yeQ==" title="https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory">https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory<i class="fa fa-external-link"></i></span></p>
 
     </div>
 
@@ -376,12 +376,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/1970-01-01-/Interview/" rel="prev" title="面试题目">
-      <i class="fa fa-chevron-left"></i> 面试题目
+    <a href="/1970-01-01-/Jupyternotebook/" rel="prev" title="Jupyter Notebook 的使用小记">
+      <i class="fa fa-chevron-left"></i> Jupyter Notebook 的使用小记
     </a></div>
       <div class="post-nav-item">
-    <a href="/1970-01-01-/Chrome-setting/" rel="next" title="Chrome的私人配置">
-      Chrome的私人配置 <i class="fa fa-chevron-right"></i>
+    <a href="/1970-01-01-/Python-tricks/" rel="next" title="Python 实用小程序">
+      Python 实用小程序 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>

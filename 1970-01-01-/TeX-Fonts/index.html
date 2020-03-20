@@ -20,7 +20,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="本文将介绍如何简单的配置LaTeX用xelatex编译时，可参考的一种字体配置方案。">
@@ -270,7 +270,7 @@
 
       
         <p>本文将介绍如何简单的配置<code>LaTeX</code>用<code>xelatex</code>编译时，可参考的一种字体配置方案。</p>
-<hr />
+<hr>
 <a id="more"></a>
 <p>很多情况下<code>LaTeX</code>默认的字体配置并不令人满意或者符合特定的场景需求，会有字体配置的需求。而<code>pdflatex</code>的编译方式要指定满意的字体是比较复杂的，<code>xelatex</code>相对来说比较简单，它能够调用系统安装的字体。以下的内容都是针对使用<code>xelatex</code>编译时的参考方案。</p>
 <p>作为一个中国人，文档里面出现中文和英文的现象并不少见。要指定英文字体比较容易，使用<code>fontspec</code>宏包可以实现。如果要同时指定中文的使用字体，可以使用<code>xeCJK</code>宏包。由于中文字体的特别，中国的<code>TeX</code>组织开发了该宏包。以下展示一个比较完整的字体设置方案。要编译成功需要安装相应的字体，可以用这个思路换成你需要的字体。</p>
@@ -371,8 +371,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/1970-01-01-/Test/" rel="prev" title="ICON">
-      <i class="fa fa-chevron-left"></i> ICON
+    <a href="/1970-01-01-/Python-tricks/" rel="prev" title="Python 实用小程序">
+      <i class="fa fa-chevron-left"></i> Python 实用小程序
     </a></div>
       <div class="post-nav-item">
     <a href="/1970-01-01-/Review/" rel="next" title="基础知识复习">

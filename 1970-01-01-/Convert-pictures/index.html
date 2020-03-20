@@ -20,7 +20,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="今天做了一个实验，实验保存的图片格式只有bmp的一种格式可以选择，并且图片数量不小。但是TeX对于bmp图片的插入支持不是特别友好。因此我想利用python来批量转换图片的格式。">
@@ -269,11 +269,11 @@
 
       
         <p>今天做了一个实验，实验保存的图片格式只有<code>bmp</code>的一种格式可以选择，并且图片数量不小。但是<code>TeX</code>对于<code>bmp</code>图片的插入支持不是特别友好。因此我想利用<code>python</code>来批量转换图片的格式。</p>
-<hr />
+<hr>
 <a id="more"></a>
 <p>经过一番折腾写出了如下的简单程序，应该能够直接满足转换的需求。我下面处理的时候为了不污染工作目录，把图片都存在<code>Figures/</code>文件夹下。新生成的图片则存在<code>Figures/Figures/</code>文件夹下面。下面的程序应该简单易读，拿来改改应该就能满足一般的需求了。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> glob</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">image_list = []</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> glob.glob(<span class="string">'Figures/*.bmp'</span>): <span class="comment">#assuming bmp</span></span><br><span class="line">    img = Image.open(filename)</span><br><span class="line">    filename = img.filename</span><br><span class="line">    img.save(<span class="string">'Figures/'</span> + os.path.splitext(filename)[<span class="number">0</span>] +<span class="string">'.png'</span>, <span class="string">'png'</span>)</span><br></pre></td></tr></table></figure>
-<p>参考链接： https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python</p>
+<p>参考链接：<br><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjYzOTIzMzYvaW1wb3J0aW5nLWltYWdlcy1mcm9tLWEtZGlyZWN0b3J5LXB5dGhvbg==" title="https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python">https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python<i class="fa fa-external-link"></i></span></p>
 
     </div>
 
@@ -284,13 +284,13 @@
   <div class="popular-posts-header">Related Posts</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/1970-01-01-/Jupyternotebook/" rel="bookmark">Jupyter Notebook 的使用小记</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/1970-01-01-/Python-Pandas/" rel="bookmark">Python Pandas 库的一些使用</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/1970-01-01-/Python-tricks/" rel="bookmark">Python 实用小程序</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/1970-01-01-/Jupyternotebook/" rel="bookmark">Jupyter Notebook 的使用小记</a></div>
     </li>
   </ul>
 
@@ -361,12 +361,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/1970-01-01-/Python-Pandas/" rel="prev" title="Python Pandas 库的一些使用">
-      <i class="fa fa-chevron-left"></i> Python Pandas 库的一些使用
+    <a href="/1970-01-01-/Interview/" rel="prev" title="面试题目">
+      <i class="fa fa-chevron-left"></i> 面试题目
     </a></div>
       <div class="post-nav-item">
-    <a href="/1970-01-01-/Jupyternotebook/" rel="next" title="Jupyter Notebook 的使用小记">
-      Jupyter Notebook 的使用小记 <i class="fa fa-chevron-right"></i>
+    <a href="/1970-01-01-/Chrome-setting/" rel="next" title="Chrome的私人配置">
+      Chrome的私人配置 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>

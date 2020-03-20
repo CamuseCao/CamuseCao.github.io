@@ -20,7 +20,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="本文是关于本人使用Jupyter Notebook 使用的一些简单记录，如果你也喜欢用它可以看看。">
@@ -32,10 +32,10 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.loli.net/2019/04/27/5cc3bed8e63a2.png">
 <meta property="article:published_time" content="1970-01-01T00:00:00.000Z">
-<meta property="article:modified_time" content="2019-04-27T02:32:50.000Z">
+<meta property="article:modified_time" content="2020-03-20T15:44:49.231Z">
 <meta property="article:author" content="CamuseCao">
-<meta property="article:tag" content="Programme">
 <meta property="article:tag" content="Python">
+<meta property="article:tag" content="Programme">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2019/04/27/5cc3bed8e63a2.png">
 
@@ -241,7 +241,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-04-27 10:32:50" itemprop="dateModified" datetime="2019-04-27T10:32:50+08:00">2019-04-27</time>
+                <time title="Modified: 2020-03-20 23:44:49" itemprop="dateModified" datetime="2020-03-20T23:44:49+08:00">2020-03-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -272,14 +272,12 @@
 
       
         <p>本文是关于本人使用<code>Jupyter Notebook</code> 使用的一些简单记录，如果你也喜欢用它可以看看。</p>
-<hr />
+<hr>
 <a id="more"></a>
 <p>默认打开<code>Jupyter Notebook</code>的位置是<code>C盘</code>下的用户文件夹作为工作文件夹。这让我很不满，所以我想嫩故不能改变这个设定。在搜索引擎上一搜索，立刻找到了解决方案。</p>
 <p>官方文档果然是可靠的，链接如下： <span class="exturl" data-url="aHR0cHM6Ly9qdXB5dGVyLW5vdGVib29rLWJlZ2lubmVyLWd1aWRlLnJlYWR0aGVkb2NzLmlvL2VuL2xhdGVzdC9leGVjdXRlLmh0bWwjY2hhbmdlLWp1cHl0ZXItbm90ZWJvb2stc3RhcnR1cC1mb2xkZXItd2luZG93cw==" title="https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html#change-jupyter-notebook-startup-folder-windows">Link<i class="fa fa-external-link"></i></span>,以下我对<code>windows</code>系统的部分做下翻译和图片指导。愿意直接看官方文档的就不需要继续看这一段了。</p>
 <p>首先找到<code>Jupyter Notebook</code>的快捷方式，右键点击属性，定位到<code>Target</code>栏，将里面的<code>%USERPROFILE%</code>改成你想要的文件夹完整路径，例如我想改到<code>F:\Code\Code\Python\Jupyter</code>，就改成如下图片的样子。重新用修改过的快捷方式打开它，工作文件夹就改变了。</p>
-<figure>
-<img data-src="https://i.loli.net/2019/04/27/5cc3bed8e63a2.png" alt="" /><figcaption>Snipaste_2019-04-27_10-30-27</figcaption>
-</figure>
+<p><img data-src="https://i.loli.net/2019/04/27/5cc3bed8e63a2.png" alt=""></p>
 
     </div>
 
@@ -293,16 +291,16 @@
       <div class="popular-posts-title"><a href="/1970-01-01-/Python-tricks/" rel="bookmark">Python 实用小程序</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/1970-01-01-/Insert-pictures-tex/" rel="bookmark">TeX 批量插入图片</a></div>
+      <div class="popular-posts-title"><a href="/1970-01-01-/Convert-pictures/" rel="bookmark">利用python批量转换图片的格式</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/1970-01-01-/Python-Pandas/" rel="bookmark">Python Pandas 库的一些使用</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/1970-01-01-/TeX-Fonts/" rel="bookmark">LaTeX 字体的基础配置</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/1970-01-01-/python-selenium/" rel="bookmark">Python 的 selenium 的一些使用</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/1970-01-01-/TeXlive-basic-install/" rel="bookmark">Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</a></div>
+      <div class="popular-posts-title"><a href="/1970-01-01-/Insert-pictures-tex/" rel="bookmark">TeX 批量插入图片</a></div>
     </li>
   </ul>
 
@@ -359,8 +357,8 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Programme/" rel="tag"><i class="fa fa-tag"></i> Programme</a>
               <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+              <a href="/tags/Programme/" rel="tag"><i class="fa fa-tag"></i> Programme</a>
           </div>
 
         
@@ -374,12 +372,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/1970-01-01-/Convert-pictures/" rel="prev" title="利用python批量转换图片的格式">
-      <i class="fa fa-chevron-left"></i> 利用python批量转换图片的格式
+    <a href="/1970-01-01-/csv/" rel="prev" title="csv文件的小坑(自己主动跳进去的)">
+      <i class="fa fa-chevron-left"></i> csv文件的小坑(自己主动跳进去的)
     </a></div>
       <div class="post-nav-item">
-    <a href="/1970-01-01-/Interview/" rel="next" title="面试题目">
-      面试题目 <i class="fa fa-chevron-right"></i>
+    <a href="/1970-01-01-/Insert-pictures-tex/" rel="next" title="TeX 批量插入图片">
+      TeX 批量插入图片 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
