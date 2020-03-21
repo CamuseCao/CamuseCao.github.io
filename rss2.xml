@@ -9,23 +9,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Fri, 01 Mar 2019 13:20:59 GMT</pubDate>
+    <pubDate>Sat, 02 Mar 2019 10:37:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>厦门大学模板使用说明</title>
-      <link>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</link>
-      <guid>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</guid>
+      <title>收藏链接</title>
+      <link>https://camusecao.top/1970-01-01-/Url/</link>
+      <guid>https://camusecao.top/1970-01-01-/Url/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
+        &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Url/#disqus_thread</comments>
     </item>
     
     <item>
@@ -45,19 +45,19 @@
     </item>
     
     <item>
-      <title>利用python批量转换图片的格式</title>
-      <link>https://camusecao.top/1970-01-01-/Convert-pictures/</link>
-      <guid>https://camusecao.top/1970-01-01-/Convert-pictures/</guid>
+      <title>TeX 批量插入图片</title>
+      <link>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</link>
+      <guid>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
+        &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Convert-pictures/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Insert-pictures-tex/#disqus_thread</comments>
     </item>
     
     <item>
@@ -77,19 +77,19 @@
     </item>
     
     <item>
-      <title>MiKTeX的基本使用</title>
-      <link>https://camusecao.top/1970-01-01-/MiKTeX/</link>
-      <guid>https://camusecao.top/1970-01-01-/MiKTeX/</guid>
+      <title>Jupyter Notebook 的使用小记</title>
+      <link>https://camusecao.top/1970-01-01-/Jupyternotebook/</link>
+      <guid>https://camusecao.top/1970-01-01-/Jupyternotebook/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
+        &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/MiKTeX/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Jupyternotebook/#disqus_thread</comments>
     </item>
     
     <item>
@@ -106,6 +106,54 @@
       
       
       <comments>https://camusecao.top/1970-01-01-/Python-Pandas/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Python 实用小程序</title>
+      <link>https://camusecao.top/1970-01-01-/Python-tricks/</link>
+      <guid>https://camusecao.top/1970-01-01-/Python-tricks/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/Python-tricks/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>MiKTeX的基本使用</title>
+      <link>https://camusecao.top/1970-01-01-/MiKTeX/</link>
+      <guid>https://camusecao.top/1970-01-01-/MiKTeX/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/MiKTeX/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>一个酷炫的清理技能</title>
+      <link>https://camusecao.top/1970-01-01-/Clear/</link>
+      <guid>https://camusecao.top/1970-01-01-/Clear/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;清理回收站&quot;&gt;&lt;a href=&quot;#清理回收站&quot; class=&quot;headerlink&quot; title=&quot;清理回收站&quot;&gt;&lt;/a&gt;清理回收站&lt;/h2&gt;&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/Clear/#disqus_thread</comments>
     </item>
     
     <item>
@@ -140,51 +188,51 @@
     </item>
     
     <item>
-      <title>Python 实用小程序</title>
-      <link>https://camusecao.top/1970-01-01-/Python-tricks/</link>
-      <guid>https://camusecao.top/1970-01-01-/Python-tricks/</guid>
+      <title>ICON</title>
+      <link>https://camusecao.top/1970-01-01-/Test/</link>
+      <guid>https://camusecao.top/1970-01-01-/Test/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
+        &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Python-tricks/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Test/#disqus_thread</comments>
     </item>
     
     <item>
-      <title>TeX 批量插入图片</title>
-      <link>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</link>
-      <guid>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</guid>
+      <title>利用python批量转换图片的格式</title>
+      <link>https://camusecao.top/1970-01-01-/Convert-pictures/</link>
+      <guid>https://camusecao.top/1970-01-01-/Convert-pictures/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
+        &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Insert-pictures-tex/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Convert-pictures/#disqus_thread</comments>
     </item>
     
     <item>
-      <title>Jupyter Notebook 的使用小记</title>
-      <link>https://camusecao.top/1970-01-01-/Jupyternotebook/</link>
-      <guid>https://camusecao.top/1970-01-01-/Jupyternotebook/</guid>
+      <title>厦门大学模板使用说明</title>
+      <link>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</link>
+      <guid>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
+        &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Jupyternotebook/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/#disqus_thread</comments>
     </item>
     
     <item>
@@ -204,35 +252,19 @@
     </item>
     
     <item>
-      <title>一个酷炫的清理技能</title>
-      <link>https://camusecao.top/1970-01-01-/Clear/</link>
-      <guid>https://camusecao.top/1970-01-01-/Clear/</guid>
+      <title>Python 的 selenium 的一些使用</title>
+      <link>https://camusecao.top/1970-01-01-/python-selenium/</link>
+      <guid>https://camusecao.top/1970-01-01-/python-selenium/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;h2 id=&quot;清理回收站&quot;&gt;&lt;a href=&quot;#清理回收站&quot; class=&quot;headerlink&quot; title=&quot;清理回收站&quot;&gt;&lt;/a&gt;清理回收站&lt;/h2&gt;&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
+        &lt;p&gt;本文记录 &lt;code&gt;Python&lt;/code&gt; 使用 &lt;code&gt;Selenium&lt;/code&gt; 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 &lt;code&gt;js&lt;/code&gt; 脚本的加载使得爬虫的难度增大，因此可以考虑使用 &lt;code&gt;Selenium&lt;/code&gt; 库来帮助我们，用它操纵浏览器来爬取需要的数据。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Clear/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
-      <link>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</link>
-      <guid>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</guid>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/python-selenium/#disqus_thread</comments>
     </item>
     
     <item>
@@ -252,19 +284,19 @@
     </item>
     
     <item>
-      <title>Python 的 selenium 的一些使用</title>
-      <link>https://camusecao.top/1970-01-01-/python-selenium/</link>
-      <guid>https://camusecao.top/1970-01-01-/python-selenium/</guid>
+      <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
+      <link>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</link>
+      <guid>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;本文记录 &lt;code&gt;Python&lt;/code&gt; 使用 &lt;code&gt;Selenium&lt;/code&gt; 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 &lt;code&gt;js&lt;/code&gt; 脚本的加载使得爬虫的难度增大，因此可以考虑使用 &lt;code&gt;Selenium&lt;/code&gt; 库来帮助我们，用它操纵浏览器来爬取需要的数据。&lt;/p&gt;
+        &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/python-selenium/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/#disqus_thread</comments>
     </item>
     
     <item>
@@ -282,38 +314,6 @@
       
       
       <comments>https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>收藏链接</title>
-      <link>https://camusecao.top/1970-01-01-/Url/</link>
-      <guid>https://camusecao.top/1970-01-01-/Url/</guid>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/1970-01-01-/Url/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>ICON</title>
-      <link>https://camusecao.top/1970-01-01-/Test/</link>
-      <guid>https://camusecao.top/1970-01-01-/Test/</guid>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/1970-01-01-/Test/#disqus_thread</comments>
     </item>
     
     <item>

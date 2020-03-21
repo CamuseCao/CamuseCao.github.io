@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>厦门大学模板使用说明</title>
-    <url>/1970-01-01-/XMU-Thesis-Instruction/</url>
-    <content><![CDATA[<h2 id="使用的前提"><a href="#使用的前提" class="headerlink" title="使用的前提"></a>使用的前提</h2><p>为了使用该模板，需要安装一个<code>TeX</code>的发行版本。可以选择<code>Texlive</code>或者<code>Miktex</code>,他们都是跨平台的。而<code>Texlive</code>打包了比较多的宏包，较为庞大，<code>Miktex</code>则是临时下载没有的宏包。这里我推荐使用<code>Miktex</code>。</p>
+    <title>收藏链接</title>
+    <url>/1970-01-01-/Url/</url>
+    <content><![CDATA[<p>本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。</p>
 <hr>
 <a id="more"></a>
-<p>但是对于Mac，推荐使用<code>MacTeX</code>，它是为Mac定制的发行版本，应该比较合适。特别提醒<code>CTeX</code>套装无法运行该模板。你可以选择卸载<code>CTeX</code>套装，安装我推荐的发行版本，或者不使用该模板。关于编译方式需选择<code>XeLaTeX</code>,否则无法正常编译该模板,如果熟悉<code>latexmk</code>的可以用它来编译，这更好。</p>
-<p>如果你不想在本地安装<code>TeX</code>的发行版本，其实可以使用 <span class="exturl" data-url="aHR0cHM6Ly93d3cub3ZlcmxlYWYuY29t" title="https://www.overleaf.com">Overleaf<i class="fa fa-external-link"></i></span> 在线编译平台，同样请使用<code>XeLaTeX</code>编译。如果想在线编译请选择我的另外一个项目去编译。我会在最后附上地址。能在Overleaf编译多亏了他们支持人员 LianTze Lim 的帮助，在此表示感谢。 大家如果在这个平台上使用遇到什么技术问题可以发邮件向<span class="exturl" data-url="bWFpbHRvOnN1cHBvcnRAb3ZlcmxlYWYuY29t" title="mailto:support@overleaf.com">支持人员<i class="fa fa-external-link"></i></span>请教，很可能回复的是林前辈哦，请大家不要发邮件问怎么样才能访问该网站。<del>关于打开该网址的正确姿势是找到一个靠谱的梯子，然后爬上去。</del></p>
-<h2 id="模板使用说明"><a href="#模板使用说明" class="headerlink" title="模板使用说明"></a>模板使用说明</h2><p>为了正确使用该模板，请按照提示安装好可使用的TeX发行版本。因为论文内容比较多，因此采取了分文件的方式来构成该文档。主文档<code>XMU.tex</code>的位置位于<code>Main</code>下，正确编译后所得的pdf文件就在这里。<code>Figure</code>文件夹是存放图片的文件夹，该文件夹已经加入图片文件夹的位置，插入图片是无需多加路径，直接用文件名即可。关于<code>Setting</code>文件夹只需要把里面的<code>Information.tex</code>正确填入即可。而你需要编辑的仅有<code>Body</code>文件夹下的文件。</p>
-<p>当你需要毕业论文的打印时。可以打开<code>Cover and reconsitution</code>文件夹，封面的制作程序已经做好了，使用它应该能的到你想要的<code>a3</code>封面，你可以自己再做调整。关于整篇论文的打印，可以在运行主文档<code>Main/XMU.tex</code>时选择用用<code>openright</code>选项，如果它生成的pdf仍然不满意，可以用<code>Reconsitution.tex</code>自己拼接和加空白页，这样总能完成工作。</p>
-<p>你可以使用<code>make1.bat</code>和<code>make2.bat</code>来直接编译得到所有的结果。</p>
-<h2 id="几点说明"><a href="#几点说明" class="headerlink" title="几点说明"></a>几点说明</h2><ul>
-<li><p>该模板应该能够在<code>Mac</code>和<code>Linux</code>系统下运行，但是笔者目前只在<code>Windows</code>上测试过，如果不行，可以向我反应。等有空了我会再去测试一下。<del>最近事情多，没用虚拟机去测试。有同学测试了可以和我反应一下结果啊。</del></p>
-</li>
-<li><p>该模板是在厦门大学博士学位论文模板的基础上修改得到的，因为本科论文与博士学位论文的要求差别比较的，所以定制了该模板。</p>
-</li>
-<li><p>在使用该模板之前，请把原始编译出来的文档读一下，对于你的使用是很有帮助的。</p>
-</li>
-<li><p>由于本人水平有限，因此该模板写的并不好，但是应该勉强能够满足毕业论文的要求。但是仍然可能有许多错误的地方，希望各位使用者如果能发现错误之处能够提出。可以给我法邮件或者直接在 <code>github</code>上面提<code>issue</code>。欢迎大家的参与，共同完善母校的模板。</p>
-</li>
-<li><p>由于本人是一名理科生，对文科的同学毕业论文的额外需求可能了解不多。虽说文科生用这个模板的可能性比较小，如果有人用，有额外的需求也可以提出。</p>
-</li>
-</ul>
-<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>邮箱： <span class="exturl" data-url="bWFpbHRvOmNhbXVzZWNhb0BnbWFpbC5jb20=" title="mailto:camusecao@gmail.com">camusecao@gmail.com<i class="fa fa-external-link"></i></span></p>
-<p>该项目github项目的地址是 : <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbXVzZUNhby9YTVUtVW5kZXJncmFkdWF0ZS10aGVzaXMtdGVtcGxhdGU=" title="https://github.com/CamuseCao/XMU-Undergraduate-thesis-template">Link<i class="fa fa-external-link"></i></span></p>
-<p><code>Overleaf</code>在线编译的项目的地址 ：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbXVzZUNhby9YTVUtVGhlc2lzLU92ZXJsZWFm" title="https://github.com/CamuseCao/XMU-Thesis-Overleaf">Githu下载<i class="fa fa-external-link"></i></span>    <span class="exturl" data-url="aHR0cHM6Ly93d3cub3ZlcmxlYWYuY29tLzIxMjg2OTc5ODNqaG1wa3p4ZHptcnk=" title="https://www.overleaf.com/2128697983jhmpkzxdzmry">Overleaf查看与下载<i class="fa fa-external-link"></i></span> </p>
-<p>(<code>Overleaf</code>项目的地址请勿随意编辑，方便大家的观看。你可以把它拷到你自己的项目下尽情玩耍。 )</p>
-]]></content>
+<h3 id="PicGo的配置参考地址：PicGo"><a href="#PicGo的配置参考地址：PicGo" class="headerlink" title="PicGo的配置参考地址：PicGo"></a>PicGo的配置参考地址：<span class="exturl" data-url="aHR0cHM6Ly9waWNnby5naXRodWIuaW8vUGljR28tRG9jL3poL2d1aWRlL2NvbmZpZy5odG1sI2dpdGh1YiVFNSU5QiVCRSVFNSVCQSU4QQ==" title="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A">PicGo<i class="fa fa-external-link"></i></span></h3>]]></content>
       <categories>
-        <category>学习</category>
+        <category>软件</category>
       </categories>
       <tags>
-        <tag>TeX</tag>
+        <tag>Software</tag>
       </tags>
   </entry>
   <entry>
@@ -100,20 +79,28 @@
       </tags>
   </entry>
   <entry>
-    <title>利用python批量转换图片的格式</title>
-    <url>/1970-01-01-/Convert-pictures/</url>
-    <content><![CDATA[<p>今天做了一个实验，实验保存的图片格式只有<code>bmp</code>的一种格式可以选择，并且图片数量不小。但是<code>TeX</code>对于<code>bmp</code>图片的插入支持不是特别友好。因此我想利用<code>python</code>来批量转换图片的格式。</p>
+    <title>TeX 批量插入图片</title>
+    <url>/1970-01-01-/Insert-pictures-tex/</url>
+    <content><![CDATA[<p>本文记录了<code>LaTeX</code>中如何快速批量插入大量图片的方法。</p>
 <hr>
 <a id="more"></a>
-<p>经过一番折腾写出了如下的简单程序，应该能够直接满足转换的需求。我下面处理的时候为了不污染工作目录，把图片都存在<code>Figures/</code>文件夹下。新生成的图片则存在<code>Figures/Figures/</code>文件夹下面。下面的程序应该简单易读，拿来改改应该就能满足一般的需求了。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> glob</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">image_list = []</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> glob.glob(<span class="string">'Figures/*.bmp'</span>): <span class="comment">#assuming bmp</span></span><br><span class="line">    img = Image.open(filename)</span><br><span class="line">    filename = img.filename</span><br><span class="line">    img.save(<span class="string">'Figures/'</span> + os.path.splitext(filename)[<span class="number">0</span>] +<span class="string">'.png'</span>, <span class="string">'png'</span>)</span><br></pre></td></tr></table></figure>
-<p>参考链接：<br><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjYzOTIzMzYvaW1wb3J0aW5nLWltYWdlcy1mcm9tLWEtZGlyZWN0b3J5LXB5dGhvbg==" title="https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python">https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python<i class="fa fa-external-link"></i></span></p>
+<p>以下情况仅针对你要插入的图片要求一样的情况。</p>
+<p>假设在<code>/images</code>文件夹下面你有各种格式的图片需要插入。</p>
+<p>最简单的情况可以这样处理。打开<code>git bash</code>,输入如下的指令,即可得到一系列的代码。在<code>tex</code>里面用就行了。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> images/*.*; <span class="keyword">do</span> <span class="built_in">echo</span> <span class="string">"\\includegraphics[width=0.9\\linewidth]&#123;images/<span class="variable">$f</span>&#125;\\\\"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
+<p>具体的代码可以根据需求更改，例如想用浮动体的插图代码。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> images/*.*; <span class="keyword">do</span> <span class="built_in">printf</span> <span class="string">"\\\begin&#123;figure&#125;\n\t\centering\n\t\includegraphics[width=0.7\linewidth]&#123;images/<span class="variable">$f</span>&#125;\n\t\caption&#123;&#125;\n\t\label&#123;fig:<span class="variable">$f</span>&#125;\n\\\end&#123;figure&#125;\n\n"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
+<p> 如果想要插入指定后缀格式的图片，比如<code>png</code>的，那么把<code>images/*.*;</code>改成<code>images/*.png;</code>即可。</p>
+<p>下面再给个别的样式的例子。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> Figures/*.*; <span class="keyword">do</span> <span class="built_in">printf</span> <span class="string">"\\\begin&#123;minipage&#125;&#123;0.18\linewidth&#125;\n\t\centering\n\t\includegraphics[height=1\linewidth]&#123;<span class="variable">$f</span>&#125;\n\t\caption&#123;&#125;\n\\\end&#123;minipage&#125;\n"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
+<p>参考链接：<br><span class="exturl" data-url="aHR0cHM6Ly90ZXguc3RhY2tleGNoYW5nZS5jb20vcXVlc3Rpb25zLzk4NzQ4L2luY2x1ZGluZy1tYW55LWZpZ3VyZXMtZnJvbS1hLWRpcmVjdG9yeQ==" title="https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory">https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory<i class="fa fa-external-link"></i></span></p>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>TeX</tag>
+        <tag>Programme</tag>
       </tags>
   </entry>
   <entry>
@@ -133,6 +120,63 @@
       <tags>
         <tag>Physics</tag>
         <tag>Band</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Jupyter Notebook 的使用小记</title>
+    <url>/1970-01-01-/Jupyternotebook/</url>
+    <content><![CDATA[<p>本文是关于本人使用<code>Jupyter Notebook</code> 使用的一些简单记录，如果你也喜欢用它可以看看。</p>
+<hr>
+<a id="more"></a>
+<p>默认打开<code>Jupyter Notebook</code>的位置是<code>C盘</code>下的用户文件夹作为工作文件夹。这让我很不满，所以我想嫩故不能改变这个设定。在搜索引擎上一搜索，立刻找到了解决方案。</p>
+<p>官方文档果然是可靠的，链接如下： <span class="exturl" data-url="aHR0cHM6Ly9qdXB5dGVyLW5vdGVib29rLWJlZ2lubmVyLWd1aWRlLnJlYWR0aGVkb2NzLmlvL2VuL2xhdGVzdC9leGVjdXRlLmh0bWwjY2hhbmdlLWp1cHl0ZXItbm90ZWJvb2stc3RhcnR1cC1mb2xkZXItd2luZG93cw==" title="https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html#change-jupyter-notebook-startup-folder-windows">Link<i class="fa fa-external-link"></i></span>,以下我对<code>windows</code>系统的部分做下翻译和图片指导。愿意直接看官方文档的就不需要继续看这一段了。</p>
+<p>首先找到<code>Jupyter Notebook</code>的快捷方式，右键点击属性，定位到<code>Target</code>栏，将里面的<code>%USERPROFILE%</code>改成你想要的文件夹完整路径，例如我想改到<code>F:\Code\Code\Python\Jupyter</code>，就改成如下图片的样子。重新用修改过的快捷方式打开它，工作文件夹就改变了。</p>
+<p><img data-src="https://i.loli.net/2019/04/27/5cc3bed8e63a2.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Programme</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python Pandas 库的一些使用</title>
+    <url>/1970-01-01-/Python-Pandas/</url>
+    <content><![CDATA[<p><code>Pandas</code> 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。</p>
+<hr>
+<a id="more"></a>
+<p>我经常需要合并两个结构相同的 <code>csv</code> 或 <code>excel</code> 或 <code>Pandas</code> 数据表格，这个时候应该直接使用 <code>concat</code> 函数，基本的用法如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">merged = pd.concat([df1, df2], ignore_index=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 实用小程序</title>
+    <url>/1970-01-01-/Python-tricks/</url>
+    <content><![CDATA[<p>Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 <code>stackoverflow</code> 已经 <code>Python</code> 相关模块的文档。</p>
+<hr>
+<a id="more"></a>
+<p>当一个文件夹里面有成百上千的文件需要重命名，并且重命名套路很强时，可以考虑使用下面的程序稍加修改应用。这个程序的干的具体事就是将 <code>stock</code> 文件夹下面的全部文件名在前面加上 <code>sh.</code> 。 修改运行这样的程序最好现在测试的文件夹里面用，确保把程序写对了再用到目标文件夹中。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span> </span><br><span class="line">    the_dir = <span class="string">"stock/"</span></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(the_dir): </span><br><span class="line">        dst =<span class="string">"sh."</span> + filename </span><br><span class="line">        src =the_dir+ filename </span><br><span class="line">        dst =the_dir+ dst </span><br><span class="line">        os.rename(src, dst) </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>: </span><br><span class="line">      </span><br><span class="line">    <span class="comment"># Calling main() function </span></span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+<hr>
+<p><code>Python</code> 读取文件获得的顺序会因为系统不同而有些差异。当我在处理一些图片用数字从小到大命名，但是中间有些又不全，不能直接循环，所以用一下代码来处理，获得符合要全的文件名。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line"></span><br><span class="line">target_dir = <span class="string">'data/'</span></span><br><span class="line">file_numbers = []</span><br><span class="line"><span class="keyword">for</span> file <span class="keyword">in</span> os.listdir(target_dir):</span><br><span class="line">    <span class="keyword">if</span> file.endswith(<span class="string">".png"</span>):</span><br><span class="line">        file_number = file.split(<span class="string">'.'</span>)[<span class="number">0</span>]</span><br><span class="line">        file_numbers +=  [int(file_number)]</span><br><span class="line">new_file_number = [ str(i) + <span class="string">'.png'</span> <span class="keyword">for</span> i <span class="keyword">in</span> sorted(file_numbers)]</span><br></pre></td></tr></table></figure>
+<hr>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Programme</tag>
       </tags>
   </entry>
   <entry>
@@ -181,20 +225,34 @@
       </tags>
   </entry>
   <entry>
-    <title>Python Pandas 库的一些使用</title>
-    <url>/1970-01-01-/Python-Pandas/</url>
-    <content><![CDATA[<p><code>Pandas</code> 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。</p>
+    <title>一个酷炫的清理技能</title>
+    <url>/1970-01-01-/Clear/</url>
+    <content><![CDATA[<h2 id="清理回收站"><a href="#清理回收站" class="headerlink" title="清理回收站"></a>清理回收站</h2><p>你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！</p>
 <hr>
 <a id="more"></a>
-<p>我经常需要合并两个结构相同的 <code>csv</code> 或 <code>excel</code> 或 <code>Pandas</code> 数据表格，这个时候应该直接使用 <code>concat</code> 函数，基本的用法如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">merged = pd.concat([df1, df2], ignore_index=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<p>清空回收站可以用如下命令行：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure>
+<p>大家应该会用<code>cmd</code>吧。不会的可以这样操作：用<code>window+r</code>键，接下来输入<code>cmd</code>，即可打卡命令行，然后运行上面代码，即可清除回收站的垃圾。</p>
+<p>可是上面的代码可能比较繁琐，不好记，生怕装逼失败。接下啦教你更酷炫的。新建一个文本文档，随意起名，例如<code>clear.txt</code>。</p>
+<p>接下来在里面的上面的代码输入。随后把文件的后缀名改成.bat。</p>
+<p>即变成<code>clear.bat</code>。</p>
+<p>这样就是一个批处理文件了。右键即可看到以管理员身份运行。运行后回收站清空。</p>
+<p>还想把逼装的更好参考如下：</p>
+<p>1.打开如下文件夹：<code>C:\Users\camuse</code>。其中的<code>camuse</code>是用户名，记得改成你自己的。</p>
+<p>2.把刚才的批处理文件放到这里面。</p>
+<p>3.接下来按用<code>window+r</code>键，再输入<code>cmd</code>，打开命令行。</p>
+<p>4.在命令行输入<code>clear</code>,这一步即执行刚才做好的批处理文件。</p>
+<p>如果想把这个用到更多地方也是可以的，比如我们系统有一个缓存了无用文件的地方：<code>C:\Users\Camuse\AppData\Local\Temp</code>,其中的<code>camuse</code>是用户名，记得改成你自己的。</p>
+<p>在命令行运行如下命令可以删除整个文件夹：<code>rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</code>，你也可以把这句命令加入之前的批处理文件。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</span><br><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure>
+<p>如果还有其它想要清理的文件夹自己加入即可。</p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>电脑知识</category>
       </categories>
       <tags>
-        <tag>Software</tag>
-        <tag>Python</tag>
+        <tag>Command</tag>
+        <tag>Clean</tag>
       </tags>
   </entry>
   <entry>
@@ -262,68 +320,80 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 实用小程序</title>
-    <url>/1970-01-01-/Python-tricks/</url>
-    <content><![CDATA[<p>Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 <code>stackoverflow</code> 已经 <code>Python</code> 相关模块的文档。</p>
+    <title>ICON</title>
+    <url>/1970-01-01-/Test/</url>
+    <content><![CDATA[<p><i class="fa fa-camera-retro"></i></p>
 <hr>
 <a id="more"></a>
-<p>当一个文件夹里面有成百上千的文件需要重命名，并且重命名套路很强时，可以考虑使用下面的程序稍加修改应用。这个程序的干的具体事就是将 <code>stock</code> 文件夹下面的全部文件名在前面加上 <code>sh.</code> 。 修改运行这样的程序最好现在测试的文件夹里面用，确保把程序写对了再用到目标文件夹中。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span> </span><br><span class="line">    the_dir = <span class="string">"stock/"</span></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(the_dir): </span><br><span class="line">        dst =<span class="string">"sh."</span> + filename </span><br><span class="line">        src =the_dir+ filename </span><br><span class="line">        dst =the_dir+ dst </span><br><span class="line">        os.rename(src, dst) </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>: </span><br><span class="line">      </span><br><span class="line">    <span class="comment"># Calling main() function </span></span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+<p><i class="fa fa-circle-o-notch fa-spin">&lt;/i&gt;<br><i class="fa fa-refresh fa-spin"></i><br><i class="fa fa-cog fa-spin">&lt;/i&gt;<br><i class="fa fa-spinner fa-pulse"></i></p>
+<p><i class="fa fa-qq">&lt;/i&gt;<br><i class="fa fa-cny"></i><br><i class="fa fa-link">&lt;/i&gt;<br><i class="fa fa-chrome"></i><br><i class="fa fa-github">&lt;/i&gt;<br><i class="fa fa-github-alt"></i><br><i class="fa fa-linux">&lt;/i&gt;<br><i class="fa fa-windows"></i><br><i class="fa fa-mouse-pointer">&lt;/i&gt;<br><i class="fa fa-music"></i><br><i class="fa fa-hand-o-up">&lt;/i&gt;<br><i class="fa fa-arrow-circle-o-up"></i></p>
+<p><i class="fa fa-">&lt;/i&gt;<i class="fa fa-"></i><i class="fa fa-">&lt;/i&gt;<i class="fa fa-"></i><i class="fa fa-">&lt;/i&gt;<i class="fa fa-"></i><i class="fa fa-"></i></p>
+<p><img data-src="https://raw.githubusercontent.com/CamuseCao/Picture/master/Mouse/Sword/Sword-b.ico" alt=""></p>
+<p><img data-src="https://raw.githubusercontent.com/CamuseCao/Picture/master/Mouse/Sword/Sword-w.ico" alt=""></p>
+<p><img data-src="" alt=""></p>
+<p><img data-src="" alt=""></p>
+<p><img data-src="" alt=""></p>
+<p><img data-src="" alt=""></p>
+<p><img data-src="" alt=""></p>
+<p><img data-src="" alt=""></p>
+]]></content>
+      <categories>
+        <category>图标</category>
+      </categories>
+      <tags>
+        <tag>Icon</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用python批量转换图片的格式</title>
+    <url>/1970-01-01-/Convert-pictures/</url>
+    <content><![CDATA[<p>今天做了一个实验，实验保存的图片格式只有<code>bmp</code>的一种格式可以选择，并且图片数量不小。但是<code>TeX</code>对于<code>bmp</code>图片的插入支持不是特别友好。因此我想利用<code>python</code>来批量转换图片的格式。</p>
 <hr>
-<p><code>Python</code> 读取文件获得的顺序会因为系统不同而有些差异。当我在处理一些图片用数字从小到大命名，但是中间有些又不全，不能直接循环，所以用一下代码来处理，获得符合要全的文件名。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line"></span><br><span class="line">target_dir = <span class="string">'data/'</span></span><br><span class="line">file_numbers = []</span><br><span class="line"><span class="keyword">for</span> file <span class="keyword">in</span> os.listdir(target_dir):</span><br><span class="line">    <span class="keyword">if</span> file.endswith(<span class="string">".png"</span>):</span><br><span class="line">        file_number = file.split(<span class="string">'.'</span>)[<span class="number">0</span>]</span><br><span class="line">        file_numbers +=  [int(file_number)]</span><br><span class="line">new_file_number = [ str(i) + <span class="string">'.png'</span> <span class="keyword">for</span> i <span class="keyword">in</span> sorted(file_numbers)]</span><br></pre></td></tr></table></figure>
-<hr>
+<a id="more"></a>
+<p>经过一番折腾写出了如下的简单程序，应该能够直接满足转换的需求。我下面处理的时候为了不污染工作目录，把图片都存在<code>Figures/</code>文件夹下。新生成的图片则存在<code>Figures/Figures/</code>文件夹下面。下面的程序应该简单易读，拿来改改应该就能满足一般的需求了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> glob</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">image_list = []</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> glob.glob(<span class="string">'Figures/*.bmp'</span>): <span class="comment">#assuming bmp</span></span><br><span class="line">    img = Image.open(filename)</span><br><span class="line">    filename = img.filename</span><br><span class="line">    img.save(<span class="string">'Figures/'</span> + os.path.splitext(filename)[<span class="number">0</span>] +<span class="string">'.png'</span>, <span class="string">'png'</span>)</span><br></pre></td></tr></table></figure>
+<p>参考链接：<br><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjYzOTIzMzYvaW1wb3J0aW5nLWltYWdlcy1mcm9tLWEtZGlyZWN0b3J5LXB5dGhvbg==" title="https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python">https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python<i class="fa fa-external-link"></i></span></p>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>Python</tag>
-        <tag>Programme</tag>
       </tags>
   </entry>
   <entry>
-    <title>TeX 批量插入图片</title>
-    <url>/1970-01-01-/Insert-pictures-tex/</url>
-    <content><![CDATA[<p>本文记录了<code>LaTeX</code>中如何快速批量插入大量图片的方法。</p>
+    <title>厦门大学模板使用说明</title>
+    <url>/1970-01-01-/XMU-Thesis-Instruction/</url>
+    <content><![CDATA[<h2 id="使用的前提"><a href="#使用的前提" class="headerlink" title="使用的前提"></a>使用的前提</h2><p>为了使用该模板，需要安装一个<code>TeX</code>的发行版本。可以选择<code>Texlive</code>或者<code>Miktex</code>,他们都是跨平台的。而<code>Texlive</code>打包了比较多的宏包，较为庞大，<code>Miktex</code>则是临时下载没有的宏包。这里我推荐使用<code>Miktex</code>。</p>
 <hr>
 <a id="more"></a>
-<p>以下情况仅针对你要插入的图片要求一样的情况。</p>
-<p>假设在<code>/images</code>文件夹下面你有各种格式的图片需要插入。</p>
-<p>最简单的情况可以这样处理。打开<code>git bash</code>,输入如下的指令,即可得到一系列的代码。在<code>tex</code>里面用就行了。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> images/*.*; <span class="keyword">do</span> <span class="built_in">echo</span> <span class="string">"\\includegraphics[width=0.9\\linewidth]&#123;images/<span class="variable">$f</span>&#125;\\\\"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
-<p>具体的代码可以根据需求更改，例如想用浮动体的插图代码。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> images/*.*; <span class="keyword">do</span> <span class="built_in">printf</span> <span class="string">"\\\begin&#123;figure&#125;\n\t\centering\n\t\includegraphics[width=0.7\linewidth]&#123;images/<span class="variable">$f</span>&#125;\n\t\caption&#123;&#125;\n\t\label&#123;fig:<span class="variable">$f</span>&#125;\n\\\end&#123;figure&#125;\n\n"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
-<p> 如果想要插入指定后缀格式的图片，比如<code>png</code>的，那么把<code>images/*.*;</code>改成<code>images/*.png;</code>即可。</p>
-<p>下面再给个别的样式的例子。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> Figures/*.*; <span class="keyword">do</span> <span class="built_in">printf</span> <span class="string">"\\\begin&#123;minipage&#125;&#123;0.18\linewidth&#125;\n\t\centering\n\t\includegraphics[height=1\linewidth]&#123;<span class="variable">$f</span>&#125;\n\t\caption&#123;&#125;\n\\\end&#123;minipage&#125;\n"</span>; <span class="keyword">done</span>;</span><br></pre></td></tr></table></figure>
-<p>参考链接：<br><span class="exturl" data-url="aHR0cHM6Ly90ZXguc3RhY2tleGNoYW5nZS5jb20vcXVlc3Rpb25zLzk4NzQ4L2luY2x1ZGluZy1tYW55LWZpZ3VyZXMtZnJvbS1hLWRpcmVjdG9yeQ==" title="https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory">https://tex.stackexchange.com/questions/98748/including-many-figures-from-a-directory<i class="fa fa-external-link"></i></span></p>
+<p>但是对于Mac，推荐使用<code>MacTeX</code>，它是为Mac定制的发行版本，应该比较合适。特别提醒<code>CTeX</code>套装无法运行该模板。你可以选择卸载<code>CTeX</code>套装，安装我推荐的发行版本，或者不使用该模板。关于编译方式需选择<code>XeLaTeX</code>,否则无法正常编译该模板,如果熟悉<code>latexmk</code>的可以用它来编译，这更好。</p>
+<p>如果你不想在本地安装<code>TeX</code>的发行版本，其实可以使用 <span class="exturl" data-url="aHR0cHM6Ly93d3cub3ZlcmxlYWYuY29t" title="https://www.overleaf.com">Overleaf<i class="fa fa-external-link"></i></span> 在线编译平台，同样请使用<code>XeLaTeX</code>编译。如果想在线编译请选择我的另外一个项目去编译。我会在最后附上地址。能在Overleaf编译多亏了他们支持人员 LianTze Lim 的帮助，在此表示感谢。 大家如果在这个平台上使用遇到什么技术问题可以发邮件向<span class="exturl" data-url="bWFpbHRvOnN1cHBvcnRAb3ZlcmxlYWYuY29t" title="mailto:support@overleaf.com">支持人员<i class="fa fa-external-link"></i></span>请教，很可能回复的是林前辈哦，请大家不要发邮件问怎么样才能访问该网站。<del>关于打开该网址的正确姿势是找到一个靠谱的梯子，然后爬上去。</del></p>
+<h2 id="模板使用说明"><a href="#模板使用说明" class="headerlink" title="模板使用说明"></a>模板使用说明</h2><p>为了正确使用该模板，请按照提示安装好可使用的TeX发行版本。因为论文内容比较多，因此采取了分文件的方式来构成该文档。主文档<code>XMU.tex</code>的位置位于<code>Main</code>下，正确编译后所得的pdf文件就在这里。<code>Figure</code>文件夹是存放图片的文件夹，该文件夹已经加入图片文件夹的位置，插入图片是无需多加路径，直接用文件名即可。关于<code>Setting</code>文件夹只需要把里面的<code>Information.tex</code>正确填入即可。而你需要编辑的仅有<code>Body</code>文件夹下的文件。</p>
+<p>当你需要毕业论文的打印时。可以打开<code>Cover and reconsitution</code>文件夹，封面的制作程序已经做好了，使用它应该能的到你想要的<code>a3</code>封面，你可以自己再做调整。关于整篇论文的打印，可以在运行主文档<code>Main/XMU.tex</code>时选择用用<code>openright</code>选项，如果它生成的pdf仍然不满意，可以用<code>Reconsitution.tex</code>自己拼接和加空白页，这样总能完成工作。</p>
+<p>你可以使用<code>make1.bat</code>和<code>make2.bat</code>来直接编译得到所有的结果。</p>
+<h2 id="几点说明"><a href="#几点说明" class="headerlink" title="几点说明"></a>几点说明</h2><ul>
+<li><p>该模板应该能够在<code>Mac</code>和<code>Linux</code>系统下运行，但是笔者目前只在<code>Windows</code>上测试过，如果不行，可以向我反应。等有空了我会再去测试一下。<del>最近事情多，没用虚拟机去测试。有同学测试了可以和我反应一下结果啊。</del></p>
+</li>
+<li><p>该模板是在厦门大学博士学位论文模板的基础上修改得到的，因为本科论文与博士学位论文的要求差别比较的，所以定制了该模板。</p>
+</li>
+<li><p>在使用该模板之前，请把原始编译出来的文档读一下，对于你的使用是很有帮助的。</p>
+</li>
+<li><p>由于本人水平有限，因此该模板写的并不好，但是应该勉强能够满足毕业论文的要求。但是仍然可能有许多错误的地方，希望各位使用者如果能发现错误之处能够提出。可以给我法邮件或者直接在 <code>github</code>上面提<code>issue</code>。欢迎大家的参与，共同完善母校的模板。</p>
+</li>
+<li><p>由于本人是一名理科生，对文科的同学毕业论文的额外需求可能了解不多。虽说文科生用这个模板的可能性比较小，如果有人用，有额外的需求也可以提出。</p>
+</li>
+</ul>
+<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>邮箱： <span class="exturl" data-url="bWFpbHRvOmNhbXVzZWNhb0BnbWFpbC5jb20=" title="mailto:camusecao@gmail.com">camusecao@gmail.com<i class="fa fa-external-link"></i></span></p>
+<p>该项目github项目的地址是 : <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbXVzZUNhby9YTVUtVW5kZXJncmFkdWF0ZS10aGVzaXMtdGVtcGxhdGU=" title="https://github.com/CamuseCao/XMU-Undergraduate-thesis-template">Link<i class="fa fa-external-link"></i></span></p>
+<p><code>Overleaf</code>在线编译的项目的地址 ：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbXVzZUNhby9YTVUtVGhlc2lzLU92ZXJsZWFm" title="https://github.com/CamuseCao/XMU-Thesis-Overleaf">Githu下载<i class="fa fa-external-link"></i></span>    <span class="exturl" data-url="aHR0cHM6Ly93d3cub3ZlcmxlYWYuY29tLzIxMjg2OTc5ODNqaG1wa3p4ZHptcnk=" title="https://www.overleaf.com/2128697983jhmpkzxdzmry">Overleaf查看与下载<i class="fa fa-external-link"></i></span> </p>
+<p>(<code>Overleaf</code>项目的地址请勿随意编辑，方便大家的观看。你可以把它拷到你自己的项目下尽情玩耍。 )</p>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
         <tag>TeX</tag>
-        <tag>Programme</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Jupyter Notebook 的使用小记</title>
-    <url>/1970-01-01-/Jupyternotebook/</url>
-    <content><![CDATA[<p>本文是关于本人使用<code>Jupyter Notebook</code> 使用的一些简单记录，如果你也喜欢用它可以看看。</p>
-<hr>
-<a id="more"></a>
-<p>默认打开<code>Jupyter Notebook</code>的位置是<code>C盘</code>下的用户文件夹作为工作文件夹。这让我很不满，所以我想嫩故不能改变这个设定。在搜索引擎上一搜索，立刻找到了解决方案。</p>
-<p>官方文档果然是可靠的，链接如下： <span class="exturl" data-url="aHR0cHM6Ly9qdXB5dGVyLW5vdGVib29rLWJlZ2lubmVyLWd1aWRlLnJlYWR0aGVkb2NzLmlvL2VuL2xhdGVzdC9leGVjdXRlLmh0bWwjY2hhbmdlLWp1cHl0ZXItbm90ZWJvb2stc3RhcnR1cC1mb2xkZXItd2luZG93cw==" title="https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html#change-jupyter-notebook-startup-folder-windows">Link<i class="fa fa-external-link"></i></span>,以下我对<code>windows</code>系统的部分做下翻译和图片指导。愿意直接看官方文档的就不需要继续看这一段了。</p>
-<p>首先找到<code>Jupyter Notebook</code>的快捷方式，右键点击属性，定位到<code>Target</code>栏，将里面的<code>%USERPROFILE%</code>改成你想要的文件夹完整路径，例如我想改到<code>F:\Code\Code\Python\Jupyter</code>，就改成如下图片的样子。重新用修改过的快捷方式打开它，工作文件夹就改变了。</p>
-<p><img data-src="https://i.loli.net/2019/04/27/5cc3bed8e63a2.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Programme</tag>
       </tags>
   </entry>
   <entry>
@@ -345,68 +415,32 @@
       </tags>
   </entry>
   <entry>
-    <title>一个酷炫的清理技能</title>
-    <url>/1970-01-01-/Clear/</url>
-    <content><![CDATA[<h2 id="清理回收站"><a href="#清理回收站" class="headerlink" title="清理回收站"></a>清理回收站</h2><p>你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！</p>
+    <title>Python 的 selenium 的一些使用</title>
+    <url>/1970-01-01-/python-selenium/</url>
+    <content><![CDATA[<p>本文记录 <code>Python</code> 使用 <code>Selenium</code> 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 <code>js</code> 脚本的加载使得爬虫的难度增大，因此可以考虑使用 <code>Selenium</code> 库来帮助我们，用它操纵浏览器来爬取需要的数据。</p>
 <hr>
 <a id="more"></a>
-<p>清空回收站可以用如下命令行：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure>
-<p>大家应该会用<code>cmd</code>吧。不会的可以这样操作：用<code>window+r</code>键，接下来输入<code>cmd</code>，即可打卡命令行，然后运行上面代码，即可清除回收站的垃圾。</p>
-<p>可是上面的代码可能比较繁琐，不好记，生怕装逼失败。接下啦教你更酷炫的。新建一个文本文档，随意起名，例如<code>clear.txt</code>。</p>
-<p>接下来在里面的上面的代码输入。随后把文件的后缀名改成.bat。</p>
-<p>即变成<code>clear.bat</code>。</p>
-<p>这样就是一个批处理文件了。右键即可看到以管理员身份运行。运行后回收站清空。</p>
-<p>还想把逼装的更好参考如下：</p>
-<p>1.打开如下文件夹：<code>C:\Users\camuse</code>。其中的<code>camuse</code>是用户名，记得改成你自己的。</p>
-<p>2.把刚才的批处理文件放到这里面。</p>
-<p>3.接下来按用<code>window+r</code>键，再输入<code>cmd</code>，打开命令行。</p>
-<p>4.在命令行输入<code>clear</code>,这一步即执行刚才做好的批处理文件。</p>
-<p>如果想把这个用到更多地方也是可以的，比如我们系统有一个缓存了无用文件的地方：<code>C:\Users\Camuse\AppData\Local\Temp</code>,其中的<code>camuse</code>是用户名，记得改成你自己的。</p>
-<p>在命令行运行如下命令可以删除整个文件夹：<code>rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</code>，你也可以把这句命令加入之前的批处理文件。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</span><br><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure>
-<p>如果还有其它想要清理的文件夹自己加入即可。</p>
+<p>以下为本文涉及的需要加载的包。<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">from</span> fake_useragent <span class="keyword">import</span> UserAgent</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="comment"># from lxml import etree, html</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>首先是使用一个随机的 <code>userAgent</code>，其次是设定初始打开的链接地址。注意设置你的 <code>webdrive</code> 的地址。<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> fake_useragent <span class="keyword">import</span> UserAgent</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">user_agent = UserAgent().random</span><br><span class="line"></span><br><span class="line">chromeOptions = webdriver.ChromeOptions()</span><br><span class="line">chromeOptions.add_argument(<span class="string">f'user-agent=<span class="subst">&#123;user_agent&#125;</span>'</span>)</span><br><span class="line">star_url = <span class="string">r"https://wenku.baidu.com/view/8844f45e15791711cc7931b765ce0508763275cf.html"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">webdrive = <span class="string">r'D:/your/chromedriver.exe'</span></span><br><span class="line">driver = webdriver.Chrome(webdrive, chrome_options=chromeOptions)</span><br><span class="line"></span><br><span class="line">driver.get(star_url)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"><span class="comment"># close the browser</span></span><br><span class="line"><span class="comment"># driver.close()</span></span><br></pre></td></tr></table></figure></p>
+<p>这里用的浏览器是 <code>chrome</code> ，可以看到成功打开了百度文库，但是目前什么操作都没做。</p>
+<p>接下来可以做点简单的操作。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 获取网页的源码，可用于 lxml 的库的分析。但是 selenium 库其实也有选择器，挑选自己喜欢的方式即可</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'baidu.html'</span>,<span class="string">'w'</span>, encoding=<span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(driver.page_source)</span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 滑到页面底部，参考 https://stackoverflow.com/questions/20986631/how-can-i-scroll-a-web-page-using-selenium-webdriver-in-python</span></span><br><span class="line">SCROLL_PAUSE_TIME = <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">last_height = driver.execute_script(<span class="string">"return document.body.scrollHeight"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    driver.execute_script(<span class="string">"window.scrollTo(0, document.body.scrollHeight);"</span>)</span><br><span class="line">    time.sleep(SCROLL_PAUSE_TIME)</span><br><span class="line">    new_height = driver.execute_script(<span class="string">"return document.body.scrollHeight"</span>)</span><br><span class="line">    <span class="keyword">if</span> new_height == last_height:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    last_height = new_height</span><br><span class="line"></span><br><span class="line"><span class="comment"># 滑动页面 水平 0，竖直 -2000 个像素点</span></span><br><span class="line"></span><br><span class="line">driver.execute_script(<span class="string">"window.scrollBy(0,-1500)"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过 xpath 的方法找到对应的 element 并且点击，例如 继续阅读 的按钮 必须在浏览器能看到的范围内才可以点击</span></span><br><span class="line">driver.find_element_by_xpath(<span class="string">'//*[@id="html-reader-go-more"]/div[2]/div[1]/span/span[2]'</span>).click()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将窗口放大到特定的大小</span></span><br><span class="line">driver.set_window_size(<span class="number">520</span>, <span class="number">1080</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将窗口放大到最大</span></span><br><span class="line">driver.maximize_window()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存网页截图,只会保存能看到的部分</span></span><br><span class="line">driver.save_screenshot(<span class="string">'screenshot.png'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存某个元素范围的截图，例如百度文库的 Logo</span></span><br><span class="line">image = driver.find_element_by_xpath(<span class="string">'//*[@id="hd"]/div/div[1]/div[1]/a/span'</span>).screenshot_as_png</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'baidu.png'</span>,<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">   f.write(image)</span><br><span class="line">   f.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取总页码</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">s_page_number = driver.find_element_by_class_name(<span class="string">'page-count'</span>).text</span><br><span class="line">print(s_page_number)</span><br><span class="line"><span class="comment"># '/26' 不是我们想要的直接结果，通过正则将 26 提取出来</span></span><br><span class="line">page_number = re.findall(<span class="string">'/([0-9]+)'</span>, s_page_number)[<span class="number">0</span>]</span><br><span class="line">print(<span class="string">'一共有'</span>+page_number +<span class="string">'页'</span>)</span><br></pre></td></tr></table></figure>
+<hr>
+<p>下面是在页面里面可输入交互的地方输入内容,并且点击.一下都是使用 <code>xpath</code> 进行元素定位.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输入内容并且跳转 注意适当加入一些休息时间</span></span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="kw"]'</span>)</span><br><span class="line">element.clear()  <span class="comment"># 清除原本在的数据</span></span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">element.send_keys(<span class="string">'量子力学'</span>)  <span class="comment"># 输入新的</span></span><br><span class="line">time.sleep(<span class="number">1.5</span>)</span><br><span class="line">driver.find_element_by_xpath(<span class="string">'//*[@id="sb"]'</span>).click()</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># driver.close()</span></span><br></pre></td></tr></table></figure>
+<p>如何新开一个 <code>tag</code> 并且关闭？可以参考如下的操作<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">chromeOptions = webdriver.ChromeOptions()</span><br><span class="line">star_url = <span class="string">r"https://camusecao.top/"</span></span><br><span class="line"></span><br><span class="line">webdrive = <span class="string">r'D:/your/chromedriver.exe'</span></span><br><span class="line">driver = webdriver.Chrome(webdrive, chrome_options=chromeOptions)</span><br><span class="line">driver.get(star_url)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参考 https://stackoverflow.com/questions/28431765/open-web-in-new-tab-selenium-python 和 https://stackoverflow.com/questions/38154483/using-selenium-webdriver-in-python-to-open-link-in-new-tab-window https://stackoverflow.com/questions/25951968/open-and-close-new-tab-with-selenium-webdriver-in-os-x</span></span><br><span class="line"></span><br><span class="line">time.sleep(<span class="number">5</span>)</span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="sidebar"]/div/div[1]/div/div[4]/ul/li/a'</span>)</span><br><span class="line">driver.execute_script(<span class="string">'arguments[0].click();'</span>, element)</span><br><span class="line">time.sleep(<span class="number">4</span>)</span><br><span class="line"><span class="comment"># 聚焦到新开的 tab</span></span><br><span class="line">driver.switch_to_window(driver.window_handles[<span class="number">1</span>])</span><br><span class="line"><span class="comment"># 关闭这个 tab</span></span><br><span class="line">driver.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># driver.execute_script("window.open('');")</span></span><br><span class="line"><span class="comment"># driver.switch_to.window(driver.window_handles[1])</span></span><br><span class="line"><span class="comment"># driver.get(url)</span></span><br></pre></td></tr></table></figure></p>
+<p>有些网页并不是一下子就加载全部的内容，可能要等到你滑动那里才加载。那么如果确保我们等待的时间不会过长呢？可以用 wait 的方法，检测到元素后再行动。比如等到某个元素加载好点击下一页.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="comment"># 设定等待时间为 5s</span></span><br><span class="line">wait = WebDriverWait(driver, <span class="number">5</span>)</span><br><span class="line">the_path = <span class="string">'//div[contains(@data-id,"5")]/img'</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    wait.until(EC.element_to_be_clickable((By.XPATH, the_path)))</span><br><span class="line">    driver.find_element_by_xpath(<span class="string">'//*[@id="newView"]/div[1]/div/a[4]/i'</span>).click()</span><br><span class="line">    time.sleep(random.random() + <span class="number">0.05</span>)</span><br></pre></td></tr></table></figure>
+<p>下面是直接调用 chrome 来实现保存网页的方法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"></span><br><span class="line">pyautogui.hotkey(<span class="string">'ctrl'</span>, <span class="string">'s'</span>)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">save_file = os.getcwd()+<span class="string">'\save'</span></span><br><span class="line">pyautogui.typewrite(save_file)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">pyautogui.hotkey(<span class="string">'enter'</span>)</span><br><span class="line">time.sleep(<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>电脑知识</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>Command</tag>
-        <tag>Clean</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
-    <url>/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<p>每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。</p>
-<hr>
-<a id="more"></a>
-<p>步骤是<code>win</code>+<code>R</code>键打开运行，后输入<code>regedit</code>，在注册表内定位到 <code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion</code>,然后下面图片这两条内容修改即可。具体地址凭你喜好。(某些位置会有权限问题)</p>
-<p><img data-src="https://i.loli.net/2019/02/22/5c6ed9945e202.png" alt=""></p>
-<p>这样就成功(作死)了。<strong>大家最好别这么做。</strong></p>
-<ul>
-<li><p>会导致某些软件自动创建的快捷方式无法使用，这一点我很早就发现了，但是很容易解决，打开快捷方式重新编辑一下就可以了。或者找到软件的位置，再用右键创建快捷方式。这里关于找文件推荐一下<code>Everything</code>，对于文件的查找很有帮助。</p>
-</li>
-<li><p>上面那点可以忍受，我不在乎。可是它会导致<code>Windows</code>的某些更新一直失败，而这一点我最近才发现。本文主旨在于这点，提醒一下和我一样喜欢作死的网友。我之前更新失败后用中文微软社区提供的一些方法均不成功，所以多次重装系统。<del>还好我很多软件都是便携版的，压根不怕重装系统，只要安装几个软件就正常使用了。</del></p>
-</li>
-</ul>
-<p>最终的解决是把报错信息用谷歌搜索在英文的微软社区找到了真正的原因。而真凶就是修改注册表。</p>
-<p><img data-src="https://i.loli.net/2019/02/22/5c6ed97cf055b.png" alt=""></p>
-<p>该连接为解决了我问题的<span class="exturl" data-url="aHR0cHM6Ly9zb2NpYWwudGVjaG5ldC5taWNyb3NvZnQuY29tL0ZvcnVtcy9lbi1VUy80NThmMzQ2ZS1iMTkxLTRhMTMtOWVmOS02NTNkOTU4NGVhNzkvd2luZG93cy11cGRhdGUtZXJyb3ItY29kZS0weDgwMDcwMTE/Zm9ydW09d2luMTBpdHByb2dlbmVyYWw=" title="https://social.technet.microsoft.com/Forums/en-US/458f346e-b191-4a13-9ef9-653d9584ea79/windows-update-error-code-0x8007011?forum=win10itprogeneral">帖子<i class="fa fa-external-link"></i></span>。</p>
-<p>当我修改回默认的，更新问题就好了。至此，我以为万事大吉了。</p>
-<p>然而故事还没有完。第二天发现我的<code>MikTeX</code>就出现问题了。查看它所报的错误，我发现是文件的定位出错。我立刻想到了修改注册表这件事。应该就是我又改回去导致文件定位出现问题。无奈之下卸载重装了。但是有些软件却没有受到影响，可能与它的复杂度以及机制的不用有很大关系吧。</p>
-<p>这下作死的故事暂时完结了，希望大家别手贱，和我一样出这种问题。</p>
-<hr>
-<p>2019年3月1日的更新</p>
-<p>之前我的Chrome浏览器的自动更新老是不能用，其实它也是在我更改注册表之后安装的软件，因此受牵连了。我又重新卸载了安装，自动更新功能可以用了。</p>
-]]></content>
-      <categories>
-        <category>电脑知识</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
-        <tag>Regedit</tag>
-        <tag>System</tag>
+        <tag>Programme</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -501,32 +535,37 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 的 selenium 的一些使用</title>
-    <url>/1970-01-01-/python-selenium/</url>
-    <content><![CDATA[<p>本文记录 <code>Python</code> 使用 <code>Selenium</code> 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 <code>js</code> 脚本的加载使得爬虫的难度增大，因此可以考虑使用 <code>Selenium</code> 库来帮助我们，用它操纵浏览器来爬取需要的数据。</p>
+    <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
+    <url>/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<p>每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。</p>
 <hr>
 <a id="more"></a>
-<p>以下为本文涉及的需要加载的包。<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">from</span> fake_useragent <span class="keyword">import</span> UserAgent</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="comment"># from lxml import etree, html</span></span><br></pre></td></tr></table></figure></p>
+<p>步骤是<code>win</code>+<code>R</code>键打开运行，后输入<code>regedit</code>，在注册表内定位到 <code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion</code>,然后下面图片这两条内容修改即可。具体地址凭你喜好。(某些位置会有权限问题)</p>
+<p><img data-src="https://i.loli.net/2019/02/22/5c6ed9945e202.png" alt=""></p>
+<p>这样就成功(作死)了。<strong>大家最好别这么做。</strong></p>
+<ul>
+<li><p>会导致某些软件自动创建的快捷方式无法使用，这一点我很早就发现了，但是很容易解决，打开快捷方式重新编辑一下就可以了。或者找到软件的位置，再用右键创建快捷方式。这里关于找文件推荐一下<code>Everything</code>，对于文件的查找很有帮助。</p>
+</li>
+<li><p>上面那点可以忍受，我不在乎。可是它会导致<code>Windows</code>的某些更新一直失败，而这一点我最近才发现。本文主旨在于这点，提醒一下和我一样喜欢作死的网友。我之前更新失败后用中文微软社区提供的一些方法均不成功，所以多次重装系统。<del>还好我很多软件都是便携版的，压根不怕重装系统，只要安装几个软件就正常使用了。</del></p>
+</li>
+</ul>
+<p>最终的解决是把报错信息用谷歌搜索在英文的微软社区找到了真正的原因。而真凶就是修改注册表。</p>
+<p><img data-src="https://i.loli.net/2019/02/22/5c6ed97cf055b.png" alt=""></p>
+<p>该连接为解决了我问题的<span class="exturl" data-url="aHR0cHM6Ly9zb2NpYWwudGVjaG5ldC5taWNyb3NvZnQuY29tL0ZvcnVtcy9lbi1VUy80NThmMzQ2ZS1iMTkxLTRhMTMtOWVmOS02NTNkOTU4NGVhNzkvd2luZG93cy11cGRhdGUtZXJyb3ItY29kZS0weDgwMDcwMTE/Zm9ydW09d2luMTBpdHByb2dlbmVyYWw=" title="https://social.technet.microsoft.com/Forums/en-US/458f346e-b191-4a13-9ef9-653d9584ea79/windows-update-error-code-0x8007011?forum=win10itprogeneral">帖子<i class="fa fa-external-link"></i></span>。</p>
+<p>当我修改回默认的，更新问题就好了。至此，我以为万事大吉了。</p>
+<p>然而故事还没有完。第二天发现我的<code>MikTeX</code>就出现问题了。查看它所报的错误，我发现是文件的定位出错。我立刻想到了修改注册表这件事。应该就是我又改回去导致文件定位出现问题。无奈之下卸载重装了。但是有些软件却没有受到影响，可能与它的复杂度以及机制的不用有很大关系吧。</p>
+<p>这下作死的故事暂时完结了，希望大家别手贱，和我一样出这种问题。</p>
 <hr>
-<p>首先是使用一个随机的 <code>userAgent</code>，其次是设定初始打开的链接地址。注意设置你的 <code>webdrive</code> 的地址。<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> fake_useragent <span class="keyword">import</span> UserAgent</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">user_agent = UserAgent().random</span><br><span class="line"></span><br><span class="line">chromeOptions = webdriver.ChromeOptions()</span><br><span class="line">chromeOptions.add_argument(<span class="string">f'user-agent=<span class="subst">&#123;user_agent&#125;</span>'</span>)</span><br><span class="line">star_url = <span class="string">r"https://wenku.baidu.com/view/8844f45e15791711cc7931b765ce0508763275cf.html"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">webdrive = <span class="string">r'D:/your/chromedriver.exe'</span></span><br><span class="line">driver = webdriver.Chrome(webdrive, chrome_options=chromeOptions)</span><br><span class="line"></span><br><span class="line">driver.get(star_url)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"><span class="comment"># close the browser</span></span><br><span class="line"><span class="comment"># driver.close()</span></span><br></pre></td></tr></table></figure></p>
-<p>这里用的浏览器是 <code>chrome</code> ，可以看到成功打开了百度文库，但是目前什么操作都没做。</p>
-<p>接下来可以做点简单的操作。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 获取网页的源码，可用于 lxml 的库的分析。但是 selenium 库其实也有选择器，挑选自己喜欢的方式即可</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'baidu.html'</span>,<span class="string">'w'</span>, encoding=<span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(driver.page_source)</span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 滑到页面底部，参考 https://stackoverflow.com/questions/20986631/how-can-i-scroll-a-web-page-using-selenium-webdriver-in-python</span></span><br><span class="line">SCROLL_PAUSE_TIME = <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">last_height = driver.execute_script(<span class="string">"return document.body.scrollHeight"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    driver.execute_script(<span class="string">"window.scrollTo(0, document.body.scrollHeight);"</span>)</span><br><span class="line">    time.sleep(SCROLL_PAUSE_TIME)</span><br><span class="line">    new_height = driver.execute_script(<span class="string">"return document.body.scrollHeight"</span>)</span><br><span class="line">    <span class="keyword">if</span> new_height == last_height:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    last_height = new_height</span><br><span class="line"></span><br><span class="line"><span class="comment"># 滑动页面 水平 0，竖直 -2000 个像素点</span></span><br><span class="line"></span><br><span class="line">driver.execute_script(<span class="string">"window.scrollBy(0,-1500)"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过 xpath 的方法找到对应的 element 并且点击，例如 继续阅读 的按钮 必须在浏览器能看到的范围内才可以点击</span></span><br><span class="line">driver.find_element_by_xpath(<span class="string">'//*[@id="html-reader-go-more"]/div[2]/div[1]/span/span[2]'</span>).click()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将窗口放大到特定的大小</span></span><br><span class="line">driver.set_window_size(<span class="number">520</span>, <span class="number">1080</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将窗口放大到最大</span></span><br><span class="line">driver.maximize_window()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存网页截图,只会保存能看到的部分</span></span><br><span class="line">driver.save_screenshot(<span class="string">'screenshot.png'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存某个元素范围的截图，例如百度文库的 Logo</span></span><br><span class="line">image = driver.find_element_by_xpath(<span class="string">'//*[@id="hd"]/div/div[1]/div[1]/a/span'</span>).screenshot_as_png</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'baidu.png'</span>,<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">   f.write(image)</span><br><span class="line">   f.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取总页码</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">s_page_number = driver.find_element_by_class_name(<span class="string">'page-count'</span>).text</span><br><span class="line">print(s_page_number)</span><br><span class="line"><span class="comment"># '/26' 不是我们想要的直接结果，通过正则将 26 提取出来</span></span><br><span class="line">page_number = re.findall(<span class="string">'/([0-9]+)'</span>, s_page_number)[<span class="number">0</span>]</span><br><span class="line">print(<span class="string">'一共有'</span>+page_number +<span class="string">'页'</span>)</span><br></pre></td></tr></table></figure>
-<hr>
-<p>下面是在页面里面可输入交互的地方输入内容,并且点击.一下都是使用 <code>xpath</code> 进行元素定位.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输入内容并且跳转 注意适当加入一些休息时间</span></span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="kw"]'</span>)</span><br><span class="line">element.clear()  <span class="comment"># 清除原本在的数据</span></span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">element.send_keys(<span class="string">'量子力学'</span>)  <span class="comment"># 输入新的</span></span><br><span class="line">time.sleep(<span class="number">1.5</span>)</span><br><span class="line">driver.find_element_by_xpath(<span class="string">'//*[@id="sb"]'</span>).click()</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># driver.close()</span></span><br></pre></td></tr></table></figure>
-<p>如何新开一个 <code>tag</code> 并且关闭？可以参考如下的操作<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">chromeOptions = webdriver.ChromeOptions()</span><br><span class="line">star_url = <span class="string">r"https://camusecao.top/"</span></span><br><span class="line"></span><br><span class="line">webdrive = <span class="string">r'D:/your/chromedriver.exe'</span></span><br><span class="line">driver = webdriver.Chrome(webdrive, chrome_options=chromeOptions)</span><br><span class="line">driver.get(star_url)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参考 https://stackoverflow.com/questions/28431765/open-web-in-new-tab-selenium-python 和 https://stackoverflow.com/questions/38154483/using-selenium-webdriver-in-python-to-open-link-in-new-tab-window https://stackoverflow.com/questions/25951968/open-and-close-new-tab-with-selenium-webdriver-in-os-x</span></span><br><span class="line"></span><br><span class="line">time.sleep(<span class="number">5</span>)</span><br><span class="line">element = driver.find_element_by_xpath(<span class="string">'//*[@id="sidebar"]/div/div[1]/div/div[4]/ul/li/a'</span>)</span><br><span class="line">driver.execute_script(<span class="string">'arguments[0].click();'</span>, element)</span><br><span class="line">time.sleep(<span class="number">4</span>)</span><br><span class="line"><span class="comment"># 聚焦到新开的 tab</span></span><br><span class="line">driver.switch_to_window(driver.window_handles[<span class="number">1</span>])</span><br><span class="line"><span class="comment"># 关闭这个 tab</span></span><br><span class="line">driver.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># driver.execute_script("window.open('');")</span></span><br><span class="line"><span class="comment"># driver.switch_to.window(driver.window_handles[1])</span></span><br><span class="line"><span class="comment"># driver.get(url)</span></span><br></pre></td></tr></table></figure></p>
-<p>有些网页并不是一下子就加载全部的内容，可能要等到你滑动那里才加载。那么如果确保我们等待的时间不会过长呢？可以用 wait 的方法，检测到元素后再行动。比如等到某个元素加载好点击下一页.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="comment"># 设定等待时间为 5s</span></span><br><span class="line">wait = WebDriverWait(driver, <span class="number">5</span>)</span><br><span class="line">the_path = <span class="string">'//div[contains(@data-id,"5")]/img'</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    wait.until(EC.element_to_be_clickable((By.XPATH, the_path)))</span><br><span class="line">    driver.find_element_by_xpath(<span class="string">'//*[@id="newView"]/div[1]/div/a[4]/i'</span>).click()</span><br><span class="line">    time.sleep(random.random() + <span class="number">0.05</span>)</span><br></pre></td></tr></table></figure>
-<p>下面是直接调用 chrome 来实现保存网页的方法。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"></span><br><span class="line">pyautogui.hotkey(<span class="string">'ctrl'</span>, <span class="string">'s'</span>)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">save_file = os.getcwd()+<span class="string">'\save'</span></span><br><span class="line">pyautogui.typewrite(save_file)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">pyautogui.hotkey(<span class="string">'enter'</span>)</span><br><span class="line">time.sleep(<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
+<p>2019年3月1日的更新</p>
+<p>之前我的Chrome浏览器的自动更新老是不能用，其实它也是在我更改注册表之后安装的软件，因此受牵连了。我又重新卸载了安装，自动更新功能可以用了。</p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>电脑知识</category>
       </categories>
       <tags>
-        <tag>Programme</tag>
-        <tag>python</tag>
+        <tag>Software</tag>
+        <tag>Regedit</tag>
+        <tag>System</tag>
       </tags>
   </entry>
   <entry>
@@ -606,45 +645,6 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
       <tags>
         <tag>Physics</tag>
         <tag>Band</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>收藏链接</title>
-    <url>/1970-01-01-/Url/</url>
-    <content><![CDATA[<p>本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。</p>
-<hr>
-<a id="more"></a>
-<h3 id="PicGo的配置参考地址：PicGo"><a href="#PicGo的配置参考地址：PicGo" class="headerlink" title="PicGo的配置参考地址：PicGo"></a>PicGo的配置参考地址：<span class="exturl" data-url="aHR0cHM6Ly9waWNnby5naXRodWIuaW8vUGljR28tRG9jL3poL2d1aWRlL2NvbmZpZy5odG1sI2dpdGh1YiVFNSU5QiVCRSVFNSVCQSU4QQ==" title="https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A">PicGo<i class="fa fa-external-link"></i></span></h3>]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ICON</title>
-    <url>/1970-01-01-/Test/</url>
-    <content><![CDATA[<p><i class="fa fa-camera-retro"></i></p>
-<hr>
-<a id="more"></a>
-<p><i class="fa fa-circle-o-notch fa-spin">&lt;/i&gt;<br><i class="fa fa-refresh fa-spin"></i><br><i class="fa fa-cog fa-spin">&lt;/i&gt;<br><i class="fa fa-spinner fa-pulse"></i></p>
-<p><i class="fa fa-qq">&lt;/i&gt;<br><i class="fa fa-cny"></i><br><i class="fa fa-link">&lt;/i&gt;<br><i class="fa fa-chrome"></i><br><i class="fa fa-github">&lt;/i&gt;<br><i class="fa fa-github-alt"></i><br><i class="fa fa-linux">&lt;/i&gt;<br><i class="fa fa-windows"></i><br><i class="fa fa-mouse-pointer">&lt;/i&gt;<br><i class="fa fa-music"></i><br><i class="fa fa-hand-o-up">&lt;/i&gt;<br><i class="fa fa-arrow-circle-o-up"></i></p>
-<p><i class="fa fa-">&lt;/i&gt;<i class="fa fa-"></i><i class="fa fa-">&lt;/i&gt;<i class="fa fa-"></i><i class="fa fa-">&lt;/i&gt;<i class="fa fa-"></i><i class="fa fa-"></i></p>
-<p><img data-src="https://raw.githubusercontent.com/CamuseCao/Picture/master/Mouse/Sword/Sword-b.ico" alt=""></p>
-<p><img data-src="https://raw.githubusercontent.com/CamuseCao/Picture/master/Mouse/Sword/Sword-w.ico" alt=""></p>
-<p><img data-src="" alt=""></p>
-<p><img data-src="" alt=""></p>
-<p><img data-src="" alt=""></p>
-<p><img data-src="" alt=""></p>
-<p><img data-src="" alt=""></p>
-<p><img data-src="" alt=""></p>
-]]></content>
-      <categories>
-        <category>图标</category>
-      </categories>
-      <tags>
-        <tag>Icon</tag>
       </tags>
   </entry>
   <entry>

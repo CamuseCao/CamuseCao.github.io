@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2019-03-01T13:20:59.000Z</updated>
+  <updated>2019-03-02T10:37:44.000Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -17,24 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>厦门大学模板使用说明</title>
-    <link href="https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/"/>
-    <id>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</id>
+    <title>收藏链接</title>
+    <link href="https://camusecao.top/1970-01-01-/Url/"/>
+    <id>https://camusecao.top/1970-01-01-/Url/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:20:59.000Z</updated>
+    <updated>2019-03-02T10:37:44.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
+      &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
     
     
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
   </entry>
   
@@ -65,15 +65,15 @@
   </entry>
   
   <entry>
-    <title>利用python批量转换图片的格式</title>
-    <link href="https://camusecao.top/1970-01-01-/Convert-pictures/"/>
-    <id>https://camusecao.top/1970-01-01-/Convert-pictures/</id>
+    <title>TeX 批量插入图片</title>
+    <link href="https://camusecao.top/1970-01-01-/Insert-pictures-tex/"/>
+    <id>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-30T14:16:20.000Z</updated>
+    <updated>2019-04-30T14:04:32.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
+      &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
@@ -82,7 +82,9 @@
       <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
@@ -111,26 +113,26 @@
   </entry>
   
   <entry>
-    <title>MiKTeX的基本使用</title>
-    <link href="https://camusecao.top/1970-01-01-/MiKTeX/"/>
-    <id>https://camusecao.top/1970-01-01-/MiKTeX/</id>
+    <title>Jupyter Notebook 的使用小记</title>
+    <link href="https://camusecao.top/1970-01-01-/Jupyternotebook/"/>
+    <id>https://camusecao.top/1970-01-01-/Jupyternotebook/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:45:17.429Z</updated>
+    <updated>2020-03-20T15:44:49.231Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
+      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
     
     
-      <category term="Programme" scheme="https://camusecao.top/categories/Programme/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
     
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
@@ -155,6 +157,78 @@
       <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
       <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 实用小程序</title>
+    <link href="https://camusecao.top/1970-01-01-/Python-tricks/"/>
+    <id>https://camusecao.top/1970-01-01-/Python-tricks/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-01-26T05:54:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MiKTeX的基本使用</title>
+    <link href="https://camusecao.top/1970-01-01-/MiKTeX/"/>
+    <id>https://camusecao.top/1970-01-01-/MiKTeX/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-03-20T15:45:17.429Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="Programme" scheme="https://camusecao.top/categories/Programme/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个酷炫的清理技能</title>
+    <link href="https://camusecao.top/1970-01-01-/Clear/"/>
+    <id>https://camusecao.top/1970-01-01-/Clear/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-01T13:24:11.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;清理回收站&quot;&gt;&lt;a href=&quot;#清理回收站&quot; class=&quot;headerlink&quot; title=&quot;清理回收站&quot;&gt;&lt;/a&gt;清理回收站&lt;/h2&gt;&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Command" scheme="https://camusecao.top/tags/Command/"/>
+    
+      <category term="Clean" scheme="https://camusecao.top/tags/Clean/"/>
     
   </entry>
   
@@ -208,15 +282,37 @@
   </entry>
   
   <entry>
-    <title>Python 实用小程序</title>
-    <link href="https://camusecao.top/1970-01-01-/Python-tricks/"/>
-    <id>https://camusecao.top/1970-01-01-/Python-tricks/</id>
+    <title>ICON</title>
+    <link href="https://camusecao.top/1970-01-01-/Test/"/>
+    <id>https://camusecao.top/1970-01-01-/Test/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-01-26T05:54:48.000Z</updated>
+    <updated>2020-03-20T15:45:48.299Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
+      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
+    
+    
+      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用python批量转换图片的格式</title>
+    <link href="https://camusecao.top/1970-01-01-/Convert-pictures/"/>
+    <id>https://camusecao.top/1970-01-01-/Convert-pictures/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-04-30T14:16:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
@@ -227,20 +323,18 @@
     
       <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
     
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
   </entry>
   
   <entry>
-    <title>TeX 批量插入图片</title>
-    <link href="https://camusecao.top/1970-01-01-/Insert-pictures-tex/"/>
-    <id>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</id>
+    <title>厦门大学模板使用说明</title>
+    <link href="https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/"/>
+    <id>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</id>
     <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-30T14:04:32.000Z</updated>
+    <updated>2019-03-01T13:20:59.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
+      &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
@@ -250,32 +344,6 @@
     
     
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jupyter Notebook 的使用小记</title>
-    <link href="https://camusecao.top/1970-01-01-/Jupyternotebook/"/>
-    <id>https://camusecao.top/1970-01-01-/Jupyternotebook/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:44:49.231Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
@@ -295,78 +363,6 @@
     
     
       <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个酷炫的清理技能</title>
-    <link href="https://camusecao.top/1970-01-01-/Clear/"/>
-    <id>https://camusecao.top/1970-01-01-/Clear/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:24:11.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;清理回收站&quot;&gt;&lt;a href=&quot;#清理回收站&quot; class=&quot;headerlink&quot; title=&quot;清理回收站&quot;&gt;&lt;/a&gt;清理回收站&lt;/h2&gt;&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="Command" scheme="https://camusecao.top/tags/Command/"/>
-    
-      <category term="Clean" scheme="https://camusecao.top/tags/Clean/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
-    <link href="https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
-    <id>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:46:31.608Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-      <category term="Regedit" scheme="https://camusecao.top/tags/Regedit/"/>
-    
-      <category term="System" scheme="https://camusecao.top/tags/System/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用软件记录</title>
-    <link href="https://camusecao.top/1970-01-01-/software/"/>
-    <id>https://camusecao.top/1970-01-01-/software/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:21:21.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
       <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
@@ -398,6 +394,54 @@
   </entry>
   
   <entry>
+    <title>常用软件记录</title>
+    <link href="https://camusecao.top/1970-01-01-/software/"/>
+    <id>https://camusecao.top/1970-01-01-/software/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2019-03-01T13:21:21.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
+    <link href="https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
+    <id>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-03-20T15:46:31.608Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Regedit" scheme="https://camusecao.top/tags/Regedit/"/>
+    
+      <category term="System" scheme="https://camusecao.top/tags/System/"/>
+    
+  </entry>
+  
+  <entry>
     <title>凝聚态物理期末总结</title>
     <link href="https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
     <id>https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</id>
@@ -419,50 +463,6 @@
       <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
       <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>收藏链接</title>
-    <link href="https://camusecao.top/1970-01-01-/Url/"/>
-    <id>https://camusecao.top/1970-01-01-/Url/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-02T10:37:44.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ICON</title>
-    <link href="https://camusecao.top/1970-01-01-/Test/"/>
-    <id>https://camusecao.top/1970-01-01-/Test/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:45:48.299Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
-    
-    
-      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
     
   </entry>
   
