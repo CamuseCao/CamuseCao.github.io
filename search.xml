@@ -79,6 +79,23 @@
       </tags>
   </entry>
   <entry>
+    <title>利用python批量转换图片的格式</title>
+    <url>/1970-01-01-/Convert-pictures/</url>
+    <content><![CDATA[<p>今天做了一个实验，实验保存的图片格式只有<code>bmp</code>的一种格式可以选择，并且图片数量不小。但是<code>TeX</code>对于<code>bmp</code>图片的插入支持不是特别友好。因此我想利用<code>python</code>来批量转换图片的格式。</p>
+<hr>
+<a id="more"></a>
+<p>经过一番折腾写出了如下的简单程序，应该能够直接满足转换的需求。我下面处理的时候为了不污染工作目录，把图片都存在<code>Figures/</code>文件夹下。新生成的图片则存在<code>Figures/Figures/</code>文件夹下面。下面的程序应该简单易读，拿来改改应该就能满足一般的需求了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> glob</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">image_list = []</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> glob.glob(<span class="string">'Figures/*.bmp'</span>): <span class="comment">#assuming bmp</span></span><br><span class="line">    img = Image.open(filename)</span><br><span class="line">    filename = img.filename</span><br><span class="line">    img.save(<span class="string">'Figures/'</span> + os.path.splitext(filename)[<span class="number">0</span>] +<span class="string">'.png'</span>, <span class="string">'png'</span>)</span><br></pre></td></tr></table></figure>
+<p>参考链接：<br><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjYzOTIzMzYvaW1wb3J0aW5nLWltYWdlcy1mcm9tLWEtZGlyZWN0b3J5LXB5dGhvbg==" title="https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python">https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python<i class="fa fa-external-link"></i></span></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TeX 批量插入图片</title>
     <url>/1970-01-01-/Insert-pictures-tex/</url>
     <content><![CDATA[<p>本文记录了<code>LaTeX</code>中如何快速批量插入大量图片的方法。</p>
@@ -142,44 +159,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python Pandas 库的一些使用</title>
-    <url>/1970-01-01-/Python-Pandas/</url>
-    <content><![CDATA[<p><code>Pandas</code> 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。</p>
-<hr>
-<a id="more"></a>
-<p>我经常需要合并两个结构相同的 <code>csv</code> 或 <code>excel</code> 或 <code>Pandas</code> 数据表格，这个时候应该直接使用 <code>concat</code> 函数，基本的用法如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">merged = pd.concat([df1, df2], ignore_index=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 实用小程序</title>
-    <url>/1970-01-01-/Python-tricks/</url>
-    <content><![CDATA[<p>Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 <code>stackoverflow</code> 已经 <code>Python</code> 相关模块的文档。</p>
-<hr>
-<a id="more"></a>
-<p>当一个文件夹里面有成百上千的文件需要重命名，并且重命名套路很强时，可以考虑使用下面的程序稍加修改应用。这个程序的干的具体事就是将 <code>stock</code> 文件夹下面的全部文件名在前面加上 <code>sh.</code> 。 修改运行这样的程序最好现在测试的文件夹里面用，确保把程序写对了再用到目标文件夹中。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span> </span><br><span class="line">    the_dir = <span class="string">"stock/"</span></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(the_dir): </span><br><span class="line">        dst =<span class="string">"sh."</span> + filename </span><br><span class="line">        src =the_dir+ filename </span><br><span class="line">        dst =the_dir+ dst </span><br><span class="line">        os.rename(src, dst) </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>: </span><br><span class="line">      </span><br><span class="line">    <span class="comment"># Calling main() function </span></span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-<hr>
-<p><code>Python</code> 读取文件获得的顺序会因为系统不同而有些差异。当我在处理一些图片用数字从小到大命名，但是中间有些又不全，不能直接循环，所以用一下代码来处理，获得符合要全的文件名。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line"></span><br><span class="line">target_dir = <span class="string">'data/'</span></span><br><span class="line">file_numbers = []</span><br><span class="line"><span class="keyword">for</span> file <span class="keyword">in</span> os.listdir(target_dir):</span><br><span class="line">    <span class="keyword">if</span> file.endswith(<span class="string">".png"</span>):</span><br><span class="line">        file_number = file.split(<span class="string">'.'</span>)[<span class="number">0</span>]</span><br><span class="line">        file_numbers +=  [int(file_number)]</span><br><span class="line">new_file_number = [ str(i) + <span class="string">'.png'</span> <span class="keyword">for</span> i <span class="keyword">in</span> sorted(file_numbers)]</span><br></pre></td></tr></table></figure>
-<hr>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Programme</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MiKTeX的基本使用</title>
     <url>/1970-01-01-/MiKTeX/</url>
     <content><![CDATA[<p>本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。</p>
@@ -225,34 +204,41 @@
       </tags>
   </entry>
   <entry>
-    <title>一个酷炫的清理技能</title>
-    <url>/1970-01-01-/Clear/</url>
-    <content><![CDATA[<h2 id="清理回收站"><a href="#清理回收站" class="headerlink" title="清理回收站"></a>清理回收站</h2><p>你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！</p>
+    <title>Python Pandas 库的一些使用</title>
+    <url>/1970-01-01-/Python-Pandas/</url>
+    <content><![CDATA[<p><code>Pandas</code> 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。</p>
 <hr>
 <a id="more"></a>
-<p>清空回收站可以用如下命令行：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure>
-<p>大家应该会用<code>cmd</code>吧。不会的可以这样操作：用<code>window+r</code>键，接下来输入<code>cmd</code>，即可打卡命令行，然后运行上面代码，即可清除回收站的垃圾。</p>
-<p>可是上面的代码可能比较繁琐，不好记，生怕装逼失败。接下啦教你更酷炫的。新建一个文本文档，随意起名，例如<code>clear.txt</code>。</p>
-<p>接下来在里面的上面的代码输入。随后把文件的后缀名改成.bat。</p>
-<p>即变成<code>clear.bat</code>。</p>
-<p>这样就是一个批处理文件了。右键即可看到以管理员身份运行。运行后回收站清空。</p>
-<p>还想把逼装的更好参考如下：</p>
-<p>1.打开如下文件夹：<code>C:\Users\camuse</code>。其中的<code>camuse</code>是用户名，记得改成你自己的。</p>
-<p>2.把刚才的批处理文件放到这里面。</p>
-<p>3.接下来按用<code>window+r</code>键，再输入<code>cmd</code>，打开命令行。</p>
-<p>4.在命令行输入<code>clear</code>,这一步即执行刚才做好的批处理文件。</p>
-<p>如果想把这个用到更多地方也是可以的，比如我们系统有一个缓存了无用文件的地方：<code>C:\Users\Camuse\AppData\Local\Temp</code>,其中的<code>camuse</code>是用户名，记得改成你自己的。</p>
-<p>在命令行运行如下命令可以删除整个文件夹：<code>rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</code>，你也可以把这句命令加入之前的批处理文件。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</span><br><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure>
-<p>如果还有其它想要清理的文件夹自己加入即可。</p>
+<p>我经常需要合并两个结构相同的 <code>csv</code> 或 <code>excel</code> 或 <code>Pandas</code> 数据表格，这个时候应该直接使用 <code>concat</code> 函数，基本的用法如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">merged = pd.concat([df1, df2], ignore_index=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>电脑知识</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>Command</tag>
-        <tag>Clean</tag>
+        <tag>Software</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 实用小程序</title>
+    <url>/1970-01-01-/Python-tricks/</url>
+    <content><![CDATA[<p>Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 <code>stackoverflow</code> 已经 <code>Python</code> 相关模块的文档。</p>
+<hr>
+<a id="more"></a>
+<p>当一个文件夹里面有成百上千的文件需要重命名，并且重命名套路很强时，可以考虑使用下面的程序稍加修改应用。这个程序的干的具体事就是将 <code>stock</code> 文件夹下面的全部文件名在前面加上 <code>sh.</code> 。 修改运行这样的程序最好现在测试的文件夹里面用，确保把程序写对了再用到目标文件夹中。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span> </span><br><span class="line">    the_dir = <span class="string">"stock/"</span></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(the_dir): </span><br><span class="line">        dst =<span class="string">"sh."</span> + filename </span><br><span class="line">        src =the_dir+ filename </span><br><span class="line">        dst =the_dir+ dst </span><br><span class="line">        os.rename(src, dst) </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>: </span><br><span class="line">      </span><br><span class="line">    <span class="comment"># Calling main() function </span></span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+<hr>
+<p><code>Python</code> 读取文件获得的顺序会因为系统不同而有些差异。当我在处理一些图片用数字从小到大命名，但是中间有些又不全，不能直接循环，所以用一下代码来处理，获得符合要全的文件名。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line"></span><br><span class="line">target_dir = <span class="string">'data/'</span></span><br><span class="line">file_numbers = []</span><br><span class="line"><span class="keyword">for</span> file <span class="keyword">in</span> os.listdir(target_dir):</span><br><span class="line">    <span class="keyword">if</span> file.endswith(<span class="string">".png"</span>):</span><br><span class="line">        file_number = file.split(<span class="string">'.'</span>)[<span class="number">0</span>]</span><br><span class="line">        file_numbers +=  [int(file_number)]</span><br><span class="line">new_file_number = [ str(i) + <span class="string">'.png'</span> <span class="keyword">for</span> i <span class="keyword">in</span> sorted(file_numbers)]</span><br></pre></td></tr></table></figure>
+<hr>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Programme</tag>
       </tags>
   </entry>
   <entry>
@@ -345,20 +331,34 @@
       </tags>
   </entry>
   <entry>
-    <title>利用python批量转换图片的格式</title>
-    <url>/1970-01-01-/Convert-pictures/</url>
-    <content><![CDATA[<p>今天做了一个实验，实验保存的图片格式只有<code>bmp</code>的一种格式可以选择，并且图片数量不小。但是<code>TeX</code>对于<code>bmp</code>图片的插入支持不是特别友好。因此我想利用<code>python</code>来批量转换图片的格式。</p>
+    <title>一个酷炫的清理技能</title>
+    <url>/1970-01-01-/Clear/</url>
+    <content><![CDATA[<h2 id="清理回收站"><a href="#清理回收站" class="headerlink" title="清理回收站"></a>清理回收站</h2><p>你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！</p>
 <hr>
 <a id="more"></a>
-<p>经过一番折腾写出了如下的简单程序，应该能够直接满足转换的需求。我下面处理的时候为了不污染工作目录，把图片都存在<code>Figures/</code>文件夹下。新生成的图片则存在<code>Figures/Figures/</code>文件夹下面。下面的程序应该简单易读，拿来改改应该就能满足一般的需求了。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> glob</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">image_list = []</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> glob.glob(<span class="string">'Figures/*.bmp'</span>): <span class="comment">#assuming bmp</span></span><br><span class="line">    img = Image.open(filename)</span><br><span class="line">    filename = img.filename</span><br><span class="line">    img.save(<span class="string">'Figures/'</span> + os.path.splitext(filename)[<span class="number">0</span>] +<span class="string">'.png'</span>, <span class="string">'png'</span>)</span><br></pre></td></tr></table></figure>
-<p>参考链接：<br><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjYzOTIzMzYvaW1wb3J0aW5nLWltYWdlcy1mcm9tLWEtZGlyZWN0b3J5LXB5dGhvbg==" title="https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python">https://stackoverflow.com/questions/26392336/importing-images-from-a-directory-python<i class="fa fa-external-link"></i></span></p>
+<p>清空回收站可以用如下命令行：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure>
+<p>大家应该会用<code>cmd</code>吧。不会的可以这样操作：用<code>window+r</code>键，接下来输入<code>cmd</code>，即可打卡命令行，然后运行上面代码，即可清除回收站的垃圾。</p>
+<p>可是上面的代码可能比较繁琐，不好记，生怕装逼失败。接下啦教你更酷炫的。新建一个文本文档，随意起名，例如<code>clear.txt</code>。</p>
+<p>接下来在里面的上面的代码输入。随后把文件的后缀名改成.bat。</p>
+<p>即变成<code>clear.bat</code>。</p>
+<p>这样就是一个批处理文件了。右键即可看到以管理员身份运行。运行后回收站清空。</p>
+<p>还想把逼装的更好参考如下：</p>
+<p>1.打开如下文件夹：<code>C:\Users\camuse</code>。其中的<code>camuse</code>是用户名，记得改成你自己的。</p>
+<p>2.把刚才的批处理文件放到这里面。</p>
+<p>3.接下来按用<code>window+r</code>键，再输入<code>cmd</code>，打开命令行。</p>
+<p>4.在命令行输入<code>clear</code>,这一步即执行刚才做好的批处理文件。</p>
+<p>如果想把这个用到更多地方也是可以的，比如我们系统有一个缓存了无用文件的地方：<code>C:\Users\Camuse\AppData\Local\Temp</code>,其中的<code>camuse</code>是用户名，记得改成你自己的。</p>
+<p>在命令行运行如下命令可以删除整个文件夹：<code>rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</code>，你也可以把这句命令加入之前的批处理文件。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rmdir /s/q C:\Users\Camuse\AppData\Local\Temp</span><br><span class="line"><span class="keyword">del</span> /q /s %systemdrive%\$Recycle.bin\*</span><br><span class="line"><span class="keyword">for</span> /d %%x <span class="keyword">in</span> (%systemdrive%\$Recycle.bin\*) do @rd /s /q <span class="string">"%%x"</span></span><br></pre></td></tr></table></figure>
+<p>如果还有其它想要清理的文件夹自己加入即可。</p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>电脑知识</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>Command</tag>
+        <tag>Clean</tag>
       </tags>
   </entry>
   <entry>
@@ -773,76 +773,6 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
       </tags>
   </entry>
   <entry>
-    <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
-    <url>/1970-01-01-/TeXlive-basic-install/</url>
-    <content><![CDATA[<p>最近又在玩 <code>Manjaro</code>，顺便要装 <code>TeXlive</code>。但是这次不想像以往一样完整安装。<del>实际上还是完整安装省事，就是浪费了很多空间，换来的是少折腾。</del>其实还有 <code>MikTeX</code> 和 <code>TinyTeX</code> 的选择，但是两者的安装在我这里都遇到了问题。另外这次发现了 <code>texliveonfly.py</code> 脚本，多谢林前辈的指点。下面进入折腾吧。这篇教程的核心内容应该适用于其它几个常见的 <code>Linux</code> 发行版本。</p>
-<hr>
-<a id="more"></a>
-<p>注意此文中的操做建议老手，有兴趣折腾的来尝试。新手还是别看了，看 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL09zYmVydFdhbmcvaW5zdGFsbC1sYXRleA==" title="https://github.com/OsbertWang/install-latex">install-latex<i class="fa fa-external-link"></i></span> 的 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL09zYmVydFdhbmcvaW5zdGFsbC1sYXRleC9yZWxlYXNlcy9kb3dubG9hZC92MjAyMC4yLjEvSW5zdGFsbC1MYVRlWC5wZGY=" title="https://github.com/OsbertWang/install-latex/releases/download/v2020.2.1/Install-LaTeX.pdf">pdf<i class="fa fa-external-link"></i></span> 才好。</p>
-<p>另外我在文中也有几处疑惑，欢迎一起讨论。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>因为是安装 <code>texlive-basic</code> ，没必要下载完整的光盘下来挂载离线安装，可以用在线安装的方法安装。文中的链接可能因为年份原因而失效，自己可以上 <code>tug</code> 搜搜相关的东西。首先是上  <span class="exturl" data-url="aHR0cHM6Ly93d3cudHVnLm9yZy90ZXhsaXZlL2FjcXVpcmUtbmV0aW5zdGFsbC5odG1s" title="https://www.tug.org/texlive/acquire-netinstall.html">tug<i class="fa fa-external-link"></i></span> 下载安装脚本 <span class="exturl" data-url="aHR0cDovL21pcnJvci5jdGFuLm9yZy9zeXN0ZW1zL3RleGxpdmUvdGxuZXQvaW5zdGFsbC10bC11bngudGFyLmd6" title="http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz">install-tl-unx.tar.gz<i class="fa fa-external-link"></i></span> 或者 <code>install-tl.zip</code>。我选择了前者。下载下来解压开，进入解压后的内部目录，在这里打开终端。准备安装。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'selected_scheme scheme-basic'</span> &gt; temp.profile</span><br><span class="line">sudo perl install-tl -profile temp.profile</span><br></pre></td></tr></table></figure>
-<p><code>scheme-basic</code> 就是指定安装 <code>texlive-basic</code>。 <code>Arch</code> 上面的 <code>install-tl</code> 应该是不能用 <code>./install-tl</code> 的方法运行的，<code>Ubuntu</code> 的应该可以，实际上它是一个 <code>perl</code> 脚本，用 <code>perl</code> 运行应该是可以的。另外需要 <code>sudo</code> ，我一开始没加就没得安装。但是其实也有 <code>Portable</code> 的安装选择，这个我猜不用 <code>sudo</code> 就行，更多详细的参考 <span class="exturl" data-url="aHR0cHM6Ly93d3cudHVnLm9yZy90ZXhsaXZlL2RvYy90ZXhsaXZlLWVuL3RleGxpdmUtZW4uaHRtbCN4MS00MjAwMDQuMg==" title="https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#x1-420004.2">The TEX Live Guide—2019<i class="fa fa-external-link"></i></span>。</p>
-<hr>
-<p>这个安装应该很快就完成了，安装完成要注意终端里面最后提示的信息，是让加环境变量的提示。按照提示的可以进行下面的操作。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># nvim ~/.profile</span></span><br><span class="line">nvim ~/.bashrc</span><br><span class="line"><span class="comment"># Add TeX Live to the PATH, MANPATH, INFOPATH</span></span><br><span class="line"><span class="built_in">export</span> PATH=/usr/<span class="built_in">local</span>/texlive/2019/bin/x86_64-linux:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> MANPATH=/usr/<span class="built_in">local</span>/texlive/2019/texmf-dist/doc/man:<span class="variable">$MANPATH</span></span><br><span class="line"><span class="built_in">export</span> INFOPATH=/usr/<span class="built_in">local</span>/texlive/2019/texmf-dist/doc/info:<span class="variable">$INFOPATH</span></span><br></pre></td></tr></table></figure>
-<p>用编辑器打开 <code>~/.bashrc</code> 将 <code>export</code> 那三行的内容加进去，我这用了 <code>nvim</code> ，你别死脑筋。另外如果你是后来着，比如安装了 <code>TeXlive-2020</code> 的话，别直接复制上面的三行，记得改年份，看终端的信息是最好的。</p>
-<hr>
-<h2 id="测试安装及增加必要的模块"><a href="#测试安装及增加必要的模块" class="headerlink" title="测试安装及增加必要的模块"></a>测试安装及增加必要的模块</h2><p>安装好之后还要检验一下真实性。重新打开终端，运行 <code>tex -v</code> ，如果返回版本信息的话，那么安装基本成功了。但是如果是出现 <code>xxx not found</code> 这样的信息，那么你很不幸，安装有问题，或者环境变量没加好。在确认安装完成后可以性执行以下的步骤。<code>sudo tlmgr update --self --all</code> 建议执行，后面几个看需求。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo tlmgr update --self --all</span><br><span class="line">sudo tlmgr install texdoc</span><br><span class="line">sudo tlmgr install texliveonfly</span><br><span class="line">sudo tlmgr install latexmk</span><br><span class="line">sudo tlmgr install xetex</span><br></pre></td></tr></table></figure>
-<p><code>texdoc</code> 是查看帮助文档的命令，这个还是要装的吧。</p>
-<p><code>texliveonfly</code> 安装了才能继续跟进本文后续的操作，它是用于帮你自动下载缺失宏包，具体用法可以使用 <code>texdoc texliveonfly</code> 后者直接在网络上看，<span class="exturl" data-url="aHR0cHM6Ly9oZWxwbWFudWFsLmlvL2hlbHAvdGV4bGl2ZW9uZmx5Lw==" title="https://helpmanual.io/help/texliveonfly/">点这里<i class="fa fa-external-link"></i></span>。我发现后者更详细点。多数 <code>Linux</code> 发行版本应该自带 <code>python</code>，它是一个 <code>python</code> 脚本，如果要运行，必然要先安装 <code>python</code>。</p>
-<p><code>latexmk</code> 是帮助你自动编译的 <code>perl</code> 脚本，我比较常用它。用法一样通过 <code>texdoc latexmk</code> 查看。</p>
-<p><code>texlive-basic</code> 版本是不带 <code>xetex</code>，如果你要用到 <code>xelatex</code> 编译的话需要装它。</p>
-<hr>
-<p>安装完上面的东西可以进入使用的环节了。新建一个 <code>a.tex</code> 的文件，写入如下内容。</p>
-<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">    Hello world <span class="tag">\<span class="name">LaTeX</span><span class="string">&#123;&#125;</span></span>.</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>运行 <code>pdflatex a.tex</code> ，应该能够直接编译得到一些辅助文件和 <code>a.pdf</code> 文件。</p>
-<h2 id="texliveonfly-的开始使用"><a href="#texliveonfly-的开始使用" class="headerlink" title="texliveonfly 的开始使用"></a>texliveonfly 的开始使用</h2><p>接下来调试用 <code>xelatex</code> 运行一个中文的 <code>Hello world</code>。修改 <code>a.tex</code> 的内容。</p>
-<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexart&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">    Hello world <span class="tag">\<span class="name">LaTeX</span><span class="string">&#123;&#125;</span></span>.</span><br><span class="line">    你好，世界。</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>可以在终端运行 <code>xelatex a.tex</code> ，会发现缺少很多宏包无法运行下去，按 <code>x</code> 退出，放弃运行，开始用 <code>texliveonfly</code> 脚本。在这之前先用 <code>latexmk -C</code> 清除辅助文件后运行，避免遇到奇怪的问题。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo texliveonfly --terminal_only --compiler=xelatex a.tex</span><br></pre></td></tr></table></figure>
-<p>上面指定编译的引擎为 <code>xelatex</code> ，这里需要等待挺久的，喝杯茶回来，发现终端已经完成任务了，但是 <code>pdf</code> 文件可没好。运行下面两条指令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">latexmk -C </span><br><span class="line">latexmk -xelatex a.tex</span><br></pre></td></tr></table></figure>
-<p>第二条指令不能彻底完成，但是它帮助我们发现问题所在，是缺少 <code>fandol</code> 字体导致的。也就是 <code>texliveonfly</code> 在解决字体类宏包是不够稳健。这时需要手动处理一下。 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo tlmgr install fandol</span><br></pre></td></tr></table></figure>
-<p>安装好 <code>fandol</code> 字体后再用 <code>latexmk -xelatex a.tex</code> 则能得到正确的 <code>pdf</code>。</p>
-<hr>
-<h2 id="解决-pdf-中的中文渲染问题"><a href="#解决-pdf-中的中文渲染问题" class="headerlink" title="解决 pdf 中的中文渲染问题"></a>解决 <code>pdf</code> 中的中文渲染问题</h2><p>得到 <code>pdf</code> 后，其实我遇到一个小插曲。就是 <code>a.pdf</code> 里面的中文在 <code>pdf</code> 里面并未显示，我发现是渲染问题，尝试打开别的带中文的 <code>pdf</code> 也是无法显示。而且我用 <code>okular</code> 和 <code>LibreOffice</code> 等打开都是同样的结果。 <code>VSCode</code> 的 <code>LaTeX Workshop</code> 的 <code>tab</code> 预览却能渲染。应该是系统缺少相应的东西导致的。搜索后在 <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTI4ODg5OTEvdGNwZGYtZG8tbm90LWRpc3BsYXktY2hpbmVzZS1vbi1saW51eC1jbGllbnQ=" title="https://stackoverflow.com/questions/12888991/tcpdf-do-not-display-chinese-on-linux-client">stack overflow<i class="fa fa-external-link"></i></span> 上得到解答。缺少 <code>poppler-data</code>，通过 <code>yay -s poppler-data</code> 安装后，问题得到解决。</p>
-<hr>
-<p>现在我们装的 <code>texlive-basic</code> 里面有的宏包还是太少，我想运行一个带有很多宏包的文档让它帮助我们安装一下比较常用的宏包，避免一直需要用 <code>texliveonfly</code> 运行。我想到是用<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbXVzZUNhby9YTVUtVW5kZXJncmFkdWF0ZS10aGVzaXMtdGVtcGxhdGU=" title="https://github.com/CamuseCao/XMU-Undergraduate-thesis-template">自己写的毕业论文摸板<i class="fa fa-external-link"></i></span>和自己改造的一个<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbXVzZUNhby9SUEctTGFUZVgtVGVtcGxhdGU=" title="https://github.com/CamuseCao/RPG-LaTeX-Template">书籍摸板<i class="fa fa-external-link"></i></span>。</p>
-<p>先调试毕业论文模板，到对应文件夹下运行 <code>sudo texliveonfly --terminal_only  XMU.tex</code> 等待良久，再重复之前的步骤</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">latexmk -C </span><br><span class="line">latexmk -xelatex XMU.tex</span><br></pre></td></tr></table></figure>
-<p>这次又出现字体问题，缺的是一些外部的字体 <code>times new roman</code> 和 <code>Arial</code> 这样的。可以通过如下命令安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yay -s ttf-ms-win10</span><br><span class="line">yay -s ttf-ms-win10-zh_cn</span><br></pre></td></tr></table></figure>
-<p>其实我用 <code>yay</code> 安装失败了，但是上 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZwaG9lbml4ODg4ODgvdHRmLW1zd2luMTAtYXJjaA==" title="https://github.com/fphoenix88888/ttf-mswin10-arch">Github<i class="fa fa-external-link"></i></span> 下载 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZwaG9lbml4ODg4ODgvdHRmLW1zd2luMTAtYXJjaC9yYXcvbWFzdGVyL3R0Zi1tcy13aW4xMC0xMC4wLjE4MzYyLjExNi0xLWFueS5wa2cudGFyLnh6" title="https://github.com/fphoenix88888/ttf-mswin10-arch/raw/master/ttf-ms-win10-10.0.18362.116-1-any.pkg.tar.xz">ttf-ms-win10-10.0.18362.116-1-any.pkg.tar.xz<i class="fa fa-external-link"></i></span> 和 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZwaG9lbml4ODg4ODgvdHRmLW1zd2luMTAtYXJjaC9yYXcvbWFzdGVyL3R0Zi1tcy13aW4xMC16aF9jbi0xMC4wLjE4MzYyLjExNi0xLWFueS5wa2cudGFyLnh6" title="https://github.com/fphoenix88888/ttf-mswin10-arch/raw/master/ttf-ms-win10-zh_cn-10.0.18362.116-1-any.pkg.tar.xz">ttf-ms-win10-zh_cn-10.0.18362.116-1-any.pkg.tar.xz<i class="fa fa-external-link"></i></span> 在到对应所在的文件执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -U ttf-ms-win10-10.0.18362.116-1-any.pkg.tar.xz</span><br><span class="line">sudo pacman -U ttf-ms-win10-zh_cn-10.0.18362.116-1-any.pkg.tar.xz</span><br></pre></td></tr></table></figure>
-<p>解决了字体问题。这次继续运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">latexmk -C </span><br><span class="line">latexmk -xelatex XMU.tex</span><br></pre></td></tr></table></figure>
-<p>解决编译。<del>似乎我这里不用 ttf-ms-win10-zh_cn 也可以啊。</del></p>
-<p>第二个书籍模板故技重施，顺利解决。这里意外开心的一点是这次的 <code>noto</code> 字体它自己安装上了。然而我前面的 <code>fandol</code> 却没装上。</p>
-<hr>
-<h2 id="为-VSCode-配置-texliveonfly-的编译"><a href="#为-VSCode-配置-texliveonfly-的编译" class="headerlink" title="为 VSCode 配置 texliveonfly 的编译"></a>为 <code>VSCode</code> 配置 <code>texliveonfly</code> 的编译</h2><h3 id="解决权限问题"><a href="#解决权限问题" class="headerlink" title="解决权限问题"></a>解决权限问题</h3><p>接下来我想在编辑器里快速调用 <code>texliveonfly</code> 来编译缺少宏包的文档，但是 <code>texliveonfly</code> 没有 <code>sudo</code> 是无法正常工作的，其中的原因之一是 <code>tlmgr</code> 指令需要 <code>sudo</code> 。这是因为初始安装的时候就是全局安装。可以用如下的命令改变 <code>texlive</code> 的所有权限，这样可以使该用户直接运行相关的指令。其中的 <code>newowner</code> 是用户名，记得修改。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo chown -R newowner /usr/<span class="built_in">local</span>/texlive</span><br></pre></td></tr></table></figure>
-<p>这样处理之后运行 <code>tlmgr</code> 和 <code>texliveonfly</code> 等指令就无需 <code>sudo</code> 了。这为编辑器里面直接调用 <code>texliveonfly</code> 创造了条件。如果需要加 <code>sudo</code> 指令，必然要输入密码，这样给的交互给编辑器调用命令造成障碍。</p>
-<h3 id="编译链的配置"><a href="#编译链的配置" class="headerlink" title="编译链的配置"></a>编译链的配置</h3><p>我用 <code>VSCode</code> ，插件是 <code>LaTeX Workshop</code> ，下面给出 <code>texliveonfly</code> 编译的配置。</p>
-<p>加入 <code>latexmk -c</code> 命令的原因是为了清除辅助文件，避免辅助文件影响 <code>texliveonfly</code> 的运行。</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">"latex-workshop.latex.recipes": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"fly-pdflatex🔃"</span>,</span><br><span class="line">    <span class="attr">"tools"</span>: [</span><br><span class="line">      <span class="string">"clean"</span>,</span><br><span class="line">      <span class="string">"fly-pdflatex"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"fly-xelatex🔃"</span>,</span><br><span class="line">    <span class="attr">"tools"</span>: [</span><br><span class="line">      <span class="string">"clean"</span>,</span><br><span class="line">      <span class="string">"fly-xelatex"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">],</span><br><span class="line"></span><br><span class="line">"latex-workshop.latex.tools": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"clean"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"latexmk"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"-c"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"fly-pdflatex"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"texliveonfly"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"--terminal_only"</span>,</span><br><span class="line">      <span class="string">"--compiler=pdflatex"</span>,</span><br><span class="line">      <span class="string">"%DOC%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"fly-xelatex"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"texliveonfly"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"--terminal_only"</span>,</span><br><span class="line">      <span class="string">"--compiler=xelatex"</span>,</span><br><span class="line">      <span class="string">"%DOC%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h2><ul>
-<li>我的 <code>VSCode</code> 的 <code>terminal</code> 现在还是必修加 <code>sudo</code> 才能用 <code>texliveonfly</code>。</li>
-<li>我的 <code>VSCode</code> 的 <code>terminal</code> 运行 <code>texdoc</code> 总是提示没有指定打开对应文件的应用。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>TeX</tag>
-        <tag>Programme</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TeX 那些小事</title>
     <url>/1970-01-01-/TeX-Record/</url>
     <content><![CDATA[<p>本文记录了使用<code>TeX</code>的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。</p>
@@ -923,6 +853,76 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
       </categories>
       <tags>
         <tag>TeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
+    <url>/1970-01-01-/TeXlive-basic-install/</url>
+    <content><![CDATA[<p>最近又在玩 <code>Manjaro</code>，顺便要装 <code>TeXlive</code>。但是这次不想像以往一样完整安装。<del>实际上还是完整安装省事，就是浪费了很多空间，换来的是少折腾。</del>其实还有 <code>MikTeX</code> 和 <code>TinyTeX</code> 的选择，但是两者的安装在我这里都遇到了问题。另外这次发现了 <code>texliveonfly.py</code> 脚本，多谢林前辈的指点。下面进入折腾吧。这篇教程的核心内容应该适用于其它几个常见的 <code>Linux</code> 发行版本。</p>
+<hr>
+<a id="more"></a>
+<p>注意此文中的操做建议老手，有兴趣折腾的来尝试。新手还是别看了，看 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL09zYmVydFdhbmcvaW5zdGFsbC1sYXRleA==" title="https://github.com/OsbertWang/install-latex">install-latex<i class="fa fa-external-link"></i></span> 的 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL09zYmVydFdhbmcvaW5zdGFsbC1sYXRleC9yZWxlYXNlcy9kb3dubG9hZC92MjAyMC4yLjEvSW5zdGFsbC1MYVRlWC5wZGY=" title="https://github.com/OsbertWang/install-latex/releases/download/v2020.2.1/Install-LaTeX.pdf">pdf<i class="fa fa-external-link"></i></span> 才好。</p>
+<p>另外我在文中也有几处疑惑，欢迎一起讨论。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>因为是安装 <code>texlive-basic</code> ，没必要下载完整的光盘下来挂载离线安装，可以用在线安装的方法安装。文中的链接可能因为年份原因而失效，自己可以上 <code>tug</code> 搜搜相关的东西。首先是上  <span class="exturl" data-url="aHR0cHM6Ly93d3cudHVnLm9yZy90ZXhsaXZlL2FjcXVpcmUtbmV0aW5zdGFsbC5odG1s" title="https://www.tug.org/texlive/acquire-netinstall.html">tug<i class="fa fa-external-link"></i></span> 下载安装脚本 <span class="exturl" data-url="aHR0cDovL21pcnJvci5jdGFuLm9yZy9zeXN0ZW1zL3RleGxpdmUvdGxuZXQvaW5zdGFsbC10bC11bngudGFyLmd6" title="http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz">install-tl-unx.tar.gz<i class="fa fa-external-link"></i></span> 或者 <code>install-tl.zip</code>。我选择了前者。下载下来解压开，进入解压后的内部目录，在这里打开终端。准备安装。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'selected_scheme scheme-basic'</span> &gt; temp.profile</span><br><span class="line">sudo perl install-tl -profile temp.profile</span><br></pre></td></tr></table></figure>
+<p><code>scheme-basic</code> 就是指定安装 <code>texlive-basic</code>。 <code>Arch</code> 上面的 <code>install-tl</code> 应该是不能用 <code>./install-tl</code> 的方法运行的，<code>Ubuntu</code> 的应该可以，实际上它是一个 <code>perl</code> 脚本，用 <code>perl</code> 运行应该是可以的。另外需要 <code>sudo</code> ，我一开始没加就没得安装。但是其实也有 <code>Portable</code> 的安装选择，这个我猜不用 <code>sudo</code> 就行，更多详细的参考 <span class="exturl" data-url="aHR0cHM6Ly93d3cudHVnLm9yZy90ZXhsaXZlL2RvYy90ZXhsaXZlLWVuL3RleGxpdmUtZW4uaHRtbCN4MS00MjAwMDQuMg==" title="https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#x1-420004.2">The TEX Live Guide—2019<i class="fa fa-external-link"></i></span>。</p>
+<hr>
+<p>这个安装应该很快就完成了，安装完成要注意终端里面最后提示的信息，是让加环境变量的提示。按照提示的可以进行下面的操作。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># nvim ~/.profile</span></span><br><span class="line">nvim ~/.bashrc</span><br><span class="line"><span class="comment"># Add TeX Live to the PATH, MANPATH, INFOPATH</span></span><br><span class="line"><span class="built_in">export</span> PATH=/usr/<span class="built_in">local</span>/texlive/2019/bin/x86_64-linux:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> MANPATH=/usr/<span class="built_in">local</span>/texlive/2019/texmf-dist/doc/man:<span class="variable">$MANPATH</span></span><br><span class="line"><span class="built_in">export</span> INFOPATH=/usr/<span class="built_in">local</span>/texlive/2019/texmf-dist/doc/info:<span class="variable">$INFOPATH</span></span><br></pre></td></tr></table></figure>
+<p>用编辑器打开 <code>~/.bashrc</code> 将 <code>export</code> 那三行的内容加进去，我这用了 <code>nvim</code> ，你别死脑筋。另外如果你是后来着，比如安装了 <code>TeXlive-2020</code> 的话，别直接复制上面的三行，记得改年份，看终端的信息是最好的。</p>
+<hr>
+<h2 id="测试安装及增加必要的模块"><a href="#测试安装及增加必要的模块" class="headerlink" title="测试安装及增加必要的模块"></a>测试安装及增加必要的模块</h2><p>安装好之后还要检验一下真实性。重新打开终端，运行 <code>tex -v</code> ，如果返回版本信息的话，那么安装基本成功了。但是如果是出现 <code>xxx not found</code> 这样的信息，那么你很不幸，安装有问题，或者环境变量没加好。在确认安装完成后可以性执行以下的步骤。<code>sudo tlmgr update --self --all</code> 建议执行，后面几个看需求。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo tlmgr update --self --all</span><br><span class="line">sudo tlmgr install texdoc</span><br><span class="line">sudo tlmgr install texliveonfly</span><br><span class="line">sudo tlmgr install latexmk</span><br><span class="line">sudo tlmgr install xetex</span><br></pre></td></tr></table></figure>
+<p><code>texdoc</code> 是查看帮助文档的命令，这个还是要装的吧。</p>
+<p><code>texliveonfly</code> 安装了才能继续跟进本文后续的操作，它是用于帮你自动下载缺失宏包，具体用法可以使用 <code>texdoc texliveonfly</code> 后者直接在网络上看，<span class="exturl" data-url="aHR0cHM6Ly9oZWxwbWFudWFsLmlvL2hlbHAvdGV4bGl2ZW9uZmx5Lw==" title="https://helpmanual.io/help/texliveonfly/">点这里<i class="fa fa-external-link"></i></span>。我发现后者更详细点。多数 <code>Linux</code> 发行版本应该自带 <code>python</code>，它是一个 <code>python</code> 脚本，如果要运行，必然要先安装 <code>python</code>。</p>
+<p><code>latexmk</code> 是帮助你自动编译的 <code>perl</code> 脚本，我比较常用它。用法一样通过 <code>texdoc latexmk</code> 查看。</p>
+<p><code>texlive-basic</code> 版本是不带 <code>xetex</code>，如果你要用到 <code>xelatex</code> 编译的话需要装它。</p>
+<hr>
+<p>安装完上面的东西可以进入使用的环节了。新建一个 <code>a.tex</code> 的文件，写入如下内容。</p>
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">    Hello world <span class="tag">\<span class="name">LaTeX</span><span class="string">&#123;&#125;</span></span>.</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>运行 <code>pdflatex a.tex</code> ，应该能够直接编译得到一些辅助文件和 <code>a.pdf</code> 文件。</p>
+<h2 id="texliveonfly-的开始使用"><a href="#texliveonfly-的开始使用" class="headerlink" title="texliveonfly 的开始使用"></a>texliveonfly 的开始使用</h2><p>接下来调试用 <code>xelatex</code> 运行一个中文的 <code>Hello world</code>。修改 <code>a.tex</code> 的内容。</p>
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexart&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">    Hello world <span class="tag">\<span class="name">LaTeX</span><span class="string">&#123;&#125;</span></span>.</span><br><span class="line">    你好，世界。</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>可以在终端运行 <code>xelatex a.tex</code> ，会发现缺少很多宏包无法运行下去，按 <code>x</code> 退出，放弃运行，开始用 <code>texliveonfly</code> 脚本。在这之前先用 <code>latexmk -C</code> 清除辅助文件后运行，避免遇到奇怪的问题。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo texliveonfly --terminal_only --compiler=xelatex a.tex</span><br></pre></td></tr></table></figure>
+<p>上面指定编译的引擎为 <code>xelatex</code> ，这里需要等待挺久的，喝杯茶回来，发现终端已经完成任务了，但是 <code>pdf</code> 文件可没好。运行下面两条指令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">latexmk -C </span><br><span class="line">latexmk -xelatex a.tex</span><br></pre></td></tr></table></figure>
+<p>第二条指令不能彻底完成，但是它帮助我们发现问题所在，是缺少 <code>fandol</code> 字体导致的。也就是 <code>texliveonfly</code> 在解决字体类宏包是不够稳健。这时需要手动处理一下。 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo tlmgr install fandol</span><br></pre></td></tr></table></figure>
+<p>安装好 <code>fandol</code> 字体后再用 <code>latexmk -xelatex a.tex</code> 则能得到正确的 <code>pdf</code>。</p>
+<hr>
+<h2 id="解决-pdf-中的中文渲染问题"><a href="#解决-pdf-中的中文渲染问题" class="headerlink" title="解决 pdf 中的中文渲染问题"></a>解决 <code>pdf</code> 中的中文渲染问题</h2><p>得到 <code>pdf</code> 后，其实我遇到一个小插曲。就是 <code>a.pdf</code> 里面的中文在 <code>pdf</code> 里面并未显示，我发现是渲染问题，尝试打开别的带中文的 <code>pdf</code> 也是无法显示。而且我用 <code>okular</code> 和 <code>LibreOffice</code> 等打开都是同样的结果。 <code>VSCode</code> 的 <code>LaTeX Workshop</code> 的 <code>tab</code> 预览却能渲染。应该是系统缺少相应的东西导致的。搜索后在 <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTI4ODg5OTEvdGNwZGYtZG8tbm90LWRpc3BsYXktY2hpbmVzZS1vbi1saW51eC1jbGllbnQ=" title="https://stackoverflow.com/questions/12888991/tcpdf-do-not-display-chinese-on-linux-client">stack overflow<i class="fa fa-external-link"></i></span> 上得到解答。缺少 <code>poppler-data</code>，通过 <code>yay -s poppler-data</code> 安装后，问题得到解决。</p>
+<hr>
+<p>现在我们装的 <code>texlive-basic</code> 里面有的宏包还是太少，我想运行一个带有很多宏包的文档让它帮助我们安装一下比较常用的宏包，避免一直需要用 <code>texliveonfly</code> 运行。我想到是用<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbXVzZUNhby9YTVUtVW5kZXJncmFkdWF0ZS10aGVzaXMtdGVtcGxhdGU=" title="https://github.com/CamuseCao/XMU-Undergraduate-thesis-template">自己写的毕业论文摸板<i class="fa fa-external-link"></i></span>和自己改造的一个<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NhbXVzZUNhby9SUEctTGFUZVgtVGVtcGxhdGU=" title="https://github.com/CamuseCao/RPG-LaTeX-Template">书籍摸板<i class="fa fa-external-link"></i></span>。</p>
+<p>先调试毕业论文模板，到对应文件夹下运行 <code>sudo texliveonfly --terminal_only  XMU.tex</code> 等待良久，再重复之前的步骤</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">latexmk -C </span><br><span class="line">latexmk -xelatex XMU.tex</span><br></pre></td></tr></table></figure>
+<p>这次又出现字体问题，缺的是一些外部的字体 <code>times new roman</code> 和 <code>Arial</code> 这样的。可以通过如下命令安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yay -s ttf-ms-win10</span><br><span class="line">yay -s ttf-ms-win10-zh_cn</span><br></pre></td></tr></table></figure>
+<p>其实我用 <code>yay</code> 安装失败了，但是上 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZwaG9lbml4ODg4ODgvdHRmLW1zd2luMTAtYXJjaA==" title="https://github.com/fphoenix88888/ttf-mswin10-arch">Github<i class="fa fa-external-link"></i></span> 下载 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZwaG9lbml4ODg4ODgvdHRmLW1zd2luMTAtYXJjaC9yYXcvbWFzdGVyL3R0Zi1tcy13aW4xMC0xMC4wLjE4MzYyLjExNi0xLWFueS5wa2cudGFyLnh6" title="https://github.com/fphoenix88888/ttf-mswin10-arch/raw/master/ttf-ms-win10-10.0.18362.116-1-any.pkg.tar.xz">ttf-ms-win10-10.0.18362.116-1-any.pkg.tar.xz<i class="fa fa-external-link"></i></span> 和 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZwaG9lbml4ODg4ODgvdHRmLW1zd2luMTAtYXJjaC9yYXcvbWFzdGVyL3R0Zi1tcy13aW4xMC16aF9jbi0xMC4wLjE4MzYyLjExNi0xLWFueS5wa2cudGFyLnh6" title="https://github.com/fphoenix88888/ttf-mswin10-arch/raw/master/ttf-ms-win10-zh_cn-10.0.18362.116-1-any.pkg.tar.xz">ttf-ms-win10-zh_cn-10.0.18362.116-1-any.pkg.tar.xz<i class="fa fa-external-link"></i></span> 在到对应所在的文件执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -U ttf-ms-win10-10.0.18362.116-1-any.pkg.tar.xz</span><br><span class="line">sudo pacman -U ttf-ms-win10-zh_cn-10.0.18362.116-1-any.pkg.tar.xz</span><br></pre></td></tr></table></figure>
+<p>解决了字体问题。这次继续运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">latexmk -C </span><br><span class="line">latexmk -xelatex XMU.tex</span><br></pre></td></tr></table></figure>
+<p>解决编译。<del>似乎我这里不用 ttf-ms-win10-zh_cn 也可以啊。</del></p>
+<p>第二个书籍模板故技重施，顺利解决。这里意外开心的一点是这次的 <code>noto</code> 字体它自己安装上了。然而我前面的 <code>fandol</code> 却没装上。</p>
+<hr>
+<h2 id="为-VSCode-配置-texliveonfly-的编译"><a href="#为-VSCode-配置-texliveonfly-的编译" class="headerlink" title="为 VSCode 配置 texliveonfly 的编译"></a>为 <code>VSCode</code> 配置 <code>texliveonfly</code> 的编译</h2><h3 id="解决权限问题"><a href="#解决权限问题" class="headerlink" title="解决权限问题"></a>解决权限问题</h3><p>接下来我想在编辑器里快速调用 <code>texliveonfly</code> 来编译缺少宏包的文档，但是 <code>texliveonfly</code> 没有 <code>sudo</code> 是无法正常工作的，其中的原因之一是 <code>tlmgr</code> 指令需要 <code>sudo</code> 。这是因为初始安装的时候就是全局安装。可以用如下的命令改变 <code>texlive</code> 的所有权限，这样可以使该用户直接运行相关的指令。其中的 <code>newowner</code> 是用户名，记得修改。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo chown -R newowner /usr/<span class="built_in">local</span>/texlive</span><br></pre></td></tr></table></figure>
+<p>这样处理之后运行 <code>tlmgr</code> 和 <code>texliveonfly</code> 等指令就无需 <code>sudo</code> 了。这为编辑器里面直接调用 <code>texliveonfly</code> 创造了条件。如果需要加 <code>sudo</code> 指令，必然要输入密码，这样给的交互给编辑器调用命令造成障碍。</p>
+<h3 id="编译链的配置"><a href="#编译链的配置" class="headerlink" title="编译链的配置"></a>编译链的配置</h3><p>我用 <code>VSCode</code> ，插件是 <code>LaTeX Workshop</code> ，下面给出 <code>texliveonfly</code> 编译的配置。</p>
+<p>加入 <code>latexmk -c</code> 命令的原因是为了清除辅助文件，避免辅助文件影响 <code>texliveonfly</code> 的运行。</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">"latex-workshop.latex.recipes": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"fly-pdflatex🔃"</span>,</span><br><span class="line">    <span class="attr">"tools"</span>: [</span><br><span class="line">      <span class="string">"clean"</span>,</span><br><span class="line">      <span class="string">"fly-pdflatex"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"fly-xelatex🔃"</span>,</span><br><span class="line">    <span class="attr">"tools"</span>: [</span><br><span class="line">      <span class="string">"clean"</span>,</span><br><span class="line">      <span class="string">"fly-xelatex"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">],</span><br><span class="line"></span><br><span class="line">"latex-workshop.latex.tools": [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"clean"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"latexmk"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"-c"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"fly-pdflatex"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"texliveonfly"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"--terminal_only"</span>,</span><br><span class="line">      <span class="string">"--compiler=pdflatex"</span>,</span><br><span class="line">      <span class="string">"%DOC%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"fly-xelatex"</span>,</span><br><span class="line">    <span class="attr">"command"</span>: <span class="string">"texliveonfly"</span>,</span><br><span class="line">    <span class="attr">"args"</span>: [</span><br><span class="line">      <span class="string">"--terminal_only"</span>,</span><br><span class="line">      <span class="string">"--compiler=xelatex"</span>,</span><br><span class="line">      <span class="string">"%DOC%"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h2><ul>
+<li>我的 <code>VSCode</code> 的 <code>terminal</code> 现在还是必修加 <code>sudo</code> 才能用 <code>texliveonfly</code>。</li>
+<li>我的 <code>VSCode</code> 的 <code>terminal</code> 运行 <code>texdoc</code> 总是提示没有指定打开对应文件的应用。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>TeX</tag>
+        <tag>Programme</tag>
       </tags>
   </entry>
   <entry>
