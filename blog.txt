@@ -1,0 +1,27 @@
+sudo npm i hexo-cli -g 
+hexo init
+npm install
+sudo npm install hexo-deployer-git --save
+npm audit fix
+npm install hexo-generator-feed --save
+npm install live2d-widget-model-chitose live2d-widget-model-haruto live2d-widget-model-nico
+npm un hexo-renderer-marked
+npm install hexo-renderer-kramed
+npm un hexo-renderer-pandoc
+npm install hexo-generator-sitemap --save
+npm install hexo-generator-feed --save
+npm install hexo-related-popular-posts --save
+npm install hexo-generator-searchdb
+npm install aplayer --save
+
+
+themes/next/layout/_layout.swig
+
+header
+
+<link rel="stylesheet" href="APlayer.min.css">
+<script src="APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+
+<div class="aplayer" data-id="375755220" data-server="netease" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="false" data-listmaxheight="350px"></div>
+

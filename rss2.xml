@@ -9,23 +9,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Sat, 02 Mar 2019 10:37:44 GMT</pubDate>
+    <pubDate>Sat, 25 Apr 2020 06:53:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>收藏链接</title>
-      <link>https://camusecao.top/1970-01-01-/Url/</link>
-      <guid>https://camusecao.top/1970-01-01-/Url/</guid>
+      <title>Archlinux offline wiki</title>
+      <link>https://camusecao.top/1970-01-01-/Arch-offline-wiki/</link>
+      <guid>https://camusecao.top/1970-01-01-/Arch-offline-wiki/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
+        &lt;p&gt;使用 &lt;code&gt;Archlinux&lt;/code&gt; 的日常就是查 &lt;code&gt;wiki&lt;/code&gt; 了，什么不会都看 &lt;code&gt;wiki&lt;/code&gt;，离开完全不会用 &lt;code&gt;Arch&lt;/code&gt;。虽然经常都是在线查看，但是想想如果有离线的也不错。于是经过一番搜索找到了自己满意的方法。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Url/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Arch-offline-wiki/#disqus_thread</comments>
     </item>
     
     <item>
@@ -45,51 +45,52 @@
     </item>
     
     <item>
-      <title>利用python批量转换图片的格式</title>
-      <link>https://camusecao.top/1970-01-01-/Convert-pictures/</link>
-      <guid>https://camusecao.top/1970-01-01-/Convert-pictures/</guid>
+      <title>自适应电子和光电子学的压电电子学和压电光电子学</title>
+      <link>https://camusecao.top/1970-01-01-/Article1/</link>
+      <guid>https://camusecao.top/1970-01-01-/Article1/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
+        &lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h2&gt;&lt;p&gt;低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Convert-pictures/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Article1/#disqus_thread</comments>
     </item>
     
     <item>
-      <title>TeX 批量插入图片</title>
-      <link>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</link>
-      <guid>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</guid>
+      <title>一个酷炫的清理技能</title>
+      <link>https://camusecao.top/1970-01-01-/Clear/</link>
+      <guid>https://camusecao.top/1970-01-01-/Clear/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
+        &lt;h2 id=&quot;清理回收站&quot;&gt;&lt;a href=&quot;#清理回收站&quot; class=&quot;headerlink&quot; title=&quot;清理回收站&quot;&gt;&lt;/a&gt;清理回收站&lt;/h2&gt;&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Insert-pictures-tex/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Clear/#disqus_thread</comments>
     </item>
     
     <item>
-      <title>面试题目</title>
-      <link>https://camusecao.top/1970-01-01-/Interview/</link>
-      <guid>https://camusecao.top/1970-01-01-/Interview/</guid>
+      <title>商务英语</title>
+      <link>https://camusecao.top/1970-01-01-/English/</link>
+      <guid>https://camusecao.top/1970-01-01-/English/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;h2 id=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;a href=&quot;#如何理解能带结构？画一个简单的能带结构。&quot; class=&quot;headerlink&quot; title=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;/a&gt;如何理解能带结构？画一个简单的能带结构。&lt;/h2&gt;&lt;p&gt;$k\text{与}E(k)$的关系图即能带结构。&lt;br&gt;画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。&lt;/p&gt;
+        &lt;p&gt;商务英语的剧本，不知道为什么，就放上来了。&lt;/p&gt;
+&lt;p&gt;旁白：今天的故事发生在一家规模不大的游戏公司中，公司仅有 50 名员工。他们正面临着一场危机，公司已经岌岌可危。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Interview/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/English/#disqus_thread</comments>
     </item>
     
     <item>
@@ -109,6 +110,38 @@
     </item>
     
     <item>
+      <title>利用python批量转换图片的格式</title>
+      <link>https://camusecao.top/1970-01-01-/Convert-pictures/</link>
+      <guid>https://camusecao.top/1970-01-01-/Convert-pictures/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/Convert-pictures/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>面试题目</title>
+      <link>https://camusecao.top/1970-01-01-/Interview/</link>
+      <guid>https://camusecao.top/1970-01-01-/Interview/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;a href=&quot;#如何理解能带结构？画一个简单的能带结构。&quot; class=&quot;headerlink&quot; title=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;/a&gt;如何理解能带结构？画一个简单的能带结构。&lt;/h2&gt;&lt;p&gt;$k\text{与}E(k)$的关系图即能带结构。&lt;br&gt;画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/Interview/#disqus_thread</comments>
+    </item>
+    
+    <item>
       <title>MiKTeX的基本使用</title>
       <link>https://camusecao.top/1970-01-01-/MiKTeX/</link>
       <guid>https://camusecao.top/1970-01-01-/MiKTeX/</guid>
@@ -125,22 +158,6 @@
     </item>
     
     <item>
-      <title>Python Pandas 库的一些使用</title>
-      <link>https://camusecao.top/1970-01-01-/Python-Pandas/</link>
-      <guid>https://camusecao.top/1970-01-01-/Python-Pandas/</guid>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/1970-01-01-/Python-Pandas/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>Python 实用小程序</title>
       <link>https://camusecao.top/1970-01-01-/Python-tricks/</link>
       <guid>https://camusecao.top/1970-01-01-/Python-tricks/</guid>
@@ -154,6 +171,22 @@
       
       
       <comments>https://camusecao.top/1970-01-01-/Python-tricks/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Python Pandas 库的一些使用</title>
+      <link>https://camusecao.top/1970-01-01-/Python-Pandas/</link>
+      <guid>https://camusecao.top/1970-01-01-/Python-Pandas/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/Python-Pandas/#disqus_thread</comments>
     </item>
     
     <item>
@@ -204,51 +237,72 @@
     </item>
     
     <item>
-      <title>一个酷炫的清理技能</title>
-      <link>https://camusecao.top/1970-01-01-/Clear/</link>
-      <guid>https://camusecao.top/1970-01-01-/Clear/</guid>
+      <title>物理定律告诉你，爱情的真相有多么残酷！</title>
+      <link>https://camusecao.top/1970-01-01-/Lover/</link>
+      <guid>https://camusecao.top/1970-01-01-/Lover/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;h2 id=&quot;清理回收站&quot;&gt;&lt;a href=&quot;#清理回收站&quot; class=&quot;headerlink&quot; title=&quot;清理回收站&quot;&gt;&lt;/a&gt;清理回收站&lt;/h2&gt;&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
+        &lt;p&gt;昨天是情人节，所以这篇文章先不发，今天来发了。&lt;/p&gt;
+&lt;p&gt;话说昨天我还在和兰铃讨论搭建博客，看到一个很好看的相册，所以发给他看。&lt;/p&gt;
+&lt;p&gt;结果他说你女朋友真好看。&lt;/p&gt;
+&lt;p&gt;原来是那个相册里面的博主和女友的照片。&lt;/p&gt;
+&lt;p&gt;我急忙解释说不是我的。&lt;/p&gt;
+&lt;p&gt;他接下来的回复令人窒息。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/Clear/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Lover/#disqus_thread</comments>
     </item>
     
     <item>
-      <title>厦门大学模板使用说明</title>
-      <link>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</link>
-      <guid>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/</guid>
+      <title>TeX 批量插入图片</title>
+      <link>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</link>
+      <guid>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
+        &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/Insert-pictures-tex/#disqus_thread</comments>
     </item>
     
     <item>
-      <title>csv文件的小坑(自己主动跳进去的)</title>
-      <link>https://camusecao.top/1970-01-01-/csv/</link>
-      <guid>https://camusecao.top/1970-01-01-/csv/</guid>
+      <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
+      <link>https://camusecao.top/1970-01-01-/TeXlive-basic-install/</link>
+      <guid>https://camusecao.top/1970-01-01-/TeXlive-basic-install/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;csv文件是一种逗号分隔值文件格式，它工作是比较稳定的。对于数据量比较大的情况，它是比较好的选择。&lt;/p&gt;
+        &lt;p&gt;最近又在玩 &lt;code&gt;Manjaro&lt;/code&gt;，顺便要装 &lt;code&gt;TeXlive&lt;/code&gt;。但是这次不想像以往一样完整安装。&lt;del&gt;实际上还是完整安装省事，就是浪费了很多空间，换来的是少折腾。&lt;/del&gt;其实还有 &lt;code&gt;MikTeX&lt;/code&gt; 和 &lt;code&gt;TinyTeX&lt;/code&gt; 的选择，但是两者的安装在我这里都遇到了问题。另外这次发现了 &lt;code&gt;texliveonfly.py&lt;/code&gt; 脚本，多谢林前辈的指点。下面进入折腾吧。这篇教程的核心内容应该适用于其它几个常见的 &lt;code&gt;Linux&lt;/code&gt; 发行版本。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/csv/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/TeXlive-basic-install/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>收藏链接</title>
+      <link>https://camusecao.top/1970-01-01-/Url/</link>
+      <guid>https://camusecao.top/1970-01-01-/Url/</guid>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/1970-01-01-/Url/#disqus_thread</comments>
     </item>
     
     <item>
@@ -268,68 +322,19 @@
     </item>
     
     <item>
-      <title>常用软件记录</title>
-      <link>https://camusecao.top/1970-01-01-/software/</link>
-      <guid>https://camusecao.top/1970-01-01-/software/</guid>
+      <title>TeX 那些小事</title>
+      <link>https://camusecao.top/1970-01-01-/TeX-Record/</link>
+      <guid>https://camusecao.top/1970-01-01-/TeX-Record/</guid>
       <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
+        &lt;p&gt;本文记录了使用&lt;code&gt;TeX&lt;/code&gt;的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/1970-01-01-/software/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
-      <link>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</link>
-      <guid>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</guid>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>凝聚态物理期末总结</title>
-      <link>https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</link>
-      <guid>https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</guid>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;../t.css&quot;&gt;
-
-&lt;h3 id=&quot;求倒格矢&quot;&gt;&lt;a href=&quot;#求倒格矢&quot; class=&quot;headerlink&quot; title=&quot;求倒格矢&quot;&gt;&lt;/a&gt;求倒格矢&lt;/h3&gt;&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>自适应电子和光电子学的压电电子学和压电光电子学</title>
-      <link>https://camusecao.top/1970-01-01-/Article1/</link>
-      <guid>https://camusecao.top/1970-01-01-/Article1/</guid>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h2&gt;&lt;p&gt;低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/1970-01-01-/Article1/#disqus_thread</comments>
+      <comments>https://camusecao.top/1970-01-01-/TeX-Record/#disqus_thread</comments>
     </item>
     
   </channel>
