@@ -291,9 +291,9 @@
       <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
       <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
     
   </entry>
   
@@ -419,6 +419,30 @@
   </entry>
   
   <entry>
+    <title>Jupyter Notebook 的使用小记</title>
+    <link href="https://camusecao.top/2020-05-09-/Jupyternotebook/"/>
+    <id>https://camusecao.top/2020-05-09-/Jupyternotebook/</id>
+    <published>2020-05-08T16:03:40.767Z</published>
+    <updated>2020-03-20T15:44:49.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>物理定律告诉你，爱情的真相有多么残酷！</title>
     <link href="https://camusecao.top/2020-05-09-/Lover/"/>
     <id>https://camusecao.top/2020-05-09-/Lover/</id>
@@ -446,30 +470,6 @@
       <category term="Love" scheme="https://camusecao.top/tags/Love/"/>
     
       <category term="Life" scheme="https://camusecao.top/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jupyter Notebook 的使用小记</title>
-    <link href="https://camusecao.top/2020-05-09-/Jupyternotebook/"/>
-    <id>https://camusecao.top/2020-05-09-/Jupyternotebook/</id>
-    <published>2020-05-08T16:03:40.767Z</published>
-    <updated>2020-03-20T15:44:49.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
