@@ -13,14 +13,14 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
   <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="Camuse&#39;s blog">
@@ -103,15 +103,12 @@
 
   <div class="site-meta">
 
-    <div>
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Born to die</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-        <h1 class="site-subtitle" itemprop="description">Living to love</h1>
-      
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Born to die</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Living to love</p>
   </div>
 
   <div class="site-nav-right">
@@ -122,32 +119,33 @@
 </div>
 
 
+
+
 <nav class="site-nav">
-  
-  <ul id="menu" class="menu">
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="/" rel="section"><i class="home fa-fw"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+    <a href="/about/" rel="section"><i class="user fa-fw"></i>About</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">20</span></a>
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>Tags<span class="badge">21</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">9</span></a>
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>Categories<span class="badge">9</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">26</span></a>
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives<span class="badge">28</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -155,17 +153,18 @@
         </a>
       </li>
   </ul>
-
 </nav>
-  <div class="site-search">
-    <div class="search-pop-overlay">
-  <div class="popup search-popup">
-      <div class="search-header">
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+    <input autocomplete="off" autocapitalize="off"
            placeholder="Searching..." spellcheck="false"
            type="search" class="search-input">
   </div>
@@ -179,10 +178,9 @@
   </div>
 </div>
 
+    </div>
   </div>
-</div>
 
-  </div>
 </div>
     </header>
 
@@ -198,15 +196,13 @@
         <div class="content-wrap">
           
 
-          <div class="content">
+          <div class="content index posts-expand">
             
-
-  <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-05-09-/Insert-pictures-tex/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/myimages/y.jpg">
@@ -220,32 +216,32 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/" class="post-title-link" itemprop="url">关于作死修改注册表导致无法更新Windows系统的反思</a>
+            <a href="/2020-05-09-/Insert-pictures-tex/" class="post-title-link" itemprop="url">TeX 批量插入图片</a>
         </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+              <time title="Created: 2020-05-09 00:03:40" itemprop="dateCreated datePublished" datetime="2020-05-09T00:03:40+08:00">2020-05-09</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-20 23:46:31" itemprop="dateModified" datetime="2020-03-20T23:46:31+08:00">2020-03-20</time>
+                <time title="Modified: 2019-04-30 22:04:32" itemprop="dateModified" datetime="2019-04-30T22:04:32+08:00">2019-04-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">电脑知识</span></a>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
                 </span>
             </span>
 
@@ -260,11 +256,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。</p>
+          <p>本文记录了<code>LaTeX</code>中如何快速批量插入大量图片的方法。</p>
 <hr>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/1970-01-01-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/#more" rel="contents">
+              <a class="btn" href="/2020-05-09-/Insert-pictures-tex/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -286,11 +282,11 @@
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/csv/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-05-09-/csv/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/myimages/y.jpg">
@@ -304,28 +300,28 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/1970-01-01-/csv/" class="post-title-link" itemprop="url">csv文件的小坑(自己主动跳进去的)</a>
+            <a href="/2020-05-09-/csv/" class="post-title-link" itemprop="url">csv文件的小坑(自己主动跳进去的)</a>
         </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+              <time title="Created: 2020-05-09 00:03:40" itemprop="dateCreated datePublished" datetime="2020-05-09T00:03:40+08:00">2020-05-09</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
                 <time title="Modified: 2019-03-29 10:50:36" itemprop="dateModified" datetime="2019-03-29T10:50:36+08:00">2019-03-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -348,7 +344,7 @@
 <hr>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/1970-01-01-/csv/#more" rel="contents">
+              <a class="btn" href="/2020-05-09-/csv/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -370,11 +366,11 @@
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/software/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-05-09-/English/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/myimages/y.jpg">
@@ -388,28 +384,281 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/1970-01-01-/software/" class="post-title-link" itemprop="url">常用软件记录</a>
+            <a href="/2020-05-09-/English/" class="post-title-link" itemprop="url">商务英语</a>
         </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+              <time title="Created: 2020-05-09 00:03:40" itemprop="dateCreated datePublished" datetime="2020-05-09T00:03:40+08:00">2020-05-09</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-03-01 21:21:21" itemprop="dateModified" datetime="2019-03-01T21:21:21+08:00">2019-03-01</time>
+                <time title="Modified: 2019-03-01 21:24:00" itemprop="dateModified" datetime="2019-03-01T21:24:00+08:00">2019-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%B4%E6%97%B6/" itemprop="url" rel="index"><span itemprop="name">临时</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>商务英语的剧本，不知道为什么，就放上来了。</p>
+<p>旁白：今天的故事发生在一家规模不大的游戏公司中，公司仅有 50 名员工。他们正面临着一场危机，公司已经岌岌可危。</p>
+<hr>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020-05-09-/English/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-05-09-/Convert-pictures/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/myimages/y.jpg">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020-05-09-/Convert-pictures/" class="post-title-link" itemprop="url">利用python批量转换图片的格式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-05-09 00:03:40" itemprop="dateCreated datePublished" datetime="2020-05-09T00:03:40+08:00">2020-05-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-04-30 22:16:20" itemprop="dateModified" datetime="2019-04-30T22:16:20+08:00">2019-04-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>今天做了一个实验，实验保存的图片格式只有<code>bmp</code>的一种格式可以选择，并且图片数量不小。但是<code>TeX</code>对于<code>bmp</code>图片的插入支持不是特别友好。因此我想利用<code>python</code>来批量转换图片的格式。</p>
+<hr>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020-05-09-/Convert-pictures/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-05-09-/Clear/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/myimages/y.jpg">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020-05-09-/Clear/" class="post-title-link" itemprop="url">一个酷炫的清理技能</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-05-09 00:03:40" itemprop="dateCreated datePublished" datetime="2020-05-09T00:03:40+08:00">2020-05-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-03-01 21:24:11" itemprop="dateModified" datetime="2019-03-01T21:24:11+08:00">2019-03-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">电脑知识</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="清理回收站"><a href="#清理回收站" class="headerlink" title="清理回收站"></a>清理回收站</h2><p>你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！</p>
+<hr>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020-05-09-/Clear/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-05-09-/Chrome-setting/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/myimages/y.jpg">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020-05-09-/Chrome-setting/" class="post-title-link" itemprop="url">Chrome的私人配置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-05-09 00:03:40" itemprop="dateCreated datePublished" datetime="2020-05-09T00:03:40+08:00">2020-05-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-20 23:43:51" itemprop="dateModified" datetime="2020-03-20T23:43:51+08:00">2020-03-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -428,11 +677,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。</p>
+          <p>这是我的Chrome浏览器的一些配置，有兴趣的话可以看看啊。希望你喜欢。</p>
 <hr>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/1970-01-01-/software/#more" rel="contents">
+              <a class="btn" href="/2020-05-09-/Chrome-setting/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -454,11 +703,11 @@
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/XMU-Thesis-Instruction/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-05-09-/Article1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/myimages/y.jpg">
@@ -472,32 +721,32 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/1970-01-01-/XMU-Thesis-Instruction/" class="post-title-link" itemprop="url">厦门大学模板使用说明</a>
+            <a href="/2020-05-09-/Article1/" class="post-title-link" itemprop="url">自适应电子和光电子学的压电电子学和压电光电子学</a>
         </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+              <time title="Created: 2020-05-09 00:03:40" itemprop="dateCreated datePublished" datetime="2020-05-09T00:03:40+08:00">2020-05-09</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-03-01 21:20:59" itemprop="dateModified" datetime="2019-03-01T21:20:59+08:00">2019-03-01</time>
+                <time title="Modified: 2020-03-20 23:41:46" itemprop="dateModified" datetime="2020-03-20T23:41:46+08:00">2020-03-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                  <a href="/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/" itemprop="url" rel="index"><span itemprop="name">文献阅读</span></a>
                 </span>
             </span>
 
@@ -512,11 +761,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="使用的前提"><a href="#使用的前提" class="headerlink" title="使用的前提"></a>使用的前提</h2><p>为了使用该模板，需要安装一个<code>TeX</code>的发行版本。可以选择<code>Texlive</code>或者<code>Miktex</code>,他们都是跨平台的。而<code>Texlive</code>打包了比较多的宏包，较为庞大，<code>Miktex</code>则是临时下载没有的宏包。这里我推荐使用<code>Miktex</code>。</p>
+          <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。</p>
 <hr>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/1970-01-01-/XMU-Thesis-Instruction/#more" rel="contents">
+              <a class="btn" href="/2020-05-09-/Article1/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -538,11 +787,11 @@
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-05-09-/Arch-offline-wiki/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/myimages/y.jpg">
@@ -556,32 +805,32 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/" class="post-title-link" itemprop="url">凝聚态物理期末总结</a>
+            <a href="/2020-05-09-/Arch-offline-wiki/" class="post-title-link" itemprop="url">Archlinux offline wiki</a>
         </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+              <time title="Created: 2020-05-09 00:03:40" itemprop="dateCreated datePublished" datetime="2020-05-09T00:03:40+08:00">2020-05-09</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+                  <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-03-01 21:19:16" itemprop="dateModified" datetime="2019-03-01T21:19:16+08:00">2019-03-01</time>
+                <time title="Modified: 2020-04-25 14:53:48" itemprop="dateModified" datetime="2020-04-25T14:53:48+08:00">2020-04-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                  <a href="/categories/Study/" itemprop="url" rel="index"><span itemprop="name">Study </span></a>
                 </span>
             </span>
 
@@ -596,100 +845,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <link rel="stylesheet" href="../t.css">
-
-<h3 id="求倒格矢"><a href="#求倒格矢" class="headerlink" title="求倒格矢"></a>求倒格矢</h3><hr>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/1970-01-01-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://camusecao.top/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/myimages/y.jpg">
-      <meta itemprop="name" content="CamuseCao">
-      <meta itemprop="description" content="Camuse's blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Born to die">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/" class="post-title-link" itemprop="url">近代物理实验复习</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-20 23:46:40" itemprop="dateModified" datetime="2020-03-20T23:46:40+08:00">2020-03-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="2010-卷子"><a href="#2010-卷子" class="headerlink" title="2010 卷子"></a>2010 卷子</h2><h3 id="虚拟仪器的主要特点有："><a href="#虚拟仪器的主要特点有：" class="headerlink" title="虚拟仪器的主要特点有："></a>虚拟仪器的主要特点有：</h3><ul>
-<li>尽可能采用了通用的硬件，各种仪器的差异主要是软件。</li>
-<li>可充分发挥计算机的能力，有强大的数据处理功能，可以创造出功能更强的仪器。</li>
-<li>用户可以根据自己的需要定义和制造各种仪器。</li>
-</ul>
+          <p>使用 <code>Archlinux</code> 的日常就是查 <code>wiki</code> 了，什么不会都看 <code>wiki</code>，离开完全不会用 <code>Arch</code>。虽然经常都是在线查看，但是想想如果有离线的也不错。于是经过一番搜索找到了自己满意的方法。</p>
 <hr>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/1970-01-01-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/#more" rel="contents">
+              <a class="btn" href="/2020-05-09-/Arch-offline-wiki/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -711,7 +871,6 @@
   
   
 
-  </div>
 
   
   <nav class="pagination">
@@ -783,7 +942,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -796,24 +955,23 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NhbXVzZWNhbw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;camusecao"><i class="fa fa-fw fa-github"></i>GitHub</span>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NhbXVzZWNhbw==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;camusecao"><i class="github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <span class="exturl" data-url="bWFpbHRvOmNhbXVzZWNhb0BnbWFpbC5jb20=" title="E-Mail → mailto:camusecao@gmail.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</span>
+        <span class="exturl" data-url="bWFpbHRvOmNhbXVzZWNhb0BnbWFpbC5jb20=" title="E-Mail → mailto:camusecao@gmail.com"><i class="envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
 
   <div class="links-of-blogroll motion-element">
-    <div class="links-of-blogroll-title">
-      <i class="fa fa-fw fa-link"></i>
+    <div class="links-of-blogroll-title"><i class="link fa-fw"></i>
       Links
     </div>
     <ul class="links-of-blogroll-list">
@@ -851,20 +1009,22 @@
   &copy; 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">CamuseCao</span>
 </div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span>
+  </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e74be3b027c9267" async="async"></script>
   </div>
 
         
 <div class="busuanzi-count">
-  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
       <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
+        <i class="user"></i>
       </span>
       <span class="site-uv" title="Total Visitors">
         <span id="busuanzi_value_site_uv"></span>
@@ -873,7 +1033,7 @@
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
+        <i class="eye"></i>
       </span>
       <span class="site-pv" title="Total Views">
         <span id="busuanzi_value_site_pv"></span>
@@ -938,7 +1098,7 @@ var pjax = new Pjax({
 });
 
 window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
     var code = element.text || element.textContent || element.innerHTML || '';
     var parent = element.parentNode;
     parent.removeChild(element);
@@ -957,8 +1117,8 @@ window.addEventListener('pjax:success', () => {
       // Force synchronous loading of peripheral JS.
       script.async = false;
     }
-    if (element.getAttribute('pjax') !== null) {
-      script.setAttribute('pjax', '');
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -984,19 +1144,35 @@ window.addEventListener('pjax:success', () => {
 
 
   
-  <script pjax>
+  <script data-pjax>
     (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
   </script>
 
 
 
-  <script pjax>
+  <script data-pjax>
   if (CONFIG.page.isPost) {
     wpac_init = window.wpac_init || [];
     wpac_init.push({
@@ -1030,7 +1206,7 @@ window.addEventListener('pjax:success', () => {
 
 
 
-<script pjax>
+<script data-pjax>
 if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
     mermaid.initialize({

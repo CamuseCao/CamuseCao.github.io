@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-04-25T06:53:48.041Z</updated>
+  <updated>2020-05-08T16:44:24.480Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -17,181 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Archlinux offline wiki</title>
-    <link href="https://camusecao.top/1970-01-01-/Arch-offline-wiki/"/>
-    <id>https://camusecao.top/1970-01-01-/Arch-offline-wiki/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-04-25T06:53:48.041Z</updated>
+    <title>Linux-commands</title>
+    <link href="https://camusecao.top/2020-05-09-/Linux-commands/"/>
+    <id>https://camusecao.top/2020-05-09-/Linux-commands/</id>
+    <published>2020-05-08T16:43:36.278Z</published>
+    <updated>2020-05-08T16:44:24.480Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;使用 &lt;code&gt;Archlinux&lt;/code&gt; 的日常就是查 &lt;code&gt;wiki&lt;/code&gt; 了，什么不会都看 &lt;code&gt;wiki&lt;/code&gt;，离开完全不会用 &lt;code&gt;Arch&lt;/code&gt;。虽然经常都是在线查看，但是想想如果有离线的也不错。于是经过一番搜索找到了自己满意的方法。&lt;/p&gt;
-&lt;hr&gt;
+      
+      
+        &lt;p&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9zZXJ2
+      
     
     </summary>
     
     
-      <category term="Study " scheme="https://camusecao.top/categories/Study/"/>
-    
-    
-      <category term="Chrome" scheme="https://camusecao.top/tags/Chrome/"/>
-    
-      <category term="Arch" scheme="https://camusecao.top/tags/Arch/"/>
     
   </entry>
   
   <entry>
-    <title>Chrome的私人配置</title>
-    <link href="https://camusecao.top/1970-01-01-/Chrome-setting/"/>
-    <id>https://camusecao.top/1970-01-01-/Chrome-setting/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:43:51.499Z</updated>
+    <title>凝聚态物理期末总结</title>
+    <link href="https://camusecao.top/2020-05-09-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
+    <id>https://camusecao.top/2020-05-09-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</id>
+    <published>2020-05-08T16:03:40.797Z</published>
+    <updated>2019-03-01T13:19:16.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;这是我的Chrome浏览器的一些配置，有兴趣的话可以看看啊。希望你喜欢。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Chrome" scheme="https://camusecao.top/tags/Chrome/"/>
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-      <category term="Extension" scheme="https://camusecao.top/tags/Extension/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自适应电子和光电子学的压电电子学和压电光电子学</title>
-    <link href="https://camusecao.top/1970-01-01-/Article1/"/>
-    <id>https://camusecao.top/1970-01-01-/Article1/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:41:46.586Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h2&gt;&lt;p&gt;低维压电半导体纳米材料，例如 ZnO 和 GaN，具有优异的机械性能，并且可以集成到可承受大应变的柔性装置中。 更重要的是，这些材料中压电极化和半导体特性（例如，电子传输和光激发）之间的耦合产生了前所未有的器件特性。 这些领域通过应用外部机械刺激提供了在柔性装置的受控操作中操纵电荷载流子传输，产生，重组或分离的新方法。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="文献阅读" scheme="https://camusecao.top/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"/>
-    
-    
-      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个酷炫的清理技能</title>
-    <link href="https://camusecao.top/1970-01-01-/Clear/"/>
-    <id>https://camusecao.top/1970-01-01-/Clear/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:24:11.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;清理回收站&quot;&gt;&lt;a href=&quot;#清理回收站&quot; class=&quot;headerlink&quot; title=&quot;清理回收站&quot;&gt;&lt;/a&gt;清理回收站&lt;/h2&gt;&lt;p&gt;你有没有想过用一种高效的方式来清理回收的垃圾，以及一些别的垃圾文件？这里我将向你介绍一个能装逼又高效的清理方式。装逼还是要把握时机的，也要适度！&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="Command" scheme="https://camusecao.top/tags/Command/"/>
-    
-      <category term="Clean" scheme="https://camusecao.top/tags/Clean/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>商务英语</title>
-    <link href="https://camusecao.top/1970-01-01-/English/"/>
-    <id>https://camusecao.top/1970-01-01-/English/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-01T13:24:00.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;商务英语的剧本，不知道为什么，就放上来了。&lt;/p&gt;
-&lt;p&gt;旁白：今天的故事发生在一家规模不大的游戏公司中，公司仅有 50 名员工。他们正面临着一场危机，公司已经岌岌可危。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="临时" scheme="https://camusecao.top/categories/%E4%B8%B4%E6%97%B6/"/>
-    
-    
-      <category term="Play" scheme="https://camusecao.top/tags/Play/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jupyter Notebook 的使用小记</title>
-    <link href="https://camusecao.top/1970-01-01-/Jupyternotebook/"/>
-    <id>https://camusecao.top/1970-01-01-/Jupyternotebook/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:44:49.231Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用python批量转换图片的格式</title>
-    <link href="https://camusecao.top/1970-01-01-/Convert-pictures/"/>
-    <id>https://camusecao.top/1970-01-01-/Convert-pictures/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-30T14:16:20.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面试题目</title>
-    <link href="https://camusecao.top/1970-01-01-/Interview/"/>
-    <id>https://camusecao.top/1970-01-01-/Interview/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:44:38.905Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;a href=&quot;#如何理解能带结构？画一个简单的能带结构。&quot; class=&quot;headerlink&quot; title=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;/a&gt;如何理解能带结构？画一个简单的能带结构。&lt;/h2&gt;&lt;p&gt;$k\text{与}E(k)$的关系图即能带结构。&lt;br&gt;画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。&lt;/p&gt;
-&lt;hr&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;../t.css&quot;&gt;
+
+&lt;h3 id=&quot;求倒格矢&quot;&gt;&lt;a href=&quot;#求倒格矢&quot; class=&quot;headerlink&quot; title=&quot;求倒格矢&quot;&gt;&lt;/a&gt;求倒格矢&lt;/h3&gt;&lt;hr&gt;
     
     </summary>
     
@@ -206,34 +62,222 @@
   </entry>
   
   <entry>
-    <title>MiKTeX的基本使用</title>
-    <link href="https://camusecao.top/1970-01-01-/MiKTeX/"/>
-    <id>https://camusecao.top/1970-01-01-/MiKTeX/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:45:17.429Z</updated>
+    <title>近代物理实验复习</title>
+    <link href="https://camusecao.top/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
+    <id>https://camusecao.top/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</id>
+    <published>2020-05-08T16:03:40.797Z</published>
+    <updated>2020-03-20T15:46:40.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
+      &lt;h2 id=&quot;2010-卷子&quot;&gt;&lt;a href=&quot;#2010-卷子&quot; class=&quot;headerlink&quot; title=&quot;2010 卷子&quot;&gt;&lt;/a&gt;2010 卷子&lt;/h2&gt;&lt;h3 id=&quot;虚拟仪器的主要特点有：&quot;&gt;&lt;a href=&quot;#虚拟仪器的主要特点有：&quot; class=&quot;headerlink&quot; title=&quot;虚拟仪器的主要特点有：&quot;&gt;&lt;/a&gt;虚拟仪器的主要特点有：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;尽可能采用了通用的硬件，各种仪器的差异主要是软件。&lt;/li&gt;
+&lt;li&gt;可充分发挥计算机的能力，有强大的数据处理功能，可以创造出功能更强的仪器。&lt;/li&gt;
+&lt;li&gt;用户可以根据自己的需要定义和制造各种仪器。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
     
     </summary>
     
     
-      <category term="Programme" scheme="https://camusecao.top/categories/Programme/"/>
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
+    
+      <category term="Experiment" scheme="https://camusecao.top/tags/Experiment/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>厦门大学模板使用说明</title>
+    <link href="https://camusecao.top/2020-05-09-/XMU-Thesis-Instruction/"/>
+    <id>https://camusecao.top/2020-05-09-/XMU-Thesis-Instruction/</id>
+    <published>2020-05-08T16:03:40.793Z</published>
+    <updated>2019-03-01T13:20:59.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
     
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
   </entry>
   
   <entry>
+    <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
+    <link href="https://camusecao.top/2020-05-09-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
+    <id>https://camusecao.top/2020-05-09-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</id>
+    <published>2020-05-08T16:03:40.793Z</published>
+    <updated>2020-03-20T15:46:31.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="电脑知识" scheme="https://camusecao.top/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Regedit" scheme="https://camusecao.top/tags/Regedit/"/>
+    
+      <category term="System" scheme="https://camusecao.top/tags/System/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
+    <link href="https://camusecao.top/2020-05-09-/TeXlive-basic-install/"/>
+    <id>https://camusecao.top/2020-05-09-/TeXlive-basic-install/</id>
+    <published>2020-05-08T16:03:40.790Z</published>
+    <updated>2020-02-07T12:22:39.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近又在玩 &lt;code&gt;Manjaro&lt;/code&gt;，顺便要装 &lt;code&gt;TeXlive&lt;/code&gt;。但是这次不想像以往一样完整安装。&lt;del&gt;实际上还是完整安装省事，就是浪费了很多空间，换来的是少折腾。&lt;/del&gt;其实还有 &lt;code&gt;MikTeX&lt;/code&gt; 和 &lt;code&gt;TinyTeX&lt;/code&gt; 的选择，但是两者的安装在我这里都遇到了问题。另外这次发现了 &lt;code&gt;texliveonfly.py&lt;/code&gt; 脚本，多谢林前辈的指点。下面进入折腾吧。这篇教程的核心内容应该适用于其它几个常见的 &lt;code&gt;Linux&lt;/code&gt; 发行版本。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>收藏链接</title>
+    <link href="https://camusecao.top/2020-05-09-/Url/"/>
+    <id>https://camusecao.top/2020-05-09-/Url/</id>
+    <published>2020-05-08T16:03:40.790Z</published>
+    <updated>2019-03-02T10:37:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TeX 那些小事</title>
+    <link href="https://camusecao.top/2020-05-09-/TeX-Record/"/>
+    <id>https://camusecao.top/2020-05-09-/TeX-Record/</id>
+    <published>2020-05-08T16:03:40.787Z</published>
+    <updated>2019-04-02T13:02:16.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录了使用&lt;code&gt;TeX&lt;/code&gt;的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LaTeX 字体的基础配置</title>
+    <link href="https://camusecao.top/2020-05-09-/TeX-Fonts/"/>
+    <id>https://camusecao.top/2020-05-09-/TeX-Fonts/</id>
+    <published>2020-05-08T16:03:40.783Z</published>
+    <updated>2019-06-01T08:03:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文将介绍如何简单的配置&lt;code&gt;LaTeX&lt;/code&gt;用&lt;code&gt;xelatex&lt;/code&gt;编译时，可参考的一种字体配置方案。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ICON</title>
+    <link href="https://camusecao.top/2020-05-09-/Test/"/>
+    <id>https://camusecao.top/2020-05-09-/Test/</id>
+    <published>2020-05-08T16:03:40.783Z</published>
+    <updated>2020-03-20T15:45:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
+    
+    
+      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用软件记录</title>
+    <link href="https://camusecao.top/2020-05-09-/software/"/>
+    <id>https://camusecao.top/2020-05-09-/software/</id>
+    <published>2020-05-08T16:03:40.780Z</published>
+    <updated>2019-03-01T13:21:21.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python 实用小程序</title>
-    <link href="https://camusecao.top/1970-01-01-/Python-tricks/"/>
-    <id>https://camusecao.top/1970-01-01-/Python-tricks/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
+    <link href="https://camusecao.top/2020-05-09-/Python-tricks/"/>
+    <id>https://camusecao.top/2020-05-09-/Python-tricks/</id>
+    <published>2020-05-08T16:03:40.777Z</published>
     <updated>2020-01-26T05:54:48.000Z</updated>
     
     <summary type="html">
@@ -247,41 +291,17 @@
       <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
       <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python Pandas 库的一些使用</title>
-    <link href="https://camusecao.top/1970-01-01-/Python-Pandas/"/>
-    <id>https://camusecao.top/1970-01-01-/Python-Pandas/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-01-31T13:00:16.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>基础知识复习</title>
-    <link href="https://camusecao.top/1970-01-01-/Review/"/>
-    <id>https://camusecao.top/1970-01-01-/Review/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
+    <link href="https://camusecao.top/2020-05-09-/Review/"/>
+    <id>https://camusecao.top/2020-05-09-/Review/</id>
+    <published>2020-05-08T16:03:40.777Z</published>
     <updated>2019-03-02T09:29:06.000Z</updated>
     
     <summary type="html">
@@ -303,15 +323,39 @@
   </entry>
   
   <entry>
-    <title>LaTeX 字体的基础配置</title>
-    <link href="https://camusecao.top/1970-01-01-/TeX-Fonts/"/>
-    <id>https://camusecao.top/1970-01-01-/TeX-Fonts/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-06-01T08:03:56.000Z</updated>
+    <title>Python Pandas 库的一些使用</title>
+    <link href="https://camusecao.top/2020-05-09-/Python-Pandas/"/>
+    <id>https://camusecao.top/2020-05-09-/Python-Pandas/</id>
+    <published>2020-05-08T16:03:40.773Z</published>
+    <updated>2020-01-31T13:00:16.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本文将介绍如何简单的配置&lt;code&gt;LaTeX&lt;/code&gt;用&lt;code&gt;xelatex&lt;/code&gt;编译时，可参考的一种字体配置方案。&lt;/p&gt;
+      &lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 的 selenium 的一些使用</title>
+    <link href="https://camusecao.top/2020-05-09-/python-selenium/"/>
+    <id>https://camusecao.top/2020-05-09-/python-selenium/</id>
+    <published>2020-05-08T16:03:40.773Z</published>
+    <updated>2020-01-26T11:59:50.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录 &lt;code&gt;Python&lt;/code&gt; 使用 &lt;code&gt;Selenium&lt;/code&gt; 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 &lt;code&gt;js&lt;/code&gt; 脚本的加载使得爬虫的难度增大，因此可以考虑使用 &lt;code&gt;Selenium&lt;/code&gt; 库来帮助我们，用它操纵浏览器来爬取需要的数据。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
@@ -322,38 +366,64 @@
     
       <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+      <category term="python" scheme="https://camusecao.top/tags/python/"/>
     
   </entry>
   
   <entry>
-    <title>ICON</title>
-    <link href="https://camusecao.top/1970-01-01-/Test/"/>
-    <id>https://camusecao.top/1970-01-01-/Test/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:45:48.299Z</updated>
+    <title>MiKTeX的基本使用</title>
+    <link href="https://camusecao.top/2020-05-09-/MiKTeX/"/>
+    <id>https://camusecao.top/2020-05-09-/MiKTeX/</id>
+    <published>2020-05-08T16:03:40.770Z</published>
+    <updated>2020-03-20T15:45:17.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+      &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
     
     
-      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
+      <category term="Programme" scheme="https://camusecao.top/categories/Programme/"/>
     
     
-      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ArchLinux OCR</title>
+    <link href="https://camusecao.top/2020-05-09-/ocr/"/>
+    <id>https://camusecao.top/2020-05-09-/ocr/</id>
+    <published>2020-05-08T16:03:40.770Z</published>
+    <updated>2020-05-07T07:48:39.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在 windows 上面有挺不错的天若 ocr 软件可以用，最近发现自己手上竟然没有一款合适的 Linux ocr 软件可用。于是有了本文。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Liunx" scheme="https://camusecao.top/tags/Liunx/"/>
     
   </entry>
   
   <entry>
     <title>物理定律告诉你，爱情的真相有多么残酷！</title>
-    <link href="https://camusecao.top/1970-01-01-/Lover/"/>
-    <id>https://camusecao.top/1970-01-01-/Lover/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-03-20T15:45:07.105Z</updated>
+    <link href="https://camusecao.top/2020-05-09-/Lover/"/>
+    <id>https://camusecao.top/2020-05-09-/Lover/</id>
+    <published>2020-05-08T16:03:40.767Z</published>
+    <updated>2020-03-20T15:45:07.000Z</updated>
     
     <summary type="html">
     
@@ -380,15 +450,15 @@
   </entry>
   
   <entry>
-    <title>TeX 批量插入图片</title>
-    <link href="https://camusecao.top/1970-01-01-/Insert-pictures-tex/"/>
-    <id>https://camusecao.top/1970-01-01-/Insert-pictures-tex/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-30T14:04:32.000Z</updated>
+    <title>Jupyter Notebook 的使用小记</title>
+    <link href="https://camusecao.top/2020-05-09-/Jupyternotebook/"/>
+    <id>https://camusecao.top/2020-05-09-/Jupyternotebook/</id>
+    <published>2020-05-08T16:03:40.767Z</published>
+    <updated>2020-03-20T15:44:49.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本文记录了&lt;code&gt;LaTeX&lt;/code&gt;中如何快速批量插入大量图片的方法。&lt;/p&gt;
+      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
@@ -396,23 +466,23 @@
     
       <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
     
       <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
-    
   </entry>
   
   <entry>
-    <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
-    <link href="https://camusecao.top/1970-01-01-/TeXlive-basic-install/"/>
-    <id>https://camusecao.top/1970-01-01-/TeXlive-basic-install/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-02-07T12:22:39.000Z</updated>
+    <title>面试题目</title>
+    <link href="https://camusecao.top/2020-05-09-/Interview/"/>
+    <id>https://camusecao.top/2020-05-09-/Interview/</id>
+    <published>2020-05-08T16:03:40.763Z</published>
+    <updated>2020-03-20T15:44:38.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;最近又在玩 &lt;code&gt;Manjaro&lt;/code&gt;，顺便要装 &lt;code&gt;TeXlive&lt;/code&gt;。但是这次不想像以往一样完整安装。&lt;del&gt;实际上还是完整安装省事，就是浪费了很多空间，换来的是少折腾。&lt;/del&gt;其实还有 &lt;code&gt;MikTeX&lt;/code&gt; 和 &lt;code&gt;TinyTeX&lt;/code&gt; 的选择，但是两者的安装在我这里都遇到了问题。另外这次发现了 &lt;code&gt;texliveonfly.py&lt;/code&gt; 脚本，多谢林前辈的指点。下面进入折腾吧。这篇教程的核心内容应该适用于其它几个常见的 &lt;code&gt;Linux&lt;/code&gt; 发行版本。&lt;/p&gt;
+      &lt;h2 id=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;a href=&quot;#如何理解能带结构？画一个简单的能带结构。&quot; class=&quot;headerlink&quot; title=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;/a&gt;如何理解能带结构？画一个简单的能带结构。&lt;/h2&gt;&lt;p&gt;$k\text{与}E(k)$的关系图即能带结构。&lt;br&gt;画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
@@ -421,77 +491,9 @@
       <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
     
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>收藏链接</title>
-    <link href="https://camusecao.top/1970-01-01-/Url/"/>
-    <id>https://camusecao.top/1970-01-01-/Url/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-03-02T10:37:44.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是一些我不想放在浏览器里的收藏链接，包括软件配置、电脑知识、资源等。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 的 selenium 的一些使用</title>
-    <link href="https://camusecao.top/1970-01-01-/python-selenium/"/>
-    <id>https://camusecao.top/1970-01-01-/python-selenium/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-01-26T11:59:50.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文记录 &lt;code&gt;Python&lt;/code&gt; 使用 &lt;code&gt;Selenium&lt;/code&gt; 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 &lt;code&gt;js&lt;/code&gt; 脚本的加载使得爬虫的难度增大，因此可以考虑使用 &lt;code&gt;Selenium&lt;/code&gt; 库来帮助我们，用它操纵浏览器来爬取需要的数据。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-      <category term="python" scheme="https://camusecao.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TeX 那些小事</title>
-    <link href="https://camusecao.top/1970-01-01-/TeX-Record/"/>
-    <id>https://camusecao.top/1970-01-01-/TeX-Record/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2019-04-02T13:02:16.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文记录了使用&lt;code&gt;TeX&lt;/code&gt;的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
     
   </entry>
   
