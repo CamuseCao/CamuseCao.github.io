@@ -1283,4 +1283,23 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
         <tag>Experiment</tag>
       </tags>
   </entry>
+  <entry>
+    <title>kde 桌面环境下蒙古语的受害者</title>
+    <url>/2020-07-07-/kde-mn/</url>
+    <content><![CDATA[<p>Archlinux 安装了 kde 桌面环境的我使用上一直有几个困扰，例如我的 chrome 不能上传中文命名的文件， wine-qq 不能输入中文。以及今天遇到另一个问题，导致一并解决了这三个问题的第三个问题。</p>
+<hr>
+<a id="more"></a>
+<p>看到群友在用 Linux 的百度云网盘，我也就下载了一个体验一下。用<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S baidunetdisk-bin</span><br></pre></td></tr></table></figure><br>愉快的装好了，但是快捷方式不能打开。先是内心咒骂，垃圾百度，退出的 linux 版网盘也这么垃圾。然后开始找问题。打开快捷方式，看到如下的内容<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=baidunetdisk</span><br><span class="line">Comment=百度网盘</span><br><span class="line">Exec=/usr/bin/baidunetdisk %U</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">Type=Application</span><br><span class="line">Icon=baidunetdisk</span><br><span class="line">StartupWMClass=baidunetdisk</span><br><span class="line">MimeType=x-scheme-handler/baiduyunguanjia;</span><br><span class="line">Categories=Network;</span><br></pre></td></tr></table></figure><br>然后在即在终端里运行 <code>/usr/bin/baidunetdisk</code> ，百度网盘成功打开，并且用起来一切正常的样子。真实光速打脸啊。那问题来了，为什么会这样呢？我尝试把 <code>Terminal=false</code> 改成 <code>Terminal=true</code> 再运行，得到一些错误。拿着错误去 Google 了一番，未果。于是决定去神奇的 telegram 群里求助。把问题描述了一番后，仙子大大认为问题是我的 <code>locale</code> 有问题。我给了在终端运行<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">locale</span><br><span class="line">locale | cat -A</span><br></pre></td></tr></table></figure></p>
+<p>两个的结果。看起来似乎正常。但是后来进一步要我在快捷方式里运行的结果，也就是改 <code>Exec</code> 运行的东西，改成<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Exec=locale &gt; /tmp/1.txt</span><br></pre></td></tr></table></figure><br>再运行这个快捷方式后查看 <code>1.txt</code> 文件<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cat /tmp/1.txt</span><br></pre></td></tr></table></figure><br>得到的结果有些意外<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">LANG=en_US.UTF-8</span><br><span class="line">LC_CTYPE=<span class="string">"en_US.UTF-8"</span></span><br><span class="line">LC_NUMERIC=mn_CN.UTF-8</span><br><span class="line">LC_TIME=mn_CN.UTF-8</span><br><span class="line">LC_COLLATE=mn_CN.UTF-8</span><br><span class="line">LC_MONETARY=mn_CN.UTF-8</span><br><span class="line">LC_MESSAGES=<span class="string">"en_US.UTF-8"</span></span><br><span class="line">LC_PAPER=<span class="string">"en_US.UTF-8"</span></span><br><span class="line">LC_NAME=<span class="string">"en_US.UTF-8"</span></span><br><span class="line">LC_ADDRESS=<span class="string">"en_US.UTF-8"</span></span><br><span class="line">LC_TELEPHONE=<span class="string">"en_US.UTF-8"</span></span><br><span class="line">LC_MEASUREMENT=mn_CN.UTF-8</span><br><span class="line">LC_IDENTIFICATION=<span class="string">"en_US.UTF-8"</span></span><br><span class="line">LC_ALL=</span><br></pre></td></tr></table></figure></p>
+<p>看到这里出现 <code>mn_CN.UTF-8</code> 这样的东西我也是蒙逼啊。 farseerfc 老师说 kde 用户查看一下 <code>System settings &gt; Regional Settings &gt; Formats</code> .  里面的结果我吃惊了。这里就是问题所在。我改成简体中文后重启，上述三个问题解决。群友说我是蒙古语言的受害者，就是蒙(在)古(里)。是 kde 的一个 bug 。时不时出现。今天顺利解决了，很开心。</p>
+<p>记录以下，似乎论坛上没怎么看到。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Arch</tag>
+        <tag>kde</tag>
+      </tags>
+  </entry>
 </search>

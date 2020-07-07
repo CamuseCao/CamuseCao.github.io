@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-05-08T16:44:24.480Z</updated>
+  <updated>2020-07-07T12:55:37.690Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>kde 桌面环境下蒙古语的受害者</title>
+    <link href="https://camusecao.top/2020-07-07-/kde-mn/"/>
+    <id>https://camusecao.top/2020-07-07-/kde-mn/</id>
+    <published>2020-07-07T11:13:44.388Z</published>
+    <updated>2020-07-07T12:55:37.690Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Archlinux 安装了 kde 桌面环境的我使用上一直有几个困扰，例如我的 chrome 不能上传中文命名的文件， wine-qq 不能输入中文。以及今天遇到另一个问题，导致一并解决了这三个问题的第三个问题。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Arch" scheme="https://camusecao.top/tags/Arch/"/>
+    
+      <category term="kde" scheme="https://camusecao.top/tags/kde/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux-commands</title>
@@ -470,30 +494,6 @@
       <category term="Love" scheme="https://camusecao.top/tags/Love/"/>
     
       <category term="Life" scheme="https://camusecao.top/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面试题目</title>
-    <link href="https://camusecao.top/2020-05-09-/Interview/"/>
-    <id>https://camusecao.top/2020-05-09-/Interview/</id>
-    <published>2020-05-08T16:03:40.763Z</published>
-    <updated>2020-03-20T15:44:38.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;a href=&quot;#如何理解能带结构？画一个简单的能带结构。&quot; class=&quot;headerlink&quot; title=&quot;如何理解能带结构？画一个简单的能带结构。&quot;&gt;&lt;/a&gt;如何理解能带结构？画一个简单的能带结构。&lt;/h2&gt;&lt;p&gt;$k\text{与}E(k)$的关系图即能带结构。&lt;br&gt;画能带结构着重体现坐标轴、禁带宽度、直接能带还是间接能带、高对称点。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
-    
-      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
     
   </entry>
   
