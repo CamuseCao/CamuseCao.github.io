@@ -23,18 +23,22 @@
     var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Camuse&#39;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Born to die">
-<meta property="og:url" content="https://camusecao.top/archives/2020/index.html">
+  <meta name="description" content="Linux 系统用常时间了系统也会有很多垃圾文件，应该适当的维护一下。本文主要针对 ArchLinux 来进行相关的维护。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux 系统的清理">
+<meta property="og:url" content="https://camusecao.top/2020-07-09-/Linux-tidy/index.html">
 <meta property="og:site_name" content="Born to die">
-<meta property="og:description" content="Camuse&#39;s blog">
+<meta property="og:description" content="Linux 系统用常时间了系统也会有很多垃圾文件，应该适当的维护一下。本文主要针对 ArchLinux 来进行相关的维护。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-09T06:28:18.096Z">
+<meta property="article:modified_time" content="2020-07-09T07:07:55.446Z">
 <meta property="article:author" content="CamuseCao">
-<meta property="article:tag" content="Enjoy">
+<meta property="article:tag" content="Clean">
+<meta property="article:tag" content="Software">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://camusecao.top/archives/2020/">
+<link rel="canonical" href="https://camusecao.top/2020-07-09-/Linux-tidy/">
 
 
 <script id="page-configurations">
@@ -42,12 +46,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | Born to die</title>
+  <title>Linux 系统的清理 | Born to die</title>
   
 
 
@@ -196,239 +200,187 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 30 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-07-09-/Linux-tidy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/myimages/y.jpg">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linux 系统的清理
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-07-09 14:28:18 / Modified: 15:07:55" itemprop="dateCreated datePublished" datetime="2020-07-09T14:28:18+08:00">2020-07-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <p>Linux 系统用常时间了系统也会有很多垃圾文件，应该适当的维护一下。本文主要针对 ArchLinux 来进行相关的维护。</p>
+<hr>
+<a id="more"></a>
+<p>为了维护系统，首先我们可以用 <code>filelight</code> 软件很直观的查看究竟是哪里的文件多。它好比 win 上面的 <code>treesize</code> 软件。</p>
+<p>首先是包管理的缓存文件。可以大胆的用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Sc</span><br><span class="line">yay -Sc</span><br></pre></td></tr></table></figure><br>清理包管理器的缓存。它们会清理所有不用的。如果想更干净甚至参数用为 <code>Scc</code> 。也不用担心，就是下回你再用包管理器的时候要多下载点东西。</p>
+<p><code>/var/log/journal/</code> 存放的是日志文件。如果你确定之前的日志全部不需要了，可以大胆的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /var/<span class="built_in">log</span>/journal/</span><br></pre></td></tr></table></figure><br>来删除这些日志文件。</p>
+<p>另外还可以用 <code>pacman -Qtd</code> 查找孤包。它们可能是以前某些软件的依赖，但是由于软件更新或者简单的用 <code>sudo pacman -R xxx</code> 卸载软件导致残存的依赖出现的。有时某些包可能被错误列出来，在确定卸载时需要谨慎。如果确定了这些包确实没用可以使用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Rns $(pacman -Qtdq)</span><br></pre></td></tr></table></figure><br>将它们都清理掉。详情还是参考 <span class="exturl" data-url="aHR0cHM6Ly93aWtpLmFyY2hsaW51eC5vcmcvaW5kZXgucGhwL1BhY21hbi9UaXBzX2FuZF90cmlja3MjUmVtb3ZpbmdfdW51c2VkX3BhY2thZ2VzXyhvcnBoYW5z">pacman 使用<i class="fa fa-external-link-alt"></i></span>) 吧。我建议这么干之前用 timeshift 来建立一个还原点。这样出事了不用怕。</p>
+<p>还可以使用 BleachBit 来帮助进一步清理，但是用这个软件也小心点，有人反应过用它翻车的。我是 kde 用户，选择用 sweeper 软件进行一些简单的清理。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+      
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/Clear/" rel="bookmark">一个酷炫的清理技能</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/Chrome-setting/" rel="bookmark">Chrome的私人配置</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/Python-Pandas/" rel="bookmark">Python Pandas 库的一些使用</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/MiKTeX/" rel="bookmark">MiKTeX的基本使用</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/Url/" rel="bookmark">收藏链接</a></div>
+    </li>
+  </ul>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-09T14:28:18+08:00"
-              content="2020-07-09">
-          07-09
-        </time>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/myimages/wechatpay.png" alt="CamuseCao WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/myimages/alipay.png" alt="CamuseCao Alipay">
+        <p>Alipay</p>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-07-09-/Linux-tidy/" itemprop="url">
-            <span itemprop="name">Linux 系统的清理</span>
+  </div>
+</div>
+
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/camusecao">
+            <span class="icon">
+              <i class="telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
           </a>
-      </div>
+        </div>
 
-    </header>
-  </article>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="rss"></i>
+            </span>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-07T19:13:44+08:00"
-              content="2020-07-07">
-          07-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-07-07-/kde-mn/" itemprop="url">
-            <span itemprop="name">kde 桌面环境下蒙古语的受害者</span>
+            <span class="label">RSS</span>
           </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:43:36+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/Linux-commands/" itemprop="url">
-            <span itemprop="name">Linux-commands</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/" itemprop="url">
-            <span itemprop="name">凝聚态物理期末总结</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/" itemprop="url">
-            <span itemprop="name">近代物理实验复习</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/XMU-Thesis-Instruction/" itemprop="url">
-            <span itemprop="name">厦门大学模板使用说明</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/" itemprop="url">
-            <span itemprop="name">关于作死修改注册表导致无法更新Windows系统的反思</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/TeXlive-basic-install/" itemprop="url">
-            <span itemprop="name">Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/Url/" itemprop="url">
-            <span itemprop="name">收藏链接</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/TeX-Record/" itemprop="url">
-            <span itemprop="name">TeX 那些小事</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
+        </div>
     </div>
   </div>
-  
-  
-  
 
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Clean/" rel="tag"><i class="fa fa-tag"></i> Clean</a>
+              <a href="/tags/Software/" rel="tag"><i class="fa fa-tag"></i> Software</a>
+              <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020-07-07-/kde-mn/" rel="prev" title="kde 桌面环境下蒙古语的受害者">
+      <i class="fa fa-chevron-left"></i> kde 桌面环境下蒙古语的受害者
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="page-number" href="/archives/2020/page/3/">3</a><a class="extend next" rel="next" href="/archives/2020/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
+  
+  
 
 
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -781,11 +733,30 @@ if (document.querySelectorAll('pre.mermaid').length) {
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://camusecao.top/archives/2020/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://camusecao.top/2020-07-09-/Linux-tidy/',]
       });
       });
   </script>
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '006b8ff4614a3b25a682',
+      clientSecret: '31bed57a45cc0dd6b56e9509a2fef935ee3f279b',
+      repo        : 'CamuseCao.github.io',
+      owner       : 'CamuseCao',
+      admin       : ['CamuseCao'],
+      id          : '6aa99a7be5e1eb987745324e4e5071e8',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
     </div>
 </body>

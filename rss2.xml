@@ -9,8 +9,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Tue, 07 Jul 2020 12:55:37 GMT</pubDate>
+    <pubDate>Thu, 09 Jul 2020 07:07:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Linux 系统的清理</title>
+      <link>https://camusecao.top/2020-07-09-/Linux-tidy/</link>
+      <guid>https://camusecao.top/2020-07-09-/Linux-tidy/</guid>
+      <pubDate>Thu, 09 Jul 2020 06:28:18 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Linux 系统用常时间了系统也会有很多垃圾文件，应该适当的维护一下。本文主要针对 ArchLinux 来进行相关的维护。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-07-09-/Linux-tidy/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>kde 桌面环境下蒙古语的受害者</title>
@@ -320,27 +336,6 @@
       
       
       <comments>https://camusecao.top/2020-05-09-/Jupyternotebook/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>物理定律告诉你，爱情的真相有多么残酷！</title>
-      <link>https://camusecao.top/2020-05-09-/Lover/</link>
-      <guid>https://camusecao.top/2020-05-09-/Lover/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;昨天是情人节，所以这篇文章先不发，今天来发了。&lt;/p&gt;
-&lt;p&gt;话说昨天我还在和兰铃讨论搭建博客，看到一个很好看的相册，所以发给他看。&lt;/p&gt;
-&lt;p&gt;结果他说你女朋友真好看。&lt;/p&gt;
-&lt;p&gt;原来是那个相册里面的博主和女友的照片。&lt;/p&gt;
-&lt;p&gt;我急忙解释说不是我的。&lt;/p&gt;
-&lt;p&gt;他接下来的回复令人窒息。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09-/Lover/#disqus_thread</comments>
     </item>
     
   </channel>

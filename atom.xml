@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-07-07T12:55:37.690Z</updated>
+  <updated>2020-07-09T07:07:55.446Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 系统的清理</title>
+    <link href="https://camusecao.top/2020-07-09-/Linux-tidy/"/>
+    <id>https://camusecao.top/2020-07-09-/Linux-tidy/</id>
+    <published>2020-07-09T06:28:18.096Z</published>
+    <updated>2020-07-09T07:07:55.446Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Linux 系统用常时间了系统也会有很多垃圾文件，应该适当的维护一下。本文主要针对 ArchLinux 来进行相关的维护。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://camusecao.top/categories/Linux/"/>
+    
+    
+      <category term="Clean" scheme="https://camusecao.top/tags/Clean/"/>
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Linux" scheme="https://camusecao.top/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>kde 桌面环境下蒙古语的受害者</title>
@@ -463,37 +489,6 @@
       <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
       <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>物理定律告诉你，爱情的真相有多么残酷！</title>
-    <link href="https://camusecao.top/2020-05-09-/Lover/"/>
-    <id>https://camusecao.top/2020-05-09-/Lover/</id>
-    <published>2020-05-08T16:03:40.767Z</published>
-    <updated>2020-03-20T15:45:07.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;昨天是情人节，所以这篇文章先不发，今天来发了。&lt;/p&gt;
-&lt;p&gt;话说昨天我还在和兰铃讨论搭建博客，看到一个很好看的相册，所以发给他看。&lt;/p&gt;
-&lt;p&gt;结果他说你女朋友真好看。&lt;/p&gt;
-&lt;p&gt;原来是那个相册里面的博主和女友的照片。&lt;/p&gt;
-&lt;p&gt;我急忙解释说不是我的。&lt;/p&gt;
-&lt;p&gt;他接下来的回复令人窒息。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="生活" scheme="https://camusecao.top/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
-    
-      <category term="Love" scheme="https://camusecao.top/tags/Love/"/>
-    
-      <category term="Life" scheme="https://camusecao.top/tags/Life/"/>
     
   </entry>
   

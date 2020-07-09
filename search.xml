@@ -1302,4 +1302,25 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
         <tag>kde</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Linux 系统的清理</title>
+    <url>/2020-07-09-/Linux-tidy/</url>
+    <content><![CDATA[<p>Linux 系统用常时间了系统也会有很多垃圾文件，应该适当的维护一下。本文主要针对 ArchLinux 来进行相关的维护。</p>
+<hr>
+<a id="more"></a>
+<p>为了维护系统，首先我们可以用 <code>filelight</code> 软件很直观的查看究竟是哪里的文件多。它好比 win 上面的 <code>treesize</code> 软件。</p>
+<p>首先是包管理的缓存文件。可以大胆的用<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -Sc</span><br><span class="line">yay -Sc</span><br></pre></td></tr></table></figure><br>清理包管理器的缓存。它们会清理所有不用的。如果想更干净甚至参数用为 <code>Scc</code> 。也不用担心，就是下回你再用包管理器的时候要多下载点东西。</p>
+<p><code>/var/log/journal/</code> 存放的是日志文件。如果你确定之前的日志全部不需要了，可以大胆的<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo rm -rf /var/<span class="built_in">log</span>/journal/</span><br></pre></td></tr></table></figure><br>来删除这些日志文件。</p>
+<p>另外还可以用 <code>pacman -Qtd</code> 查找孤包。它们可能是以前某些软件的依赖，但是由于软件更新或者简单的用 <code>sudo pacman -R xxx</code> 卸载软件导致残存的依赖出现的。有时某些包可能被错误列出来，在确定卸载时需要谨慎。如果确定了这些包确实没用可以使用<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pacman -Rns $(pacman -Qtdq)</span><br></pre></td></tr></table></figure><br>将它们都清理掉。详情还是参考 <span class="exturl" data-url="aHR0cHM6Ly93aWtpLmFyY2hsaW51eC5vcmcvaW5kZXgucGhwL1BhY21hbi9UaXBzX2FuZF90cmlja3MjUmVtb3ZpbmdfdW51c2VkX3BhY2thZ2VzXyhvcnBoYW5z">pacman 使用<i class="fa fa-external-link-alt"></i></span>) 吧。我建议这么干之前用 timeshift 来建立一个还原点。这样出事了不用怕。</p>
+<p>还可以使用 BleachBit 来帮助进一步清理，但是用这个软件也小心点，有人反应过用它翻车的。我是 kde 用户，选择用 sweeper 软件进行一些简单的清理。</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Clean</tag>
+        <tag>Software</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
 </search>
