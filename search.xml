@@ -1323,4 +1323,24 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
         <tag>Linux</tag>
       </tags>
   </entry>
+  <entry>
+    <title>LaTeX 调用发行版本的字体</title>
+    <url>/2020-07-14-/tex-font/</url>
+    <content><![CDATA[<p>曾经在 win 上面用 <code>xelatex</code> 编译文档时，并没有太在意它不仅能通过 <code>fontspec</code> 宏包调用系统字体，还能调用发行版本带有的字体。后来才知道在 Linux 和 Mac 上却并不是这样，它们只能通过文件名来调用发行版本的字体，而不能通过字体名调用发行版本的字体。</p>
+<hr>
+<a id="more"></a>
+<p>最初是在编译如下的简单示例发现的<br><figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexart&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">setmainfont</span><span class="string">&#123;TeX Gyre Termes&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">test</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure><br>编译时报错说找不到 <code>TeX Gyre Termes</code> 字体。这个字体在 <code>TeX</code> 里是多种安装方案下都是默认安装的。这时我猜想发行版本会不会缺字体，因为我起初是装的 <code>basic-scheme</code>。打开 <code>$TEXMFDIST/fonts/opentype/public</code> 下面是能找到 <code>TeX Gyre Termes</code> 字体的。进而尝试用 <code>\setmainfont{texgyretermes-regular.otf}</code> 进行设置字体，成功了。但是这样我并不满意。因为用文件名设置字体很麻烦，不会自动设定粗体斜体等。经过一些搜索，发现 <span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81OTc3NDM5NQ==">慕子在知乎上写的文章<i class="fa fa-external-link-alt"></i></span> 有详细讲到这个问题，并且给出了直接的解决方案。</p>
+<p>他提供的是 Mac 上的解决方案。方案二 Linux 可以稍作修改就能用，也就是<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ln -s `kpsewhich -var-value TEXMFDIST`/fonts/truetype ~/.<span class="built_in">local</span>/share/fonts/texlive-truetype</span><br><span class="line">ln -s `kpsewhich -var-value TEXMFDIST`/fonts/opentype ~/.<span class="built_in">local</span>/share/fonts/texlive-opentype</span><br></pre></td></tr></table></figure><br>可能 <code>~/.local/share/fonts</code> 不存在，可以建立一个。注意里面值的替换。这个是单用户的解决方案。如果想装到系统里，就把 <code>~/.local/share/fonts</code> 改成 <code>/usr/share/fonts</code> 。创建好上面的软链接后，手动刷新字体缓存 <code>fc-cache -fsv</code> 就可以了。</p>
+<p>他提到的方法一在 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL09zYmVydFdhbmcvaW5zdGFsbC1sYXRleA==">install-latex<i class="fa fa-external-link-alt"></i></span> 中有提到 Linux 上的具体解决手段。<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo cp /usr/<span class="built_in">local</span>/texlive/2020/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.conf</span><br></pre></td></tr></table></figure><br>其实这里我更喜欢创建软链接，改进的版本如下<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ln -s `kpsewhich -var-value TEXMFVAR`/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.conf</span><br></pre></td></tr></table></figure></p>
+<p>创建软链接的好处是一边的更改可以影响另一边。不过这里直接复制也可以。 </p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+        <tag>TeX</tag>
+        <tag>Programme</tag>
+      </tags>
+  </entry>
 </search>

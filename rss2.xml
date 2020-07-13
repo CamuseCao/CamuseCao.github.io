@@ -9,8 +9,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Thu, 09 Jul 2020 07:07:55 GMT</pubDate>
+    <pubDate>Mon, 13 Jul 2020 17:21:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>LaTeX 调用发行版本的字体</title>
+      <link>https://camusecao.top/2020-07-14-/tex-font/</link>
+      <guid>https://camusecao.top/2020-07-14-/tex-font/</guid>
+      <pubDate>Mon, 13 Jul 2020 16:37:55 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;曾经在 win 上面用 &lt;code&gt;xelatex&lt;/code&gt; 编译文档时，并没有太在意它不仅能通过 &lt;code&gt;fontspec&lt;/code&gt; 宏包调用系统字体，还能调用发行版本带有的字体。后来才知道在 Linux 和 Mac 上却并不是这样，它们只能通过文件名来调用发行版本的字体，而不能通过字体名调用发行版本的字体。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-07-14-/tex-font/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Linux 系统的清理</title>
@@ -320,22 +336,6 @@
       
       
       <comments>https://camusecao.top/2020-05-09-/ocr/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Jupyter Notebook 的使用小记</title>
-      <link>https://camusecao.top/2020-05-09-/Jupyternotebook/</link>
-      <guid>https://camusecao.top/2020-05-09-/Jupyternotebook/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09-/Jupyternotebook/#disqus_thread</comments>
     </item>
     
   </channel>

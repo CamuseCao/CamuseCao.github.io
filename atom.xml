@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-07-09T07:07:55.446Z</updated>
+  <updated>2020-07-13T17:21:09.092Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LaTeX 调用发行版本的字体</title>
+    <link href="https://camusecao.top/2020-07-14-/tex-font/"/>
+    <id>https://camusecao.top/2020-07-14-/tex-font/</id>
+    <published>2020-07-13T16:37:55.353Z</published>
+    <updated>2020-07-13T17:21:09.092Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;曾经在 win 上面用 &lt;code&gt;xelatex&lt;/code&gt; 编译文档时，并没有太在意它不仅能通过 &lt;code&gt;fontspec&lt;/code&gt; 宏包调用系统字体，还能调用发行版本带有的字体。后来才知道在 Linux 和 Mac 上却并不是这样，它们只能通过文件名来调用发行版本的字体，而不能通过字体名调用发行版本的字体。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 系统的清理</title>
@@ -465,30 +491,6 @@
       <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
       <category term="Liunx" scheme="https://camusecao.top/tags/Liunx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jupyter Notebook 的使用小记</title>
-    <link href="https://camusecao.top/2020-05-09-/Jupyternotebook/"/>
-    <id>https://camusecao.top/2020-05-09-/Jupyternotebook/</id>
-    <published>2020-05-08T16:03:40.767Z</published>
-    <updated>2020-03-20T15:44:49.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是关于本人使用&lt;code&gt;Jupyter Notebook&lt;/code&gt; 使用的一些简单记录，如果你也喜欢用它可以看看。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
     
   </entry>
   
