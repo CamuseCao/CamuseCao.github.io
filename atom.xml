@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-07-13T17:21:09.092Z</updated>
+  <updated>2020-07-15T16:40:24.580Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fcitx5 和 vim 的配合使用</title>
+    <link href="https://camusecao.top/2020-07-16-/fcitx5-vim/"/>
+    <id>https://camusecao.top/2020-07-16-/fcitx5-vim/</id>
+    <published>2020-07-15T16:21:40.553Z</published>
+    <updated>2020-07-15T16:40:24.580Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近更新了输入法，用上了 &lt;code&gt;fcitx5&lt;/code&gt; 输入法，之前的 &lt;code&gt;fcitx&lt;/code&gt; 的部分设置需要更新了。但是目前 &lt;code&gt;Arch wiki&lt;/code&gt; 还没做出更新，因此在这里做个简单的记录。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+  </entry>
   
   <entry>
     <title>LaTeX 调用发行版本的字体</title>
@@ -467,30 +491,6 @@
       <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ArchLinux OCR</title>
-    <link href="https://camusecao.top/2020-05-09-/ocr/"/>
-    <id>https://camusecao.top/2020-05-09-/ocr/</id>
-    <published>2020-05-08T16:03:40.770Z</published>
-    <updated>2020-05-07T07:48:39.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在 windows 上面有挺不错的天若 ocr 软件可以用，最近发现自己手上竟然没有一款合适的 Linux ocr 软件可用。于是有了本文。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-      <category term="Liunx" scheme="https://camusecao.top/tags/Liunx/"/>
     
   </entry>
   

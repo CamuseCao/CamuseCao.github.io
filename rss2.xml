@@ -9,8 +9,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Mon, 13 Jul 2020 17:21:09 GMT</pubDate>
+    <pubDate>Wed, 15 Jul 2020 16:40:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>fcitx5 和 vim 的配合使用</title>
+      <link>https://camusecao.top/2020-07-16-/fcitx5-vim/</link>
+      <guid>https://camusecao.top/2020-07-16-/fcitx5-vim/</guid>
+      <pubDate>Wed, 15 Jul 2020 16:21:40 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近更新了输入法，用上了 &lt;code&gt;fcitx5&lt;/code&gt; 输入法，之前的 &lt;code&gt;fcitx&lt;/code&gt; 的部分设置需要更新了。但是目前 &lt;code&gt;Arch wiki&lt;/code&gt; 还没做出更新，因此在这里做个简单的记录。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-07-16-/fcitx5-vim/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>LaTeX 调用发行版本的字体</title>
@@ -320,22 +336,6 @@
       
       
       <comments>https://camusecao.top/2020-05-09-/MiKTeX/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>ArchLinux OCR</title>
-      <link>https://camusecao.top/2020-05-09-/ocr/</link>
-      <guid>https://camusecao.top/2020-05-09-/ocr/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;在 windows 上面有挺不错的天若 ocr 软件可以用，最近发现自己手上竟然没有一款合适的 Linux ocr 软件可用。于是有了本文。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09-/ocr/#disqus_thread</comments>
     </item>
     
   </channel>

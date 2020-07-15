@@ -23,18 +23,21 @@
     var CONFIG = {"hostname":"camusecao.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Camuse&#39;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Born to die">
-<meta property="og:url" content="https://camusecao.top/tags/Chrome/index.html">
+  <meta name="description" content="最近更新了输入法，用上了 fcitx5 输入法，之前的 fcitx 的部分设置需要更新了。但是目前 Arch wiki 还没做出更新，因此在这里做个简单的记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="fcitx5 和 vim 的配合使用">
+<meta property="og:url" content="https://camusecao.top/2020-07-16-/fcitx5-vim/index.html">
 <meta property="og:site_name" content="Born to die">
-<meta property="og:description" content="Camuse&#39;s blog">
+<meta property="og:description" content="最近更新了输入法，用上了 fcitx5 输入法，之前的 fcitx 的部分设置需要更新了。但是目前 Arch wiki 还没做出更新，因此在这里做个简单的记录。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-15T16:21:40.553Z">
+<meta property="article:modified_time" content="2020-07-15T16:40:24.580Z">
 <meta property="article:author" content="CamuseCao">
-<meta property="article:tag" content="Enjoy">
+<meta property="article:tag" content="Software">
+<meta property="article:tag" content="Programme">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://camusecao.top/tags/Chrome/">
+<link rel="canonical" href="https://camusecao.top/2020-07-16-/fcitx5-vim/">
 
 
 <script id="page-configurations">
@@ -42,12 +45,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Tag: Chrome | Born to die</title>
+  <title>fcitx5 和 vim 的配合使用 | Born to die</title>
   
 
 
@@ -196,77 +199,184 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Chrome
-          <small>Tag</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://camusecao.top/2020-07-16-/fcitx5-vim/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/myimages/y.jpg">
+      <meta itemprop="name" content="CamuseCao">
+      <meta itemprop="description" content="Camuse's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Born to die">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          fcitx5 和 vim 的配合使用
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-07-16 00:21:40 / Modified: 00:40:24" itemprop="dateCreated datePublished" datetime="2020-07-16T00:21:40+08:00">2020-07-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">软件</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <p>最近更新了输入法，用上了 <code>fcitx5</code> 输入法，之前的 <code>fcitx</code> 的部分设置需要更新了。但是目前 <code>Arch wiki</code> 还没做出更新，因此在这里做个简单的记录。</p>
+<hr>
+<a id="more"></a>
+<p><code>vim</code> 里面在进行中文输入，突然想切换进命令模式，还要自己改输入法就太不爽了。因此有人开发了<span class="exturl" data-url="aHR0cHM6Ly9hdXIuYXJjaGxpbnV4Lm9yZy9wYWNrYWdlcy92aW0tZmNpdHgv">vim-fcitx<i class="fa fa-external-link-alt"></i></span> 插件。在 <span class="exturl" data-url="aHR0cHM6Ly93aWtpLmFyY2hsaW51eC5vcmcvaW5kZXgucGhwL0ZjaXR4XyglRTclQUUlODAlRTQlQkQlOTMlRTQlQjglQUQlRTYlOTYlODc=">fcitx 的 Arch wiki<i class="fa fa-external-link-alt"></i></span>) 还给了另一种解决方式，就是自己配置 <code>.vimrc</code> 文件实现。但是只给了 <code>fcitx</code> 的实现，没有给 <code>fcitx5</code> 的实现。但是要实现 <code>fcitx5</code> 的实际上很简单，只需要将里面的 <code>fcitx</code> 全部替换成 <code>fcitx5</code> 即可，替换后如下<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">"##### auto fcitx  ###########</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:input_toggle</span> = <span class="number">1</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">Fcitx2en</span><span class="params">()</span></span></span><br><span class="line">   <span class="keyword">let</span> <span class="variable">s:input_status</span> = <span class="built_in">system</span>(<span class="string">"fcitx5-remote"</span>)</span><br><span class="line">   <span class="keyword">if</span> <span class="variable">s:input_status</span> == <span class="number">2</span></span><br><span class="line">      <span class="keyword">let</span> <span class="variable">g:input_toggle</span> = <span class="number">1</span></span><br><span class="line">      <span class="keyword">let</span> <span class="variable">l:a</span> = <span class="built_in">system</span>(<span class="string">"fcitx5-remote -c"</span>)</span><br><span class="line">   <span class="keyword">endif</span></span><br><span class="line"><span class="keyword">endfunction</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span>! <span class="title">Fcitx2zh</span><span class="params">()</span></span></span><br><span class="line">   <span class="keyword">let</span> <span class="variable">s:input_status</span> = <span class="built_in">system</span>(<span class="string">"fcitx5-remote"</span>)</span><br><span class="line">   <span class="keyword">if</span> <span class="variable">s:input_status</span> != <span class="number">2</span> &amp;&amp; <span class="variable">g:input_toggle</span> == <span class="number">1</span></span><br><span class="line">      <span class="keyword">let</span> <span class="variable">l:a</span> = <span class="built_in">system</span>(<span class="string">"fcitx5-remote -o"</span>)</span><br><span class="line">      <span class="keyword">let</span> <span class="variable">g:input_toggle</span> = <span class="number">0</span></span><br><span class="line">   <span class="keyword">endif</span></span><br><span class="line"><span class="keyword">endfunction</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span> ttimeoutlen=<span class="number">150</span></span><br><span class="line"><span class="comment">"退出插入模式</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertLeave * <span class="keyword">call</span> Fcitx2en()</span><br><span class="line"><span class="comment">"进入插入模式</span></span><br><span class="line"><span class="keyword">autocmd</span> InsertEnter * <span class="keyword">call</span> Fcitx2zh()</span><br><span class="line"><span class="comment">"##### auto fcitx end ######</span></span><br></pre></td></tr></table></figure></p>
+<p>于是就舒服的使用 <code>vim</code> 了。对于 <code>Vscode</code> 里面的 <code>vim</code> 插件的处理类似，根据 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2RhaXBlaWh1c3QvaW0tc2VsZWN0I2ZjaXR4">官方提示<i class="fa fa-external-link-alt"></i></span> 有处理 <code>fcitx</code> 的代码，我们做一样的替换即可。替换后为<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"vim.autoSwitchInputMethod.enable"</span>: true,</span><br><span class="line"><span class="string">"vim.autoSwitchInputMethod.defaultIM"</span>: <span class="string">"1"</span>,</span><br><span class="line"><span class="string">"vim.autoSwitchInputMethod.obtainIMCmd"</span>: <span class="string">"/usr/bin/fcitx5-remote"</span>,</span><br><span class="line"><span class="string">"vim.autoSwitchInputMethod.switchIMCmd"</span>: <span class="string">"/usr/bin/fcitx5-remote -t &#123;im&#125;"</span>,</span><br></pre></td></tr></table></figure></p>
+<p>遗憾的是，目前该插件仅支持部分 <code>.vimrc</code> 设置，不然还可以有另一种处理方式。也就是把 <code>Vscode</code> 里面的 <code>vim</code> 插件也引入普通 <code>vim</code> 里的处理方式的代码，但是目前还不被支持。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+      
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-07-14-/tex-font/" rel="bookmark">LaTeX 调用发行版本的字体</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/Chrome-setting/" rel="bookmark">Chrome的私人配置</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/Python-Pandas/" rel="bookmark">Python Pandas 库的一些使用</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/MiKTeX/" rel="bookmark">MiKTeX的基本使用</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2020-05-09-/Url/" rel="bookmark">收藏链接</a></div>
+    </li>
+  </ul>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/myimages/wechatpay.png" alt="CamuseCao WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/myimages/alipay.png" alt="CamuseCao Alipay">
+        <p>Alipay</p>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/Chrome-setting/" itemprop="url">
-            <span itemprop="name">Chrome的私人配置</span>
+  </div>
+</div>
+
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/camusecao">
+            <span class="icon">
+              <i class="telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
           </a>
-      </div>
+        </div>
 
-    </header>
-  </article>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="rss"></i>
+            </span>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T00:03:40+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020-05-09-/Arch-offline-wiki/" itemprop="url">
-            <span itemprop="name">Archlinux offline wiki</span>
+            <span class="label">RSS</span>
           </a>
-      </div>
-
-    </header>
-  </article>
-
+        </div>
     </div>
   </div>
-  
-  
-  
 
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Software/" rel="tag"><i class="fa fa-tag"></i> Software</a>
+              <a href="/tags/Programme/" rel="tag"><i class="fa fa-tag"></i> Programme</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020-07-14-/tex-font/" rel="prev" title="LaTeX 调用发行版本的字体">
+      <i class="fa fa-chevron-left"></i> LaTeX 调用发行版本的字体
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -619,11 +729,30 @@ if (document.querySelectorAll('pre.mermaid').length) {
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://camusecao.top/tags/Chrome/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://camusecao.top/2020-07-16-/fcitx5-vim/',]
       });
       });
   </script>
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '006b8ff4614a3b25a682',
+      clientSecret: '31bed57a45cc0dd6b56e9509a2fef935ee3f279b',
+      repo        : 'CamuseCao.github.io',
+      owner       : 'CamuseCao',
+      admin       : ['CamuseCao'],
+      id          : '250732e0223b56537d77b497a057ad21',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
     </div>
 </body>
