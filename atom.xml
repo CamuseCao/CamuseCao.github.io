@@ -137,34 +137,6 @@
   </entry>
   
   <entry>
-    <title>近代物理实验复习</title>
-    <link href="https://camusecao.top/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
-    <id>https://camusecao.top/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</id>
-    <published>2020-05-08T16:03:40.797Z</published>
-    <updated>2020-03-20T15:46:40.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;2010-卷子&quot;&gt;&lt;a href=&quot;#2010-卷子&quot; class=&quot;headerlink&quot; title=&quot;2010 卷子&quot;&gt;&lt;/a&gt;2010 卷子&lt;/h2&gt;&lt;h3 id=&quot;虚拟仪器的主要特点有：&quot;&gt;&lt;a href=&quot;#虚拟仪器的主要特点有：&quot; class=&quot;headerlink&quot; title=&quot;虚拟仪器的主要特点有：&quot;&gt;&lt;/a&gt;虚拟仪器的主要特点有：&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;尽可能采用了通用的硬件，各种仪器的差异主要是软件。&lt;/li&gt;
-&lt;li&gt;可充分发挥计算机的能力，有强大的数据处理功能，可以创造出功能更强的仪器。&lt;/li&gt;
-&lt;li&gt;用户可以根据自己的需要定义和制造各种仪器。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
-    
-      <category term="Experiment" scheme="https://camusecao.top/tags/Experiment/"/>
-    
-  </entry>
-  
-  <entry>
     <title>凝聚态物理期末总结</title>
     <link href="https://camusecao.top/2020-05-09-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
     <id>https://camusecao.top/2020-05-09-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</id>
@@ -190,15 +162,19 @@
   </entry>
   
   <entry>
-    <title>厦门大学模板使用说明</title>
-    <link href="https://camusecao.top/2020-05-09-/XMU-Thesis-Instruction/"/>
-    <id>https://camusecao.top/2020-05-09-/XMU-Thesis-Instruction/</id>
-    <published>2020-05-08T16:03:40.793Z</published>
-    <updated>2019-03-01T13:20:59.000Z</updated>
+    <title>近代物理实验复习</title>
+    <link href="https://camusecao.top/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
+    <id>https://camusecao.top/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</id>
+    <published>2020-05-08T16:03:40.797Z</published>
+    <updated>2020-03-20T15:46:40.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
+      &lt;h2 id=&quot;2010-卷子&quot;&gt;&lt;a href=&quot;#2010-卷子&quot; class=&quot;headerlink&quot; title=&quot;2010 卷子&quot;&gt;&lt;/a&gt;2010 卷子&lt;/h2&gt;&lt;h3 id=&quot;虚拟仪器的主要特点有：&quot;&gt;&lt;a href=&quot;#虚拟仪器的主要特点有：&quot; class=&quot;headerlink&quot; title=&quot;虚拟仪器的主要特点有：&quot;&gt;&lt;/a&gt;虚拟仪器的主要特点有：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;尽可能采用了通用的硬件，各种仪器的差异主要是软件。&lt;/li&gt;
+&lt;li&gt;可充分发挥计算机的能力，有强大的数据处理功能，可以创造出功能更强的仪器。&lt;/li&gt;
+&lt;li&gt;用户可以根据自己的需要定义和制造各种仪器。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
     
     </summary>
@@ -207,7 +183,9 @@
       <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
+    
+      <category term="Experiment" scheme="https://camusecao.top/tags/Experiment/"/>
     
   </entry>
   
@@ -238,15 +216,15 @@
   </entry>
   
   <entry>
-    <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
-    <link href="https://camusecao.top/2020-05-09-/TeXlive-basic-install/"/>
-    <id>https://camusecao.top/2020-05-09-/TeXlive-basic-install/</id>
-    <published>2020-05-08T16:03:40.790Z</published>
-    <updated>2020-02-07T12:22:39.000Z</updated>
+    <title>厦门大学模板使用说明</title>
+    <link href="https://camusecao.top/2020-05-09-/XMU-Thesis-Instruction/"/>
+    <id>https://camusecao.top/2020-05-09-/XMU-Thesis-Instruction/</id>
+    <published>2020-05-08T16:03:40.793Z</published>
+    <updated>2019-03-01T13:20:59.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;最近又在玩 &lt;code&gt;Manjaro&lt;/code&gt;，顺便要装 &lt;code&gt;TeXlive&lt;/code&gt;。但是这次不想像以往一样完整安装。&lt;del&gt;实际上还是完整安装省事，就是浪费了很多空间，换来的是少折腾。&lt;/del&gt;其实还有 &lt;code&gt;MikTeX&lt;/code&gt; 和 &lt;code&gt;TinyTeX&lt;/code&gt; 的选择，但是两者的安装在我这里都遇到了问题。另外这次发现了 &lt;code&gt;texliveonfly.py&lt;/code&gt; 脚本，多谢林前辈的指点。下面进入折腾吧。这篇教程的核心内容应该适用于其它几个常见的 &lt;code&gt;Linux&lt;/code&gt; 发行版本。&lt;/p&gt;
+      &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
 &lt;hr&gt;
     
     </summary>
@@ -256,8 +234,6 @@
     
     
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
@@ -280,6 +256,30 @@
     
     
       <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
+    <link href="https://camusecao.top/2020-05-09-/TeXlive-basic-install/"/>
+    <id>https://camusecao.top/2020-05-09-/TeXlive-basic-install/</id>
+    <published>2020-05-08T16:03:40.790Z</published>
+    <updated>2020-02-07T12:22:39.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近又在玩 &lt;code&gt;Manjaro&lt;/code&gt;，顺便要装 &lt;code&gt;TeXlive&lt;/code&gt;。但是这次不想像以往一样完整安装。&lt;del&gt;实际上还是完整安装省事，就是浪费了很多空间，换来的是少折腾。&lt;/del&gt;其实还有 &lt;code&gt;MikTeX&lt;/code&gt; 和 &lt;code&gt;TinyTeX&lt;/code&gt; 的选择，但是两者的安装在我这里都遇到了问题。另外这次发现了 &lt;code&gt;texliveonfly.py&lt;/code&gt; 脚本，多谢林前辈的指点。下面进入折腾吧。这篇教程的核心内容应该适用于其它几个常见的 &lt;code&gt;Linux&lt;/code&gt; 发行版本。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
