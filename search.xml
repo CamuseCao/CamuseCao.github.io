@@ -906,7 +906,7 @@
 <hr>
 <h2 id="texliveonfly-的字体问题"><a href="#texliveonfly-的字体问题" class="headerlink" title="texliveonfly 的字体问题"></a>texliveonfly 的字体问题</h2><p>它很可能不能很好的帮你解决字体的安装，尤其是 <code>type1</code> 的字体。所以你可以选择一次性把字体都安装了<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tlmgr install collection-fontsrecommended </span><br><span class="line">tlmgr install collection-fontsextra</span><br></pre></td></tr></table></figure></p>
 <p><code>collection-fontsrecommended</code> 比较少，比较常用。第二个的 <code>collection-fontsextra</code> 巨大无比。如果你编译的模板用不到 <code>type1</code> 字体，可以不安装这部分字体。安装之后 <code>texliveonfly</code> 应该就能解决剩下宏包的自动安装了。</p>
-<p><del>这样装好后大概有 3.3G 了，也不小了。</del> 好处是每个完全更新的宏包一般不多，比完整安装更新起来舒服很多，快非常多。</p>
+<p><del>这样装好后大概有 3.3G 了，也不小了。</del> 好处是每次完全更新的宏包一般不多，比完整安装更新起来舒服很多，快非常多。</p>
 <h2 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h2><ul>
 <li>我的 <code>LaTeX Workshop</code> 里调用 <code>texliveonfly</code> 速度会慢很多，而且可能不成功。</li>
 </ul>
