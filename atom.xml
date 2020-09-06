@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-09-06T07:32:58.772Z</updated>
+  <updated>2020-09-06T09:28:24.228Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JabRef 的使用记录</title>
+    <link href="https://camusecao.top/2020-09-06-/jabref/"/>
+    <id>https://camusecao.top/2020-09-06-/jabref/</id>
+    <published>2020-09-06T09:10:23.542Z</published>
+    <updated>2020-09-06T09:28:24.228Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;JabRef 是一个方便使用的参考文献管理工具，使用起来挺方便的。但是需要 Java 环境可能用起来稍微麻烦一点。鉴于自己经常忘记里面的一些使用方法，因此在这里做过简单的记录，方便自己日后看。里面的内容无非是官方文档里的部分摘录。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+  </entry>
+  
+  <entry>
     <title>打造舒适的 TeX 参考文献引用环境</title>
     <link href="https://camusecao.top/2020-09-06-/bib/"/>
     <id>https://camusecao.top/2020-09-06-/bib/</id>
     <published>2020-09-06T07:06:25.185Z</published>
-    <updated>2020-09-06T07:32:58.772Z</updated>
+    <updated>2020-09-06T07:40:51.829Z</updated>
     
     <summary type="html">
     
@@ -338,6 +362,28 @@
   </entry>
   
   <entry>
+    <title>ICON</title>
+    <link href="https://camusecao.top/2020-05-09-/Test/"/>
+    <id>https://camusecao.top/2020-05-09-/Test/</id>
+    <published>2020-05-08T16:03:40.783Z</published>
+    <updated>2020-03-20T15:45:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
+    
+    
+      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LaTeX 字体的基础配置</title>
     <link href="https://camusecao.top/2020-05-09-/TeX-Fonts/"/>
     <id>https://camusecao.top/2020-05-09-/TeX-Fonts/</id>
@@ -358,28 +404,6 @@
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
       <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ICON</title>
-    <link href="https://camusecao.top/2020-05-09-/Test/"/>
-    <id>https://camusecao.top/2020-05-09-/Test/</id>
-    <published>2020-05-08T16:03:40.783Z</published>
-    <updated>2020-03-20T15:45:48.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
-    
-    
-      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
     
   </entry>
   
@@ -475,30 +499,6 @@
       <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
       <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 的 selenium 的一些使用</title>
-    <link href="https://camusecao.top/2020-05-09-/python-selenium/"/>
-    <id>https://camusecao.top/2020-05-09-/python-selenium/</id>
-    <published>2020-05-08T16:03:40.773Z</published>
-    <updated>2020-01-26T11:59:50.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文记录 &lt;code&gt;Python&lt;/code&gt; 使用 &lt;code&gt;Selenium&lt;/code&gt; 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 &lt;code&gt;js&lt;/code&gt; 脚本的加载使得爬虫的难度增大，因此可以考虑使用 &lt;code&gt;Selenium&lt;/code&gt; 库来帮助我们，用它操纵浏览器来爬取需要的数据。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
-      <category term="python" scheme="https://camusecao.top/tags/python/"/>
     
   </entry>
   
