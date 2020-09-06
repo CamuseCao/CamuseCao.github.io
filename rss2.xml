@@ -9,8 +9,32 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Wed, 15 Jul 2020 16:40:24 GMT</pubDate>
+    <pubDate>Sun, 06 Sep 2020 07:32:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>打造舒适的 TeX 参考文献引用环境</title>
+      <link>https://camusecao.top/2020-09-06-/bib/</link>
+      <guid>https://camusecao.top/2020-09-06-/bib/</guid>
+      <pubDate>Sun, 06 Sep 2020 07:06:25 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;以前一直很将就的在 TeX 里面引用参考文献。现在上研究生了，发觉必须好好管理一下参考文献，改进一下引用的方式。于是有了今日的折腾。&lt;/p&gt;
+&lt;p&gt;简要介绍一下我的环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;系统： ArchLinux&lt;/li&gt;
+&lt;li&gt;TeX 发行版： texlive&lt;/li&gt;
+&lt;li&gt;编辑器： VsCode&lt;/li&gt;
+&lt;li&gt;VsCode 插件：LaTeX Workshop&lt;/li&gt;
+&lt;li&gt;参考文献管理工具： JabRef&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-09-06-/bib/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>fcitx5 和 vim 的配合使用</title>
@@ -260,21 +284,6 @@
     </item>
     
     <item>
-      <title>基础知识复习</title>
-      <link>https://camusecao.top/2020-05-09-/Review/</link>
-      <guid>https://camusecao.top/2020-05-09-/Review/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;h2 id=&quot;半导体重掺应用&quot;&gt;&lt;a href=&quot;#半导体重掺应用&quot; class=&quot;headerlink&quot; title=&quot;半导体重掺应用&quot;&gt;&lt;/a&gt;半导体重掺应用&lt;/h2&gt;&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09-/Review/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>Python 实用小程序</title>
       <link>https://camusecao.top/2020-05-09-/Python-tricks/</link>
       <guid>https://camusecao.top/2020-05-09-/Python-tricks/</guid>
@@ -288,6 +297,21 @@
       
       
       <comments>https://camusecao.top/2020-05-09-/Python-tricks/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>基础知识复习</title>
+      <link>https://camusecao.top/2020-05-09-/Review/</link>
+      <guid>https://camusecao.top/2020-05-09-/Review/</guid>
+      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;半导体重掺应用&quot;&gt;&lt;a href=&quot;#半导体重掺应用&quot; class=&quot;headerlink&quot; title=&quot;半导体重掺应用&quot;&gt;&lt;/a&gt;半导体重掺应用&lt;/h2&gt;&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-05-09-/Review/#disqus_thread</comments>
     </item>
     
     <item>
@@ -320,22 +344,6 @@
       
       
       <comments>https://camusecao.top/2020-05-09-/python-selenium/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>MiKTeX的基本使用</title>
-      <link>https://camusecao.top/2020-05-09-/MiKTeX/</link>
-      <guid>https://camusecao.top/2020-05-09-/MiKTeX/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09-/MiKTeX/#disqus_thread</comments>
     </item>
     
   </channel>

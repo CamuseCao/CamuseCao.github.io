@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-07-15T16:40:24.580Z</updated>
+  <updated>2020-09-06T07:32:58.772Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>打造舒适的 TeX 参考文献引用环境</title>
+    <link href="https://camusecao.top/2020-09-06-/bib/"/>
+    <id>https://camusecao.top/2020-09-06-/bib/</id>
+    <published>2020-09-06T07:06:25.185Z</published>
+    <updated>2020-09-06T07:32:58.772Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以前一直很将就的在 TeX 里面引用参考文献。现在上研究生了，发觉必须好好管理一下参考文献，改进一下引用的方式。于是有了今日的折腾。&lt;/p&gt;
+&lt;p&gt;简要介绍一下我的环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;系统： ArchLinux&lt;/li&gt;
+&lt;li&gt;TeX 发行版： texlive&lt;/li&gt;
+&lt;li&gt;编辑器： VsCode&lt;/li&gt;
+&lt;li&gt;VsCode 插件：LaTeX Workshop&lt;/li&gt;
+&lt;li&gt;参考文献管理工具： JabRef&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Linux" scheme="https://camusecao.top/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>fcitx5 和 vim 的配合使用</title>
@@ -374,6 +406,30 @@
   </entry>
   
   <entry>
+    <title>Python 实用小程序</title>
+    <link href="https://camusecao.top/2020-05-09-/Python-tricks/"/>
+    <id>https://camusecao.top/2020-05-09-/Python-tricks/</id>
+    <published>2020-05-08T16:03:40.777Z</published>
+    <updated>2020-01-26T05:54:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
+    
+  </entry>
+  
+  <entry>
     <title>基础知识复习</title>
     <link href="https://camusecao.top/2020-05-09-/Review/"/>
     <id>https://camusecao.top/2020-05-09-/Review/</id>
@@ -395,30 +451,6 @@
       <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
     
       <category term="Semiconductor" scheme="https://camusecao.top/tags/Semiconductor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 实用小程序</title>
-    <link href="https://camusecao.top/2020-05-09-/Python-tricks/"/>
-    <id>https://camusecao.top/2020-05-09-/Python-tricks/</id>
-    <published>2020-05-08T16:03:40.777Z</published>
-    <updated>2020-01-26T05:54:48.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Python" scheme="https://camusecao.top/tags/Python/"/>
-    
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
@@ -467,30 +499,6 @@
       <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
       <category term="python" scheme="https://camusecao.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MiKTeX的基本使用</title>
-    <link href="https://camusecao.top/2020-05-09-/MiKTeX/"/>
-    <id>https://camusecao.top/2020-05-09-/MiKTeX/</id>
-    <published>2020-05-08T16:03:40.770Z</published>
-    <updated>2020-03-20T15:45:17.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="Programme" scheme="https://camusecao.top/categories/Programme/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
     
   </entry>
   
