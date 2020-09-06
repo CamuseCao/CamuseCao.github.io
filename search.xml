@@ -1384,6 +1384,7 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
 <p>使用 <code>latexmk -pdfxe main.tex</code> 编译，可以得到正确的结果。</p>
 <p>为了在 VsCode 中得到更好的体验，要设置一个值<br><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"latex-workshop.latex.bibDirs": [</span><br><span class="line">  <span class="string">"/home/camuse/bib/"</span></span><br><span class="line">],</span><br></pre></td></tr></table></figure></p>
 <p>这样用命令 <code>\cite{}</code> 时会更方便，它能分析对应文件夹下面的 <code>bib</code> 文件。更方便的是打开 <code>citation browser</code> ，能获得更好的引用体验。</p>
+<p>这样写文章确实舒服，但是又有一个要解决的问题，也就是写好文章之后要投稿的话，不可能把自己整个 <code>bib</code> 文件都放进去，而是应该提取出被引用的 entry 。这时候可以用 JabRef 带的一个从 <code>aux</code> 文件提取出一个新的 <code>bib</code> 文件的功能。在 <code>Tools &gt; New sublibrary based on AUX file</code> 里选择 <code>aux</code> 文件，它能够帮助筛选出引用部分的 entry ，并且形成新的一个 <code>bib</code> 文件。</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -1396,7 +1397,7 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
   <entry>
     <title>JabRef 的使用记录</title>
     <url>/2020-09-06-/jabref/</url>
-    <content><![CDATA[<p>JabRef 是一个方便使用的参考文献管理工具，使用起来挺方便的。但是需要 Java 环境可能用起来稍微麻烦一点。鉴于自己经常忘记里面的一些使用方法，因此在这里做过简单的记录，方便自己日后看。里面的内容无非是官方文档里的部分摘录。</p>
+    <content><![CDATA[<p>JabRef 是一个方便使用的参考文献管理工具，使用起来挺方便的。但是需要 Java 环境可能用起来稍微麻烦一点。鉴于自己经常忘记里面的一些使用方法，因此在这里做个简单的记录，方便自己日后看。里面的内容无非是官方文档里的部分摘录。</p>
 <hr>
 <a id="more"></a>
 <p>使用首先要设定 <code>bibtexkey</code> ，在 <code>Library &gt; BibTeX key patterns</code> 里，我将 <code>Default pattern</code> 设定为 <code>[auth][year]-[title]</code> 。这样的设定可以使得唯一性有较好的保障，且方便查看。</p>

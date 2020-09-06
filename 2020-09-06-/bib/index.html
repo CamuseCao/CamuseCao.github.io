@@ -31,7 +31,7 @@
 <meta property="og:description" content="以前一直很将就的在 TeX 里面引用参考文献。现在上研究生了，发觉必须好好管理一下参考文献，改进一下引用的方式。于是有了今日的折腾。 简要介绍一下我的环境：  系统： ArchLinux TeX 发行版： texlive 编辑器： VsCode VsCode 插件：LaTeX Workshop 参考文献管理工具： JabRef">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-06T07:06:25.185Z">
-<meta property="article:modified_time" content="2020-09-06T07:40:51.829Z">
+<meta property="article:modified_time" content="2020-09-06T14:13:25.919Z">
 <meta property="article:author" content="CamuseCao">
 <meta property="article:tag" content="TeX">
 <meta property="article:tag" content="Linux">
@@ -230,7 +230,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-09-06 15:06:25 / Modified: 15:40:51" itemprop="dateCreated datePublished" datetime="2020-09-06T15:06:25+08:00">2020-09-06</time>
+              <time title="Created: 2020-09-06 15:06:25 / Modified: 22:13:25" itemprop="dateCreated datePublished" datetime="2020-09-06T15:06:25+08:00">2020-09-06</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -277,6 +277,7 @@
 <p>使用 <code>latexmk -pdfxe main.tex</code> 编译，可以得到正确的结果。</p>
 <p>为了在 VsCode 中得到更好的体验，要设置一个值<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"latex-workshop.latex.bibDirs": [</span><br><span class="line">  <span class="string">"/home/camuse/bib/"</span></span><br><span class="line">],</span><br></pre></td></tr></table></figure></p>
 <p>这样用命令 <code>\cite{}</code> 时会更方便，它能分析对应文件夹下面的 <code>bib</code> 文件。更方便的是打开 <code>citation browser</code> ，能获得更好的引用体验。</p>
+<p>这样写文章确实舒服，但是又有一个要解决的问题，也就是写好文章之后要投稿的话，不可能把自己整个 <code>bib</code> 文件都放进去，而是应该提取出被引用的 entry 。这时候可以用 JabRef 带的一个从 <code>aux</code> 文件提取出一个新的 <code>bib</code> 文件的功能。在 <code>Tools &gt; New sublibrary based on AUX file</code> 里选择 <code>aux</code> 文件，它能够帮助筛选出引用部分的 entry ，并且形成新的一个 <code>bib</code> 文件。</p>
 
     </div>
 

@@ -9,7 +9,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Sun, 06 Sep 2020 09:28:24 GMT</pubDate>
+    <pubDate>Sun, 06 Sep 2020 09:30:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -19,7 +19,7 @@
       <pubDate>Sun, 06 Sep 2020 09:10:23 GMT</pubDate>
       <description>
       
-        &lt;p&gt;JabRef 是一个方便使用的参考文献管理工具，使用起来挺方便的。但是需要 Java 环境可能用起来稍微麻烦一点。鉴于自己经常忘记里面的一些使用方法，因此在这里做过简单的记录，方便自己日后看。里面的内容无非是官方文档里的部分摘录。&lt;/p&gt;
+        &lt;p&gt;JabRef 是一个方便使用的参考文献管理工具，使用起来挺方便的。但是需要 Java 环境可能用起来稍微麻烦一点。鉴于自己经常忘记里面的一些使用方法，因此在这里做个简单的记录，方便自己日后看。里面的内容无非是官方文档里的部分摘录。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
