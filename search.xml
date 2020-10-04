@@ -1429,6 +1429,7 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
 <p>在搞定 <code>ssh</code> ，并且把 <code>git</code> 仓库弄得差不多后，可以准备提交。要注意， <code>aur</code> 常常只需要 <code>PKGBUILD</code> 和 <code>.SRCINFO</code>，其中的 <code>.SRCINFO</code> 文件由 <code>makepkg --printsrcinfo &gt; .SRCINFO</code> 自动生成，所以这个 <code>git</code> 仓库最好是要加 <code>.gitignore</code>。并且里面我推荐写入<br><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">*</span><br><span class="line">!PKGBUILD</span><br><span class="line">!.SRCINFO</span><br></pre></td></tr></table></figure><br>这三行。熟悉 <code>git</code> 的话应该明白这里的意思。第一行的 <code>*</code> 表示忽略所有文件，而里面的 <code>!</code> 表示特例，也就是 <code>PKGBUILD</code> 和 <code>.SRCINFO</code> 是特例，这两个文件会被记录追踪。这样的方式在备份 <code>home</code> 里的 <code>dotfiles</code> 被很多用户采纳。</p>
 <p>上传与传到 Github 差不多。传好很快就能看到自己的包在 aur 上了。</p>
 <h2 id="回炉重造"><a href="#回炉重造" class="headerlink" title="回炉重造"></a>回炉重造</h2><p>第一次打包，难免忽略一些细节，于是在发布到 aur 后，就有大神给我建议了。感谢大神对萌新的培养，我赶紧把缺的知识补上，然后更新这个包。还发现给我建议的大神维护了四页的包，里面有不少是我在用的。</p>
+<h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><p>会用 aur 的你如果用 <code>yay</code> 作为你的 aur helper 的话使用 <code>yay -S spx2wav</code> 即可安装它。使用也很简单<br><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">spx2wav your.speex your.wav</span><br></pre></td></tr></table></figure></p>
 <p>我打的包的地址是 <span class="exturl" data-url="aHR0cHM6Ly9hdXIuYXJjaGxpbnV4Lm9yZy9wYWNrYWdlcy9zcHgyd2F2Lw==">spx2wav<i class="fa fa-external-link-alt"></i></span></p>
 ]]></content>
       <categories>
