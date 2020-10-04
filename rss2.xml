@@ -9,8 +9,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Sun, 06 Sep 2020 09:30:12 GMT</pubDate>
+    <pubDate>Sun, 04 Oct 2020 13:39:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>我的第一个 aur 包</title>
+      <link>https://camusecao.top/2020-10-04-/first-aur/</link>
+      <guid>https://camusecao.top/2020-10-04-/first-aur/</guid>
+      <pubDate>Sun, 04 Oct 2020 08:25:13 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;成为一名 ArchLinux 用户是幸运的 &lt;del&gt;因为可以说 btw I use Arch&lt;/del&gt; ， aur 上面 “什么都有” 是我坚信的。我也一直享受着它给我带来的便利。但是最近想为它做点小贡献，我也想自己打一个包，同时方便自己。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-10-04-/first-aur/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>JabRef 的使用记录</title>
@@ -300,22 +316,6 @@
     </item>
     
     <item>
-      <title>Python 实用小程序</title>
-      <link>https://camusecao.top/2020-05-09-/Python-tricks/</link>
-      <guid>https://camusecao.top/2020-05-09-/Python-tricks/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09-/Python-tricks/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>基础知识复习</title>
       <link>https://camusecao.top/2020-05-09-/Review/</link>
       <guid>https://camusecao.top/2020-05-09-/Review/</guid>
@@ -331,19 +331,19 @@
     </item>
     
     <item>
-      <title>Python Pandas 库的一些使用</title>
-      <link>https://camusecao.top/2020-05-09-/Python-Pandas/</link>
-      <guid>https://camusecao.top/2020-05-09-/Python-Pandas/</guid>
+      <title>Python 实用小程序</title>
+      <link>https://camusecao.top/2020-05-09-/Python-tricks/</link>
+      <guid>https://camusecao.top/2020-05-09-/Python-tricks/</guid>
       <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。&lt;/p&gt;
+        &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
 &lt;hr&gt;
       
       </description>
       
       
-      <comments>https://camusecao.top/2020-05-09-/Python-Pandas/#disqus_thread</comments>
+      <comments>https://camusecao.top/2020-05-09-/Python-tricks/#disqus_thread</comments>
     </item>
     
   </channel>

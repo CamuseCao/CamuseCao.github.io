@@ -1415,4 +1415,27 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
         <tag>TeX</tag>
       </tags>
   </entry>
+  <entry>
+    <title>我的第一个 aur 包</title>
+    <url>/2020-10-04-/first-aur/</url>
+    <content><![CDATA[<p>成为一名 ArchLinux 用户是幸运的 <del>因为可以说 btw I use Arch</del> ， aur 上面 “什么都有” 是我坚信的。我也一直享受着它给我带来的便利。但是最近想为它做点小贡献，我也想自己打一个包，同时方便自己。</p>
+<hr>
+<a id="more"></a>
+<p>注意，这不是教程，要看教程请坚持看 Arch wiki，别的资料不宜为主。这里就是分享一下经历，自己不太熟悉的东西做点记录。</p>
+<h2 id="学习写-PKGBUILD"><a href="#学习写-PKGBUILD" class="headerlink" title="学习写 PKGBUILD"></a>学习写 PKGBUILD</h2><p>写 PKGBUILD 不算难，可以跟着 wiki 的步骤走，再看看一些 aur 实例就能动手打简单的包了。</p>
+<p>我动手打的第一个包是 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2Jhb2dhaXRvdS9zcHgyd2F2">spx2wav<i class="fa fa-external-link-alt"></i></span>，里面遇到的一个坑是校验码，校验码的章节起初我没有注意看，以为自己能直接搞定。用了各种奇葩的思路来获得这个 <code>git</code> 拷下来的文件夹的 md5 码之类的，均无果。后面注意到 <span class="exturl" data-url="aHR0cHM6Ly9iYnMuYXJjaGxpbnV4Lm9yZy92aWV3dG9waWMucGhwP2lkPTE4MzE4MA==">Arch 论坛上的讨论<i class="fa fa-external-link-alt"></i></span> 才明白并不需要校验 git 的东西。后来也在 telegram 的群聊中得到确认。回头发现有 wiki 上面其实有捷径可走，直接使用 <code>makepkg -g</code> 可以获得所有 <code>source</code> 的校验码。更好的方法是使用 <code>pacman-contrib</code> 提供的 <code>updpkgsums</code> 来直接更新校验码。</p>
+<p>觉得写得差不多就可以试试 <code>makepkg</code> 了。得到的 <code>pkg</code> 目录的结构应该与 <code>/</code> 是一致的。如果顺利打包出来可以使用 <code>pacman -Qlp [package file]</code> 和 <code>pacman -Qip [package file]</code> 看看是不是预期的。如果是，进一步使用 <code>namcap</code> 检查一下正确性。如果都没什么问题，可以安装该包，并且使用一下，确保其正确性。</p>
+<h2 id="发布到-aur"><a href="#发布到-aur" class="headerlink" title="发布到 aur"></a>发布到 aur</h2><p>有包了之后，要发布当然是要先有账户了。去 <span class="exturl" data-url="aHR0cHM6Ly9hdXIuYXJjaGxpbnV4Lm9yZy8=">aur<i class="fa fa-external-link-alt"></i></span> 注册账户。接下来可能需要通读一下以下链接的内容<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;index.php&#x2F;Arch_User_Repository#Submitting_packages</span><br><span class="line">https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;index.php&#x2F;AUR_submission_guidelines</span><br><span class="line">https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;index.php&#x2F;Arch_package_guidelines</span><br></pre></td></tr></table></figure></p>
+<p>在搞定 <code>ssh</code> ，并且把 <code>git</code> 仓库弄得差不多后，可以准备提交。要注意， <code>aur</code> 常常只需要 <code>PKGBUILD</code> 和 <code>.SRCINFO</code>，其中的 <code>.SRCINFO</code> 文件由 <code>makepkg --printsrcinfo &gt; .SRCINFO</code> 自动生成，所以这个 <code>git</code> 仓库最好是要加 <code>.gitignore</code>。并且里面我推荐写入<br><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">*</span><br><span class="line">!PKGBUILD</span><br><span class="line">!.SRCINFO</span><br></pre></td></tr></table></figure><br>这三行。熟悉 <code>git</code> 的话应该明白这里的意思。第一行的 <code>*</code> 表示忽略所有文件，而里面的 <code>!</code> 表示特例，也就是 <code>PKGBUILD</code> 和 <code>.SRCINFO</code> 是特例，这两个文件会被记录追踪。这样的方式在备份 <code>home</code> 里的 <code>dotfiles</code> 被很多用户采纳。</p>
+<p>上传与传到 Github 差不多。传好很快就能看到自己的包在 aur 上了。</p>
+<h2 id="回炉重造"><a href="#回炉重造" class="headerlink" title="回炉重造"></a>回炉重造</h2><p>第一次打包，难免忽略一些细节，于是在发布到 aur 后，就有大神给我建议了。感谢大神对萌新的培养，我赶紧把缺的知识补上，然后更新这个包。还发现给我建议的大神维护了四页的包，里面有不少是我在用的。</p>
+<p>我打的包的地址是 <span class="exturl" data-url="aHR0cHM6Ly9hdXIuYXJjaGxpbnV4Lm9yZy9wYWNrYWdlcy9zcHgyd2F2Lw==">spx2wav<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Arch</tag>
+      </tags>
+  </entry>
 </search>
