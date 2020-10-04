@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-10-04T13:49:58.072Z</updated>
+  <updated>2020-10-04T15:28:55.635Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LaTeX in ArchLinux</title>
+    <link href="https://camusecao.top/2020-10-04-/vscode-for-latex/"/>
+    <id>https://camusecao.top/2020-10-04-/vscode-for-latex/</id>
+    <published>2020-10-04T13:55:33.922Z</published>
+    <updated>2020-10-04T15:28:55.635Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一名经常使用 &lt;code&gt;LaTeX&lt;/code&gt; 的用户必须配置一个好用的编辑器来提高效率。另外也得想办法提高编译速度。这里我介绍一下我的常用编译相关的内容，希望你看了有收获。&lt;/p&gt;
+&lt;p&gt;注意，本文不适合新人，要看懂偏难。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Linux" scheme="https://camusecao.top/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>我的第一个 aur 包</title>
@@ -384,28 +409,6 @@
   </entry>
   
   <entry>
-    <title>ICON</title>
-    <link href="https://camusecao.top/2020-05-09-/Test/"/>
-    <id>https://camusecao.top/2020-05-09-/Test/</id>
-    <published>2020-05-08T16:03:40.783Z</published>
-    <updated>2020-03-20T15:45:48.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
-    
-    
-      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
-    
-  </entry>
-  
-  <entry>
     <title>LaTeX 字体的基础配置</title>
     <link href="https://camusecao.top/2020-05-09-/TeX-Fonts/"/>
     <id>https://camusecao.top/2020-05-09-/TeX-Fonts/</id>
@@ -430,6 +433,28 @@
   </entry>
   
   <entry>
+    <title>ICON</title>
+    <link href="https://camusecao.top/2020-05-09-/Test/"/>
+    <id>https://camusecao.top/2020-05-09-/Test/</id>
+    <published>2020-05-08T16:03:40.783Z</published>
+    <updated>2020-03-20T15:45:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="图标" scheme="https://camusecao.top/categories/%E5%9B%BE%E6%A0%87/"/>
+    
+    
+      <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
+    
+  </entry>
+  
+  <entry>
     <title>常用软件记录</title>
     <link href="https://camusecao.top/2020-05-09-/software/"/>
     <id>https://camusecao.top/2020-05-09-/software/</id>
@@ -448,31 +473,6 @@
     
     
       <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基础知识复习</title>
-    <link href="https://camusecao.top/2020-05-09-/Review/"/>
-    <id>https://camusecao.top/2020-05-09-/Review/</id>
-    <published>2020-05-08T16:03:40.777Z</published>
-    <updated>2019-03-02T09:29:06.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;半导体重掺应用&quot;&gt;&lt;a href=&quot;#半导体重掺应用&quot; class=&quot;headerlink&quot; title=&quot;半导体重掺应用&quot;&gt;&lt;/a&gt;半导体重掺应用&lt;/h2&gt;&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Physics" scheme="https://camusecao.top/tags/Physics/"/>
-    
-      <category term="Band" scheme="https://camusecao.top/tags/Band/"/>
-    
-      <category term="Semiconductor" scheme="https://camusecao.top/tags/Semiconductor/"/>
     
   </entry>
   

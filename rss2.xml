@@ -9,8 +9,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Sun, 04 Oct 2020 13:49:58 GMT</pubDate>
+    <pubDate>Sun, 04 Oct 2020 15:28:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>LaTeX in ArchLinux</title>
+      <link>https://camusecao.top/2020-10-04-/vscode-for-latex/</link>
+      <guid>https://camusecao.top/2020-10-04-/vscode-for-latex/</guid>
+      <pubDate>Sun, 04 Oct 2020 13:55:33 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;一名经常使用 &lt;code&gt;LaTeX&lt;/code&gt; 的用户必须配置一个好用的编辑器来提高效率。另外也得想办法提高编译速度。这里我介绍一下我的常用编译相关的内容，希望你看了有收获。&lt;/p&gt;
+&lt;p&gt;注意，本文不适合新人，要看懂偏难。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-10-04-/vscode-for-latex/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>我的第一个 aur 包</title>
@@ -268,22 +285,6 @@
     </item>
     
     <item>
-      <title>ICON</title>
-      <link>https://camusecao.top/2020-05-09-/Test/</link>
-      <guid>https://camusecao.top/2020-05-09-/Test/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09-/Test/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>LaTeX 字体的基础配置</title>
       <link>https://camusecao.top/2020-05-09-/TeX-Fonts/</link>
       <guid>https://camusecao.top/2020-05-09-/TeX-Fonts/</guid>
@@ -300,6 +301,22 @@
     </item>
     
     <item>
+      <title>ICON</title>
+      <link>https://camusecao.top/2020-05-09-/Test/</link>
+      <guid>https://camusecao.top/2020-05-09-/Test/</guid>
+      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-05-09-/Test/#disqus_thread</comments>
+    </item>
+    
+    <item>
       <title>常用软件记录</title>
       <link>https://camusecao.top/2020-05-09-/software/</link>
       <guid>https://camusecao.top/2020-05-09-/software/</guid>
@@ -313,21 +330,6 @@
       
       
       <comments>https://camusecao.top/2020-05-09-/software/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>基础知识复习</title>
-      <link>https://camusecao.top/2020-05-09-/Review/</link>
-      <guid>https://camusecao.top/2020-05-09-/Review/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;h2 id=&quot;半导体重掺应用&quot;&gt;&lt;a href=&quot;#半导体重掺应用&quot; class=&quot;headerlink&quot; title=&quot;半导体重掺应用&quot;&gt;&lt;/a&gt;半导体重掺应用&lt;/h2&gt;&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09-/Review/#disqus_thread</comments>
     </item>
     
     <item>
