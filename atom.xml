@@ -18,8 +18,8 @@
   
   <entry>
     <title>LaTeX in ArchLinux</title>
-    <link href="https://camusecao.top/2020-10-04-/vscode-for-latex/"/>
-    <id>https://camusecao.top/2020-10-04-/vscode-for-latex/</id>
+    <link href="https://camusecao.top/2020-10-04/vscode-for-latex/"/>
+    <id>https://camusecao.top/2020-10-04/vscode-for-latex/</id>
     <published>2020-10-04T13:55:33.922Z</published>
     <updated>2020-10-04T15:28:55.635Z</updated>
     
@@ -43,8 +43,8 @@
   
   <entry>
     <title>我的第一个 aur 包</title>
-    <link href="https://camusecao.top/2020-10-04-/first-aur/"/>
-    <id>https://camusecao.top/2020-10-04-/first-aur/</id>
+    <link href="https://camusecao.top/2020-10-04/first-aur/"/>
+    <id>https://camusecao.top/2020-10-04/first-aur/</id>
     <published>2020-10-04T08:25:13.939Z</published>
     <updated>2020-10-04T13:49:58.072Z</updated>
     
@@ -65,8 +65,8 @@
   
   <entry>
     <title>JabRef 的使用记录</title>
-    <link href="https://camusecao.top/2020-09-06-/jabref/"/>
-    <id>https://camusecao.top/2020-09-06-/jabref/</id>
+    <link href="https://camusecao.top/2020-09-06/jabref/"/>
+    <id>https://camusecao.top/2020-09-06/jabref/</id>
     <published>2020-09-06T09:10:23.542Z</published>
     <updated>2020-09-06T09:30:12.024Z</updated>
     
@@ -89,8 +89,8 @@
   
   <entry>
     <title>打造舒适的 TeX 参考文献引用环境</title>
-    <link href="https://camusecao.top/2020-09-06-/bib/"/>
-    <id>https://camusecao.top/2020-09-06-/bib/</id>
+    <link href="https://camusecao.top/2020-09-06/bib/"/>
+    <id>https://camusecao.top/2020-09-06/bib/</id>
     <published>2020-09-06T07:06:25.185Z</published>
     <updated>2020-09-06T14:15:21.457Z</updated>
     
@@ -121,8 +121,8 @@
   
   <entry>
     <title>fcitx5 和 vim 的配合使用</title>
-    <link href="https://camusecao.top/2020-07-16-/fcitx5-vim/"/>
-    <id>https://camusecao.top/2020-07-16-/fcitx5-vim/</id>
+    <link href="https://camusecao.top/2020-07-16/fcitx5-vim/"/>
+    <id>https://camusecao.top/2020-07-16/fcitx5-vim/</id>
     <published>2020-07-15T16:21:40.553Z</published>
     <updated>2020-07-15T16:40:24.580Z</updated>
     
@@ -145,8 +145,8 @@
   
   <entry>
     <title>LaTeX 调用发行版本的字体</title>
-    <link href="https://camusecao.top/2020-07-14-/tex-font/"/>
-    <id>https://camusecao.top/2020-07-14-/tex-font/</id>
+    <link href="https://camusecao.top/2020-07-14/tex-font/"/>
+    <id>https://camusecao.top/2020-07-14/tex-font/</id>
     <published>2020-07-13T16:37:55.353Z</published>
     <updated>2020-07-13T17:21:09.092Z</updated>
     
@@ -163,16 +163,16 @@
     
       <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
   <entry>
     <title>Linux 系统的清理</title>
-    <link href="https://camusecao.top/2020-07-09-/Linux-tidy/"/>
-    <id>https://camusecao.top/2020-07-09-/Linux-tidy/</id>
+    <link href="https://camusecao.top/2020-07-09/Linux-tidy/"/>
+    <id>https://camusecao.top/2020-07-09/Linux-tidy/</id>
     <published>2020-07-09T06:28:18.096Z</published>
     <updated>2020-07-09T07:07:55.446Z</updated>
     
@@ -197,8 +197,8 @@
   
   <entry>
     <title>kde 桌面环境下蒙古语的受害者</title>
-    <link href="https://camusecao.top/2020-07-07-/kde-mn/"/>
-    <id>https://camusecao.top/2020-07-07-/kde-mn/</id>
+    <link href="https://camusecao.top/2020-07-07/kde-mn/"/>
+    <id>https://camusecao.top/2020-07-07/kde-mn/</id>
     <published>2020-07-07T11:13:44.388Z</published>
     <updated>2020-07-08T04:16:02.593Z</updated>
     
@@ -221,8 +221,8 @@
   
   <entry>
     <title>Linux-commands</title>
-    <link href="https://camusecao.top/2020-05-09-/Linux-commands/"/>
-    <id>https://camusecao.top/2020-05-09-/Linux-commands/</id>
+    <link href="https://camusecao.top/2020-05-09/Linux-commands/"/>
+    <id>https://camusecao.top/2020-05-09/Linux-commands/</id>
     <published>2020-05-08T16:43:36.278Z</published>
     <updated>2020-05-08T16:44:24.480Z</updated>
     
@@ -241,8 +241,8 @@
   
   <entry>
     <title>凝聚态物理期末总结</title>
-    <link href="https://camusecao.top/2020-05-09-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
-    <id>https://camusecao.top/2020-05-09-/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</id>
+    <link href="https://camusecao.top/2020-05-09/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/"/>
+    <id>https://camusecao.top/2020-05-09/%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB/</id>
     <published>2020-05-08T16:03:40.797Z</published>
     <updated>2019-03-01T13:19:16.000Z</updated>
     
@@ -266,8 +266,8 @@
   
   <entry>
     <title>近代物理实验复习</title>
-    <link href="https://camusecao.top/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
-    <id>https://camusecao.top/2020-05-09-/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</id>
+    <link href="https://camusecao.top/2020-05-09/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/"/>
+    <id>https://camusecao.top/2020-05-09/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E5%8D%B7%E5%AD%90/</id>
     <published>2020-05-08T16:03:40.797Z</published>
     <updated>2020-03-20T15:46:40.000Z</updated>
     
@@ -294,8 +294,8 @@
   
   <entry>
     <title>厦门大学模板使用说明</title>
-    <link href="https://camusecao.top/2020-05-09-/XMU-Thesis-Instruction/"/>
-    <id>https://camusecao.top/2020-05-09-/XMU-Thesis-Instruction/</id>
+    <link href="https://camusecao.top/2020-05-09/XMU-Thesis-Instruction/"/>
+    <id>https://camusecao.top/2020-05-09/XMU-Thesis-Instruction/</id>
     <published>2020-05-08T16:03:40.793Z</published>
     <updated>2019-03-01T13:20:59.000Z</updated>
     
@@ -316,8 +316,8 @@
   
   <entry>
     <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
-    <link href="https://camusecao.top/2020-05-09-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
-    <id>https://camusecao.top/2020-05-09-/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</id>
+    <link href="https://camusecao.top/2020-05-09/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/"/>
+    <id>https://camusecao.top/2020-05-09/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</id>
     <published>2020-05-08T16:03:40.793Z</published>
     <updated>2020-03-20T15:46:31.000Z</updated>
     
@@ -342,8 +342,8 @@
   
   <entry>
     <title>收藏链接</title>
-    <link href="https://camusecao.top/2020-05-09-/Url/"/>
-    <id>https://camusecao.top/2020-05-09-/Url/</id>
+    <link href="https://camusecao.top/2020-05-09/Url/"/>
+    <id>https://camusecao.top/2020-05-09/Url/</id>
     <published>2020-05-08T16:03:40.790Z</published>
     <updated>2019-03-02T10:37:44.000Z</updated>
     
@@ -364,8 +364,8 @@
   
   <entry>
     <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
-    <link href="https://camusecao.top/2020-05-09-/TeXlive-basic-install/"/>
-    <id>https://camusecao.top/2020-05-09-/TeXlive-basic-install/</id>
+    <link href="https://camusecao.top/2020-05-09/TeXlive-basic-install/"/>
+    <id>https://camusecao.top/2020-05-09/TeXlive-basic-install/</id>
     <published>2020-05-08T16:03:40.790Z</published>
     <updated>2020-08-23T02:44:29.239Z</updated>
     
@@ -380,16 +380,16 @@
       <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
   <entry>
     <title>TeX 那些小事</title>
-    <link href="https://camusecao.top/2020-05-09-/TeX-Record/"/>
-    <id>https://camusecao.top/2020-05-09-/TeX-Record/</id>
+    <link href="https://camusecao.top/2020-05-09/TeX-Record/"/>
+    <id>https://camusecao.top/2020-05-09/TeX-Record/</id>
     <published>2020-05-08T16:03:40.787Z</published>
     <updated>2019-04-02T13:02:16.000Z</updated>
     
@@ -410,8 +410,8 @@
   
   <entry>
     <title>LaTeX 字体的基础配置</title>
-    <link href="https://camusecao.top/2020-05-09-/TeX-Fonts/"/>
-    <id>https://camusecao.top/2020-05-09-/TeX-Fonts/</id>
+    <link href="https://camusecao.top/2020-05-09/TeX-Fonts/"/>
+    <id>https://camusecao.top/2020-05-09/TeX-Fonts/</id>
     <published>2020-05-08T16:03:40.783Z</published>
     <updated>2019-06-01T08:03:56.000Z</updated>
     
@@ -426,18 +426,18 @@
       <category term="学习" scheme="https://camusecao.top/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
-    
       <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+      <category term="Programme" scheme="https://camusecao.top/tags/Programme/"/>
     
   </entry>
   
   <entry>
     <title>ICON</title>
-    <link href="https://camusecao.top/2020-05-09-/Test/"/>
-    <id>https://camusecao.top/2020-05-09-/Test/</id>
+    <link href="https://camusecao.top/2020-05-09/Test/"/>
+    <id>https://camusecao.top/2020-05-09/Test/</id>
     <published>2020-05-08T16:03:40.783Z</published>
-    <updated>2020-03-20T15:45:48.000Z</updated>
+    <updated>2020-11-23T12:18:20.137Z</updated>
     
     <summary type="html">
     
@@ -456,8 +456,8 @@
   
   <entry>
     <title>常用软件记录</title>
-    <link href="https://camusecao.top/2020-05-09-/software/"/>
-    <id>https://camusecao.top/2020-05-09-/software/</id>
+    <link href="https://camusecao.top/2020-05-09/software/"/>
+    <id>https://camusecao.top/2020-05-09/software/</id>
     <published>2020-05-08T16:03:40.780Z</published>
     <updated>2019-03-01T13:21:21.000Z</updated>
     
@@ -478,8 +478,8 @@
   
   <entry>
     <title>Python 实用小程序</title>
-    <link href="https://camusecao.top/2020-05-09-/Python-tricks/"/>
-    <id>https://camusecao.top/2020-05-09-/Python-tricks/</id>
+    <link href="https://camusecao.top/2020-05-09/Python-tricks/"/>
+    <id>https://camusecao.top/2020-05-09/Python-tricks/</id>
     <published>2020-05-08T16:03:40.777Z</published>
     <updated>2020-01-26T05:54:48.000Z</updated>
     
