@@ -9,8 +9,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Sun, 04 Oct 2020 15:28:55 GMT</pubDate>
+    <pubDate>Thu, 03 Dec 2020 02:27:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>python3.8 再见</title>
+      <link>https://camusecao.top/2020-12-03/say-goodbye-to-py3.8/</link>
+      <guid>https://camusecao.top/2020-12-03/say-goodbye-to-py3.8/</guid>
+      <pubDate>Thu, 03 Dec 2020 01:54:21 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;作为 Arch 的忠实用户，我选择每天 &lt;code&gt;Syu&lt;/code&gt; 。今天在 cn 的公告群看到了如下的置顶消息&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;官方源中 Python 3.9 及所有依赖包已经进入稳定仓库， archlinuxcn 中的所有 python 库正在针对 3.9 版本重新打包，在重新打包全部完成前更新系统可能遭遇 Python 版本不一致的情况。希望系统稳定更新至最新的话可以考虑今天避开更新系统或者安装新包，耐心等待重新打包工作结束。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2020-12-03/say-goodbye-to-py3.8/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>LaTeX in ArchLinux</title>
@@ -330,22 +349,6 @@
       
       
       <comments>https://camusecao.top/2020-05-09/software/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Python 实用小程序</title>
-      <link>https://camusecao.top/2020-05-09/Python-tricks/</link>
-      <guid>https://camusecao.top/2020-05-09/Python-tricks/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09/Python-tricks/#disqus_thread</comments>
     </item>
     
   </channel>
