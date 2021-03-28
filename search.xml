@@ -1448,4 +1448,40 @@ src="https://i.loli.net/2018/12/18/5c18e95ea1455.jpg"></img>
         <tag>TeX</tag>
       </tags>
   </entry>
+  <entry>
+    <title>TeXLive 升级到 pretest</title>
+    <url>/2021-03-28/tlpretest/</url>
+    <content><![CDATA[<p>一年的 1/4 快过去了，TeXLive 的发新也快好了。今天我运行</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">tlmgr update --self --all</span><br></pre></td></tr></table></figure>
+<p>发现 2020 已经被冻结了，无法再升级宏包了。</p>
+<hr>
+<a id="more"></a>
+<p>在 CTeXUG 群里说了句不懂怎么升级到 pretest ， Harry 回复我说其实和普通的跨年份升级是一样的。升级脚本在 pretest 源里就有。于是我决定升级一番试试。</p>
+<p>第一步自然是下载升级脚本了</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/tlpretest/update-tlmgr-latest.sh</span><br></pre></td></tr></table></figure>
+<p>检查其权限</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">ls -al |grep tlmgr</span><br></pre></td></tr></table></figure>
+<p>必然是缺少可执行权限。赋予其可执行权限</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">chmod u+x ./update-tlmgr-latest.sh</span><br></pre></td></tr></table></figure>
+<p>然后运行之。貌似不到一秒就好了。接下来要换到 pretest 的源。国内自然清华源是个好选择。（一般我不推荐清华源，因为其压力过大，不过国内有 pretest 的镜像貌似仅有清华）因此切换镜像</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/tlpretest</span><br></pre></td></tr></table></figure>
+<p>接下来升级部分重要的脚本以及宏包</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">tlmgr update --self --all</span><br></pre></td></tr></table></figure>
+<p>至此，基本升级搞定了。对于有使用 <code>lualatex</code> 的用户应该还需要使用</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">luaotfload-tool -fu</span><br></pre></td></tr></table></figure>
+<p>此过程时间略长，耐心等待即可。</p>
+<p>运行 <code>tex -v</code> 检查一下是否成功，没出意外应该看到</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">TeX 3.141592653 (TeX Live 2021)</span><br><span class="line">kpathsea version 6.3.3</span><br><span class="line">Copyright 2021 D.E. Knuth.</span><br><span class="line">There is NO warranty.  Redistribution of this software is</span><br><span class="line">covered by the terms of both the TeX copyright and</span><br><span class="line">the Lesser GNU General Public License.</span><br><span class="line">For more information about these matters, see the file</span><br><span class="line">named COPYING and the TeX <span class="built_in">source</span>.</span><br><span class="line">Primary author of TeX: D.E. Knuth.</span><br></pre></td></tr></table></figure>
+<p>那么恭喜你，升级成功啦。</p>
+<hr>
+<p>参考资料：<br><span class="exturl" data-url="aHR0cHM6Ly93d3cudHVnLm9yZy90ZXhsaXZlL3VwZ3JhZGUuaHRtbA==">Upgrade from TeX Live 2019 to 2020<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+        <tag>TeX</tag>
+      </tags>
+  </entry>
 </search>

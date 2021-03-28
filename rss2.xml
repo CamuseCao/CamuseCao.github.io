@@ -9,8 +9,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Camuse&#39;s blog</description>
-    <pubDate>Thu, 03 Dec 2020 02:27:18 GMT</pubDate>
+    <pubDate>Sun, 28 Mar 2021 07:28:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>TeXLive 升级到 pretest</title>
+      <link>https://camusecao.top/2021-03-28/tlpretest/</link>
+      <guid>https://camusecao.top/2021-03-28/tlpretest/</guid>
+      <pubDate>Sun, 28 Mar 2021 07:09:49 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;一年的 1/4 快过去了，TeXLive 的发新也快好了。今天我运行&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;tlmgr update --self --all&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;发现 2020 已经被冻结了，无法再升级宏包了。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-03-28/tlpretest/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>python3.8 再见</title>
@@ -333,22 +351,6 @@
       
       
       <comments>https://camusecao.top/2020-05-09/Test/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>常用软件记录</title>
-      <link>https://camusecao.top/2020-05-09/software/</link>
-      <guid>https://camusecao.top/2020-05-09/software/</guid>
-      <pubDate>Fri, 08 May 2020 16:03:40 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
-&lt;hr&gt;
-      
-      </description>
-      
-      
-      <comments>https://camusecao.top/2020-05-09/software/#disqus_thread</comments>
     </item>
     
   </channel>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://camusecao.top/"/>
-  <updated>2020-12-03T02:27:18.048Z</updated>
+  <updated>2021-03-28T07:28:09.906Z</updated>
   <id>https://camusecao.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TeXLive 升级到 pretest</title>
+    <link href="https://camusecao.top/2021-03-28/tlpretest/"/>
+    <id>https://camusecao.top/2021-03-28/tlpretest/</id>
+    <published>2021-03-28T07:09:49.291Z</published>
+    <updated>2021-03-28T07:28:09.906Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一年的 1/4 快过去了，TeXLive 的发新也快好了。今天我运行&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;tlmgr update --self --all&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;发现 2020 已经被冻结了，无法再升级宏包了。&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
+    
+      <category term="TeX" scheme="https://camusecao.top/tags/TeX/"/>
+    
+  </entry>
   
   <entry>
     <title>python3.8 再见</title>
@@ -478,28 +504,6 @@
     
     
       <category term="Icon" scheme="https://camusecao.top/tags/Icon/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用软件记录</title>
-    <link href="https://camusecao.top/2020-05-09/software/"/>
-    <id>https://camusecao.top/2020-05-09/software/</id>
-    <published>2020-05-08T16:03:40.780Z</published>
-    <updated>2019-03-01T13:21:21.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
-&lt;hr&gt;
-    
-    </summary>
-    
-    
-      <category term="软件" scheme="https://camusecao.top/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="Software" scheme="https://camusecao.top/tags/Software/"/>
     
   </entry>
   
