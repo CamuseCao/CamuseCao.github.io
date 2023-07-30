@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Born to die</title>
+    <link>https://camusecao.top/</link>
+    
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>Camuse&#39;s blog</description>
+    <pubDate>Sun, 30 Jul 2023 07:22:11 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>一次深入的交流</title>
+      <link>https://camusecao.top/2023-07-30/reaction-1-langyue/</link>
+      <guid>https://camusecao.top/2023-07-30/reaction-1-langyue/</guid>
+      <pubDate>Sat, 29 Jul 2023 16:15:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;随着年龄的增长，与社会的快速发展，快餐文化逐渐渗透到我们的生活中。我好像许久未与他人深入交流过。而最近我终于体验了一次深入交流，虽然因为双方文化水平上的差异，我信息过载,最终许多交流是无效的。但是我仍然收获了许多。这也引发了我不少反思。久违的更新一下我的博客。好似到了研究生阶段我就少有兴趣更新博客了，仅有的几次也因为工作繁忙等借口而推脱了。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2023-07-30/reaction-1-langyue/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>厦门大学模板使用说明</title>
+      <link>https://camusecao.top/2021-06-16/XMU-Thesis-Instruction/</link>
+      <guid>https://camusecao.top/2021-06-16/XMU-Thesis-Instruction/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;使用的前提&quot;&gt;&lt;a href=&quot;#使用的前提&quot; class=&quot;headerlink&quot; title=&quot;使用的前提&quot;&gt;&lt;/a&gt;使用的前提&lt;/h2&gt;&lt;p&gt;为了使用该模板，需要安装一个&lt;code&gt;TeX&lt;/code&gt;的发行版本。可以选择&lt;code&gt;Texlive&lt;/code&gt;或者&lt;code&gt;Miktex&lt;/code&gt;,他们都是跨平台的。而&lt;code&gt;Texlive&lt;/code&gt;打包了比较多的宏包，较为庞大，&lt;code&gt;Miktex&lt;/code&gt;则是临时下载没有的宏包。这里我推荐使用&lt;code&gt;Miktex&lt;/code&gt;。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/XMU-Thesis-Instruction/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>关于作死修改注册表导致无法更新Windows系统的反思</title>
+      <link>https://camusecao.top/2021-06-16/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</link>
+      <guid>https://camusecao.top/2021-06-16/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;每次新电脑装软件前，我都喜欢修改注册表，改变软件的默认安装位置。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/%E4%BD%9C%E6%AD%BB%E5%BF%83%E5%BE%97/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>TeX 那些小事</title>
+      <link>https://camusecao.top/2021-06-16/TeX-Record/</link>
+      <guid>https://camusecao.top/2021-06-16/TeX-Record/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;本文记录了使用&lt;code&gt;TeX&lt;/code&gt;的一些心得，多参考自它处，分享给TeXers，欢迎大家交流。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/TeX-Record/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>LaTeX 字体的基础配置</title>
+      <link>https://camusecao.top/2021-06-16/TeX-Fonts/</link>
+      <guid>https://camusecao.top/2021-06-16/TeX-Fonts/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;本文将介绍如何简单的配置&lt;code&gt;LaTeX&lt;/code&gt;用&lt;code&gt;xelatex&lt;/code&gt;编译时，可参考的一种字体配置方案。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/TeX-Fonts/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Arch 下 TeXlive-basic 的安装以及 texliveonfly 的基础使用的折腾日记</title>
+      <link>https://camusecao.top/2021-06-16/TeXlive-basic-install/</link>
+      <guid>https://camusecao.top/2021-06-16/TeXlive-basic-install/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;最近又在玩 &lt;code&gt;Linux&lt;/code&gt;，顺便要装 &lt;code&gt;TeXlive&lt;/code&gt;。但是这次不想像以往一样完整安装。&lt;del&gt;实际上还是完整安装省事，就是浪费了很多空间，换来的是少折腾。&lt;/del&gt;其实还有 &lt;code&gt;MikTeX&lt;/code&gt; 和 &lt;code&gt;TinyTeX&lt;/code&gt; 的选择。另外这次发现了 &lt;code&gt;texliveonfly.py&lt;/code&gt; 脚本，多谢林前辈的指点。下面进入折腾吧。这篇教程的核心内容应该适用于其它几个常见的 &lt;code&gt;Linux&lt;/code&gt; 发行版本。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/TeXlive-basic-install/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>TeXLive 升级到 pretest</title>
+      <link>https://camusecao.top/2021-06-16/tlpretest/</link>
+      <guid>https://camusecao.top/2021-06-16/tlpretest/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;一年的 1/4 快过去了，TeXLive 的发新也快好了。今天我运行&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;tlmgr update --self --all&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;发现 2020 已经被冻结了，无法再升级宏包了。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/tlpretest/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>LaTeX in ArchLinux</title>
+      <link>https://camusecao.top/2021-06-16/vscode-for-latex/</link>
+      <guid>https://camusecao.top/2021-06-16/vscode-for-latex/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;一名经常使用 &lt;code&gt;LaTeX&lt;/code&gt; 的用户必须配置一个好用的编辑器来提高效率。另外也得想办法提高编译速度。这里我介绍一下我的常用编译相关的内容，希望你看了有收获。&lt;/p&gt;
+&lt;p&gt;注意，本文不适合新人，要看懂偏难。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/vscode-for-latex/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Python 实用小程序</title>
+      <link>https://camusecao.top/2021-06-16/Python-tricks/</link>
+      <guid>https://camusecao.top/2021-06-16/Python-tricks/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Python 是一门简单易用的编程语言，除了很多比较正经的使用，它还有很多小用处。本文主要介绍我自己在日常生活中的一些小程序。分享给大家，希望对你的使用有帮助。另外也是做一本保存的作用。本文中基本是参考 &lt;code&gt;stackoverflow&lt;/code&gt; 已经 &lt;code&gt;Python&lt;/code&gt; 相关模块的文档。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/Python-tricks/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Python 的 selenium 的一些使用</title>
+      <link>https://camusecao.top/2021-06-16/python-selenium/</link>
+      <guid>https://camusecao.top/2021-06-16/python-selenium/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;本文记录 &lt;code&gt;Python&lt;/code&gt; 使用 &lt;code&gt;Selenium&lt;/code&gt; 的一些操作，主要是为了方便以后查阅使用。对于一些网站的爬虫由于 &lt;code&gt;js&lt;/code&gt; 脚本的加载使得爬虫的难度增大，因此可以考虑使用 &lt;code&gt;Selenium&lt;/code&gt; 库来帮助我们，用它操纵浏览器来爬取需要的数据。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/python-selenium/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>python3.8 再见</title>
+      <link>https://camusecao.top/2021-06-16/say-goodbye-to-py3.8/</link>
+      <guid>https://camusecao.top/2021-06-16/say-goodbye-to-py3.8/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;作为 Arch 的忠实用户，我选择每天 &lt;code&gt;Syu&lt;/code&gt; 。今天在 cn 的公告群看到了如下的置顶消息&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;官方源中 Python 3.9 及所有依赖包已经进入稳定仓库， archlinuxcn 中的所有 python 库正在针对 3.9 版本重新打包，在重新打包全部完成前更新系统可能遭遇 Python 版本不一致的情况。希望系统稳定更新至最新的话可以考虑今天避开更新系统或者安装新包，耐心等待重新打包工作结束。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/say-goodbye-to-py3.8/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>LaTeX 调用发行版本的字体</title>
+      <link>https://camusecao.top/2021-06-16/tex-font/</link>
+      <guid>https://camusecao.top/2021-06-16/tex-font/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;曾经在 win 上面用 &lt;code&gt;xelatex&lt;/code&gt; 编译文档时，并没有太在意它不仅能通过 &lt;code&gt;fontspec&lt;/code&gt; 宏包调用系统字体，还能调用发行版本带有的字体。后来才知道在 Linux 和 Mac 上却并不是这样，它们只能通过文件名来调用发行版本的字体，而不能通过字体名调用发行版本的字体。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/tex-font/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>常用软件记录</title>
+      <link>https://camusecao.top/2021-06-16/software/</link>
+      <guid>https://camusecao.top/2021-06-16/software/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;该文档是用来记录自己常用的一些软件的，如果你有兴趣的话不烦打开看看，说不定能找到你中意的软件。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/software/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Linux 系统的清理</title>
+      <link>https://camusecao.top/2021-06-16/Linux-tidy/</link>
+      <guid>https://camusecao.top/2021-06-16/Linux-tidy/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Linux 系统用常时间了系统也会有很多垃圾文件，应该适当的维护一下。本文主要针对 ArchLinux 来进行相关的维护。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/Linux-tidy/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>MiKTeX的基本使用</title>
+      <link>https://camusecao.top/2021-06-16/MiKTeX/</link>
+      <guid>https://camusecao.top/2021-06-16/MiKTeX/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;本文是关于 MiKTeX 的一些基本介绍、建立自己的cls文件安放位置，以及它如何运行起来latexmk。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/MiKTeX/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>物理定律告诉你，爱情的真相有多么残酷！</title>
+      <link>https://camusecao.top/2021-06-16/Lover/</link>
+      <guid>https://camusecao.top/2021-06-16/Lover/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;昨天是情人节，所以这篇文章先不发，今天来发了。&lt;/p&gt;
+&lt;p&gt;话说昨天我还在和兰铃讨论搭建博客，看到一个很好看的相册，所以发给他看。&lt;/p&gt;
+&lt;p&gt;结果他说你女朋友真好看。&lt;/p&gt;
+&lt;p&gt;原来是那个相册里面的博主和女友的照片。&lt;/p&gt;
+&lt;p&gt;我急忙解释说不是我的。&lt;/p&gt;
+&lt;p&gt;他接下来的回复令人窒息。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/Lover/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Python Pandas 库的一些使用</title>
+      <link>https://camusecao.top/2021-06-16/Python-Pandas/</link>
+      <guid>https://camusecao.top/2021-06-16/Python-Pandas/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; 库我总是看了忘，忘了看。然后经常看的还是同样的一些内容。今天终于下定决心要做一点简单的记录。主要记录自己经常用到且记不住的一些操作。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/Python-Pandas/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>kde 桌面环境下蒙古语的受害者</title>
+      <link>https://camusecao.top/2021-06-16/kde-mn/</link>
+      <guid>https://camusecao.top/2021-06-16/kde-mn/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Archlinux 安装了 kde 桌面环境的我使用上一直有几个困扰，例如我的 chrome 不能上传中文命名的文件， wine-qq 不能输入中文。以及今天遇到另一个问题，导致一并解决了这三个问题的第三个问题。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/kde-mn/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>ArchLinux OCR</title>
+      <link>https://camusecao.top/2021-06-16/ocr/</link>
+      <guid>https://camusecao.top/2021-06-16/ocr/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;在 windows 上面有挺不错的天若 ocr 软件可以用，最近发现自己手上竟然没有一款合适的 Linux ocr 软件可用。于是有了本文。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/ocr/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>利用python批量转换图片的格式</title>
+      <link>https://camusecao.top/2021-06-16/Convert-pictures/</link>
+      <guid>https://camusecao.top/2021-06-16/Convert-pictures/</guid>
+      <pubDate>Wed, 16 Jun 2021 15:58:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;今天做了一个实验，实验保存的图片格式只有&lt;code&gt;bmp&lt;/code&gt;的一种格式可以选择，并且图片数量不小。但是&lt;code&gt;TeX&lt;/code&gt;对于&lt;code&gt;bmp&lt;/code&gt;图片的插入支持不是特别友好。因此我想利用&lt;code&gt;python&lt;/code&gt;来批量转换图片的格式。&lt;/p&gt;
+&lt;hr&gt;
+      
+      </description>
+      
+      
+      <comments>https://camusecao.top/2021-06-16/Convert-pictures/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
